@@ -1,10 +1,95 @@
-%!TEX root = ../main.tex
+\chapter{Introduction}
 
-\chapter*{\label{ch:introduction}Introduction}
-\markboth{Introduction}{}
-\addcontentsline{toc}{chapter}{Introduction} 
-% NOTE: Introduction and Conclusions are special chapters: they are not
-%       marked by a section number, so we need to add it manually to the
-%       ToC, as done above.
 
-\lipsum[1-7]
+% the process of capturing energy from the surrounding environment
+
+
+% Energy harvesting has been demonstrated as a viable alternative for powering low-energy electronics systems, such as Internet of Things (IoT) devices and wireless sensor systems
+% \cite{xuSelfpoweredRPMSensor2023}.
+
+
+% In many cases, the output of energy harvesters is an alternating current (AC) requiring rectification in order to supply the electronic load. The rectifier design and selection can have a considerable influence on the energy harvesting system performance in terms of extracted output power and conversion losses
+
+
+% The rapid advancement of the Internet of Things (IoT) and wireless sensor networks has revolutionized the monitoring of industrial, structural, and transportation systems. As the deployment of smart sensors continues to scale, ensuring a continuous and reliable power supply has become a critical bottleneck. Traditional battery-powered solutions present significant limitations, including finite lifespans, frequent maintenance requirements, logistics costs, and environmental concerns. In this context, energy harvesting—the process of capturing and converting ambient energy into usable electrical power—has emerged as a highly promising strategy to develop self-sustaining, autonomous sensor systems.
+
+% Among the various ambient energy sources available, kinetic energy derived from rotational motion is particularly abundant in industrial machinery, vehicles, and urban infrastructure. Harvesting this rotational energy offers a consistent power source for monitoring critical moving components, such as bearings, wheels, and drive shafts. Electromagnetic and variable reluctance energy harvesters have proven to be robust and effective technologies for this purpose, capable of operating efficiently across different speed ranges without requiring complex mechanical attachments.
+
+% However, the practical implementation of rotational energy harvesting systems introduces several engineering challenges. At low rotational speeds, the generated power is often limited and highly variable, requiring highly efficient power management and rectification circuits to supply direct current (DC) to electronic loads. Additionally, the mechanical integration of these harvesters must be carefully designed to minimize any adverse effects on the host system, such as unwanted vibrations, acoustic noise, or torque ripple. Overcoming these barriers requires a comprehensive approach that combines mechanical design, electromagnetic optimization, and advanced electronic circuitry.
+
+% This thesis aims to explore the principles, design, and optimization of energy harvesting systems for rotational applications. By analyzing the fundamental trade-offs between mechanical constraints, energy conversion efficiency, and power output, this work seeks to evaluate and propose improved architectures. Ultimately, the objective is to advance the development of highly efficient, reliable, and self-powered sensor networks capable of seamlessly integrating into modern smart environments.
+
+
+% . Motivazione globale
+% Perché l'energy harvesting è rilevante oggi — crescita dei dispositivi IoT, edge computing, sensori wireless, wearable. Il problema dell'alimentazione a batteria (manutenzione, sostituzione, sostenibilità). La domanda: esiste un'alternativa?
+% 2. Cos'è l'energy harvesting
+% Definizione, principio generale. Energia "ambientale" come fonte: vibrazione, termica, RF, solare, piezoelettrica. Vantaggi chiave: autonomia, manutenzione zero, scalabilità.
+% 3. Contesto storico
+% Quando nasce e perché — puoi partire dai primi generatori termoelettrici degli anni '50/'60 (es. nelle sonde spaziali), poi il boom con la miniaturizzazione elettronica e l'IoT degli anni 2000.
+% 4. Principali tecnologie esistenti
+% Una panoramica delle famiglie principali: piezoelettrico, elettromagnetico, elettrostatico, termoelettrico, fotovoltaico, RF harvesting. Non serve entrare nel dettaglio — quello va nei capitoli successivi.
+% 5. Sfide aperte (questo ti consiglio di aggiungere)
+% Densità di potenza ancora bassa, dipendenza dalle condizioni ambientali, circuiti di power management, integrazione con i carichi. Questo giustifica la ricerca attiva nel campo — e prepara il terreno per il tuo contributo.
+% 6. Obiettivo e struttura della tesi (fondamentale)
+% Di cosa si occupa esattamente la tua tesi, qual è il contributo originale, e come sono organizzati i capitoli. Questo è l'ultimo paragrafo dell'introduzione e il lettore lo aspetta.
+
+
+
+The number of wireless sensor networks (WSNs) and Internet 
+of Things (IoT) devices has grown rapidly in recent years, 
+raising a fundamental question: how to power all these 
+devices without replacing batteries or requiring constant 
+maintenance. Recent advances in low-power electronics have 
+reduced the energy consumption of sensor nodes to the range 
+of tens to hundreds of microwatts 
+\cite{roundyStudyLowLevel2003a}. At such low power levels, 
+it becomes possible to power these devices by extracting 
+energy from the surrounding environment, removing the need 
+for batteries and allowing the network to operate 
+indefinitely.
+
+Batteries are the most common power source for WSN nodes, 
+but they have well-known limitations. In many applications, such as structural health monitoring, industrial 
+machinery surveillance, or medical implants, replacing or 
+recharging depleted batteries is difficult or simply not 
+possible \cite{grossiEnergyHarvestingStrategies2021}. Using 
+larger batteries to extend the device lifetime increases the 
+size of the system, which is often not acceptable. In 
+addition, the environmental cost of battery and the consequent 
+maintenance of large-scale networks are serious 
+obstacles to the widespread use of WSNs 
+\cite{leonavilaEnergyHarvestingTechniques2025}.
+
+Energy harvesting offers a practical solution to these 
+problems. Instead of storing a fixed amount of energy, 
+harvesting systems collect energy from sources available in 
+the environment such as sunlight, heat gradients, mechanical 
+vibrations, or radio frequency signals and convert it 
+into electrical power to supply an electronic system.
+
+Among all available energy sources, mechanical vibrations 
+have received the most attention in the research community, 
+accounting for more than half of publications in this field 
+\cite{leonavilaEnergyHarvestingTechniques2025}. 
+Piezoelectric, triboelectric, and electromagnetic transducers 
+are the most widely used mechanisms, each with different 
+trade-offs in output voltage, power density, and complexity 
+\cite{roundyStudyLowLevel2003a, 
+grossiEnergyHarvestingStrategies2021}.
+Figure~\ref{fig:transducer_distribution} shows the 
+distribution of recent publications about transducer types, 
+highlighting the dominance of mechanical energy harvesting 
+approaches.
+
+\input{Plots/EH_Studies.tex}
+
+
+Energy harvesting systems are generally divided into two 
+categories \cite{grossiEnergyHarvestingStrategies2021}: 
+systems that use the harvested energy immediately 
+(\emph{Harvest-Use}), and systems that store it first in a 
+battery or supercapacitor before supplying it to the node 
+(\emph{Harvest-Store-Use}). The second approach is far more 
+common, since most energy sources are not continuously 
+available and some form of storage is needed to guarantee 
+uninterrupted operation.

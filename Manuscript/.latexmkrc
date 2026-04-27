@@ -1,0 +1,1 @@
+$pdf_mode = 1; $biber = 'biber %S';

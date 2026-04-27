@@ -333,7 +333,13 @@
 
     % add watermark
     \thiswatermark{\centering
-    \put(-294,-750){\includegraphics[width=1.4\linewidth]{template/unipdbg}}
+    % \put(-294,-750){\includegraphics[width=1.4\linewidth]{template/unipdbg2}}
+    % \put(-294,-740){\includegraphics[width=1.45\linewidth]{template/unipdbg}}
+    \put(-294,-740){%
+    \begin{tikzpicture}
+        \node[inner sep=0, opacity=0.45] {\includegraphics[width=1.45\linewidth]{template/unipdbg}};
+    \end{tikzpicture}%
+}
     }
 
     % logo(s)

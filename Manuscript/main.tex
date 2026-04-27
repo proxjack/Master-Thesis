@@ -1,4 +1,4 @@
-%!TEX TS-program = pdflatex
+%!TEX TS-program = latexmk
 %!TEX encoding = UTF-8 Unicode
 
 \PassOptionsToPackage{table}{xcolor} % to use colors in tables
@@ -14,6 +14,10 @@
 % additional packages
 \usepackage{lipsum} % for DEMO only
 
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
 %% (optional) to add a draft watermark, uncomment the following:
 %\usepackage[color={[gray]{0.85}}]{draftwatermark} 
 % NOTE: high values -> less visible
@@ -25,7 +29,8 @@
 
 
 % titles
-\title{A modern template for a thesis\\at University of Padua}
+% \title{Comparative Analysis of Interface Circuits for Maximum Power Extraction in a Six-Phase Variable Reluctance Energy Harvester}
+\title{>Title}
 \thesisHeader{University of Padua, Department of Information Engineering\\Master Thesis in Electronic Engineering}
 \academicYear{2025/2026}
 
@@ -35,7 +40,7 @@
 
 % supervisor(s)Zürich
 \advisor{Prof. Sebastian Bader}{Mid Sweden University} % (mandatory)
-\coadvisor{Prof. dunno}{Mid Sweden University} % (optional, comment to remove)
+\coadvisor{Prof. Ye Xu}{Mid Sweden University} % (optional, comment to remove)
 \otheradvisor{Prof. Alessandro Pozzebon}{University of Padua} % (optional, comment to remove)
 % ^ NOTE: you can use optional arg to customize the label "Internal Supervisor"
 %   example:   \otheradvisor[The best supervisor!]{Prof. Paolino Paperino}{University of Padua}
@@ -72,31 +77,46 @@
     % main content
     \mainmatter
 
-    % introduction -------------
-    \input{chapters/introduction}
-    \glsresetall  % reset gls after introduction (suggested, but optional)
-
-    % --------------------------
-    \part{\label{prt:demo}Demo of the template features} % NOTE: dividing in parts is optional
-
-    \input{chapters/demo-basic}
-    % NOTE: I suggest to create a file for each chapter, like the previous \input{}.
+    \input{chapters/Introduction.tex}
+    \input{chapters/Rectifiers.tex}
+    \cite{wuMultiPhaseVariableReluctance2024}
 
 
-    % --------------------------
-    \part{\label{prt:filler}Filler part}
-    
-    \input{chapters/demo-filler}
 
-    % conclusion ---------------
-    \input{chapters/conclusions}
+
+
+
+
+
+
 
     
-    % appendices ---------------
-    \begin{appendices}
-        \include{chapters/demo-appendix}
-    \end{appendices}
+    % % introduction -------------
+    % \input{chapters2/introduction}
+    % \glsresetall  % reset gls after introduction (suggested, but optional)
+
+    % % --------------------------
+    % \part{\label{prt:demo}Demo of the template features} % NOTE: dividing in parts is optional
+
+    % \input{chapters2/demo-basic}
+    % % NOTE: I suggest to create a file for each chapter, like the previous \input{}.
+
+
+    % % --------------------------
+    % \part{\label{prt:filler}Filler part}
+    
+    % \input{chapters2/demo-filler}
+
+    % % conclusion ---------------
+    % \input{chapters2/conclusions}
+
+    
+    % % appendices ---------------
+    % \begin{appendices}
+    %     \include{chapters2/demo-appendix}
+    % \end{appendices}
 
     % glossary, bibliography, acknowledges
+
     \backmatter
 \end{document}
