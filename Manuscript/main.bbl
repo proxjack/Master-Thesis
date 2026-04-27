@@ -1,0 +1,265 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{grossiEnergyHarvestingStrategies2021}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=5ad5ed0af306900d8b5ce9b48a55c35d}{%
+           family={Grossi},
+           familyi={G\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Multidisciplinary Digital Publishing Institute}%
+      }
+      \strng{namehash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{fullhash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{fullhashraw}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{bibnamehash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{authorbibnamehash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{authornamehash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{authorfullhash}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \strng{authorfullhashraw}{5ad5ed0af306900d8b5ce9b48a55c35d}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Wireless sensor network nodes and mobile devices are normally powered by batteries that, when depleted, must be recharged or replaced. This poses important problems, in particular for sensor nodes that are placed in inaccessible areas or biomedical sensors implanted in the human body where the battery replacement is very impractical. Moreover, the depleted battery must be properly disposed of in accordance with national and international regulations to prevent environmental pollution. A very interesting alternative to power mobile devices is energy harvesting where energy sources naturally present in the environment (such as sunlight, thermal gradients and vibrations) are scavenged to provide the power supply for sensor nodes and mobile systems. Since the presence of these energy sources is discontinuous in nature, electronic systems powered by energy harvesting must include a power management system and a storage device to store the scavenged energy. In this paper, the main strategies to design a wireless mobile sensor system powered by energy harvesting are reviewed and different sensor systems powered by such energy sources are presented.}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{6}
+      \field{shorttitle}{Energy {{Harvesting Strategies}} for {{Wireless Sensor Networks}} and {{Mobile Devices}}}
+      \field{title}{Energy {{Harvesting Strategies}} for {{Wireless Sensor Networks}} and {{Mobile Devices}}: {{A Review}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{10}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{661}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics10060661
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\VZRPNTPR\Grossi - 2021 - Energy Harvesting Strategies for Wireless Sensor Networks and Mobile Devices A Review.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2079-9292/10/6/661
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2079-9292/10/6/661
+      \endverb
+      \keyw{INTRO}
+    \endentry
+    \entry{leonavilaEnergyHarvestingTechniques2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=b1602e6eb868a691b8b4cf1f6856c09b}{%
+           family={León\bibnamedelima Ávila},
+           familyi={L\bibinitperiod\bibinitdelim Á\bibinitperiod},
+           given={Bernardo},
+           giveni={B\bibinitperiod}}}%
+        {{hash=d5218af725a4dd77d9a42d54adc9dee1}{%
+           family={García\bibnamedelima Vázquez},
+           familyi={G\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Carlos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=8cd9aac4cef7c76e3d23d7db67b750f7}{%
+           family={Perez\bibnamedelima Baluja},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Osmel},
+           giveni={O\bibinitperiod}}}%
+        {{hash=39975b4306f9595f9222e072dd07be26}{%
+           family={Cotfas},
+           familyi={C\bibinitperiod},
+           given={Petru},
+           giveni={P\bibinitperiod}}}%
+        {{hash=867d4d1be9e082a52439900342c04f54}{%
+           family={Cotfas},
+           familyi={C\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d23cf5aa15b02f0d4adfa91c86ea4b3}
+      \strng{fullhash}{524606148960747cd9d777d9054d2989}
+      \strng{fullhashraw}{524606148960747cd9d777d9054d2989}
+      \strng{bibnamehash}{3d23cf5aa15b02f0d4adfa91c86ea4b3}
+      \strng{authorbibnamehash}{3d23cf5aa15b02f0d4adfa91c86ea4b3}
+      \strng{authornamehash}{3d23cf5aa15b02f0d4adfa91c86ea4b3}
+      \strng{authorfullhash}{524606148960747cd9d777d9054d2989}
+      \strng{authorfullhashraw}{524606148960747cd9d777d9054d2989}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Energy harvesting has emerged as a promising avenue for addressing the constraints imposed by battery lifespan in wireless sensor networks (WSNs), paving the way for more sustainable and autonomous operations. This paper presents a comprehensive and systematic literature review (SLR) that critically examines the latest advancements and methodologies in energy harvesting for wireless sensor networks (WSNs). The review encompasses the entire system architecture, including energy storage and power management systems. The review is based on biblio-metric analysis and a detailed examination of an extensive collection of 196 peer-reviewed studies published between 2014 and 2023. The text provides a comprehensive assessment of diverse technologies, techniques, and mechanisms for extracting energy from environmental sources, including thermal, light, mechanical, radio frequency , chemical, and biological, to power a wireless sensor node device. Furthermore, the concepts of transducers , energy sources, and energy types are elucidated and defined, thus establishing a lucid framework for classifying and analyzing these techniques and technologies. Additionally, key trends, challenges, and future research directions are identified, emphasizing areas that require further exploration to advance the field, particularly in battery-less systems employing capacitors and supercapacitors.}
+      \field{day}{1}
+      \field{journaltitle}{Energy Strategy Reviews}
+      \field{month}{1}
+      \field{shortjournal}{Energy Strategy Reviews}
+      \field{shorttitle}{Energy Harvesting Techniques for Wireless Sensor Networks}
+      \field{title}{Energy Harvesting Techniques for Wireless Sensor Networks: {{A}} Systematic Literature Review}
+      \field{volume}{57}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{pages}{101617}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.esr.2024.101617
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\YBINZKCL\León Ávila et al. - 2025 - Energy harvesting techniques for wireless sensor networks A systematic literature review.pdf
+      \endverb
+      \keyw{INTRO}
+    \endentry
+    \entry{roundyStudyLowLevel2003a}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a28447cb1dfb99431490e8099c374189}{%
+           family={Roundy},
+           familyi={R\bibinitperiod},
+           given={Shad},
+           giveni={S\bibinitperiod}}}%
+        {{hash=957f9f04c21ed79719be75a5d340dbca}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Paul\bibnamedelima K.},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=3bba79e0c28ae09bb2c98029b1739c53}{%
+           family={Rabaey},
+           familyi={R\bibinitperiod},
+           given={Jan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e69a419423709bffa57651796da0ec9d}
+      \strng{fullhash}{e69a419423709bffa57651796da0ec9d}
+      \strng{fullhashraw}{e69a419423709bffa57651796da0ec9d}
+      \strng{bibnamehash}{e69a419423709bffa57651796da0ec9d}
+      \strng{authorbibnamehash}{e69a419423709bffa57651796da0ec9d}
+      \strng{authornamehash}{e69a419423709bffa57651796da0ec9d}
+      \strng{authorfullhash}{e69a419423709bffa57651796da0ec9d}
+      \strng{authorfullhashraw}{e69a419423709bffa57651796da0ec9d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Advances in low power VLSI design, along with the potentially low duty cycle of wireless sensor nodes open up the possibility of powering small wireless computing devices from scavenged ambient power. A broad review of potential power scavenging technologies and conventional energy sources is first presented. Low-level vibrations occurring in common household and office environments as a potential power source are studied in depth. The goal of this paper is not to suggest that the conversion of vibrations is the best or most versatile method to scavenge ambient power, but to study its potential as a viable power source for applications where vibrations are present. Different conversion mechanisms are investigated and evaluated leading to specific optimized designs for both capacitive MicroElectroMechancial Systems (MEMS) and piezoelectric converters. Simulations show that the potential power density from piezoelectric conversion is significantly higher. Experiments using an off-the-shelf PZT piezoelectric bimorph verify the accuracy of the models for piezoelectric converters. A power density of 70 mW/cm3 has been demonstrated with the PZT bimorph. Simulations show that an optimized design would be capable of 250 mW/cm3 from a vibration source with an acceleration amplitude of 2.5 m/s2 at 120 Hz.}
+      \field{issn}{01403664}
+      \field{journaltitle}{Computer Communications}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{11}
+      \field{shortjournal}{Computer Communications}
+      \field{title}{A Study of Low Level Vibrations as a Power Source for Wireless Sensor Nodes}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
+      \field{volume}{26}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1131\bibrangedash 1144}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1016/S0140-3664(02)00248-7
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\RTY8IT3U\Roundy et al. - 2003 - A study of low level vibrations as a power source for wireless sensor nodes.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0140366402002487
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0140366402002487
+      \endverb
+      \keyw{INTRO}
+    \endentry
+    \entry{wuMultiPhaseVariableReluctance2024}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=05c253c0a4cd0a6b1a1055027e1ddc73}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Mengfei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ad716c4f6aa5883cc0f54907883ad01d}{%
+           family={Bader},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Tonsberg, Norway}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{fullhash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{fullhashraw}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{bibnamehash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{authorbibnamehash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{authornamehash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{authorfullhash}{b5d65b7e75d25306ef829bb74d86004e}
+      \strng{authorfullhashraw}{b5d65b7e75d25306ef829bb74d86004e}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper reports on the design, optimization, and evaluation of a multi-phase variable reluctance energy harvester (MP-VREH) for integration into a smart bearing hub unit of large commercial vehicles. The MP-VREH converts rotational kinetic energy into electrical energy to enable the supply of smart electronic systems to monitor the bearing condition. The proposed design consists of a ferromagnetic toothed wheel and six identical m-shaped pickup units. Adhering to the space limitations of an example bearing hub unit, critical parameters, such as the pickup unit pole-piece structure, the magnet height, and the number of teeth, have been optimized using 3D finite element analysis. The optimized harvester provides output powers ranging from 0.46 W to 4.77 W at relevant rotational speeds of 100 to 400 RPM. This is deemed to provide sufficient energy for typical application scenarios.}
+      \field{booktitle}{2024 {{IEEE}} 23rd {{International Conference}} on {{Micro}} and {{Miniature Power Systems}}, {{Self-Powered Sensors}} and {{Energy Autonomous Devices}} ({{PowerMEMS}})}
+      \field{day}{18}
+      \field{eventtitle}{2024 {{IEEE}} 23rd {{International Conference}} on {{Micro}} and {{Miniature Power Systems}}, {{Self-Powered Sensors}} and {{Energy Autonomous Devices}} ({{PowerMEMS}})}
+      \field{isbn}{979-8-3503-8020-0}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Multi-{{Phase Variable Reluctance Energy Harvester For Smart Bearing Hub Units}}}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{46\bibrangedash 49}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/PowerMEMS63147.2024.10814240
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\P968GGH2\Wu et al. - 2024 - Multi-Phase Variable Reluctance Energy Harvester For Smart Bearing Hub Units.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10814240/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10814240/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
