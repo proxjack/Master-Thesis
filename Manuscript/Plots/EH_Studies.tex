@@ -1,5 +1,3 @@
-
-
 \begin{figure}[htbp]
 \centering
 \definecolor{colHeat}{RGB}{55,138,221}
@@ -10,17 +8,17 @@
 \definecolor{colChem}{RGB}{136,135,128}
 \begin{tikzpicture}
 \begin{axis}[
-    ybar,
-    bar width        = 0.55cm,
+    ybar stacked,
+    bar width        = 0.45cm,
     width            = 0.95\textwidth,
-    height           = 7cm,
-    enlarge x limits = 0.05,
+    height           = 9cm,
+    enlarge x limits = 0.07,
     ylabel           = {Quantity of papers},
     ylabel style     = {font=\small},
     symbolic x coords = {TEG, PV, Coil, Rectenna, MME,
                           TENG, PZ, EM, Electrodes, Hydrovoltaic, ACY},
     xtick            = data,
-    xticklabel style = {font=\small, rotate=30, anchor=east},
+    xticklabel style = {font=\footnotesize, rotate=45, anchor=east},
     ymin = 0, ymax   = 70,
     ytick            = {0,10,20,30,40,50,60,70},
     yticklabel style = {font=\small},
@@ -28,8 +26,17 @@
     grid style       = {dashed, gray!30},
     axis line style  = {gray!50},
     tick style       = {draw=none},
+        nodes near coords,
+    nodes near coords align = {vertical},
+    every node near coord/.append style = {
+        font=\footnotesize,
+        /pgf/number format/fixed,
+        /pgf/number format/precision=0
+    },
+    visualization depends on = y \as \rawy,
+    after end axis/.code={},
     legend style     = {
-        at={(0.5,-0.30)},
+        at={(0.5,-0.25)},
         anchor=north,
         legend columns=3,
         font=\small,
@@ -37,40 +44,44 @@
         column sep=0.8em
     },
 ]
-
+% Heat -> TEG=24, tutto il resto 0
 \addplot[fill=colHeat, draw=none] coordinates {
     (TEG,24)(PV,0)(Coil,0)(Rectenna,0)(MME,0)
     (TENG,0)(PZ,0)(EM,0)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
 \addlegendentry{Heat}
 
+% Light -> PV=33, tutto il resto 0
 \addplot[fill=colLight, draw=none] coordinates {
-    (TEG,0)(PV,35)(Coil,0)(Rectenna,0)(MME,0)
+    (TEG,0)(PV,33)(Coil,0)(Rectenna,0)(MME,0)
     (TENG,0)(PZ,0)(EM,0)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
 \addlegendentry{Light}
 
+% EMF -> Coil=4, tutto il resto 0
 \addplot[fill=colEMF, draw=none] coordinates {
     (TEG,0)(PV,0)(Coil,4)(Rectenna,0)(MME,0)
     (TENG,0)(PZ,0)(EM,0)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
 \addlegendentry{EMF}
 
+% RF -> Rectenna=2, tutto il resto 0
 \addplot[fill=colRF, draw=none] coordinates {
     (TEG,0)(PV,0)(Coil,0)(Rectenna,2)(MME,0)
     (TENG,0)(PZ,0)(EM,0)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
 \addlegendentry{RF}
 
+% Mechanical -> MME=19, TENG=61, PZ=38, EM=37
 \addplot[fill=colMech, draw=none] coordinates {
     (TEG,0)(PV,0)(Coil,0)(Rectenna,0)(MME,19)
     (TENG,61)(PZ,38)(EM,37)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
 \addlegendentry{Mechanical}
 
+% Chemistry & Biology -> Electrodes=1, Hydrovoltaic=1, ACY=2
 \addplot[fill=colChem, draw=none] coordinates {
     (TEG,0)(PV,0)(Coil,0)(Rectenna,0)(MME,0)
-    (TENG,0)(PZ,0)(EM,0)(Electrodes,0)(Hydrovoltaic,0)(ACY,0)};
+    (TENG,0)(PZ,0)(EM,0)(Electrodes,1)(Hydrovoltaic,1)(ACY,2)};
 \addlegendentry{Chemistry \& Biology}
 
 \end{axis}
 \end{tikzpicture}
-\caption{Distribution of papers based on transducer type.
-Adapted from \cite{leonavilaEnergyHarvestingTechniques2025}.}
+\caption{Distribution of papers based on transducer type \cite{leonavilaEnergyHarvestingTechniques2025}.}
 \label{fig:transducer_distribution}
 \end{figure}

@@ -1,4 +1,4 @@
-\chapter{Introduction}
+
 
 
 % the process of capturing energy from the surrounding environment
@@ -33,7 +33,9 @@
 % 6. Obiettivo e struttura della tesi (fondamentale)
 % Di cosa si occupa esattamente la tua tesi, qual è il contributo originale, e come sono organizzati i capitoli. Questo è l'ultimo paragrafo dell'introduzione e il lettore lo aspetta.
 
+\chapter{Introduction}
 
+\section{Motivation}
 
 The number of wireless sensor networks (WSNs) and Internet 
 of Things (IoT) devices has grown rapidly in recent years, 
@@ -76,7 +78,7 @@ are the most widely used mechanisms, each with different
 trade-offs in output voltage, power density, and complexity 
 \cite{roundyStudyLowLevel2003a, 
 grossiEnergyHarvestingStrategies2021}.
-Figure~\ref{fig:transducer_distribution} shows the 
+Figure \ref{fig:transducer_distribution} shows the 
 distribution of recent publications about transducer types, 
 highlighting the dominance of mechanical energy harvesting 
 approaches.
@@ -93,3 +95,159 @@ battery or supercapacitor before supplying it to the node
 common, since most energy sources are not continuously 
 available and some form of storage is needed to guarantee 
 uninterrupted operation.
+
+
+\section{Energy Harvesting Systems}
+
+An energy harvesting system is made of three components
+that work in sequence, as illustrated in
+Figure \ref{fig:BD_EHS}.
+
+\begin{itemize}
+    \item \emph{Transducer}: converts the ambient energy into an electrical signal.
+    \item \emph{Power conditioning circuit}: perform AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021}.
+    \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is week or no more present. Such element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
+\end{itemize}
+
+
+
+%Inserire uno schema a blocchi di transducer, pcc e nenrgy storage
+\begin{figure}[htbp]
+\centering
+\caption{Block diagram of a typical energy harvesting system.}
+\label{fig:BD_EHS}
+\end{figure}
+
+
+
+The performance of the entire system depends in particular on
+the transducer. Its design must be matched to the
+characteristics of the ambient source as well as to the power need
+of the target device. A transducer that is well suited to
+one environment may perform poorly in another, which is why
+the choice of transduction mechanism is the central design
+decision in any harvesting application \cite{grossiEnergyHarvestingStrategies2021}.
+
+Designing a good harvesting system is not just about 
+getting the most power out of it. The system must work 
+reliably in real conditions, where the energy source can 
+be irregular or unpredictable. At the same time, it must 
+be small, cheap, and easy to integrate into the target 
+device \cite{grossiEnergyHarvestingStrategies2021}. Finding 
+the right balance between these requirements is the main 
+challenge in this field, and it has led to the development 
+of many different solutions, as discussed in the following 
+sections.
+
+\section{Performance metrics}
+
+A key challenge in evaluating energy harvesting systems is 
+choosing the right performance metrics. Xu et 
+al.\cite{xuSystemImplementationTradeOffs2021} propose two metrics 
+for this purpose. The first is the \emph{power conversion 
+efficiency} (PCE), which measures how much of the power 
+entering the interface circuit actually reaches the output:
+
+
+\begin{equation}
+    \text{PCE} = \eta_\text{Rec} \cdot \eta_\text{DC-DC} 
+    = \frac{P_\text{out}}{P_\text{in}}.
+    \label{eq:pce}
+\end{equation}
+
+
+The second is the \emph{power extraction efficiency} (PEE), 
+which compares the output power to the maximum power the 
+transducer could deliver under ideal conditions:
+
+
+\begin{equation}
+    \text{PEE} = \frac{P_\text{out}}{P_\text{max}} 
+    = \frac{P_\text{in}}{P_\text{max}} \cdot \text{PCE}.
+    \label{eq:pee}
+\end{equation}
+
+
+The difference between the two is important. A circuit can 
+convert power efficiently (high PCE) while still wasting 
+much of what the transducer could produce, if the circuit 
+itself is not able to work in the optimal operating 
+point. For this reason, PEE is a more useful metric when the 
+goal is to maximise the total power delivered to the 
+load \cite{xuSystemImplementationTradeOffs2021}.
+
+
+% ─────────────────────────────────────────────────────────────
+%  Section 4 — Main transduction technologies
+% ─────────────────────────────────────────────────────────────
+\section{Main Transduction Technologies}
+\label{sec:intro-technologies}
+
+Mechanical vibrations can be converted into electrical 
+energy through four main transduction mechanisms: 
+piezoelectric, electromagnetic, electrostatic, and 
+triboelectric. Each of them works in a different way and 
+comes with its own advantages and 
+limitations \cite{mitchesonEnergyHarvestingHuman2008, beebyEnergyHarvestingVibration2006}.
+
+\subsection*{Piezoelectric}
+Piezoelectric transducers produce a voltage when a
+material is bent or squeezed. The most common design
+is a cantilever beam with a piezoelectric layer on top:
+when the beam vibrates, the material deforms and
+generates an electric charge. This approach gives a
+high output voltage and does not need a magnet or
+moving parts, which makes it easy to miniaturise\cite{antonReviewPowerHarvesting2007}. The main drawback is that
+piezoelectric materials are brittle and may crack under
+large deformations. Also, the output drops sharply
+when the vibration frequency shifts away from the
+resonant frequency of the beam \cite{roundyStudyLowLevel2003a}.
+
+\subsection*{Electromagnetic}
+Electromagnetic transducers generate a voltage by
+moving a coil near a permanent magnet. This is the
+same principle used in large electrical generators,
+applied at a small scale. These harvesters tend to
+produce a low voltage but can deliver a relatively
+high current, which makes them a good choice when
+power output is the main goal.
+One limitation is that the coil and magnet must move
+relative to each other, which can be hard to achieve
+in applications involving large or slowly rotating
+objects \cite{mitchesonEnergyHarvestingHuman2008}.
+
+\subsection*{Electrostatic}
+Electrostatic transducers work by changing the
+capacitance between two conductive plates as they
+move. When the plates get closer or further apart
+due to vibration, the stored electrical energy
+changes and can be extracted as useful power.
+This approach is easy to manufacture using standard
+microfabrication processes, making it attractive for
+very small devices. However, it requires an external
+voltage or a pre-charged material to get started,
+which adds complexity to the
+system \cite{mitchesonEnergyHarvestingHuman2008, beebyEnergyHarvestingVibration2006}.
+
+\subsection*{Triboelectric}
+Triboelectric transducers use contact between two
+different materials to generate surface charges.
+When the materials touch and then separate, charges
+build up and can drive a current through an external
+circuit. This type of harvester, known as a
+triboelectric nanogenerator (TENG), was first
+demonstrated by Fan et al.\cite{fanFlexibleTriboelectricGenerator2012} and
+has attracted a lot of interest because it can be
+made from cheap, flexible materials and works well
+at low frequencies, such as those produced by human
+motion. The main weaknesses are sensitivity to
+humidity and wear of the contact surfaces over
+time \cite{leonavilaEnergyHarvestingTechniques2025}.
+
+Among these four mechanisms, no single technology is 
+universally superior. The best choice depends on the 
+specific application, the characteristics of the available 
+vibration source, and the constraints on size and cost. 
+This comparison motivates the investigation of 
+alternative approaches, including variable reluctance 
+transduction, which is discussed in the following section.
