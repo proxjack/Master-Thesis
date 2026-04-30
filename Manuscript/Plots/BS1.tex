@@ -1,0 +1,52 @@
+\usetikzlibrary{calc}
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[node distance=1.2cm and 1.4cm,
+    block/.style={
+        rectangle,
+        draw,
+        rounded corners=4pt,
+        minimum width=3.2cm,
+        minimum height=1.4cm,
+        text width=3.0cm,
+        align=center,
+        font=\small
+    },
+    arrow/.style={-{Stealth[length=6pt]}, thick},
+    label/.style={font=\footnotesize, gray}
+]
+ 
+% Nodes
+\node[block, fill=teal!15, draw=teal!60] (trans)
+    {\textbf{Transducer}\\[4pt]\footnotesize Ambient $\rightarrow$ electrical};
+ 
+\node[block, fill=violet!10, draw=violet!50, right=of trans] (pcc)
+    {\textbf{Power conditioning}\\[4pt]\footnotesize Rectifier + PMIC\\impedance matching};
+ 
+\node[block, fill=orange!15, draw=orange!60, right=of pcc] (stor)
+    {\textbf{Energy storage}\\[4pt]\footnotesize Capacitor / supercap\\/ rechargeable battery};
+ 
+\node[block, fill=gray!10, draw=gray!50, right=of stor,
+      minimum width=1.6cm, text width=1.4cm] (load)
+    {\textbf{Load}};
+ 
+% Ambient energy input
+\node[label, left=0.8cm of trans] (src) {Ambient\\energy};
+\draw[arrow] (src) -- (trans);
+ 
+% Main chain arrows
+\draw[arrow] (trans) -- node[above, label]{AC/DC} (pcc);
+\draw[arrow] (pcc)   -- (stor);
+\draw[arrow] (stor)  -- (load);
+ 
+% Backup path (dashed, below)
+\draw[-{Stealth[length=5pt]}, dashed, gray, thick]
+    (stor.south) -- ++(0,-0.9)
+    -- node[below, label, midway]{backup (weak/absent source)}
+    ($(trans.south)+(0,-0.9)$)
+    -- (trans.south);
+ 
+  \end{tikzpicture}
+  \caption{Energy harvesting chain}
+  \label{fig:energy-harvesting}
+\end{figure}
