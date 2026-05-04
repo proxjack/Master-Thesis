@@ -177,11 +177,8 @@ goal is to maximise the total power delivered to the
 load \cite{xuSystemImplementationTradeOffs2021}.
 
 
-% ─────────────────────────────────────────────────────────────
-%  Section 4 — Main transduction technologies
-% ─────────────────────────────────────────────────────────────
+
 \section{Main Transduction Technologies}
-\label{sec:intro-technologies}
 
 Mechanical vibrations can be converted into electrical 
 energy through four main transduction mechanisms: 
@@ -191,17 +188,20 @@ comes with its own advantages and
 limitations \cite{mitchesonEnergyHarvestingHuman2008, beebyEnergyHarvestingVibration2006}.
 
 \subsection*{Piezoelectric}
-Piezoelectric transducers produce a voltage when a
-material is bent or squeezed. The most common design
+Piezoelectric transducers produce a voltage when a 
+material is mechanically deformed. The most common design
 is a cantilever beam with a piezoelectric layer on top:
 when the beam vibrates, the material deforms and
 generates an electric charge. This approach gives a
 high output voltage and does not need a magnet or
-moving parts, which makes it easy to miniaturise\cite{antonReviewPowerHarvesting2007}. The main drawback is that
-piezoelectric materials are brittle and may crack under
-large deformations. Also, the output drops sharply
-when the vibration frequency shifts away from the
-resonant frequency of the beam \cite{roundyStudyLowLevel2003a}.
+moving parts, which makes it easy to integrate into small 
+devices \cite{antonReviewPowerHarvesting2007}. The main drawback is that
+piezoelectric materials are fragile and may crack under
+large deformations. Also, the output drops quickly
+when the vibration frequency moves away from the 
+resonant frequency of the 
+beam \cite{roundyStudyLowLevel2003a}.
+
 
 \subsection*{Electromagnetic}
 Electromagnetic transducers generate a voltage by
@@ -251,3 +251,288 @@ vibration source, and the constraints on size and cost.
 This comparison motivates the investigation of 
 alternative approaches, including variable reluctance 
 transduction, which is discussed in the following section.
+
+
+
+
+\section{The Variable Reluctance Principle}
+
+
+Variable reluctance energy harvesting (VREH) is a type of
+electromagnetic energy harvesting based on Faraday's law
+of induction. The transducer consists of three main parts:
+a permanent magnet, a pickup coil wound around a
+ferromagnetic pole piece, and a toothed ferromagnetic
+wheel that rotates nearby. When a tooth on the wheel
+aligns with the pole piece, the magnetic flux through the
+coil reaches its maximum value. When the gap between two
+teeth faces the pole piece, the flux drops to its minimum.
+This periodic variation in flux induces an alternating
+voltage across the coil, with a frequency that depends on
+the rotational speed and the number of teeth on the
+wheel \cite{xuSurveyVariableReluctance2018}:
+%
+\begin{equation}
+    f_c = \omega \, N_t,
+    \label{eq:vreh_freq}
+\end{equation}
+%
+where $\omega$ is the rotational speed in rad/s and $N_t$
+is the number of teeth on the weel. Following Faraday's law, the output
+power of the transducer delivered to a matched load can be expressed
+as~\cite{xuDesignModelingOptimization2019a}:
+%
+\begin{equation}
+    P_L = \frac{N_\text{Coil}^2}{8R_\text{Coil}}
+    \Delta_\phi^2
+    \left[\frac{\omega N_\text{Tooth}}{2\pi}\right]^2,
+    \label{eq:vreh_power}
+\end{equation}
+%
+where $N_\text{Coil}$ is the number of coil turns,
+$R_\text{Coil}$ is the coil resistance, $\Delta_\phi$ is
+the magnetic flux difference between the aligned and
+unaligned positions, and $N_\text{Tooth}$ is the number of
+teeth. This expression shows that the output power grows
+with the square of the rotational speed, and that it can
+be increased by maximising the flux difference and the
+number of coil turns, or by reducing the coil resistance.
+
+What makes VREH different from most other electromagnetic
+harvesters is that neither the magnet nor the coil needs
+to move. The flux variation is caused entirely by the
+relative motion between the toothed wheel and the pickup units.
+This removes the need for a mechanical connection between the 
+rotating part and the harvester, which is an advantage. It also
+means that the device is easy to scale: changing the shaft
+diameter mainly affects the size of the toothed wheel,
+while the pickup unit can stay the
+same \cite{xuDesignModelingOptimization2019a}. In contrast, traditional
+electromagnetic generators require scaling of the magnets
+or coils, which becomes costly for large shafts or slow
+rotational speeds.
+
+At low rotational speeds, the output voltage and frequency
+are both small, which makes the design of the interface
+circuit more critical \cite{xuSystemImplementationTradeOffs2021}.
+At the same time, low-speed applications are exactly where
+VREH has the clearest advantage over other electromagnetic
+harvesters, since these typically require a relative
+displacement between coil and magnet that is hard to
+achieve at low speeds \cite{mitchesonEnergyHarvestingHuman2008}.
+
+Its application to energy harvesting is more recent. Kroener et
+al. \cite{kroenerVariableReluctanceHarvester2013} were among the first to study a
+VREH specifically designed for energy harvesting in railway
+monitoring, showing that the principle could reliably power
+wireless sensor nodes from the motion of passing train
+wheels. Since then, the approach has been explored in a
+growing number of industrial and structural monitoring
+applications \cite{xuSurveyVariableReluctance2018, xuDesignModelingOptimization2019a}.
+
+
+
+
+
+\section{State of the Art of VREH}
+
+
+The first applications of the variable reluctance principle
+to energy harvesting appeared in the context of railway
+monitoring. Kroener et al. \cite{kroenerVariableReluctanceHarvester2013} demonstrated
+that a VREH placed beside a rail track could generate
+enough power from the passage of train wheels to supply a
+wireless sensor node, reporting a peak output power of
+around $5.9$ mW at a simulated train speed of $81.5$ Km/h.
+This work showed for the first time that the variable
+reluctance principle could be practically used as an energy source
+rather than just a measurement transducer.
+
+A systematic comparison of VREH topologies was later
+carried out by Xu et al. \cite{xuSurveyVariableReluctance2018}, who surveyed
+the structures proposed in the literature and evaluated
+them in terms of output power and power density for
+low-speed rotating applications. The study identified the
+\emph{m-shaped} pickup unit, which uses two opposing
+permanent magnets and a centre pole piece, as the
+topology with the highest volumetric power density among
+all structures considered. This result motivated a
+detailed design study of the m-shaped VREH, in which
+the influence of three key geometric parameters was
+investigated: the coil height $h_\text{Coil}$, the tooth
+height $h_\text{Tooth}$, and the magnet height
+$h_\text{M}$ \cite{xuDesignModelingOptimization2019a}. The study
+showed that these parameters involve trade-offs under size
+constraints, and provided a numerical optimisation method
+based on finite element analysis (FEA). The optimised
+structure reached output powers between 0.12 mW and
+22 mW at rotational speeds of 5\,rpm to 60 rpm within
+a volume constraint of 43.5 cm $^3$, which is sufficient
+to power a range of duty-cycled wireless sensor
+systems \cite{xuDesignModelingOptimization2019a}.
+
+A practical challenge in VREH systems is that the
+transducer produces a low-voltage alternating output,
+which must be rectified and conditioned before it can
+supply any systems. At low rotational speeds, the output
+voltage can be well below 1 V, which makes the choice of
+rectifier circuit critical. Xu et
+al. \cite{xuSystemImplementationTradeOffs2021} compared three
+passive rectifier topologie: a full-wave bridge
+rectifier (FWR), a voltage doubler (VD), and a negative
+voltage converter (NVC), all on the same VREH system at
+speeds between 5 rpm and 20 rpm. The results showed
+that the VD achieved the best power extraction efficiency
+at low speeds, reaching a PEE of 40-60\%, while the NVC
+outperformed it above 18 rpm. The FWR showed the lowest
+performance across all conditions, with PEE values of only
+20-40\%. These results confirm that the interface circuit
+is not just a passive element but actively affects how
+much power the transducer can deliver to the load.
+
+These studies show that VREH is a mature
+and well-understood technology for low-speed rotational
+applications, with demonstrated power levels sufficient
+for a variety of wireless sensing tasks. The most recent
+step forward in this direction is the multi-phase VREH
+proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024}, which
+integrates six m-shaped pickup units into a bearing hub
+unit for large commercial vehicles, reaching output powers
+between 0.46 W and 4.77 W at rotational speeds of
+100 to 400 RPM. This significant increase in output power
+opens new possibilities for powering more demanding
+condition monitoring systems. However, it also introduces
+new challenges in the design of the power conditioning
+circuit, which must handle six independent AC outputs
+with different phases and varying voltage levels depending
+on the rotational speed. These challenges are discussed in
+the next section.
+
+
+\section{Open Challenges}
+
+
+Despite the progress described in the previous sections,
+several challenges remain open in the design of VREH
+systems. This section focuses on those that are most
+relevant to the work presented in this thesis.
+
+\subsection*{Power conditioning for multi-phase outputs}
+Single-phase VREH systems produce one alternating
+voltage signal that must be rectified and converted into a
+stable DC supply. This problem has been studied in detail
+for low-speed single-phase harvesters, where the choice
+of rectifier topology has a significant impact on the
+power extraction efficiency \cite{xuSystemImplementationTradeOffs2021}.
+
+
+Many studies have investigated the design of power 
+conditioning circuits for single-phase
+energy harvesters. The most common approach combines 
+a rectification stage with a DC-DC converter, such as a 
+Buck or Boost circuit, to regulate the output voltage to 
+a level suitable for the target load \cite{yuSingleStageAC2016,yuDiscontinuousConductionMode2017a,hsiehSimpleBidirectionalBridgeless2014,dayalNewSingleStage2010}. However, these 
+solutions are designed for a single AC input and cannot 
+be directly applied to a multi-phase harvester such as 
+the MP-VREH, where six independent AC signals must 
+be processed simultaneously.
+
+Furthermore, many of these solutions do not include a
+startup circuit or a control system, which are both
+essential for the reliable operation of the power
+conditioning circuit in practice. Without a startup
+circuit, the system is not able to start operating when
+the harvested voltage is initially too low to power the
+control electronics. Without a control system, the
+circuit cannot adapt to changes in the rotational speed
+or load conditions, which are essential in real-world
+applications.
+
+This gap in the literature 
+motivates the investigation presented in this thesis.
+
+When the number of pickup units increases,
+as in the multi-phase VREH proposed by Wu et
+al. \cite{wuMultiPhaseVariableReluctance2024}, which uses six m-shaped
+pickup units arranged around a common toothed wheel,
+the power conditioning problem becomes considerably
+more complex. Each pickup unit produces an independent
+AC output with a different phase and the six signals are evenly
+spaced in time by $60^\circ$ phase shift.
+This means that standard single-phase rectifier
+solutions cannot be directly applied, and that the
+interface circuit must be designed to handle multiple AC inputs efficiently.
+
+\subsection*{Low output voltage at low speed}
+A fundamental limitation of VREH transducers is that
+the output voltage scales with rotational speed. At low
+speeds, the induced voltage may be well below 1 V, which
+makes rectification difficult because conventional diode
+bridges lose a significant fraction of the available voltage
+across their forward drops \cite{xuSystemImplementationTradeOffs2021}.
+In a multi-phase system, this problem affects all six
+phases simultaneously. Finding a rectifier topology that
+works efficiently across a wide speed range, from the
+minimum speed at which the harvester can sustain the
+load, up to the maximum operating speed, is therefore
+a key design requirement.
+
+\subsection*{Impedance matching under variable conditions}
+The maximum power that a VREH can deliver to a load
+is achieved when the load impedance is matched to the
+internal impedance of the pickup coil. This matching
+condition depends on the rotational speed, because the
+electrical frequency of the output signal changes with
+speed. For a single-phase harvester, Xu et
+al. \cite{xuDesignModelingOptimization2019a} showed that a fixed
+resistive load leads to an approximately linear increase
+in output power with speed, whereas a complex conjugate
+matched load, which compensates for the inductive
+component of the coil, could further increase the
+output power, especially at higher speeds. In a six-phase
+system, achieving dynamic impedance matching for all
+phases simultaneously adds a further layer of complexity
+to the interface circuit design.
+
+\section{Harvester Specifications and Research Objective}
+
+The work presented in this thesis is based directly on
+the MP-VREH proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024}.
+The electrical characteristics of a single pickup unit,
+obtained from the transducer model, are summarised in
+Table \ref{tab:vreh_par}. These values are used
+throughout this work as the reference operating
+conditions for the design and evaluation of the proposed
+power conditioning circuits.
+
+\begin{table}[htbp]
+    \centering
+
+    \begin{tabular}{cccccc}
+        \toprule
+        RPM & $f$ (Hz) & $V_\text{Lpk}$ (V) & $R_\text{coil}$ ($\Omega$) &$L_\text{coil}$ (mH) & $P_o$ (W) \\
+        \midrule
+        100 & 36.7  & 0.91 & 6 & 21.68 & 0.41 \\
+        200 & 73.3  & 1.35 & 6 & 21.46 & 0.91 \\
+        300 & 110.0 & 1.59 & 6 & 21.27 & 1.26 \\
+        400 & 146.7 & 1.74 & 6 & 21.12 & 1.51 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Electrical parameters of a single MP-VREH
+             pickup unit at different rotational speeds.}
+    \label{tab:vreh_par}
+\end{table}
+
+All values in Table \ref{tab:vreh_par} were obtained under 
+impedance-matched load conditions. $V_\text{Lpk}$ refers to 
+the peak voltage across the load, and $P_o$ is the average 
+power dissipated in the load.
+
+These challenges motivate the work presented in this
+thesis, which focuses on the design and evaluation of
+power conditioning circuits for the six-phase MP-VREH
+described above. The goal is to identify the interface
+circuit topology that maximises the power delivered to
+the load across the relevant operating speed range of
+100 to 400 RPM (20-80 Km/h), corresponding to typical driving
+conditions of large commercial vehicles .

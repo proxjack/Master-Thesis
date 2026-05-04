@@ -6,6 +6,10 @@
 \contentsline {section}{\numberline {1.2}Energy Harvesting Systems}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Performance metrics}{3}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Main Transduction Technologies}{4}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Rectifiers}{7}{chapter.2}%
-\contentsline {chapter}{Bibliography}{9}{section*.9}%
-\contentsline {chapter}{Acknowledgments}{11}{section*.11}%
+\contentsline {section}{\numberline {1.5}The Variable Reluctance Principle}{5}{section.1.5}%
+\contentsline {section}{\numberline {1.6}State of the Art of VREH}{6}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Open Challenges}{7}{section.1.7}%
+\contentsline {section}{\numberline {1.8}Harvester Specifications and Research Objective}{9}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Rectifiers}{11}{chapter.2}%
+\contentsline {chapter}{Bibliography}{13}{section*.10}%
+\contentsline {chapter}{Acknowledgments}{17}{section*.12}%
