@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  30 APR 2026 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  4 MAY 2026 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2742,7 +2742,26 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
+))) (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen481
+\lightrulewidth=\dimen482
+\cmidrulewidth=\dimen483
+\belowrulesep=\dimen484
+\belowbottomsep=\dimen485
+\aboverulesep=\dimen486
+\abovetopsep=\dimen487
+\cmidrulesep=\dimen488
+\cmidrulekern=\dimen489
+\defaultaddspace=\dimen490
+\@cmidla=\count621
+\@cmidlb=\count622
+\@aboverulesep=\dimen491
+\@belowrulesep=\dimen492
+\@thisruleclass=\count623
+\@lastruleclass=\count624
+\@thisrulewidth=\dimen493
+) (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip192
@@ -2774,42 +2793,42 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip274
 \cftfigindent=\skip275
 \cftfignumwidth=\skip276
-\c@lofdepth=\count621
-\c@lotdepth=\count622
+\c@lofdepth=\count625
+\c@lotdepth=\count626
 \cftbeforelottitleskip=\skip277
 \cftafterlottitleskip=\skip278
 \cftbeforetabskip=\skip279
 \cfttabindent=\skip280
 \cfttabnumwidth=\skip281
 ) (custom-symbols.tex
-\c@prop=\count623
-\c@theorem=\count624
+\c@prop=\count627
+\c@theorem=\count628
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 75.
+(Font)              scaled to size 10.95pt on input line 76.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2847,16 +2866,16 @@ LaTeX Font Info:    ... okay on input line 75.
 
 (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count625
-\scratchdimen=\dimen481
+\scratchcounter=\count629
+\scratchdimen=\dimen494
 \scratchbox=\box161
-\nofMPsegments=\count626
-\nofMParguments=\count627
+\nofMPsegments=\count630
+\nofMParguments=\count631
 \everyMPshowfont=\toks83
-\MPscratchCnt=\count628
-\MPscratchDim=\dimen482
-\MPnumerator=\count629
-\makeMPintoPDFobject=\count630
+\MPscratchCnt=\count632
+\MPscratchDim=\dimen495
+\MPnumerator=\count633
+\makeMPintoPDFobject=\count634
 \everyMPtoPDFconversion=\toks84
 ) (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -2870,9 +2889,9 @@ Package grfext Info: Graphics extension search list:
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@mv@tabular=\count631
-\c@mv@boldtabular=\count632
-Package hyperref Info: Link coloring ON on input line 75.
+\c@mv@tabular=\count635
+\c@mv@boldtabular=\count636
+Package hyperref Info: Link coloring ON on input line 76.
  (main.out) (main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
@@ -2899,9 +2918,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 75.
-Package biblatex Info: Reference segment=0 on input line 75.
-\c@lstlisting=\count633
+Package biblatex Info: Reference section=0 on input line 76.
+Package biblatex Info: Reference segment=0 on input line 76.
+\c@lstlisting=\count637
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
@@ -2940,36 +2959,36 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 
 pdfTeX warning: pdflatex (file ./template/universis.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<template/universis.pdf, id=85, 547.96718pt x 186.70352pt>
+<template/universis.pdf, id=101, 547.96718pt x 186.70352pt>
 File: template/universis.pdf Graphic file (type pdf)
 <use template/universis.pdf>
-Package pdftex.def Info: template/universis.pdf  used on input line 77.
+Package pdftex.def Info: template/universis.pdf  used on input line 78.
 (pdftex.def)             Requested size: 200.42024pt x 68.28644pt.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.95pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 77.
+(Font)              scaled to size 20.74pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 77.
+(Font)              scaled to size 20.74pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 77.
+(Font)              scaled to size 12.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 77.
+(Font)              scaled to size 12.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
+(Font)              scaled to size 10.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 77.
+(Font)              scaled to size 10.0pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 77.
+(Font)              scaled to size 10.0pt on input line 78.
 
 
 
 
 pdfTeX warning: pdflatex (file ./template/unipdbg.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<template/unipdbg.pdf, id=86, 608.18213pt x 574.15504pt>
+<template/unipdbg.pdf, id=102, 608.18213pt x 574.15504pt>
 File: template/unipdbg.pdf Graphic file (type pdf)
 <use template/unipdbg.pdf>
-Package pdftex.def Info: template/unipdbg.pdf  used on input line 77.
+Package pdftex.def Info: template/unipdbg.pdf  used on input line 78.
 (pdftex.def)             Requested size: 618.84615pt x 584.27246pt.
 [1
 
@@ -2991,7 +3010,7 @@ LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not a
 
 {C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc}]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.95pt on input line 78.
 
 
 [3
@@ -3004,9 +3023,9 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 77.
+(Font)              scaled to size 10.95pt on input line 78.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 77.
+(Font)              scaled to size 24.88pt on input line 78.
  (main.toc)
 \tf@toc=\write10
 \openout10 = `main.toc'.
@@ -3071,71 +3090,89 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 
 [3{C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 
-[4]) (chapters/Rectifiers.tex
+[4]
 
 [5]
 
-[6
+[6]
 
+[7]
 
-]
+[8]) (chapters/Rectifiers.tex
+
+[9]
+
+[10]
 Chapter 2.
 )
 No file main.gls.
 No file main.acr.
 
 
-[7]
-
-[8
+[11
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 123.
+
+[12
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 124.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 123.
+(Font)              scaled to size 10.95pt on input line 124.
+
+Overfull \hbox (10.44496pt too wide) in paragraph at lines 124--124
+\T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
+ []
 
 
-[9
 
-
-]
-
-[10] (docs/acknowledgments.tex)
-
-[11
-
-
+[13
 
 
 ]
 
-[12] (main.aux)
+[14]
+
+[15]
+
+[16
+
+
+] (docs/acknowledgments.tex)
+
+[17
+
+
+]
+
+[18] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4AC23989995E11760CE4B3044F007060;1250.
+(rerunfilecheck)             Checksum: 48C7545F9B46A3467D16689BB0B3AF2D;2105.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 80374 strings out of 468130
- 1826859 string characters out of 5430633
- 2901787 words of memory out of 5000000
- 107708 multiletter control sequences out of 15000+600000
+ 80517 strings out of 468130
+ 1830758 string characters out of 5430633
+ 2903499 words of memory out of 5000000
+ 107827 multiletter control sequences out of 15000+600000
  697685 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,19n,131p,2557b,3404s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (22 pages, 509911 bytes).
+ 123i,19n,131p,2557b,3405s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on main.pdf (28 pages, 583117 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 52 named destinations out of 1000 (max. 500000)
- 259 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 291 words of extra memory for PDF output out of 10000 (max. 10000000)
 

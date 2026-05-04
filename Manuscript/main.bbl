@@ -108,6 +108,59 @@
       \verb C:\Users\jacop\Zotero\storage\YNWPAHNK\Beeby et al. - 2006 - Energy Harvesting Vibration Sources for Microsystems Applications.pdf
       \endverb
     \endentry
+    \entry{dayalNewSingleStage2010}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=e49fe3ffe94a508cc181ee769d81dab5}{%
+           family={Dayal},
+           familyi={D\bibinitperiod},
+           given={Rohan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=89e88d57302d8cf32189127e62235906}{%
+           family={Parsa},
+           familyi={P\bibinitperiod},
+           given={Leila},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{fullhash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{fullhashraw}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{bibnamehash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{authorbibnamehash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{authornamehash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{authorfullhash}{2c819f6486e41c63b038a78ab6889d27}
+      \strng{authorfullhashraw}{2c819f6486e41c63b038a78ab6889d27}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, a direct AC-DC converter for electromagnetic microgenerators is presented. In recent years, researchers have developed a number of microgenerator configurations that are capable of producing an AC voltage of a few hundred millivolts. However, little work has been reported on conversion of such low voltages to a steady DC voltage required by most devices. The authors present a new converter topology that can be used for such low voltage, low power energy harvesting. It utilizes the bidirectional current capability of MOSFETs to avoid the use of front-end bridge rectifier. The converter offers a resistive load to the microgenerator making it suitable for optimum energy harvesting. Simulation and experimental results are depicted to verify the operation of the converter.}
+      \field{booktitle}{2010 {{IEEE Energy Conversion Congress}} and {{Exposition}}}
+      \field{eventtitle}{2010 {{IEEE Energy Conversion Congress}} and {{Exposition}}}
+      \field{issn}{2329-3748}
+      \field{month}{9}
+      \field{title}{A New Single Stage {{AC-DC}} Converter for Low Voltage Electromagnetic Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{4447\bibrangedash 4452}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ECCE.2010.5618446
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\MF3DCJWU\Dayal e Parsa - 2010 - A new single stage AC-DC converter for low voltage electromagnetic energy harvesting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/5618446
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/5618446
+      \endverb
+      \keyw{AC-DC power conversion,Buck-boost conversion,Capacitors,Converters,energy harvesting,Energy harvesting,Inductors,low power,low voltage,MOSFETs,Switches,Topology}
+    \endentry
     \entry{fanFlexibleTriboelectricGenerator2012}{article}{}{}
       \name{author}{3}{}{%
         {{hash=9e7568b67aa6c467cc7bb4775c0e30ed}{%
@@ -221,6 +274,124 @@
       \verb https://www.mdpi.com/2079-9292/10/6/661
       \endverb
       \keyw{INTRO}
+    \endentry
+    \entry{hsiehSimpleBidirectionalBridgeless2014}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=1d761f55355cb9e4487a63be9152fd3f}{%
+           family={Hsieh},
+           familyi={H\bibinitperiod},
+           given={Chen-Yu},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=bb33ffd448dce65b359fafd407e70da7}{%
+           family={Moallem},
+           familyi={M\bibinitperiod},
+           given={Mehrdad},
+           giveni={M\bibinitperiod}}}%
+        {{hash=36e1a355b1dc8dd6b5570de850c1f06b}{%
+           family={Golnaraghi},
+           familyi={G\bibinitperiod},
+           given={Farid},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{fullhash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{fullhashraw}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{bibnamehash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{authorbibnamehash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{authornamehash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{authorfullhash}{ca9b47da14eb105976c4e889f0cace94}
+      \strng{authorfullhashraw}{ca9b47da14eb105976c4e889f0cace94}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, a new switched-mode bidirectional bridgeless AC/DC converter, operating in the discontinuous conduction mode (DCM), for automotive energy harvesting is presented. The simple topology consisting of common source n-MOSFETs allows for direct AC/DC conversion, minimum auxiliary circuits and simple gating patterns, when compared to other AC/DC converters proposed in the literatures. The circuit operation is analyzed and shown that the converter-battery topology can operate as a synthesized variable resistor with regenerative functionality. The circuit is designed for low-power energy harvesting applications; for example, regenerating dissipated power in a vehicle suspension damper by converting vibrational energy into battery charge. Simulation results including various switching waveforms and power conversion efficiency are presented to demonstrate performance of the proposed converter. Experimental results, including power conversion efficiency and resistance synthesis sweep, by connecting the proposed converter to a regenerative vehicle suspension prototype are also included.}
+      \field{booktitle}{{{IECON}} 2014 - 40th {{Annual Conference}} of the {{IEEE Industrial Electronics Society}}}
+      \field{eventtitle}{{{IECON}} 2014 - 40th {{Annual Conference}} of the {{IEEE Industrial Electronics Society}}}
+      \field{issn}{1553-572X}
+      \field{month}{10}
+      \field{title}{A Simple {{Bi-directional}} Bridgeless {{AC}}/{{DC}} Buck-Boost Converter for Automotive Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1937\bibrangedash 1943}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IECON.2014.7048767
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\Z6GDVS4U\Hsieh et al. - 2014 - A simple Bi-directional bridgeless ACDC buck-boost converter for automotive energy harvesting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7048767/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7048767/
+      \endverb
+      \keyw{Bi-directional bridgeless AC/DC,Energy harvesting,Inductors,Low-power energy harvesting,MOSFET,Rectifiers,Regenerative vehicle suspension,Resistance,Switches,Topology}
+    \endentry
+    \entry{kroenerVariableReluctanceHarvester2013}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7889c09b864dda355ad9e92cf95bb3c4}{%
+           family={Kroener},
+           familyi={K\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a7fa544ea1c2f90befc55f4d58582194}{%
+           family={Ravindran},
+           familyi={R\bibinitperiod},
+           given={S\bibnamedelima K\bibnamedelima T},
+           giveni={S\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d45063d6861f23c22b00dd9cf958ac5e}{%
+           family={Woias},
+           familyi={W\bibinitperiod},
+           given={P},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{fullhash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{fullhashraw}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{bibnamehash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{authorbibnamehash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{authornamehash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{authorfullhash}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \strng{authorfullhashraw}{817fffbdeaab47e6d878b41b3d4d9a73}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present the design, realization, and testing of a variable reluctance energy harvester for the detection of moving ferromagnetic parts, e.g. the wheels of a train while passing over a train passage detector. Measurements were done to determine the output voltage, the energy output per event and the power output with the frequency of the moving ferromagnetic body. Results are compared with finite element analysis (FEA) to estimate the change in magnetic flux and the output voltages. A maximum energy output of 131 μJ per pulse was measured for a simulated condition of a train wheel passing with a speed of 81.5 km/h, which results in a mean output power of 5.9 mW, with a spacing of 10 mm between wheel and the reluctance circuit. This shows that the variable reluctance principle, a well-known method used for numerous sensor applications, is also a comfortable, energy-autonomous and reliable method to detect passing train wheels or other moving ferromagnetic parts, with a simple setup and fairly high useable output power.}
+      \field{issn}{1742-6596}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{J. Phys.: Conf. Ser.}
+      \field{title}{Variable Reluctance Harvester for Applications in Railroad Monitoring}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{476}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{012091}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/476/1/012091
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\5A29KHR9\Kroener et al. - 2013 - Variable reluctance harvester for applications in railroad monitoring.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1088/1742-6596/476/1/012091
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1088/1742-6596/476/1/012091
+      \endverb
     \endentry
     \entry{leonavilaEnergyHarvestingTechniques2025}{article}{}{}
       \name{author}{5}{}{%
@@ -478,6 +649,127 @@
       \verb https://ieeexplore.ieee.org/document/10814240/
       \endverb
     \endentry
+    \entry{xuSurveyVariableReluctance2018}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ad716c4f6aa5883cc0f54907883ad01d}{%
+           family={Bader},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=633b0f371ec77f4814c1d07ac6deb70b}{%
+           family={Oelmann},
+           familyi={O\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{fullhash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{fullhashraw}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{bibnamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorbibnamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authornamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorfullhash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorfullhashraw}{ab20984bc5ae4384755ad84e32ece114}
+      \field{extraname}{1}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Energy harvesting converts ambient energy to electrical energy that can be used to power, for example, sensors and sensor systems. Variable reluctance (VR) energy harvesting is a suitable candidate for the conversion of rotary kinetic motion, an energy form commonly found in industrial applications. The implementation of a VR energy harvester (VREH), however, has a significant effect on its performance and is not well studied. In this paper, we therefore conduct a survey on different structures of VREHs. Six existing structures, previously used in VR sensors, are presented and analyzed according to their approaches for magnetic flux change improvement. Together with a newly proposed structure, these structures are evaluated based on a finite element analysis, and their results are compared. It is demonstrated that the choice of structure considerably affects the power output of the harvester and is dependent on the improvement approaches the structure utilizes. The newly proposed structure outperforms all existing structures with respect to power output and power density, which comes at a cost of higher parasitic torque generation. A 53-fold power improvement over the reference and an 1.2-fold power improvement over the next best structure is observed. As a result, applications of VR energy harvesting become viable even at low angular velocities.}
+      \field{issn}{1558-1748}
+      \field{journaltitle}{IEEE Sensors Journal}
+      \field{month}{4}
+      \field{number}{8}
+      \field{title}{A {{Survey}} on {{Variable Reluctance Energy Harvesters}} in {{Low-Speed Rotating Applications}}}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{18}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{3426\bibrangedash 3435}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/JSEN.2018.2808377
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\M7M8QMUA\Xu et al. - 2018 - A Survey on Variable Reluctance Energy Harvesters in Low-Speed Rotating Applications.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/8300310
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/8300310
+      \endverb
+      \keyw{electromagnetic induction,Energy harvesting,finite element analysis,magnetic flux,Magnetic sensors,Power generation,sensor systems,Sensor systems,Transducers,Wheels}
+    \endentry
+    \entry{xuDesignModelingOptimization2019a}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Ye},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ad716c4f6aa5883cc0f54907883ad01d}{%
+           family={Bader},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=633b0f371ec77f4814c1d07ac6deb70b}{%
+           family={Oelmann},
+           familyi={O\bibinitperiod},
+           given={Bengt},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{fullhash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{fullhashraw}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{bibnamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorbibnamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authornamehash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorfullhash}{ab20984bc5ae4384755ad84e32ece114}
+      \strng{authorfullhashraw}{ab20984bc5ae4384755ad84e32ece114}
+      \field{extraname}{2}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The variable reluctance principle can be used to convert rotational kinetic energy into electrical energy, creating a Variable Reluctance Energy Harvester (VREH) based on electromagnetic induction. This can be used to implement self-sustaining wireless sensors in rotating applications. In this paper, we present and investigate a novel design of a VREH with high volumetric power density that targets low-speed rotating applications. The design uses an m-shaped pole-piece and two opposing magnets. We theoretically analyze key design parameters that influence the VREH’s output power, and relate these parameters to geometrical design factors of the proposed structure. Key design factors include the coil height, the permanent magnet height and the tooth height. A method based on numerical simulations is introduced, enabling to determine the optimal geometrical dimensions of the proposed structure under given size-constraints. The results demonstrate that the method leads to optimal structure configurations, which has been evaluated for different cases and is verified experimentally. Good agreement between numerical simulations and experiments are reported with deviations in output power estimation below 3\%. The optimized m-shaped VREH, moreover, provides output power levels sufficient for wireless sensor operation, even in low-speed rotating applications.}
+      \field{day}{1}
+      \field{issn}{0196-8904}
+      \field{journaltitle}{Energy Conversion and Management}
+      \field{month}{9}
+      \field{shortjournal}{Energy Conversion and Management}
+      \field{title}{Design, Modeling and Optimization of an m-Shaped Variable Reluctance Energy Harvester for Rotating Applications}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
+      \field{volume}{195}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1280\bibrangedash 1294}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1016/j.enconman.2019.05.082
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\jacop\\Zotero\\storage\\95HQZ6NF\\Xu et al. - 2019 - Design, modeling and optimization of an m-shaped variable reluctance energy harvester for rotating a.pdf;C\:\\Users\\jacop\\Zotero\\storage\\B5P4TT8U\\S0196890419306375.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890419306375
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0196890419306375
+      \endverb
+      \keyw{Design method,Energy harvesting,Power density,Rotational energy,Sensor systems,Variable reluctance}
+    \endentry
     \entry{xuSystemImplementationTradeOffs2021}{article}{}{}
       \name{author}{5}{}{%
         {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
@@ -548,6 +840,117 @@
       \verb{url}
       \verb https://www.mdpi.com/1424-8220/21/18/6317
       \endverb
+    \endentry
+    \entry{yuSingleStageAC2016}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=6e179b37ac2319805ed0b07b8975e83c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=44ddd1947297940fae36faf60cfdc356}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haoyu},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{fullhash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{fullhashraw}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{bibnamehash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{authorbibnamehash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{authornamehash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{authorfullhash}{2432571a41a67ac334a2b5c819f911c9}
+      \strng{authorfullhashraw}{2432571a41a67ac334a2b5c819f911c9}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, a novel ac/dc converter is proposed for low voltage, low power rectification applications. The proposed converter manages the energy harvested from micro-scale electromagnetic transducers. It integrates the conventional Boost and Buck-Boost topologies with a shared inductor, a bidirectional switch and two split filtering capacitors. The Boost and the Buck-Boost topologies function in the positive and negative half input cycles, respectively. The inductor is energized by being shorted with the input source through the MOSFET channel without using the diodes. This enables active rectification of low amplitude (below 0.7 V) ac voltages. Theoretical analysis, design considerations and control method are detailed. A 45 mW circuit prototype, which converts a 0.4 V peak, 100 Hz ac voltage to 3.3 V dc is designed and tested to verify the proof of concept.}
+      \field{booktitle}{2016 {{IEEE Energy Conversion Congress}} and {{Exposition}} ({{ECCE}})}
+      \field{eventtitle}{2016 {{IEEE Energy Conversion Congress}} and {{Exposition}} ({{ECCE}})}
+      \field{month}{9}
+      \field{title}{A Single Stage {{AC}}/{{DC}} Converter for Low Voltage Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ECCE.2016.7854782
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\SELQL9V8\Yu e Wang - 2016 - A single stage ACDC converter for low voltage energy harvesting.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7854782/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7854782/
+      \endverb
+      \keyw{ac/dc conversion,Boost,Buck-Boost,Capacitors,Electromagnetics,energy harvesting,Generators,Inductors,low power,low voltage,Switches,Switching loss,Topology}
+    \endentry
+    \entry{yuDiscontinuousConductionMode2017a}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6e179b37ac2319805ed0b07b8975e83c}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Liang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=44ddd1947297940fae36faf60cfdc356}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Haoyu},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e479780bc3d7686efdeb285e94f3ed1f}{%
+           family={Khaligh},
+           familyi={K\bibinitperiod},
+           given={Alireza},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{fullhash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{fullhashraw}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{bibnamehash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{authorbibnamehash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{authornamehash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{authorfullhash}{dd76791b5f0744c629c336fcca162e9a}
+      \strng{authorfullhashraw}{dd76791b5f0744c629c336fcca162e9a}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, a novel ac/dc converter is proposed for low-voltage and low-power ac rectification applications. The proposed converter manages the energy harvested from microscale electromagnetic generators (MEGs). It integrates the conventional boost and buck-boost topologies with a shared inductor, a bidirectional switch, and two split filtering capacitors. The boost and the buck-boost topologies function in the positive and negative half input cycles, respectively. The inductor is energized by being shorted with the input source through the mosfet channel without using the diodes. This enables active rectification of low-amplitude (below 0.7 V) ac voltages. Theoretical analysis, design considerations, and control method are detailed. A 40-mW circuit prototype, which converts a 0.4-V peak, 100-Hz ac voltage source to 3.3-V dc, is designed and tested to verify the proof of concept.}
+      \field{issn}{1941-0107}
+      \field{journaltitle}{IEEE Transactions on Power Electronics}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{A {{Discontinuous Conduction Mode Single-Stage Step-Up Rectifier}} for {{Low-Voltage Energy Harvesting Applications}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
+      \field{volume}{32}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{6161\bibrangedash 6169}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/TPEL.2016.2614995
+      \endverb
+      \verb{file}
+      \verb C:\Users\jacop\Zotero\storage\3J2RVRAI\Yu et al. - 2017 - A Discontinuous Conduction Mode Single-Stage Step-Up Rectifier for Low-Voltage Energy Harvesting App.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/7582535/
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/7582535/
+      \endverb
+      \keyw{AC/DC conversion,boost,buck–boost,Capacitors,energy harvesting,Energy harvesting,Inductors,low power,low voltage,Low voltage,MOSFET,Switches,Topology}
     \endentry
   \enddatalist
 \endrefsection
