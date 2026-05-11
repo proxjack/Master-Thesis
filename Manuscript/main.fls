@@ -898,6 +898,9 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zplTLF
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newpx\zpl_TOsF.enc
+INPUT .\chapters\Theory.tex
+INPUT .\chapters\Theory.tex
+INPUT chapters\Theory.tex
 INPUT .\chapters\Rectifiers.tex
 INPUT .\chapters\Rectifiers.tex
 INPUT chapters\Rectifiers.tex
