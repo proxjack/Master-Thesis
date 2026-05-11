@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  4 MAY 2026 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  11 MAY 2026 16:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2959,7 +2959,7 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 
 pdfTeX warning: pdflatex (file ./template/universis.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<template/universis.pdf, id=101, 547.96718pt x 186.70352pt>
+<template/universis.pdf, id=105, 547.96718pt x 186.70352pt>
 File: template/universis.pdf Graphic file (type pdf)
 <use template/universis.pdf>
 Package pdftex.def Info: template/universis.pdf  used on input line 78.
@@ -2985,7 +2985,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 
 
 pdfTeX warning: pdflatex (file ./template/unipdbg.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<template/unipdbg.pdf, id=102, 608.18213pt x 574.15504pt>
+<template/unipdbg.pdf, id=106, 608.18213pt x 574.15504pt>
 File: template/unipdbg.pdf Graphic file (type pdf)
 <use template/unipdbg.pdf>
 Package pdftex.def Info: template/unipdbg.pdf  used on input line 78.
@@ -3098,16 +3098,13 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 
 [7]
 
-[8]) (chapters/Rectifiers.tex
+[8]) (chapters/Theory.tex
 
 [9]
 
 [10]
 Chapter 2.
-)
-No file main.gls.
-No file main.acr.
-
+) (chapters/Rectifiers.tex
 
 [11
 
@@ -3118,61 +3115,73 @@ No file main.acr.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 124.
+Chapter 3.
+)
+No file main.gls.
+No file main.acr.
+
+
+[13]
+
+[14
+
+
+]
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 113.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 124.
+(Font)              scaled to size 10.95pt on input line 113.
 
-Overfull \hbox (10.44496pt too wide) in paragraph at lines 124--124
+Overfull \hbox (10.44496pt too wide) in paragraph at lines 113--113
 \T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
  []
 
 
 
-[13
+[15
 
 
 ]
 
-[14]
+[16]
 
-[15]
+[17]
 
-[16
+[18
 
 
 ] (docs/acknowledgments.tex)
 
-[17
+[19
 
 
 ]
 
-[18] (main.aux)
+[20] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 48C7545F9B46A3467D16689BB0B3AF2D;2105.
+(rerunfilecheck)             Checksum: 6EFDD607C9C41D95303B0ED3A86C536F;2262.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 80517 strings out of 468130
- 1830758 string characters out of 5430633
- 2903499 words of memory out of 5000000
- 107827 multiletter control sequences out of 15000+600000
+ 80533 strings out of 468130
+ 1831079 string characters out of 5430633
+ 2903589 words of memory out of 5000000
+ 107837 multiletter control sequences out of 15000+600000
  697685 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2557b,3405s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (28 pages, 583117 bytes).
+Output written on main.pdf (30 pages, 585390 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 504 PDF objects out of 1000 (max. 8388607)
+ 75 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
