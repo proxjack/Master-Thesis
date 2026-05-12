@@ -1,3 +1,141 @@
 \chapter{Theoretical Background}
 
-This chapter introduces the physical and circuit-level concepts required to motivate the design choices made in the following chapters
+
+
+
+
+
+
+This chapter introduces the physical and circuit-level concepts required to motivate the design choices made in the following chapters.
+In this chapter, starting from Faraday's law, an electrical
+model of the variable-reluctance energy harvester (VREH) is
+derived. The model is then used to discuss the maximum
+power transfer theorem and the role of impedance matching
+
+\section{Electrical Model of the Variable-Reluctance Harvester}
+
+
+\subsection{Faraday's law}
+
+The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $V_c(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
+
+\begin{equation}
+    V_c(t) = -\frac{\dd \Phi(t)}{\dd t}
+    \label{eq:faraday}
+\end{equation}
+
+For a coil mode by $N_c$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi_i(t)$ and the induced EMF becomes:
+
+\begin{equation}
+    V_c(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_c\frac{\dd \Phi(t)}{\dd t}.
+    \label{eq:faraday_N}
+\end{equation}
+
+In case of a coil consisting of $N_c$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
+
+\begin{equation}
+V_c(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_c} \Phi_i(t)
+\label{eq:faraday_dis}
+\end{equation}
+
+
+where $\Phi_i$ is the flux linkage associated to a single turn of the coil\cite{xuSurveyVariableReluctance2018a}. 
+
+\subsection{Variable Reluctance Principle}
+
+According to Faraday's law of electromagnetic induction, a VREH converts kinetic energy to electrical energy.
+An electromotive force (EMF) is induced across the pickup
+coil that couples to the time-varying magnetic flux caused
+by the rotating toothed wheel, and the variation in reluctance
+of the system \cite{xuSurveyVariableReluctance2018a}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imm/VREH_basic.png}
+    \caption{Structure of a variable-reluctance sensor}
+    \label{fig:VREH_basic_struct}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The magnetic flux is produced by a permanent magnet whose
+field follows a fixed path through a ferromagnetic stator
+and a moving rotor.
+The rotor introduces a periodic variation of the magnetic
+reluctance $\mathcal{R}(\theta)$ of the magnetic circuit,
+where $\theta$ denotes the mechanical angle of rotation.
+If the magnetomotive force of the permanent magnet is
+denoted $\mathcal{F}_m$ and is assumed constant, the flux
+through the coil is governed by Hopkinson's law
+\cite{fitzgeraldElectricMachinery2003}:
+\begin{equation}
+    \Phi_B(\theta)
+    \;=\;
+    \frac{\mathcal{F}_m}{\mathcal{R}(\theta)}.
+    \label{eq:hopkinson}
+\end{equation}
+For a rotor turning at constant angular velocity
+$\omega = \dd\theta/\dd t$, the chain rule applied to
+\eqref{eq:faraday-N} together with \eqref{eq:hopkinson}
+yields
+\begin{equation}
+    \varepsilon(t)
+    \;=\;
+    -N\,\frac{\dd \Phi_B}{\dd \theta}\,\frac{\dd \theta}{\dd t}
+    \;=\;
+    N\,\mathcal{F}_m\,
+    \frac{1}{\mathcal{R}^2(\theta)}\,
+    \frac{\dd \mathcal{R}(\theta)}{\dd \theta}\,\omega.
+    \label{eq:emf-reluctance}
+\end{equation}
+Equation \eqref{eq:emf-reluctance} shows the two features
+that characterise variable-reluctance harvesters. First,
+the open-circuit voltage scales linearly with the angular
+velocity $\omega$, hence with the rotational speed of the
+host system. Second, the waveform is not sinusoidal in
+general: its shape is dictated by the geometric profile
+$\mathcal{R}(\theta)$ of the magnetic
+circuit \cite{xuThreephaseVariableReluctance2022}.
+ 
+Under the working assumption that the reluctance variation
+is well approximated by its fundamental Fourier component
+(an assumption justified by a posteriori observation of the
+measured waveforms in
+\cite{wuMultiPhaseVariableReluctance2024}), the induced EMF
+of a single phase reduces to a sinusoid of amplitude
+proportional to $\omega$:
+\begin{equation}
+    \varepsilon(t) \;=\; E_0(\omega)\,\sin(\omega t),
+    \qquad
+    E_0(\omega) \;\propto\; \omega.
+    \label{eq:emf-sinusoidal}
+\end{equation}
+In the six-phase machine considered in this work, the
+stator coils are spatially distributed so that the six
+generated EMFs are mutually phase-shifted by
+$\Delta\varphi = 2\pi/6 = \pi/3\,\text{rad}$. The EMF of
+the $k$-th phase, $k\in\{1,\dots,6\}$, is therefore
+\begin{equation}
+    \varepsilon_k(t)
+    \;=\;
+    E_0(\omega)\,
+    \sin\!\left(\omega t - (k-1)\,\frac{\pi}{3}\right).
+    \label{eq:emf-sixphase}
+\end{equation}
