@@ -761,6 +761,8 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgf
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryplotmarks.code.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\booktabs\booktabs.sty
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\physics\physics.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT .\custom-symbols.tex
@@ -901,6 +903,13 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newpx\zpl_TOs
 INPUT .\chapters\Theory.tex
 INPUT .\chapters\Theory.tex
 INPUT chapters\Theory.tex
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
+INPUT .\imm\VREH_basic.png
 INPUT .\chapters\Rectifiers.tex
 INPUT .\chapters\Rectifiers.tex
 INPUT chapters\Rectifiers.tex
@@ -924,6 +933,8 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb

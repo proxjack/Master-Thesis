@@ -11,6 +11,9 @@
 \contentsline {section}{\numberline {1.7}Open Challenges}{7}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Harvester Specifications and Research Objective}{9}{section.1.8}%
 \contentsline {chapter}{\numberline {2}Theoretical Background}{11}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Rectifiers}{13}{chapter.3}%
-\contentsline {chapter}{Bibliography}{15}{section*.10}%
-\contentsline {chapter}{Acknowledgments}{19}{section*.12}%
+\contentsline {section}{\numberline {2.1}Electrical Model of the Variable-Reluctance Harvester}{11}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.a}Faraday's law}{11}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.b}Variable Reluctance Principle}{12}{subsection.2.1.2}%
+\contentsline {chapter}{\numberline {3}Rectifiers}{15}{chapter.3}%
+\contentsline {chapter}{Bibliography}{17}{section*.11}%
+\contentsline {chapter}{Acknowledgments}{21}{section*.13}%
