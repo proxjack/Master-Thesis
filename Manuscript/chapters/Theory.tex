@@ -20,21 +20,21 @@ power transfer theorem and the role of impedance matching
 The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $V_c(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
 
 \begin{equation}
-    V_c(t) = -\frac{\dd \Phi(t)}{\dd t}
+    V_c(t) = -\frac{\dd \Phi_i(t)}{\dd t}
     \label{eq:faraday}
 \end{equation}
 
-For a coil mode by $N_c$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi_i(t)$ and the induced EMF becomes:
+For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi_i(t)$ and the induced EMF becomes:
 
 \begin{equation}
-    V_c(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_c\frac{\dd \Phi(t)}{\dd t}.
+    V_c(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi_i(t)}{\dd t}.
     \label{eq:faraday_N}
 \end{equation}
 
-In case of a coil consisting of $N_c$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
+In case of a coil consisting of $N_t$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
 
 \begin{equation}
-V_c(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_c} \Phi_i(t)
+V_c(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_t} \Phi_i(t)
 \label{eq:faraday_dis}
 \end{equation}
 
@@ -51,7 +51,7 @@ of the system \cite{xuSurveyVariableReluctance2018a}.
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.8\textwidth]{imm/VREH_basic.png}
+    \includegraphics[width=0.8\textwidth]{imm/VR_theory.pdf}
     \caption{Structure of a variable-reluctance sensor}
     \label{fig:VREH_basic_struct}
 \end{figure}
