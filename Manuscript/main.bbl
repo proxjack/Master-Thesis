@@ -709,66 +709,6 @@
       \endverb
       \keyw{electromagnetic induction,Energy harvesting,finite element analysis,magnetic flux,Magnetic sensors,Power generation,sensor systems,Sensor systems,Transducers,Wheels}
     \endentry
-    \entry{xuSurveyVariableReluctance2018a}{article}{}{}
-      \name{author}{3}{}{%
-        {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Ye},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=ad716c4f6aa5883cc0f54907883ad01d}{%
-           family={Bader},
-           familyi={B\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=633b0f371ec77f4814c1d07ac6deb70b}{%
-           family={Oelmann},
-           familyi={O\bibinitperiod},
-           given={Bengt},
-           giveni={B\bibinitperiod}}}%
-      }
-      \strng{namehash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{fullhash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{fullhashraw}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{bibnamehash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{authorbibnamehash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{authornamehash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{authorfullhash}{ab20984bc5ae4384755ad84e32ece114}
-      \strng{authorfullhashraw}{ab20984bc5ae4384755ad84e32ece114}
-      \field{extraname}{2}
-      \field{sortinit}{X}
-      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Energy harvesting converts ambient energy to electrical energy that can be used to power, for example, sensors and sensor systems. Variable reluctance (VR) energy harvesting is a suitable candidate for the conversion of rotary kinetic motion, an energy form commonly found in industrial applications. The implementation of a VR energy harvester (VREH), however, has a significant effect on its performance and is not well studied. In this paper, we therefore conduct a survey on different structures of VREHs. Six existing structures, previously used in VR sensors, are presented and analyzed according to their approaches for magnetic flux change improvement. Together with a newly proposed structure, these structures are evaluated based on a finite element analysis, and their results are compared. It is demonstrated that the choice of structure considerably affects the power output of the harvester and is dependent on the improvement approaches the structure utilizes. The newly proposed structure outperforms all existing structures with respect to power output and power density, which comes at a cost of higher parasitic torque generation. A 53-fold power improvement over the reference and an 1.2-fold power improvement over the next best structure is observed. As a result, applications of VR energy harvesting become viable even at low angular velocities.}
-      \field{issn}{1558-1748}
-      \field{journaltitle}{IEEE Sensors Journal}
-      \field{month}{4}
-      \field{number}{8}
-      \field{title}{A {{Survey}} on {{Variable Reluctance Energy Harvesters}} in {{Low-Speed Rotating Applications}}}
-      \field{urlday}{12}
-      \field{urlmonth}{5}
-      \field{urlyear}{2026}
-      \field{volume}{18}
-      \field{year}{2018}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{3426\bibrangedash 3435}
-      \range{pages}{10}
-      \verb{doi}
-      \verb 10.1109/JSEN.2018.2808377
-      \endverb
-      \verb{file}
-      \verb C:\Users\jacop\Zotero\storage\FDLLPRT7\Xu et al. - 2018 - A Survey on Variable Reluctance Energy Harvesters in Low-Speed Rotating Applications.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://ieeexplore.ieee.org/document/8300310/
-      \endverb
-      \verb{url}
-      \verb https://ieeexplore.ieee.org/document/8300310/
-      \endverb
-      \keyw{electromagnetic induction,Energy harvesting,finite element analysis,magnetic flux,Magnetic sensors,Power generation,sensor systems,Sensor systems,Transducers,Wheels}
-    \endentry
     \entry{xuDesignModelingOptimization2019a}{article}{}{}
       \name{author}{3}{}{%
         {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
@@ -795,7 +735,7 @@
       \strng{authornamehash}{ab20984bc5ae4384755ad84e32ece114}
       \strng{authorfullhash}{ab20984bc5ae4384755ad84e32ece114}
       \strng{authorfullhashraw}{ab20984bc5ae4384755ad84e32ece114}
-      \field{extraname}{3}
+      \field{extraname}{2}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{labelnamesource}{author}
