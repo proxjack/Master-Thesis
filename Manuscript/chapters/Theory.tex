@@ -10,6 +10,7 @@ power transfer theorem and the role of impedance matching
 
 
 \subsection{Faraday's law}
+\label{sec:faraday_law}
 
 The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $\varepsilon(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
 
@@ -126,16 +127,157 @@ and, once the pole pitch and slot width are fixed, the available radial space $C
 \end{equation}
 where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap length and width at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors accounting for flux leakage and for the MMF drop in the finite-permeability soft iron, respectively \cite{xuDesignModelingOptimization2019a}.
 
-\subsubsection{Pickup-unit topology and flux-improvement strategies}
 
-A comparative survey of pickup-unit structures used in VR sensors identifies three complementary strategies to increase $\Delta\Phi$ for a given MMF \cite{xuSurveyVariableReluctance2018}:
-\begin{enumerate}
-    \item providing a soft-ferromagnetic return path for the flux, reducing leakage outside the useful magnetic circuit;
-    \item placing both the PM and the pickup coil as close as possible to the air gap, improving their coupling to the rotating wheel;
-    \item using multiple PMs in a repelling arrangement, so that their flux loops are forced to converge through a shared pole -- since $\Delta\Phi$ enters \eqref{eq:power_law} quadratically, combining flux loops in this way is more effective than simply adding them.
-\end{enumerate}
-These strategies were compared quantitatively by finite-element analysis (FEA) on seven pickup-unit structures, all evaluated on the same 270\,mm-diameter shaft rotating at $\omega\approx1.06\ \text{rad/s}$ ($\approx 10.1$\,rpm) \cite{xuSurveyVariableReluctance2018}. The most basic, single-magnet structure without a return path (taken as the reference) produced only $15.74\ \mu\text{W}$; adding a ferromagnetic return path and moving the PM adjacent to the air gap already yields up to a $17.56$-fold improvement, while combining all three strategies in an \mbox{$m$-shaped} pickup unit with two repelling PMs -- with the pickup coil wound around the shared centre pole -- reaches over $840\ \mu\text{W}$, i.e.\ a $53$-fold increase in output power and a $30$-fold increase in power density (about $158\ \text{nW/mm}^3$, the highest of all structures compared) over the reference, and roughly $20\%$ more than the next-best design \cite{xuSurveyVariableReluctance2018}. This gain, however, comes at the cost of the largest PM volume among the compared structures and therefore the highest parasitic (cogging) torque ripple, whereas structures with smaller, single or non-repelling magnets remain more torque-friendly at the expense of lower power density \cite{xuSurveyVariableReluctance2018}.
 
-In this \mbox{$m$-shaped} topology, the two PMs face the air gap with the same magnetic pole, so that their fields are mutually repelling. At the aligned position, each outer pole is coupled to a tooth of the wheel through a low-reluctance path, and the two flux loops originating from the two magnets are forced to converge through the centre pole, producing a high flux density in the region spanned by the coil. At the unaligned position, both outer poles face a slot, the air-gap reluctance reaches its maximum, and the flux collapses accordingly \cite{xuDesignModelingOptimization2019a}. A detailed structural optimization of this topology, validated experimentally with FEA-to-measurement errors below $3\%$ over several magnet-, tooth- and coil-height combinations, confirmed that a size-constrained \mbox{$m$-shaped} VREH (volume $\approx 43.5\ \text{cm}^3$) can deliver between $0.12\ \text{mW}$ and $22\ \text{mW}$ over the $5$--$60$\,rpm range typical of low-speed industrial shafts \cite{xuDesignModelingOptimization2019a}. This \mbox{$m$-shaped}, dual-magnet pickup unit is the reference topology adopted for the harvester considered in this thesis.
+% \subsubsection{Pickup-unit topology and flux-improvement strategies}
 
-It is worth noting that \eqref{eq:power_law} neglects the coil inductance, an approximation only valid at sufficiently low electrical frequencies. In the optimized structure discussed above, the coil presents a non-negligible inductance ($L_{Coil}\approx210\ \text{mH}$); as $\omega$ increases, the corresponding inductive reactance becomes comparable to $R_{Coil}$, and a purely resistive load match, $R_L = R_{Coil}$, no longer maximizes the extracted power. Experimentally, the effect of a complex-conjugate impedance match (a series-compensating capacitor added to the resistive load) was found to be negligible below $\omega\approx2.1\ \text{rad/s}$ ($\approx 20$\,rpm), but above this speed a purely resistive load increasingly fails to exploit the harvester's capability, so that a full complex-conjugate match between coil and load is required to reach the maximum output power of $22\ \text{mW}$ quoted above at the top of the evaluated speed range \cite{xuDesignModelingOptimization2019a}. This observation motivates the discussion of impedance matching under variable operating conditions developed later in this chapter.
+% A comparative survey of pickup-unit structures used in VR sensors identifies three complementary strategies to increase $\Delta\Phi$ for a given MMF \cite{xuSurveyVariableReluctance2018}:
+% \begin{enumerate}
+%     \item providing a soft-ferromagnetic return path for the flux, reducing leakage outside the useful magnetic circuit;
+%     \item placing both the PM and the pickup coil as close as possible to the air gap, improving their coupling to the rotating wheel;
+%     \item using multiple PMs in a repelling arrangement, so that their flux loops are forced to converge through a shared pole -- since $\Delta\Phi$ enters \eqref{eq:power_law} quadratically, combining flux loops in this way is more effective than simply adding them.
+% \end{enumerate}
+% These strategies were compared quantitatively by finite-element analysis (FEA) on seven pickup-unit structures, all evaluated on the same 270\,mm-diameter shaft rotating at $\omega\approx1.06\ \text{rad/s}$ ($\approx 10.1$\,rpm) \cite{xuSurveyVariableReluctance2018}. The most basic, single-magnet structure without a return path (taken as the reference) produced only $15.74\ \mu\text{W}$; adding a ferromagnetic return path and moving the PM adjacent to the air gap already yields up to a $17.56$-fold improvement, while combining all three strategies in an \mbox{$m$-shaped} pickup unit with two repelling PMs -- with the pickup coil wound around the shared centre pole -- reaches over $840\ \mu\text{W}$, i.e.\ a $53$-fold increase in output power and a $30$-fold increase in power density (about $158\ \text{nW/mm}^3$, the highest of all structures compared) over the reference, and roughly $20\%$ more than the next-best design \cite{xuSurveyVariableReluctance2018}. This gain, however, comes at the cost of the largest PM volume among the compared structures and therefore the highest parasitic (cogging) torque ripple, whereas structures with smaller, single or non-repelling magnets remain more torque-friendly at the expense of lower power density \cite{xuSurveyVariableReluctance2018}.
+
+% In this \mbox{$m$-shaped} topology, the two PMs face the air gap with the same magnetic pole, so that their fields are mutually repelling. At the aligned position, each outer pole is coupled to a tooth of the wheel through a low-reluctance path, and the two flux loops originating from the two magnets are forced to converge through the centre pole, producing a high flux density in the region spanned by the coil. At the unaligned position, both outer poles face a slot, the air-gap reluctance reaches its maximum, and the flux collapses accordingly \cite{xuDesignModelingOptimization2019a}. A detailed structural optimization of this topology, validated experimentally with FEA-to-measurement errors below $3\%$ over several magnet-, tooth- and coil-height combinations, confirmed that a size-constrained \mbox{$m$-shaped} VREH (volume $\approx 43.5\ \text{cm}^3$) can deliver between $0.12\ \text{mW}$ and $22\ \text{mW}$ over the $5$--$60$\,rpm range typical of low-speed industrial shafts \cite{xuDesignModelingOptimization2019a}. This \mbox{$m$-shaped}, dual-magnet pickup unit is the reference topology adopted for the harvester considered in this thesis.
+
+% It is worth noting that \eqref{eq:power_law} neglects the coil inductance, an approximation only valid at sufficiently low electrical frequencies. In the optimized structure discussed above, the coil presents a non-negligible inductance ($L_{Coil}\approx210\ \text{mH}$); as $\omega$ increases, the corresponding inductive reactance becomes comparable to $R_{Coil}$, and a purely resistive load match, $R_L = R_{Coil}$, no longer maximizes the extracted power. Experimentally, the effect of a complex-conjugate impedance match (a series-compensating capacitor added to the resistive load) was found to be negligible below $\omega\approx2.1\ \text{rad/s}$ ($\approx 20$\,rpm), but above this speed a purely resistive load increasingly fails to exploit the harvester's capability, so that a full complex-conjugate match between coil and load is required to reach the maximum output power of $22\ \text{mW}$ quoted above at the top of the evaluated speed range \cite{xuDesignModelingOptimization2019a}. This observation motivates the discussion of impedance matching under variable operating conditions developed later in this chapter.
+
+
+\subsection{Electrical Thevenin Model of the Pickup Unit}
+\label{sec:Electrical_model}
+% The electrical model and its consequent derivation is important to study the system and t o of a single pick up unit 
+
+% Il modello elettrico e la sua conseguante modellazione sono estremamente importanti e permettono di studiare il sistema dal punto di vista elettrico\cite{xu2022rotational}.
+
+
+
+The Faraday law derivation of Section~\ref{sec:faraday_law} gives the ideal electromotive force induced in the coil, but it does not yet describe how that voltage appears at the physical terminals of the pickup unit. A real coil is made of a finite length of copper wire, so it has a nonzero winding resistance, and it carries a current that produces its own magnetic flux, so it also has a nonzero self inductance. Both effects sit in series with the ideal source, since the same wire that generates the electromotive force also carries the resistance and the flux linkage that define $R_{Coil}$ and $L_{Coil}$.
+
+\subsubsection*{Circuit equation}
+
+Let $e(t)$ denote the ideal electromotive force predicted by \eqref{eq:faraday_dis}, and let $i(t)$ be the current flowing out of the coil into the external circuit. Applying Kirchhoff's voltage law around the loop formed by the source, the winding resistance, the winding inductance and the external circuit gives
+\begin{equation}
+    e(t) \;=\; R_{Coil}\, i(t) \;+\; L_{Coil}\,\frac{\dd i(t)}{\dd t} \;+\; v(t),
+    \label{eq:kvl_coil}
+\end{equation}
+where $v(t)$ is the voltage measured at the coil terminals, available to the power conditioning circuit. Equation \eqref{eq:kvl_coil} is the defining relation of the series generator model adopted throughout this thesis, an ideal voltage source $e(t)$ in series with a resistance $R_{Coil}$ and an inductance $L_{Coil}$, feeding the external circuit at the coil terminals.
+
+\subsubsection*{Winding resistance}
+
+The winding resistance follows directly from the resistivity of the wire, its total length and its cross sectional area,
+\begin{equation}
+    R_{Coil} \;=\; \rho_{wire}\,\frac{N_c\, l_t}{A_w},
+    \label{eq:rcoil_def}
+\end{equation}
+where $N_c$ is the number of turns, $l_t$ is the mean length of a single turn, and $A_w$ is the cross sectional area of the wire. If the coil occupies a winding window of height $h_{Coil}$ and width $W_{Coil}$ with a copper fill factor $f_w$, the wire cross section can be written as $A_w = f_w\, h_{Coil}\, W_{Coil} / N_c$, so that \eqref{eq:rcoil_def} becomes
+\begin{equation}
+    R_{Coil} \;=\; \rho_{wire}\,\frac{N_c^2\, l_t}{f_w\, h_{Coil}\, W_{Coil}}.
+    \label{eq:rcoil_fillfactor}
+\end{equation}
+Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref{eq:rcoil_fillfactor} reproduces the proportionality $N_c^2 / R_{Coil} \propto f_w\, h_{Coil}\, W_{Coil} / \rho_{wire}$ already used in \eqref{eq:coil_appendixA} to optimize the winding cross section \cite{xuDesignModelingOptimization2019a}.
+
+\subsubsection*{Self inductance and its dependence on rotor position}
+
+The self inductance of a coil linked to a magnetic circuit of total reluctance $\mathcal{R}$ is, by the same reluctance formalism used for Hopkinson's law in \eqref{eq:reluctance_def},
+\begin{equation}
+    L_{Coil} \;=\; \frac{N_c^2}{\mathcal{R}}.
+    \label{eq:lcoil_def}
+\end{equation}
+Because the pickup unit is a variable reluctance device, the reluctance seen by the coil's own flux changes with the rotor angle in exactly the same way as the reluctance that shapes the induced electromotive force. The self inductance therefore swings between two extremes,
+\begin{equation}
+    L_{max} \;=\; \frac{N_c^2}{\mathcal{R}_{g,a}+\mathcal{R}_M}, \qquad
+    L_{min} \;=\; \frac{N_c^2}{\mathcal{R}_{g,u}+\mathcal{R}_M},
+    \label{eq:lcoil_extremes}
+\end{equation}
+reached at the aligned and unaligned positions respectively, mirroring the flux extremes already given in \eqref{eq:flux_extremes}. For circuit level analysis, such as the impedance matching study of Section~\ref{sec:impedance_matching}, this position dependent inductance is normally replaced by a single lumped value $L_{Coil}$, obtained either as an average over one electrical period or as a direct measurement with an impedance analyzer at the frequency of interest. This is the value referred to as $L_{Coil}\approx210\ \text{mH}$ later in this chapter.
+
+\subsubsection*{Phasor representation}
+
+For a sinusoidal steady state at the electrical frequency $f_c$ of \eqref{eq:freq_teeth}, the time domain relation \eqref{eq:kvl_coil} can be written in phasor form as
+\begin{equation}
+    E \;=\; I\left(R_{Coil} + j\,\omega_e\,L_{Coil}\right) + V,
+    \label{eq:phasor_source}
+\end{equation}
+where $E$, $I$ and $V$ are the phasors associated with $e(t)$, $i(t)$ and $v(t)$, and $\omega_e = 2\pi f_c$. Equation \eqref{eq:phasor_source} shows that, seen from its electrical terminals, the pickup unit behaves as an ideal source $E$ in series with the impedance
+\begin{equation}
+    Z_s \;=\; R_{Coil} + j\,\omega_e\,L_{Coil},
+    \label{eq:source_impedance_def}
+\end{equation}
+which is precisely the Th\'{e}venin source impedance used in \eqref{eq:source_impedance} for the impedance matching analysis of Section~\ref{sec:impedance_matching}. The series generator, resistance, inductance model derived in this section therefore provides the electrical foundation on which the maximum power transfer condition of the next section, and the power conditioning topologies compared in Chapter~\ref{ch:topologies}, are built.
+
+
+\subsection{Maximum Power Transfer and Impedance Matching}
+\label{sec:impedance_matching}
+
+The previous section modelled the pickup unit as a Th\'{e}venin source, an open circuit EMF $V_c(t)$ in series with the coil's own impedance. At low electrical frequency this impedance is essentially the winding resistance $R_{Coil}$, and matching a resistive load to it, $R_L = R_{Coil}$, is enough to extract the maximum available power, as already used in \eqref{eq:power_law}. As the rotational speed increases, however, the coil inductance $L_{Coil}$ can no longer be neglected, and the condition for maximum power transfer must be generalized. This section derives that general condition and explains why it becomes a central design constraint for a harvester that must operate between 100 and 400\,rpm, the target range of this thesis.
+
+\subsection{Th\'{e}venin model of the source and the load}
+
+Let the coil be represented, at the electrical frequency of interest, by its Th\'{e}venin equivalent, an RMS open circuit phasor voltage $V_c$ in series with the source impedance
+\begin{equation}
+    Z_{s} \;=\; R_{Coil} \;+\; j\,\omega_e\,L_{Coil},
+    \label{eq:source_impedance}
+\end{equation}
+where $\omega_e = 2\pi f_c$ is the electrical angular frequency and $f_c$ is the electrical frequency defined in \eqref{eq:freq_teeth}. The load presented to the coil by the power conditioning circuit is likewise represented, at the same frequency, by a generic complex impedance
+\begin{equation}
+    Z_{L} \;=\; R_{L} \;+\; j\,X_{L}.
+    \label{eq:load_impedance}
+\end{equation}
+Here $R_L$ is the resistive part of the load and $X_L$ its reactive part, which can be inductive ($X_L>0$) or capacitive ($X_L<0$) depending on how the load is realized.
+
+\subsection{Power delivered to the load}
+
+With $Z_s$ and $Z_L$ in series, the RMS current flowing in the loop is
+\begin{equation}
+    I \;=\; \frac{V_c}{Z_s + Z_L},
+    \label{eq:loop_current}
+\end{equation}
+and the average power dissipated in the resistive part of the load is
+\begin{equation}
+    P_L \;=\; |I|^2 R_L \;=\; \frac{|V_c|^2\,R_L}{(R_{Coil}+R_L)^2 + (\omega_e L_{Coil}+X_L)^2}.
+    \label{eq:power_general}
+\end{equation}
+Equation \eqref{eq:power_general} is the generalization of \eqref{eq:power_law} to a complex load. Setting $L_{Coil}=0$ and $X_L=0$ recovers the purely resistive case already used earlier in this chapter.
+
+\subsection{The complex conjugate matching condition}
+
+Equation \eqref{eq:power_general} can be maximized in two independent steps, since $R_L$ and $X_L$ appear in separate terms of the denominator.
+
+First, for any fixed $R_L$, the denominator is minimized, and $P_L$ is therefore maximized, by cancelling the reactive term. This requires
+\begin{equation}
+    X_L \;=\; -\,\omega_e L_{Coil}.
+    \label{eq:reactance_cancel}
+\end{equation}
+With this choice, \eqref{eq:power_general} reduces to
+\begin{equation}
+    P_L \;=\; \frac{|V_c|^2\,R_L}{(R_{Coil}+R_L)^2}.
+    \label{eq:power_resistive_stage}
+\end{equation}
+Second, differentiating \eqref{eq:power_resistive_stage} with respect to $R_L$ and setting the result to zero,
+\begin{equation}
+    \frac{\partial P_L}{\partial R_L} \;=\; |V_c|^2\,\frac{R_{Coil}-R_L}{(R_{Coil}+R_L)^3} \;=\; 0
+    \quad\Longrightarrow\quad
+    R_L \;=\; R_{Coil}.
+    \label{eq:resistive_match}
+\end{equation}
+Combining \eqref{eq:reactance_cancel} and \eqref{eq:resistive_match} gives the well known maximum power transfer theorem in its general, complex form,
+\begin{equation}
+    Z_L \;=\; Z_s^{*} \;=\; R_{Coil} \;-\; j\,\omega_e L_{Coil}.
+    \label{eq:conjugate_match}
+\end{equation}
+The load must present a resistance equal to the coil resistance and a reactance equal in magnitude but opposite in sign to the coil reactance. Physically, the load must absorb energy from the coil (resistive part) while returning, every half cycle, exactly the reactive energy that the coil inductance would otherwise store (capacitive part). Substituting \eqref{eq:conjugate_match} into \eqref{eq:power_general} gives the maximum available power,
+\begin{equation}
+    P_{L,\max} \;=\; \frac{|V_c|^2}{4\,R_{Coil}},
+    \label{eq:max_power}
+\end{equation}
+which is independent of $L_{Coil}$. Once the reactance is properly cancelled, the maximum extractable power depends only on the coil resistance, exactly as in the low frequency case of \eqref{eq:power_law}.
+
+\subsection{Realizing the reactive compensation}
+
+Condition \eqref{eq:reactance_cancel} shows that an inductive coil requires a load with an equal and opposite \emph{capacitive} reactance. The simplest way to obtain this is a compensation capacitor $C_m$ placed in series with the resistive load, whose reactance at $\omega_e$ is $X_{C_m} = -1/(\omega_e C_m)$. Imposing $X_{C_m} = -\omega_e L_{Coil}$ gives the required capacitance
+\begin{equation}
+    C_m \;=\; \frac{1}{\omega_e^2\,L_{Coil}}.
+    \label{eq:matching_cap}
+\end{equation}
+Equation \eqref{eq:matching_cap} is the condition used, for instance, to compensate the $L_{Coil}\approx210\ \text{mH}$ winding discussed at the end of Section~\ref{sec:impedance_matching}. At a given speed, a single series capacitor sized according to \eqref{eq:matching_cap} restores the resistive matching condition of \eqref{eq:resistive_match} and recovers the maximum power of \eqref{eq:max_power}.
