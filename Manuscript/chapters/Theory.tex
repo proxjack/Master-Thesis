@@ -46,7 +46,15 @@ Unlike conventional electromagnetic transducers, in which the EMF is induced by 
     \label{fig:VREH_basic_struct}
 \end{figure}
 
-The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes.
+
+The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes. Fig.~\ref{fig:Airgap_swing} illustrates this swing directly: the air-gap flux density is sharply peaked at the aligned position and nearly collapses at the unaligned position, confirming that the flux change is concentrated within a narrow angular window around each tooth-slot transition.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imm/Airgap_swing.png}
+    \caption{Airgap flux density distribution for aligned and unaligned positions. Reproduced from \cite{xuSurveyVariableReluctance2018}.}
+    \label{fig:Airgap_swing}
+\end{figure}
 
 \subsubsection*{From flux swing to output power}
 
@@ -77,13 +85,6 @@ Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assume
 
 
 where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, and the number of coil turns $N_c$, and linearly with the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
-
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.9\textwidth]{imm/Airgap_swing.png}
-    \caption{Airgap flux density distribution for aligned and unaligned positions. Reproduced from \cite{xuSurveyVariableReluctance2018}.}
-    \label{fig:Airgap_swing}
-\end{figure}
 
 For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimization problems \cite{xuDesignModelingOptimization2019a}:
 \begin{subequations}
