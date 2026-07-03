@@ -11,24 +11,24 @@ power transfer theorem and the role of impedance matching
 
 \subsection{Faraday's law}
 
-The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $V_c(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
+The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $\varepsilon(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
 
 \begin{equation}
-    V_c(t) = -\frac{\dd \Phi_i(t)}{\dd t}
+    \varepsilon(t) = -\frac{\dd \Phi_i(t)}{\dd t}
     \label{eq:faraday}
 \end{equation}
 
 For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi_i(t)$ and the induced EMF becomes:
 
 \begin{equation}
-    V_c(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi_i(t)}{\dd t}.
+    \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi_i(t)}{\dd t}.
     \label{eq:faraday_N}
 \end{equation}
 
 In case of a coil consisting of $N_t$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
 
 \begin{equation}
-V_c(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_t} \Phi_i(t)
+    \varepsilon(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_t} \Phi_i(t)
 \label{eq:faraday_dis}
 \end{equation}
 
@@ -37,99 +37,91 @@ where $\Phi_i$ is the flux linkage associated to a single turn of the coil\cite{
 
 \subsection{Variable Reluctance Principle}
 
-According to Faraday's law of electromagnetic induction, a VREH converts kinetic energy to electrical energy.
-An electromotive force (EMF) is induced across the pickup
-coil that couples to the time-varying magnetic flux caused
-by the rotating toothed wheel, and the variation in reluctance
-of the system \cite{xuSurveyVariableReluctance2018}.
+Unlike conventional electromagnetic transducers, in which the EMF is induced by a relative motion between a permanent magnet (PM) and a pickup coil, a variable-reluctance energy harvester (VREH) keeps both the magnet and the coil stationary. The magnetic flux linked to the coil is instead modulated by the passage of a rotating, toothed ferromagnetic wheel in front of a stationary pickup unit: as a tooth or a slot alternately faces the pickup unit, the reluctance of the magnetic circuit changes periodically, and it is this reluctance variation -- rather than any bulk motion of the magnet -- that drives the flux change $\Phi_i(t)$ in \eqref{eq:faraday_dis} \cite{xuSurveyVariableReluctance2018}. Because the rotating part carries no magnet, no coil and no electrical connection, the resulting transducer is mechanically simple, robust, and easily rescaled to shafts of different diameters \cite{xuDesignModelingOptimization2019a}.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{imm/VR_theory.pdf}
-    \caption{Structure of a variable-reluctance sensor}
+    \caption{Structure of a variable-reluctance sensor: a stationary pickup unit, composed of a permanent magnet, a soft-ferromagnetic pole-piece and a pickup coil, faces a rotating toothed wheel across an air gap.}
     \label{fig:VREH_basic_struct}
 \end{figure}
 
+The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes.
 
+\subsubsection*{From flux swing to output power}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The magnetic flux is produced by a permanent magnet whose
-field follows a fixed path through a ferromagnetic stator
-and a moving rotor.
-The rotor introduces a periodic variation of the magnetic
-reluctance $\mathcal{R}(\theta)$ of the magnetic circuit,
-where $\theta$ denotes the mechanical angle of rotation.
-If the magnetomotive force of the permanent magnet is
-denoted $\mathcal{F}_m$ and is assumed constant, the flux
-through the coil is governed by Hopkinson's law
-\cite{fitzgeraldElectricMachinery2003}:
+For a wheel with $N_t$ teeth rotating at angular velocity $\omega$, the electrical frequency of the induced voltage is
 \begin{equation}
-    \Phi_B(\theta)
-    \;=\;
-    \frac{\mathcal{F}_m}{\mathcal{R}(\theta)}.
-    \label{eq:hopkinson}
+    f_c \;=\; \omega\, N_t.
+    \label{eq:freq_teeth}
 \end{equation}
-For a rotor turning at constant angular velocity
-$\omega = \dd\theta/\dd t$, the chain rule applied to
-\eqref{eq:faraday_N} together with \eqref{eq:hopkinson}
-yields
+At low rotational speeds the coil impedance is dominated by its resistance $R_{Coil}$, so that maximum power is transferred to a purely resistive load matched to it, $R_L = R_{Coil}$; under this condition the load voltage is related to the open-circuit coil voltage $V_c(t)$ of \eqref{eq:faraday_dis} by
 \begin{equation}
-    \varepsilon(t)
-    \;=\;
-    -N\,\frac{\dd \Phi_B}{\dd \theta}\,\frac{\dd \theta}{\dd t}
-    \;=\;
-    N\,\mathcal{F}_m\,
-    \frac{1}{\mathcal{R}^2(\theta)}\,
-    \frac{\dd \mathcal{R}(\theta)}{\dd \theta}\,\omega.
-    \label{eq:emf-reluctance}
+    V_L(t) \;=\; \frac{1}{2}\,V_c(t).
+    \label{eq:vload}
 \end{equation}
-Equation \eqref{eq:emf-reluctance} shows the two features
-that characterise variable-reluctance harvesters. First,
-the open-circuit voltage scales linearly with the angular
-velocity $\omega$, hence with the rotational speed of the
-host system. Second, the waveform is not sinusoidal in
-general: its shape is dictated by the geometric profile
-$\mathcal{R}(\theta)$ of the magnetic
-circuit \cite{xuThreephaseVariableReluctance2022}.
- 
-Under the working assumption that the reluctance variation
-is well approximated by its fundamental Fourier component
-(an assumption justified by a posteriori observation of the
-measured waveforms in
-\cite{wuMultiPhaseVariableReluctance2024}), the induced EMF
-of a single phase reduces to a sinusoid of amplitude
-proportional to $\omega$:
+Assuming the time-varying flux to be an ideal sinusoidal wave, uniformly distributed in the $N_c$ turns of the coil, the peak-to-peak voltage developed across the matched load follows from \eqref{eq:faraday_dis} and \eqref{eq:vload} as \cite{xuSurveyVariableReluctance2018}
 \begin{equation}
-    \varepsilon(t) \;=\; E_0(\omega)\,\sin(\omega t),
-    \qquad
-    E_0(\omega) \;\propto\; \omega.
-    \label{eq:emf-sinusoidal}
+    V_{L,pp} \;=\; -\frac{1}{2}\,N_c\,\frac{\Phi_{max}-\Phi_{min}}{\frac{1}{2}T_c} \;=\; -N_c\, f_c\, \Delta\Phi,
+    \label{eq:vpp}
 \end{equation}
-In the six-phase machine considered in this work, the
-stator coils are spatially distributed so that the six
-generated EMFs are mutually phase-shifted by
-$\Delta\varphi = 2\pi/6 = \pi/3\,\text{rad}$. The EMF of
-the $k$-th phase, $k\in\{1,\dots,6\}$, is therefore
+where $\frac{1}{2}T_c$ is the time taken by the wheel to rotate from the aligned to the unaligned position, i.e.\ from a tooth to a slot centred on the pole-piece. Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assumed) sinusoidal load voltage, its root-mean-square value is $V_{L,rms} = V_{L,pp}/(2\sqrt{2})$, so that the RMS power dissipated in the matched load is \cite{xuSurveyVariableReluctance2018}
 \begin{equation}
-    \varepsilon_k(t)
-    \;=\;
-    E_0(\omega)\,
-    \sin\!\left(\omega t - (k-1)\,\frac{\pi}{3}\right).
-    \label{eq:emf-sixphase}
+    P_L \;=\; \frac{V_{L,rms}^2}{R_L} \;=\; \frac{V_{L,pp}^2}{8\,R_{Coil}} \;=\; \frac{(\omega\, N_t\, N_c)^2}{8\,R_{Coil}}\,(\Delta\Phi)^2,
+    \label{eq:power_law}
 \end{equation}
+where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, and the number of coil turns $N_c$, and linearly with the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
+
+For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimization problems \cite{xuDesignModelingOptimization2019a}:
+\begin{subequations}
+\begin{align}
+    P_L &\;\propto\; \frac{N_c^2}{R_{Coil}}, \label{eq:subfunc_coil}\\
+    P_L &\;\propto\; (\Delta\Phi)^2 \;=\; \left(\frac{\mathcal{F}_M}{\Delta\mathcal{R}}\right)^2, \label{eq:subfunc_flux}
+\end{align}
+\end{subequations}
+where $\Delta\mathcal{R} = \mathcal{R}_u - \mathcal{R}_a$ is the difference between the total loop reluctance at the unaligned and aligned positions. Sub-function \eqref{eq:subfunc_coil} is a winding-design problem: for a coil of resistivity $\rho_{wire}$ occupying a cross-section of height $h_{Coil}$ and width $W_{Coil}$ inside the pole-piece, it can be shown that \eqref{eq:subfunc_coil} reduces to \cite{xuDesignModelingOptimization2019a}
+\begin{equation}
+    P_L \;\propto\; \frac{h_{Coil}\,W_{Coil}\,f_w}{\rho_{wire}},
+    \label{eq:coil_appendixA}
+\end{equation}
+with $f_w<1$ the winding fill factor of the coil; for a fixed available cross-section, output power is thus maximized simply by maximizing the copper fill of the winding window. Sub-function \eqref{eq:subfunc_flux}, in contrast, is a magnetic-circuit design problem: with the MMF $\mathcal{F}_M = H_c\,h_M$ fixed by the magnet coercivity $H_c$ and its height $h_M$, maximizing $\Delta\Phi$ reduces to maximizing the reluctance swing $\Delta\mathcal{R}$ between the two extreme rotor positions.
+
+\subsubsection*{Magnetic-circuit model of the reluctance swing}
+
+The reluctance of a homogeneous flux-path element of length $l$, cross-section $A$ and relative permeability $\mu_r$ is
+\begin{equation}
+    \mathcal{R} \;=\; \frac{l}{\mu_0\,\mu_r\,A}.
+    \label{eq:reluctance_def}
+\end{equation}
+Since the soft ferromagnetic pole-piece and toothed wheel have a relative permeability several orders of magnitude larger than that of air ($\mu_r\approx 1$) or of the PM ($\mu_r\approx 1.05$), their contribution to the loop reluctance is negligible, and $\Delta\mathcal{R}$ is dominated by the air gap and by the magnet's own reluctance $\mathcal{R}_M = h_M/(\mu_0\mu_M A_M)$ \cite{xuDesignModelingOptimization2019a}. Denoting by $\mathcal{R}_{g,a}$ and $\mathcal{R}_{g,u}$ the air-gap reluctance at the aligned and unaligned positions, respectively, the flux at each extreme follows from Hopkinson's law as $\Phi_{max}=\mathcal{F}_M/(\mathcal{R}_{g,a}+\mathcal{R}_M)$ and $\Phi_{min}=\mathcal{F}_M/(\mathcal{R}_{g,u}+\mathcal{R}_M)$, so that the flux swing of \eqref{eq:subfunc_flux} can be written explicitly as
+\begin{equation}
+    \Delta\Phi \;=\; \mathcal{F}_M\left(\frac{1}{\mathcal{R}_{g,a}+\mathcal{R}_M} - \frac{1}{\mathcal{R}_{g,u}+\mathcal{R}_M}\right).
+    \label{eq:flux_extremes}
+\end{equation}
+Equation \eqref{eq:flux_extremes} makes explicit that, once the magnet material and the air-gap length are fixed by mechanical constraints, $\Delta\Phi$ is governed by the pickup-unit geometry surrounding the air gap, namely the tooth height $h_{Tooth}$ (which sets $\mathcal{R}_{g,u}$, since a taller tooth increases the reluctance seen at the unaligned position up to a saturating knee at approximately $h_{Tooth}\approx 3\ \text{mm}$) and the magnet height $h_M$ (which enters both $\mathcal{F}_M$ and $\mathcal{R}_M$, so that an optimal, non-trivial value of $h_M$ exists) \cite{xuDesignModelingOptimization2019a}.
+
+For a fixed available volume, expressed as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density of the harvester is
+\begin{equation}
+    p_v \;=\; \frac{P_L}{V_{VREH}}, \qquad V_{VREH} \;=\; \frac{\pi}{4}\,l_o\,(d_o-d_{Shaft})^2,
+    \label{eq:power_density}
+\end{equation}
+and, once the pole pitch and slot width are fixed, the available radial space $C = h_{Coil}+h_{Tooth}$ must be split between the coil and the tooth. Since $P_L$ increases monotonically with $h_{Coil}$ through \eqref{eq:coil_appendixA} but only up to the knee point through $h_{Tooth}$ in \eqref{eq:flux_extremes}, for a given $C$ there is an optimal $h_{Coil}/h_{Tooth}$ ratio that maximizes $p_v$ \cite{xuDesignModelingOptimization2019a}. Similarly, setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form optimal magnet height,
+\begin{equation}
+    h_M^{\ast} \;=\; \mu_M\,\frac{k_2}{k_1}\,\frac{W_{g,a}}{W_{g,u}}\,\sqrt{l_{g,a}\,l_{g,u}},
+    \label{eq:optimal_hm}
+\end{equation}
+where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap length and width at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors accounting for flux leakage and for the MMF drop in the finite-permeability soft iron, respectively \cite{xuDesignModelingOptimization2019a}.
+
+\subsubsection{Pickup-unit topology and flux-improvement strategies}
+
+A comparative survey of pickup-unit structures used in VR sensors identifies three complementary strategies to increase $\Delta\Phi$ for a given MMF \cite{xuSurveyVariableReluctance2018}:
+\begin{enumerate}
+    \item providing a soft-ferromagnetic return path for the flux, reducing leakage outside the useful magnetic circuit;
+    \item placing both the PM and the pickup coil as close as possible to the air gap, improving their coupling to the rotating wheel;
+    \item using multiple PMs in a repelling arrangement, so that their flux loops are forced to converge through a shared pole -- since $\Delta\Phi$ enters \eqref{eq:power_law} quadratically, combining flux loops in this way is more effective than simply adding them.
+\end{enumerate}
+These strategies were compared quantitatively by finite-element analysis (FEA) on seven pickup-unit structures, all evaluated on the same 270\,mm-diameter shaft rotating at $\omega\approx1.06\ \text{rad/s}$ ($\approx 10.1$\,rpm) \cite{xuSurveyVariableReluctance2018}. The most basic, single-magnet structure without a return path (taken as the reference) produced only $15.74\ \mu\text{W}$; adding a ferromagnetic return path and moving the PM adjacent to the air gap already yields up to a $17.56$-fold improvement, while combining all three strategies in an \mbox{$m$-shaped} pickup unit with two repelling PMs -- with the pickup coil wound around the shared centre pole -- reaches over $840\ \mu\text{W}$, i.e.\ a $53$-fold increase in output power and a $30$-fold increase in power density (about $158\ \text{nW/mm}^3$, the highest of all structures compared) over the reference, and roughly $20\%$ more than the next-best design \cite{xuSurveyVariableReluctance2018}. This gain, however, comes at the cost of the largest PM volume among the compared structures and therefore the highest parasitic (cogging) torque ripple, whereas structures with smaller, single or non-repelling magnets remain more torque-friendly at the expense of lower power density \cite{xuSurveyVariableReluctance2018}.
+
+In this \mbox{$m$-shaped} topology, the two PMs face the air gap with the same magnetic pole, so that their fields are mutually repelling. At the aligned position, each outer pole is coupled to a tooth of the wheel through a low-reluctance path, and the two flux loops originating from the two magnets are forced to converge through the centre pole, producing a high flux density in the region spanned by the coil. At the unaligned position, both outer poles face a slot, the air-gap reluctance reaches its maximum, and the flux collapses accordingly \cite{xuDesignModelingOptimization2019a}. A detailed structural optimization of this topology, validated experimentally with FEA-to-measurement errors below $3\%$ over several magnet-, tooth- and coil-height combinations, confirmed that a size-constrained \mbox{$m$-shaped} VREH (volume $\approx 43.5\ \text{cm}^3$) can deliver between $0.12\ \text{mW}$ and $22\ \text{mW}$ over the $5$--$60$\,rpm range typical of low-speed industrial shafts \cite{xuDesignModelingOptimization2019a}. This \mbox{$m$-shaped}, dual-magnet pickup unit is the reference topology adopted for the harvester considered in this thesis.
+
+It is worth noting that \eqref{eq:power_law} neglects the coil inductance, an approximation only valid at sufficiently low electrical frequencies. In the optimized structure discussed above, the coil presents a non-negligible inductance ($L_{Coil}\approx210\ \text{mH}$); as $\omega$ increases, the corresponding inductive reactance becomes comparable to $R_{Coil}$, and a purely resistive load match, $R_L = R_{Coil}$, no longer maximizes the extracted power. Experimentally, the effect of a complex-conjugate impedance match (a series-compensating capacitor added to the resistive load) was found to be negligible below $\omega\approx2.1\ \text{rad/s}$ ($\approx 20$\,rpm), but above this speed a purely resistive load increasingly fails to exploit the harvester's capability, so that a full complex-conjugate match between coil and load is required to reach the maximum output power of $22\ \text{mW}$ quoted above at the top of the evaluated speed range \cite{xuDesignModelingOptimization2019a}. This observation motivates the discussion of impedance matching under variable operating conditions developed later in this chapter.

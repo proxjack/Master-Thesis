@@ -806,7 +806,6 @@
       \strng{authornamehash}{0b1a9d8de5cf71b8d014e2c312ec9e96}
       \strng{authorfullhash}{187e03b9e27e4b9ad62503c717afafa4}
       \strng{authorfullhashraw}{187e03b9e27e4b9ad62503c717afafa4}
-      \field{extraname}{1}
       \field{sortinit}{X}
       \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
       \field{labelnamesource}{author}
@@ -840,76 +839,6 @@
       \endverb
       \verb{url}
       \verb https://www.mdpi.com/1424-8220/21/18/6317
-      \endverb
-    \endentry
-    \entry{xuThreephaseVariableReluctance2022}{article}{}{}
-      \name{author}{5}{}{%
-        {{hash=f997fcf327578f5a4a5b7ff4ceb47e4d}{%
-           family={Xu},
-           familyi={X\bibinitperiod},
-           given={Ye},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=f5acec98b29ee91fa6b08b85a6a0adad}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Ying},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=ad716c4f6aa5883cc0f54907883ad01d}{%
-           family={Bader},
-           familyi={B\bibinitperiod},
-           given={Sebastian},
-           giveni={S\bibinitperiod}}}%
-        {{hash=633b0f371ec77f4814c1d07ac6deb70b}{%
-           family={Oelmann},
-           familyi={O\bibinitperiod},
-           given={Bengt},
-           giveni={B\bibinitperiod}}}%
-        {{hash=329b952a52152a0eeb38e92446713bef}{%
-           family={Cao},
-           familyi={C\bibinitperiod},
-           given={Junyi},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{0b1a9d8de5cf71b8d014e2c312ec9e96}
-      \strng{fullhash}{8dedf07180c89010b819feab2cc7c8be}
-      \strng{fullhashraw}{8dedf07180c89010b819feab2cc7c8be}
-      \strng{bibnamehash}{0b1a9d8de5cf71b8d014e2c312ec9e96}
-      \strng{authorbibnamehash}{0b1a9d8de5cf71b8d014e2c312ec9e96}
-      \strng{authornamehash}{0b1a9d8de5cf71b8d014e2c312ec9e96}
-      \strng{authorfullhash}{8dedf07180c89010b819feab2cc7c8be}
-      \strng{authorfullhashraw}{8dedf07180c89010b819feab2cc7c8be}
-      \field{extraname}{2}
-      \field{sortinit}{X}
-      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{A variable reluctance energy harvester (VREH) based on electromagnetic induction is developed for generating electrical energy from low-speed rotary motion. The challenge of a VREH at low rotational speeds is not only the low output power, but also the torque ripple that the harvester generates. Cogging torque, the major contribution to this torque ripple, is an inherent characteristic of VREH and is caused by its geometric features. Cogging torque produces acoustic noise and mechanical vibration for a drive system into which the VREH is embedded. This issue is of particular importance at low speeds and with light loads. In this paper, we use an m-shaped VREH as an example to propose a three-phase design in order to reduce the cogging torque but maintain a high output power at low speeds of 5 rpm to 20 rpm. Three identical m-shaped pickup units in a proper arrangement generate high amounts of electrical energy in three phases, but result in a lower torque ripple. Ten prototypes based on the proposed design were fabricated and tested, and their performance were in good agreement with the simulation results. By using the three pickup units in an optimized arrangement, the VREH enhances the energy harvesting performance in comparison to three single pickup units. At the same time, the torque ripple is reduced to one fifth of that produced by a single pickup unit. This demonstrates the strong potential of the three-phase VREH for implementations of self-powered wireless sensing systems in terms of energy output and mechanical effects on the rotary host.}
-      \field{issn}{25901745}
-      \field{journaltitle}{Energy Conversion and Management: X}
-      \field{langid}{english}
-      \field{month}{5}
-      \field{shortjournal}{Energy Conversion and Management: X}
-      \field{title}{Three-Phase Variable Reluctance Energy Harvesting}
-      \field{urlday}{10}
-      \field{urlmonth}{3}
-      \field{urlyear}{2026}
-      \field{volume}{14}
-      \field{year}{2022}
-      \field{dateera}{ce}
-      \field{urldateera}{ce}
-      \field{pages}{100211}
-      \range{pages}{1}
-      \verb{doi}
-      \verb 10.1016/j.ecmx.2022.100211
-      \endverb
-      \verb{file}
-      \verb C:\Users\jacop\Zotero\storage\2KGU5E3P\Xu et al. - 2022 - Three-phase variable reluctance energy harvesting.pdf
-      \endverb
-      \verb{urlraw}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S2590174522000344
-      \endverb
-      \verb{url}
-      \verb https://linkinghub.elsevier.com/retrieve/pii/S2590174522000344
       \endverb
     \endentry
     \entry{yuSingleStageAC2016}{inproceedings}{}{}
@@ -1024,7 +953,6 @@
       \keyw{AC/DC conversion,boost,buck–boost,Capacitors,energy harvesting,Energy harvesting,Inductors,low power,low voltage,Low voltage,MOSFET,Switches,Topology}
     \endentry
   \enddatalist
-  \missing{fitzgeraldElectricMachinery2003}
 \endrefsection
 \endinput
 

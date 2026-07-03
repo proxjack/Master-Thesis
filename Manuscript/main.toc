@@ -14,6 +14,7 @@
 \contentsline {section}{\numberline {2.1}Electrical Model of the Variable-Reluctance Harvester}{11}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.a}Faraday's law}{11}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.b}Variable Reluctance Principle}{12}{subsection.2.1.2}%
-\contentsline {chapter}{\numberline {3}Rectifiers}{15}{chapter.3}%
-\contentsline {chapter}{Bibliography}{17}{section*.11}%
-\contentsline {chapter}{Acknowledgments}{21}{section*.13}%
+\contentsline {subsubsection}{Pickup-unit topology and flux-improvement strategies}{15}{subsubsection*.11}%
+\contentsline {chapter}{\numberline {3}Rectifiers}{19}{chapter.3}%
+\contentsline {chapter}{Bibliography}{21}{section*.12}%
+\contentsline {chapter}{Acknowledgments}{25}{section*.14}%
