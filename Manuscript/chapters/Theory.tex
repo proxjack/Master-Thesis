@@ -65,12 +65,25 @@ Assuming the time-varying flux to be an ideal sinusoidal wave, uniformly distrib
     V_{L,pp} \;=\; -\frac{1}{2}\,N_c\,\frac{\Phi_{max}-\Phi_{min}}{\frac{1}{2}T_c} \;=\; -N_c\, f_c\, \Delta\Phi,
     \label{eq:vpp}
 \end{equation}
-where $\frac{1}{2}T_c$ is the time taken by the wheel to rotate from the aligned to the unaligned position, i.e.\ from a tooth to a slot centred on the pole-piece. Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assumed) sinusoidal load voltage, its root-mean-square value is $V_{L,rms} = V_{L,pp}/(2\sqrt{2})$, so that the RMS power dissipated in the matched load is \cite{xuSurveyVariableReluctance2018}
+where $\frac{1}{2}T_c$ is the time taken by the wheel to rotate from the aligned to the unaligned position, i.e.\ from a tooth to a slot centred on the pole-piece. 
+
+
+Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assumed) sinusoidal load voltage, its root-mean-square value is $V_{L,rms} = V_{L,pp}/(2\sqrt{2})$, so that the RMS power dissipated in the matched load is \cite{xuSurveyVariableReluctance2018}
 \begin{equation}
     P_L \;=\; \frac{V_{L,rms}^2}{R_L} \;=\; \frac{V_{L,pp}^2}{8\,R_{Coil}} \;=\; \frac{(\omega\, N_t\, N_c)^2}{8\,R_{Coil}}\,(\Delta\Phi)^2,
     \label{eq:power_law}
 \end{equation}
+
+
+
 where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, and the number of coil turns $N_c$, and linearly with the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.9\textwidth]{imm/Airgap_swing.png}
+    \caption{Airgap flux density distribution for aligned and unaligned positions. Reproduced from \cite{xuSurveyVariableReluctance2018}.}
+    \label{fig:Airgap_swing}
+\end{figure}
 
 For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimization problems \cite{xuDesignModelingOptimization2019a}:
 \begin{subequations}

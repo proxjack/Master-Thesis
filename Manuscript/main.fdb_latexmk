@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1783073900.06764 "main.bcf" "main.bbl" "main" 1783074318.41099 0
-  "main.bcf" 1783074317 114048 0b6d58f2b99a33117c7d14eb671e2f1c "pdflatex"
-  "refs.bib" 1783074312 37017 0681fe504e1545b99c32db5e7e4047ca ""
+["biber main"] 1783075799.35715 "main.bcf" "main.bbl" "main" 1783075809.59714 0
+  "main.bcf" 1783075808 114659 d61fab1b83a55004f38612a6c0483418 "pdflatex"
+  "refs.bib" 1783075021 37017 0681fe504e1545b99c32db5e7e4047ca ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1783074313.25967 "c:/UNIPD/Magistrale/Master Thesis/Manuscript/main.tex" "main.pdf" "main" 1783074318.41172 0
+["pdflatex"] 1783075802.2787 "c:/UNIPD/Magistrale/Master Thesis/Manuscript/main.tex" "main.pdf" "main" 1783075809.59849 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778596719 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954 13286966 e7490d2baf4e82c397637554381a672f ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1651500229 2920 d63721872b8c77041b88e51b8f7c291d ""
@@ -445,23 +445,24 @@
   "c:/UNIPD/Magistrale/Master Thesis/Manuscript/main.tex" 1783065510 3397 bb9f45e3768acd90a8e3b8a282e2da40 ""
   "chapters/Introduction.tex" 1778511095 27482 aea9babe3028428be0ecec0d773d9128 ""
   "chapters/Rectifiers.tex" 1774369563 27 4f9af1153d85cbb12a29f8cba1b7edf3 ""
-  "chapters/Theory.tex" 1783074247 9710 7e500e54909de585d8f3f3e5855229c7 ""
+  "chapters/Theory.tex" 1783075793 15438 de965dbe1203d0ce66dec9f5a2ea461f ""
   "custom-symbols.tex" 1773833088 330 f652a192ed11175e0617d51cd50916a8 ""
   "docs/abstract.tex" 1773833088 125 23735d28ea1d84b2de267f9ceece6974 ""
   "docs/acknowledgments.tex" 1773833088 115 dbdcf034a0cce734e23c3a719effa62b ""
   "docs/glossary.tex" 1773833088 247 75a9127c84ea5f857a732e9e1f545bb7 ""
   "docs/secondcover.tex" 1773833088 539 cb0f8fffdcbcdb8d447b74791e5c50fa ""
   "docs/sommario.tex" 1773833088 198 d3dbe8b42cc15e1504905dc2b8319789 ""
+  "imm/Airgap_swing.png" 1783075052 209883 9450865cbc4d4460b57dbe9908cc72aa ""
   "imm/VR_theory.pdf" 1779791790 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1783074317 14954 a2cef167394875bf06b0d713564da80c "pdflatex"
-  "main.bbl" 1783073939 59478 70da255c72c80241f3cf49145788a659 "biber main"
+  "main.aux" 1783075808 16254 41bfe1a6e361a1e517f54d0da49daba9 "pdflatex"
+  "main.bbl" 1783075802 59478 70da255c72c80241f3cf49145788a659 "biber main"
   "main.gls" 0 -1 0 ""
-  "main.out" 1783074317 3280 e1d491ae463e9152ba51c63d771bfe5c "pdflatex"
-  "main.run.xml" 1783074317 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1783075808 3280 938b8ccf50778e567973b09efdea09b1 "pdflatex"
+  "main.run.xml" 1783075808 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1783065510 3397 bb9f45e3768acd90a8e3b8a282e2da40 ""
-  "main.toc" 1783074317 1551 d8856d6c6d37a958178499fc787f623f "pdflatex"
-  "pdfa.xmpi" 1783074314 5042 dab9267e3f883786d16c66b7ba2bffb2 "pdflatex"
+  "main.toc" 1783075808 1551 bc2af05b51814f047f4b352a0a4a2ff1 "pdflatex"
+  "pdfa.xmpi" 1783075803 5042 abf340e0e8b74f7f2f02ccffc3b7d599 "pdflatex"
   "template/extras.tex" 1773833088 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892 142582 b442848f700784647bf2ab115ae3287d ""
   "template/universis.pdf" 1776333969 117986 21853b0a4da715a3df48abb62b9855c6 ""
