@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 17:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3129,38 +3129,57 @@ Underfull \vbox (badness 1215) has occurred while \output is active []
 [15]
 
 [16]
-Underfull \vbox (badness 1226) has occurred while \output is active []
+<Circuits/Coil_model.pdf, id=517, 166.60744pt x 58.89403pt>
+File: Circuits/Coil_model.pdf Graphic file (type pdf)
+<use Circuits/Coil_model.pdf>
+Package pdftex.def Info: Circuits/Coil_model.pdf  used on input line 181.
+(pdftex.def)             Requested size: 268.12068pt x 94.78499pt.
+
+Underfull \vbox (badness 2460) has occurred while \output is active []
 
 
 
-[17]
+[17 <./Circuits/Coil_model.pdf>]
 
-LaTeX Warning: Reference `ch:topologies' on page 18 undefined on input line 220.
+LaTeX Warning: Reference `ch:topologies' on page 18 undefined on input line 227.
 
 
-Overfull \hbox (4.3345pt too wide) in paragraph at lines 219--221
+Overfull \hbox (4.3345pt too wide) in paragraph at lines 226--228
 \T1/zpltlf/m/n/10.95 which is pre-cisely the Thévenin source impedance used in [] for the impedance
  []
 
 
 
 [18]
+<Circuits/Matching_condition.pdf, id=579, 120.79428pt x 65.92128pt>
+File: Circuits/Matching_condition.pdf Graphic file (type pdf)
+<use Circuits/Matching_condition.pdf>
+Package pdftex.def Info: Circuits/Matching_condition.pdf  used on input line 253.
+(pdftex.def)             Requested size: 229.82106pt x 125.43378pt.
 
-[19]) (chapters/Rectifiers.tex
 
-[20]
+[19 <./Circuits/Matching_condition.pdf>]
+Underfull \vbox (badness 5847) has occurred while \output is active []
+
+
+
+[20]) (chapters/Rectifiers.tex
+
+[21]
+
+[22
+
+
+]
 Chapter 3.
 )
 No file main.gls.
 No file main.acr.
 
 
-[21
+[23]
 
-
-]
-
-[22
+[24
 
 
 ]
@@ -3177,26 +3196,26 @@ Overfull \hbox (10.44496pt too wide) in paragraph at lines 117--117
 
 
 
-[23
+[25
 
 
 ]
 
-[24]
+[26]
 
-[25]
+[27]
 
-[26
+[28
 
 
 ] (docs/acknowledgments.tex)
 
-[27
+[29
 
 
 ]
 
-[28] (main.aux)
+[30] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -3206,23 +3225,23 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4C07C98D8366971EAF1AF9583DA7E21B;4562.
+(rerunfilecheck)             Checksum: 1E0114486B183D3C1581512AACE320E3;4562.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81101 strings out of 468130
- 1837066 string characters out of 5430633
- 2914867 words of memory out of 5000000
- 108359 multiletter control sequences out of 15000+600000
+ 81121 strings out of 468130
+ 1837676 string characters out of 5430633
+ 2915217 words of memory out of 5000000
+ 108375 multiletter control sequences out of 15000+600000
  691381 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2557b,3405s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (38 pages, 916826 bytes).
+<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on main.pdf (40 pages, 998659 bytes).
 PDF statistics:
- 753 PDF objects out of 1000 (max. 8388607)
- 125 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 821 PDF objects out of 1000 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
+ 391 words of extra memory for PDF output out of 10000 (max. 10000000)
 
