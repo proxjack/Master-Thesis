@@ -126,14 +126,14 @@ Once the magnet material and the nominal air-gap length are fixed by mechanical 
     \item the \textbf{magnet height} $h_M$, which pulls in two opposite directions at once: it raises the MMF $\mathcal{F}_M=H_ch_M$ (good for $\Delta\Phi$), but it also raises the magnet's own reluctance $\mathcal{R}_M$ (bad for $\Delta\Phi$). Because of this trade-off, a non-trivial optimal value of $h_M$ exists.
 \end{itemize}
 
-\paragraph{Volumetric optimization.} In a size-constrained design, what matters is not just $P_L$ but the power delivered per unit volume. Modelling the harvester as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density is
+In a size-constrained design, what matters is not just $P_L$ but the power delivered per unit volume, i.e.\ the volumetric optimization of the pickup unit. Modelling the harvester as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density is
 \begin{equation}
     p_v \;=\; \frac{P_L}{V_{VREH}}, \qquad V_{VREH} \;=\; \frac{\pi}{4}\,l_o\,(d_o-d_{Shaft})^2.
     \label{eq:power_density}
 \end{equation}
 Once the air-gap length and the (shared) flux-path width are fixed, the available radial space must be split between the coil and the tooth, $C = h_{Coil}+h_{Tooth}$. Growing $h_{Coil}$ always helps $P_L$, through \eqref{eq:coil_appendixA}, whereas growing $h_{Tooth}$ only helps up to the $3\ \text{mm}$ knee point described above, through \eqref{eq:flux_extremes}. Because of this asymmetry, for any given $C$ there is an optimal split between $h_{Coil}$ and $h_{Tooth}$ that maximizes $p_v$ \cite{xuDesignModelingOptimization2019a}.
 
-The same reasoning applies to the magnet height: setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form expression for the optimal magnet height,
+The same reasoning applies to the magnet height by setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form expression for the optimal magnet height,
 \begin{equation}
     h_M^{\ast} \;=\; \mu_M\,\frac{k_2}{k_1}\,\frac{W_{g,a}}{W_{g,u}}\,\sqrt{l_{g,a}\,l_{g,u}},
     \label{eq:optimal_hm}
