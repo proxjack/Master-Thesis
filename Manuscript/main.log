@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4081,7 +4081,7 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 pdfTeX warning: pdflatex.exe (file ./template/universis.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<template/universis.pdf, id=141, 547.96718pt x 186.70352pt>
+<template/universis.pdf, id=145, 547.96718pt x 186.70352pt>
 File: template/universis.pdf Graphic file (type pdf)
 <use template/universis.pdf>
 Package pdftex.def Info: template/universis.pdf  used on input line 82.
@@ -4108,7 +4108,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 
 pdfTeX warning: pdflatex.exe (file ./template/unipdbg.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<template/unipdbg.pdf, id=142, 608.18213pt x 574.15504pt>
+<template/unipdbg.pdf, id=146, 608.18213pt x 574.15504pt>
 File: template/unipdbg.pdf Graphic file (type pdf)
 <use template/unipdbg.pdf>
 Package pdftex.def Info: template/unipdbg.pdf  used on input line 82.
@@ -4235,7 +4235,7 @@ Chapter 2.
 
 pdfTeX warning: pdflatex.exe (file ./imm/VR_theory.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<imm/VR_theory.pdf, id=389, 356.79297pt x 275.98108pt>
+<imm/VR_theory.pdf, id=394, 356.79297pt x 275.98108pt>
 File: imm/VR_theory.pdf Graphic file (type pdf)
 <use imm/VR_theory.pdf>
 Package pdftex.def Info: imm/VR_theory.pdf  used on input line 45.
@@ -4243,7 +4243,7 @@ Package pdftex.def Info: imm/VR_theory.pdf  used on input line 45.
 
 
 [12 <./imm/VR_theory.pdf>]
-<imm/Airgap_swing.png, id=454, 1083.29718pt x 544.28343pt>
+<imm/Airgap_swing.png, id=459, 1083.29718pt x 544.28343pt>
 File: imm/Airgap_swing.png Graphic file (type png)
 <use imm/Airgap_swing.png>
 Package pdftex.def Info: imm/Airgap_swing.png  used on input line 55.
@@ -4251,32 +4251,34 @@ Package pdftex.def Info: imm/Airgap_swing.png  used on input line 55.
 
 
 [13 <./imm/Airgap_swing.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1215) has occurred while \output is active []
 
 
 
 [14]
-Underfull \vbox (badness 2600) has occurred while \output is active []
-
-
 
 [15]
 
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 129.
+
+
+
 [16]
+Underfull \vbox (badness 1226) has occurred while \output is active []
+
+
 
 [17]
 
-LaTeX Warning: Reference `ch:topologies' on page 18 undefined on input line 207
+LaTeX Warning: Reference `ch:topologies' on page 18 undefined on input line 220
 .
 
 
-Overfull \hbox (4.3345pt too wide) in paragraph at lines 206--208
+Overfull \hbox (4.3345pt too wide) in paragraph at lines 219--221
 \T1/zpltlf/m/n/10.95 which is pre-cisely the Thévenin source impedance used in 
 [] for the impedance
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -4344,16 +4346,16 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4C07C98D8366971EAF1AF9583DA7E21B;4562.
+(rerunfilecheck)             Checksum: CCEA655F0F3C373FB75373FC4691AAC3;4749.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81097 strings out of 468130
- 1836892 string characters out of 5430633
- 2914836 words of memory out of 5000000
- 108358 multiletter control sequences out of 15000+600000
+ 81103 strings out of 468130
+ 1836989 string characters out of 5430633
+ 2914916 words of memory out of 5000000
+ 108362 multiletter control sequences out of 15000+600000
  691381 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3405s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4376,9 +4378,9 @@ fb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.
 pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr
 .pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zpl
 ri.pfb>
-Output written on main.pdf (38 pages, 915206 bytes).
+Output written on main.pdf (38 pages, 917497 bytes).
 PDF statistics:
- 751 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 758 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

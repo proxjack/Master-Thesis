@@ -19,7 +19,7 @@ The Faraday's law is the starting point for any electromagnetic transducer, whic
     \label{eq:faraday}
 \end{equation}
 
-For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi(t)$ and the induced EMF becomes:
+For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N_t\Phi(t)$ and the induced EMF becomes:
 
 \begin{equation}
     \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi(t)}{\dd t}.
@@ -38,7 +38,7 @@ where $\Phi_i$ is the flux linkage associated to a single turn of the coil\cite{
 
 \subsection{Variable Reluctance Principle}
 
-Unlike conventional electromagnetic transducers, in which the EMF is induced by a relative motion between a permanent magnet (PM) and a pickup coil, a variable-reluctance energy harvester (VREH) keeps both the magnet and the coil stationary. The magnetic flux linked to the coil is instead modulated by the passage of a rotating, toothed ferromagnetic wheel in front of a stationary pickup unit: as a tooth or a slot alternately faces the pickup unit, the reluctance of the magnetic circuit changes periodically, and it is this reluctance variation -- rather than any bulk motion of the magnet -- that drives the flux change $\Phi_i(t)$ in \eqref{eq:faraday_dis} \cite{xuSurveyVariableReluctance2018}. Because the rotating part carries no magnet, no coil and no electrical connection, the resulting transducer is mechanically simple, robust, and easily rescaled to shafts of different diameters \cite{xuDesignModelingOptimization2019a}.
+Unlike conventional electromagnetic transducers, in which the EMF is induced by a relative motion between a permanent magnet (PM) and a pickup coil, a variable-reluctance energy harvester (VREH) keeps both the magnet and the coil stationary. The magnetic flux linked to the coil is instead modulated by the passage of a rotating, toothed ferromagnetic wheel in front of a stationary pickup unit: as a tooth or a slot alternately faces the pickup unit, the reluctance of the magnetic circuit changes periodically, and it is this reluctance variation (rather than any motion of the magnet) that drives the flux change $\Phi_i(t)$ in \eqref{eq:faraday_dis} \cite{xuSurveyVariableReluctance2018}. Because the rotating part carries no magnet, no coil and no electrical connection, the resulting transducer is mechanically simple, robust, and easily scalable to shafts of different diameters \cite{xuDesignModelingOptimization2019a}.
 
 \begin{figure}[h!]
     \centering
@@ -48,7 +48,7 @@ Unlike conventional electromagnetic transducers, in which the EMF is induced by 
 \end{figure}
 
 
-The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes. Fig.~\ref{fig:Airgap_swing} illustrates this swing directly: the air-gap flux density is sharply peaked at the aligned position and nearly collapses at the unaligned position, confirming that the flux change is concentrated within a narrow angular window around each tooth-slot transition.
+The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes. Fig.~\ref{fig:Airgap_swing} illustrates this swing directly: the air-gap flux density rises sharply to a plateau at the aligned position and nearly collapses at the unaligned position, confirming that the flux change is concentrated within a narrow angular window around each tooth-slot transition.
 
 \begin{figure}[h!]
     \centering
@@ -64,7 +64,7 @@ For a wheel with $N_t$ teeth rotating at angular velocity $\omega$, the electric
     f_c \;=\; \omega\, N_t.
     \label{eq:freq_teeth}
 \end{equation}
-At low rotational speeds the coil impedance is dominated by its resistance $R_{Coil}$, so that maximum power is transferred to a purely resistive load matched to it, $R_L = R_{Coil}$; under this condition the load voltage is related to the open-circuit coil voltage $V_c(t)$ of \eqref{eq:faraday_dis} by
+At low rotational speeds the coil impedance is dominated by its resistance $R_{Coil}$, so that maximum power is transferred to a purely resistive load matched to it, $R_L = R_{Coil}$; under this condition the load voltage $V_L(t)$ is related to the open-circuit coil voltage $V_c(t)$ of \eqref{eq:faraday_dis} by
 \begin{equation}
     V_L(t) \;=\; \frac{1}{2}\,V_c(t).
     \label{eq:vload}
@@ -85,47 +85,60 @@ Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assume
 
 
 
-where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, and the number of coil turns $N_c$, and linearly with the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
+where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, the number of coil turns $N_c$ and the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
 
 For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimization problems \cite{xuDesignModelingOptimization2019a}:
 \begin{subequations}
 \begin{align}
     P_L &\;\propto\; \frac{N_c^2}{R_{Coil}}, \label{eq:subfunc_coil}\\
-    P_L &\;\propto\; (\Delta\Phi)^2 \;=\; \left(\frac{\mathcal{F}_M}{\Delta\mathcal{R}}\right)^2, \label{eq:subfunc_flux}
+    P_L &\;\propto\; (\Delta\Phi)^2, \label{eq:subfunc_flux}
 \end{align}
 \end{subequations}
-where $\Delta\mathcal{R} = \mathcal{R}_u - \mathcal{R}_a$ is the difference between the total loop reluctance at the unaligned and aligned positions. Sub-function \eqref{eq:subfunc_coil} is a winding-design problem: for a coil of resistivity $\rho_{wire}$ occupying a cross-section of height $h_{Coil}$ and width $W_{Coil}$ inside the pole-piece, it can be shown that \eqref{eq:subfunc_coil} reduces to \cite{xuDesignModelingOptimization2019a}
+Sub-function \eqref{eq:subfunc_coil} is a winding-design problem: for a coil of resistivity $\rho_{wire}$ occupying a cross-section of height $h_{Coil}$ and width $W_{Coil}$ inside the pole-piece, it can be shown that \eqref{eq:subfunc_coil} reduces to \cite{xuDesignModelingOptimization2019a}
 \begin{equation}
-    P_L \;\propto\; \frac{h_{Coil}\,W_{Coil}\,f_w}{\rho_{wire}},
+    P_L \;\propto\; \frac{h_{Coil}\,W_{Coil}\,k_w}{\rho_{wire}},
     \label{eq:coil_appendixA}
 \end{equation}
-with $f_w<1$ the winding fill factor of the coil; for a fixed available cross-section, output power is thus maximized simply by maximizing the copper fill of the winding window. Sub-function \eqref{eq:subfunc_flux}, in contrast, is a magnetic-circuit design problem: with the MMF $\mathcal{F}_M = H_c\,h_M$ fixed by the magnet coercivity $H_c$ and its height $h_M$, maximizing $\Delta\Phi$ reduces to maximizing the reluctance swing $\Delta\mathcal{R}$ between the two extreme rotor positions.
+with $k_w<1$ the winding fill factor, defined as the fraction of the winding-window cross-section $h_{Coil}W_{Coil}$ actually occupied by copper \cite{xuDesignModelingOptimization2019a}. For a fixed available cross-section, output power is thus maximized simply by maximizing the copper fill of the winding window. Sub-function \eqref{eq:subfunc_flux}, in contrast, is a magnetic-circuit design problem. Once the magnet is chosen, its coercivity $H_c$ and height $h_M$ fix the MMF $\mathcal{F}_M = H_c\,h_M$, so $\Delta\Phi$ can no longer be increased by acting on the magnet alone. What remains under the designer's control is the shape of the pole-piece and toothed wheel around the air gap, thus the reluctance should be made as small as possible at the aligned position and as large as possible at the unaligned position, so that the two extremes are as far apart as possible and $\Delta\Phi$ is maximized. This magnetic-circuit optimization is detailed next.
 
 \subsubsection*{Magnetic-circuit model of the reluctance swing}
 
-The reluctance of a homogeneous flux-path element of length $l$, cross-section $A$ and relative permeability $\mu_r$ is
+To turn $\Delta\Phi$ into a design formula, the magnetic circuit can be treated like an electrical one, with reluctance playing the role of resistance. The reluctance of a simple flux-path element of length $l$, cross-section $A$ and relative permeability $\mu_r$ is
 \begin{equation}
     \mathcal{R} \;=\; \frac{l}{\mu_0\,\mu_r\,A}.
     \label{eq:reluctance_def}
 \end{equation}
-Since the soft ferromagnetic pole-piece and toothed wheel have a relative permeability several orders of magnitude larger than that of air ($\mu_r\approx 1$) or of the PM ($\mu_r\approx 1.05$), their contribution to the loop reluctance is negligible, and $\Delta\mathcal{R}$ is dominated by the air gap and by the magnet's own reluctance $\mathcal{R}_M = h_M/(\mu_0\mu_M A_M)$ \cite{xuDesignModelingOptimization2019a}. Denoting by $\mathcal{R}_{g,a}$ and $\mathcal{R}_{g,u}$ the air-gap reluctance at the aligned and unaligned positions, respectively, the flux at each extreme follows from Hopkinson's law as $\Phi_{max}=\mathcal{F}_M/(\mathcal{R}_{g,a}+\mathcal{R}_M)$ and $\Phi_{min}=\mathcal{F}_M/(\mathcal{R}_{g,u}+\mathcal{R}_M)$, so that the flux swing of \eqref{eq:subfunc_flux} can be written explicitly as
+
+The pole-piece and the toothed wheel are made of soft ferromagnetic material, whose relative permeability is several orders of magnitude larger than that of air ($\mu_r\approx 1$) or of the PM ($\mu_r\approx 1.05$). Since a larger $\mu_r$ means a much smaller reluctance, the pole-piece and the wheel contribute essentially nothing to the total loop reluctance \cite{xuDesignModelingOptimization2019a}. What is left, at either rotor position, is just two terms in series: the air-gap reluctance and the magnet's own reluctance,
+\begin{equation}
+    \mathcal{R}_M \;=\; \frac{h_M}{\mu_0\,\mu_M\,A_M}.
+    \label{eq:magnet_reluctance}
+\end{equation}
+Denoting by $\mathcal{R}_{g,a}$ and $\mathcal{R}_{g,u}$ the air-gap reluctance at the aligned and unaligned positions, Hopkinson's law gives the flux at each extreme simply as the MMF divided by the loop reluctance, $\Phi_{max}=\mathcal{F}_M/(\mathcal{R}_{g,a}+\mathcal{R}_M)$ and $\Phi_{min}=\mathcal{F}_M/(\mathcal{R}_{g,u}+\mathcal{R}_M)$. Subtracting the two gives the flux swing already introduced in \eqref{eq:subfunc_flux}, now written out explicitly:
 \begin{equation}
     \Delta\Phi \;=\; \mathcal{F}_M\left(\frac{1}{\mathcal{R}_{g,a}+\mathcal{R}_M} - \frac{1}{\mathcal{R}_{g,u}+\mathcal{R}_M}\right).
     \label{eq:flux_extremes}
 \end{equation}
-Equation \eqref{eq:flux_extremes} makes explicit that, once the magnet material and the air-gap length are fixed by mechanical constraints, $\Delta\Phi$ is governed by the pickup-unit geometry surrounding the air gap, namely the tooth height $h_{Tooth}$ (which sets $\mathcal{R}_{g,u}$, since a taller tooth increases the reluctance seen at the unaligned position up to a saturating knee at approximately $h_{Tooth}\approx 3\ \text{mm}$) and the magnet height $h_M$ (which enters both $\mathcal{F}_M$ and $\mathcal{R}_M$, so that an optimal, non-trivial value of $h_M$ exists) \cite{xuDesignModelingOptimization2019a}.
 
-For a fixed available volume, expressed as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density of the harvester is
+Once the magnet material and the nominal air-gap length are fixed by mechanical constraints, \eqref{eq:flux_extremes} shows that only two geometric parameters are left to control $\Delta\Phi$:
+\begin{itemize}
+    \item the \textbf{tooth height} $h_{Tooth}$, which affects only $\mathcal{R}_{g,u}$: a taller tooth raises the reluctance seen at the unaligned position, but this benefit saturates once the tooth is taller than about $3\ \text{mm}$, while the aligned-position reluctance $\mathcal{R}_{g,a}$ stays essentially unchanged \cite{xuDesignModelingOptimization2019a};
+    \item the \textbf{magnet height} $h_M$, which pulls in two opposite directions at once: it raises the MMF $\mathcal{F}_M=H_ch_M$ (good for $\Delta\Phi$), but it also raises the magnet's own reluctance $\mathcal{R}_M$ (bad for $\Delta\Phi$). Because of this trade-off, a non-trivial optimal value of $h_M$ exists.
+\end{itemize}
+
+\paragraph{Volumetric optimization.} In a size-constrained design, what matters is not just $P_L$ but the power delivered per unit volume. Modelling the harvester as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density is
 \begin{equation}
-    p_v \;=\; \frac{P_L}{V_{VREH}}, \qquad V_{VREH} \;=\; \frac{\pi}{4}\,l_o\,(d_o-d_{Shaft})^2,
+    p_v \;=\; \frac{P_L}{V_{VREH}}, \qquad V_{VREH} \;=\; \frac{\pi}{4}\,l_o\,(d_o-d_{Shaft})^2.
     \label{eq:power_density}
 \end{equation}
-and, once the pole pitch and slot width are fixed, the available radial space $C = h_{Coil}+h_{Tooth}$ must be split between the coil and the tooth. Since $P_L$ increases monotonically with $h_{Coil}$ through \eqref{eq:coil_appendixA} but only up to the knee point through $h_{Tooth}$ in \eqref{eq:flux_extremes}, for a given $C$ there is an optimal $h_{Coil}/h_{Tooth}$ ratio that maximizes $p_v$ \cite{xuDesignModelingOptimization2019a}. Similarly, setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form optimal magnet height,
+Once the air-gap length and the (shared) flux-path width are fixed, the available radial space must be split between the coil and the tooth, $C = h_{Coil}+h_{Tooth}$. Growing $h_{Coil}$ always helps $P_L$, through \eqref{eq:coil_appendixA}, whereas growing $h_{Tooth}$ only helps up to the $3\ \text{mm}$ knee point described above, through \eqref{eq:flux_extremes}. Because of this asymmetry, for any given $C$ there is an optimal split between $h_{Coil}$ and $h_{Tooth}$ that maximizes $p_v$ \cite{xuDesignModelingOptimization2019a}.
+
+The same reasoning applies to the magnet height: setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form expression for the optimal magnet height,
 \begin{equation}
     h_M^{\ast} \;=\; \mu_M\,\frac{k_2}{k_1}\,\frac{W_{g,a}}{W_{g,u}}\,\sqrt{l_{g,a}\,l_{g,u}},
     \label{eq:optimal_hm}
 \end{equation}
-where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap length and width at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors accounting for flux leakage and for the MMF drop in the finite-permeability soft iron, respectively \cite{xuDesignModelingOptimization2019a}.
+where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap length and width at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors that account, respectively, for flux leakage and for the MMF drop across the finite-permeability soft iron \cite{xuDesignModelingOptimization2019a}.
 
 
 
@@ -170,12 +183,12 @@ The winding resistance follows directly from the resistivity of the wire, its to
     R_{Coil} \;=\; \rho_{wire}\,\frac{N_c\, l_t}{A_w},
     \label{eq:rcoil_def}
 \end{equation}
-where $N_c$ is the number of turns, $l_t$ is the mean length of a single turn, and $A_w$ is the cross sectional area of the wire. If the coil occupies a winding window of height $h_{Coil}$ and width $W_{Coil}$ with a copper fill factor $f_w$, the wire cross section can be written as $A_w = f_w\, h_{Coil}\, W_{Coil} / N_c$, so that \eqref{eq:rcoil_def} becomes
+where $N_c$ is the number of turns, $l_t$ is the mean length of a single turn, and $A_w$ is the cross sectional area of the wire. If the coil occupies a winding window of height $h_{Coil}$ and width $W_{Coil}$ with a copper fill factor $k_w$, the wire cross section can be written as $A_w = k_w\, h_{Coil}\, W_{Coil} / N_c$, so that \eqref{eq:rcoil_def} becomes
 \begin{equation}
-    R_{Coil} \;=\; \rho_{wire}\,\frac{N_c^2\, l_t}{f_w\, h_{Coil}\, W_{Coil}}.
+    R_{Coil} \;=\; \rho_{wire}\,\frac{N_c^2\, l_t}{k_w\, h_{Coil}\, W_{Coil}}.
     \label{eq:rcoil_fillfactor}
 \end{equation}
-Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref{eq:rcoil_fillfactor} reproduces the proportionality $N_c^2 / R_{Coil} \propto f_w\, h_{Coil}\, W_{Coil} / \rho_{wire}$ already used in \eqref{eq:coil_appendixA} to optimize the winding cross section \cite{xuDesignModelingOptimization2019a}.
+Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref{eq:rcoil_fillfactor} reproduces the proportionality $N_c^2 / R_{Coil} \propto k_w\, h_{Coil}\, W_{Coil} / \rho_{wire}$ already used in \eqref{eq:coil_appendixA} to optimize the winding cross section \cite{xuDesignModelingOptimization2019a}.
 
 \subsubsection*{Self inductance and its dependence on rotor position}
 
