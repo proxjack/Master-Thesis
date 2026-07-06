@@ -4,7 +4,7 @@ This chapter introduces the physical and circuit-level concepts required to moti
 In this chapter, starting from Faraday's law, an electrical
 model of the variable-reluctance energy harvester (VREH) is
 derived. The model is then used to discuss the maximum
-power transfer theorem and the role of impedance matching
+power transfer theorem and the role of impedance matching.
 
 \section{Electrical Model of the Variable-Reluctance Harvester}
 
@@ -15,14 +15,14 @@ power transfer theorem and the role of impedance matching
 The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $\varepsilon(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
 
 \begin{equation}
-    \varepsilon(t) = -\frac{\dd \Phi_i(t)}{\dd t}
+    \varepsilon(t) = -\frac{\dd \Phi(t)}{\dd t}
     \label{eq:faraday}
 \end{equation}
 
-For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi_i(t)$ and the induced EMF becomes:
+For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N\,\Phi(t)$ and the induced EMF becomes:
 
 \begin{equation}
-    \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi_i(t)}{\dd t}.
+    \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi(t)}{\dd t}.
     \label{eq:faraday_N}
 \end{equation}
 
