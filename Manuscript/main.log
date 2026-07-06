@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  6 JUL 2026 12:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4123,16 +4123,16 @@ pc.enc}{C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-
 ec-tlf.enc} <./template/unipdbg.pdf, page is rotated 90 degrees> <./template/un
 iversis.pdf>]
 
-[2]
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 82.
-
-
-[3
+[2
 
 
 
 ]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 10.95pt on input line 82.
+
+
+[3]
 
 [4
 
@@ -4156,7 +4156,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 [6
 
 
-] (docs/abstract.tex
+] (chapters/abstract.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 4.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
@@ -4168,20 +4168,18 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 [8
 
 
-] (docs/sommario.tex)
-Underfull \vbox (badness 1527) has occurred while \output is active []
-
-
+] (chapters/sommario.tex)
 
 [9]
 
-[10] (chapters/Introduction.tex
+[10
+
+
+] (chapters/Introduction.tex
 Chapter 1.
 
 
 [1
-
-
 
 
 ] (Plots/EH_Studies.tex
@@ -4353,8 +4351,8 @@ Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  81097 strings out of 468130
- 1836836 string characters out of 5430633
- 2914828 words of memory out of 5000000
+ 1836892 string characters out of 5430633
+ 2914836 words of memory out of 5000000
  108358 multiletter control sequences out of 15000+600000
  691381 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4378,7 +4376,7 @@ fb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.
 pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr
 .pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zpl
 ri.pfb>
-Output written on main.pdf (38 pages, 914872 bytes).
+Output written on main.pdf (38 pages, 915206 bytes).
 PDF statistics:
  751 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 500000)

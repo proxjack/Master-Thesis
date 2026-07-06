@@ -363,14 +363,14 @@
     
     % author and advisors 
     \doublespacing
-    \vspace{1.7cm}
+    \vspace{1.4cm}
     \begin{flushleft}
     
         \large{\textbf{\@author}} \\
         \small{ ID \@studentId}\\
 
     % supervisor
-    \vspace{2.7cm}
+    \vspace{2.2cm}
     \begin{minipage}[t]{7cm}
         \textsc{Supervisor}\\
         {\setlength\parindent{1mm}
@@ -547,10 +547,10 @@
 
 \newcommand{\abstractpage} {
     % english version
-    \input{docs/abstract}
+    \input{chapters/abstract}
     % italian version
     \cleardoublepage
-    \input{docs/sommario}
+    \input{chapters/sommario}
 }
 
 
