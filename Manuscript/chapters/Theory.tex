@@ -165,16 +165,23 @@ where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap lengt
 
 
 
-The Faraday law derivation of Section~\ref{sec:faraday_law} gives the ideal electromotive force induced in the coil, but it does not yet describe how that voltage appears at the physical terminals of the pickup unit. A real coil is made of a finite length of copper wire, so it has a nonzero winding resistance, and it carries a current that produces its own magnetic flux, so it also has a nonzero self inductance. Both effects sit in series with the ideal source, since the same wire that generates the electromotive force also carries the resistance and the flux linkage that define $R_{Coil}$ and $L_{Coil}$.
+The Faraday law derivation of Section~\ref{sec:faraday_law} gives the ideal electromotive force induced in the coil, but it does not yet describe how that voltage appears at the physical terminals of the pickup unit. A real coil is made of a finite length of copper wire, so it has a nonzero winding resistance, and it carries a current that produces its own magnetic flux, so it also has a nonzero self inductance. Both effects are in series with the ideal source, since the same wire that generates the electromotive force also carries the resistance and the flux linkage that define $R_{Coil}$ and $L_{Coil}$.
 
 \subsubsection*{Circuit equation}
 
 Let $e(t)$ denote the ideal electromotive force predicted by \eqref{eq:faraday_dis}, and let $i(t)$ be the current flowing out of the coil into the external circuit. Applying Kirchhoff's voltage law around the loop formed by the source, the winding resistance, the winding inductance and the external circuit gives
 \begin{equation}
-    e(t) \;=\; R_{Coil}\, i(t) \;+\; L_{Coil}\,\frac{\dd i(t)}{\dd t} \;+\; v(t),
+    v(t) \;=\; R_{Coil}\, i(t) \;+\; L_{Coil}\,\frac{\dd i(t)}{\dd t} \;+\; e(t),
     \label{eq:kvl_coil}
 \end{equation}
-where $v(t)$ is the voltage measured at the coil terminals, available to the power conditioning circuit. Equation \eqref{eq:kvl_coil} is the defining relation of the series generator model adopted throughout this thesis, an ideal voltage source $e(t)$ in series with a resistance $R_{Coil}$ and an inductance $L_{Coil}$, feeding the external circuit at the coil terminals.
+where $v(t)$ is the voltage measured at the coil terminals, available to the power conditioning circuit. In other words, \eqref{eq:kvl_coil} models the pickup unit as an ideal voltage source $e(t)$ in series with a resistance $R_{Coil}$ and an inductance $L_{Coil}$, feeding the external circuit at the coil terminals; this series generator model is used throughout the rest of this thesis.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Circuits/Coil_model.pdf}
+    \caption{Series generator model of the pickup unit: an ideal source in series with the winding resistance $R_{Coil}$ and inductance $L_{Coil}$}.
+    \label{fig:coil_model}
+\end{figure}
 
 \subsubsection*{Winding resistance}
 
@@ -192,24 +199,24 @@ Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref
 
 \subsubsection*{Self inductance and its dependence on rotor position}
 
-The self inductance of a coil linked to a magnetic circuit of total reluctance $\mathcal{R}$ is, by the same reluctance formalism used for Hopkinson's law in \eqref{eq:reluctance_def},
+The self inductance of a coil linked to a magnetic circuit of total reluctance $\mathcal{R}$ is, by the same reluctance used for Hopkinson's law in \eqref{eq:reluctance_def},
 \begin{equation}
     L_{Coil} \;=\; \frac{N_c^2}{\mathcal{R}}.
     \label{eq:lcoil_def}
 \end{equation}
-Because the pickup unit is a variable reluctance device, the reluctance seen by the coil's own flux changes with the rotor angle in exactly the same way as the reluctance that shapes the induced electromotive force. The self inductance therefore swings between two extremes,
+The pickup unit is a variable-reluctance device, so the reluctance seen by the coil's own flux changes with the rotor angle too, in the same way as the reluctance that shapes the induced EMF. This means the self inductance is not constant: it swings between two extremes,
 \begin{equation}
     L_{max} \;=\; \frac{N_c^2}{\mathcal{R}_{g,a}+\mathcal{R}_M}, \qquad
     L_{min} \;=\; \frac{N_c^2}{\mathcal{R}_{g,u}+\mathcal{R}_M},
     \label{eq:lcoil_extremes}
 \end{equation}
-reached at the aligned and unaligned positions respectively, mirroring the flux extremes already given in \eqref{eq:flux_extremes}. For circuit level analysis, such as the impedance matching study of Section~\ref{sec:impedance_matching}, this position dependent inductance is normally replaced by a single lumped value $L_{Coil}$, obtained either as an average over one electrical period or as a direct measurement with an impedance analyzer at the frequency of interest. This is the value referred to as $L_{Coil}\approx210\ \text{mH}$ later in this chapter.
+reached at the aligned and unaligned positions, just like the flux extremes of \eqref{eq:flux_extremes}. For circuit-level analysis, such as the impedance matching study of Section~\ref{sec:impedance_matching}, it is more practical to replace this varying inductance with a single, constant value $L_{Coil}$. This value can be obtained either by averaging over one electrical period, or by measuring it directly with an impedance analyzer at the frequency of interest. It is this constant value, $L_{Coil}\approx210\ \text{mH}$, that is used later in this chapter.
 
 \subsubsection*{Phasor representation}
 
 For a sinusoidal steady state at the electrical frequency $f_c$ of \eqref{eq:freq_teeth}, the time domain relation \eqref{eq:kvl_coil} can be written in phasor form as
 \begin{equation}
-    E \;=\; I\left(R_{Coil} + j\,\omega_e\,L_{Coil}\right) + V,
+    V \;=\; I\left(R_{Coil} + j\,\omega_e\,L_{Coil}\right) + E,
     \label{eq:phasor_source}
 \end{equation}
 where $E$, $I$ and $V$ are the phasors associated with $e(t)$, $i(t)$ and $v(t)$, and $\omega_e = 2\pi f_c$. Equation \eqref{eq:phasor_source} shows that, seen from its electrical terminals, the pickup unit behaves as an ideal source $E$ in series with the impedance
@@ -223,7 +230,7 @@ which is precisely the Th\'{e}venin source impedance used in \eqref{eq:source_im
 \subsection{Maximum Power Transfer and Impedance Matching}
 \label{sec:impedance_matching}
 
-The previous section modelled the pickup unit as a Th\'{e}venin source, an open circuit EMF $V_c(t)$ in series with the coil's own impedance. At low electrical frequency this impedance is essentially the winding resistance $R_{Coil}$, and matching a resistive load to it, $R_L = R_{Coil}$, is enough to extract the maximum available power, as already used in \eqref{eq:power_law}. As the rotational speed increases, however, the coil inductance $L_{Coil}$ can no longer be neglected, and the condition for maximum power transfer must be generalized. This section derives that general condition and explains why it becomes a central design constraint for a harvester that must operate between 100 and 400\,rpm, the target range of this thesis.
+The previous section modelled the pickup unit as a Th\'{e}venin source, an open circuit EMF $e(t)$ in series with the coil's own impedance. At low electrical frequency this impedance is essentially the winding resistance $R_{Coil}$, and matching a resistive load to it, $R_L = R_{Coil}$, is enough to extract the maximum available power, as already used in \eqref{eq:power_law}. As the rotational speed increases, however, the coil inductance $L_{Coil}$ can no longer be neglected, and the condition for maximum power transfer must be generalized. This section derives that general condition and explains why it becomes a central design constraint for a harvester that must operate between 100 and 400\,rpm (the target range of this thesis).
 
 \subsection{Th\'{e}venin model of the source and the load}
 
@@ -241,14 +248,21 @@ Here $R_L$ is the resistive part of the load and $X_L$ its reactive part, which 
 
 \subsection{Power delivered to the load}
 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{Circuits/Matching_condition.pdf}
+    \caption{Thévenin equivalent circuit used for the impedance matching analysis: source $E$ with source impedance $Z_s$, driving a generic load impedance $Z_L$.}
+    \label{fig:matching_condition}
+\end{figure}
+
 With $Z_s$ and $Z_L$ in series, the RMS current flowing in the loop is
 \begin{equation}
-    I \;=\; \frac{V_c}{Z_s + Z_L},
+    I \;=\; \frac{E}{Z_s + Z_L},
     \label{eq:loop_current}
 \end{equation}
 and the average power dissipated in the resistive part of the load is
 \begin{equation}
-    P_L \;=\; |I|^2 R_L \;=\; \frac{|V_c|^2\,R_L}{(R_{Coil}+R_L)^2 + (\omega_e L_{Coil}+X_L)^2}.
+    P_L \;=\; |I|^2 R_L \;=\; \frac{|E|^2\,R_L}{(R_{Coil}+R_L)^2 + (\omega_e L_{Coil}+X_L)^2}.
     \label{eq:power_general}
 \end{equation}
 Equation \eqref{eq:power_general} is the generalization of \eqref{eq:power_law} to a complex load. Setting $L_{Coil}=0$ and $X_L=0$ recovers the purely resistive case already used earlier in this chapter.
@@ -264,12 +278,12 @@ First, for any fixed $R_L$, the denominator is minimized, and $P_L$ is therefore
 \end{equation}
 With this choice, \eqref{eq:power_general} reduces to
 \begin{equation}
-    P_L \;=\; \frac{|V_c|^2\,R_L}{(R_{Coil}+R_L)^2}.
+    P_L \;=\; \frac{|E|^2\,R_L}{(R_{Coil}+R_L)^2}.
     \label{eq:power_resistive_stage}
 \end{equation}
 Second, differentiating \eqref{eq:power_resistive_stage} with respect to $R_L$ and setting the result to zero,
 \begin{equation}
-    \frac{\partial P_L}{\partial R_L} \;=\; |V_c|^2\,\frac{R_{Coil}-R_L}{(R_{Coil}+R_L)^3} \;=\; 0
+    \frac{\partial P_L}{\partial R_L} \;=\; |E|^2\,\frac{R_{Coil}-R_L}{(R_{Coil}+R_L)^3} \;=\; 0
     \quad\Longrightarrow\quad
     R_L \;=\; R_{Coil}.
     \label{eq:resistive_match}
@@ -281,7 +295,7 @@ Combining \eqref{eq:reactance_cancel} and \eqref{eq:resistive_match} gives the w
 \end{equation}
 The load must present a resistance equal to the coil resistance and a reactance equal in magnitude but opposite in sign to the coil reactance. Physically, the load must absorb energy from the coil (resistive part) while returning, every half cycle, exactly the reactive energy that the coil inductance would otherwise store (capacitive part). Substituting \eqref{eq:conjugate_match} into \eqref{eq:power_general} gives the maximum available power,
 \begin{equation}
-    P_{L,\max} \;=\; \frac{|V_c|^2}{4\,R_{Coil}},
+    P_{L,\max} \;=\; \frac{|E|^2}{4\,R_{Coil}},
     \label{eq:max_power}
 \end{equation}
 which is independent of $L_{Coil}$. Once the reactance is properly cancelled, the maximum extractable power depends only on the coil resistance, exactly as in the low frequency case of \eqref{eq:power_law}.
@@ -293,4 +307,4 @@ Condition \eqref{eq:reactance_cancel} shows that an inductive coil requires a lo
     C_m \;=\; \frac{1}{\omega_e^2\,L_{Coil}}.
     \label{eq:matching_cap}
 \end{equation}
-Equation \eqref{eq:matching_cap} is the condition used, for instance, to compensate the $L_{Coil}\approx210\ \text{mH}$ winding discussed at the end of Section~\ref{sec:impedance_matching}. At a given speed, a single series capacitor sized according to \eqref{eq:matching_cap} restores the resistive matching condition of \eqref{eq:resistive_match} and recovers the maximum power of \eqref{eq:max_power}.
+Once the capacitor $C_m$ is fixed according to \eqref{eq:matching_cap}, it cancels the coil's reactance and therefore restores the resistive matching condition of \eqref{eq:resistive_match} and the maximum power of \eqref{eq:max_power} only at the single electrical frequency $\omega_e$ for which it was chosen.
