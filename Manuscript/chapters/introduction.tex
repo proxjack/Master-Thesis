@@ -495,6 +495,7 @@ phases simultaneously adds a further layer of complexity
 to the interface circuit design.
 
 \section{Harvester Specifications and Research Objective}
+\label{sec:mpvreh_specs}
 
 The work presented in this thesis is based directly on
 the MP-VREH proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024}.
@@ -523,10 +524,14 @@ power conditioning circuits.
     \label{tab:vreh_par}
 \end{table}
 
-All values in Table \ref{tab:vreh_par} were obtained under 
-impedance-matched load conditions. $V_\text{Lpk}$ refers to 
-the peak voltage across the load, and $P_o$ is the average 
+All values in Table \ref{tab:vreh_par} were obtained under
+impedance-matched load conditions. $V_\text{Lpk}$ refers to
+the peak voltage across the load, and $P_o$ is the average
 power dissipated in the load.
+
+The overall system consists of six pickup units arranged
+in space so that they are electrically phase-shifted by
+$60^\circ$ from one another.
 
 These challenges motivate the work presented in this
 thesis, which focuses on the design and evaluation of
