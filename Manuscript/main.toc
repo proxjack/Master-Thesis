@@ -20,6 +20,15 @@
 \contentsline {subsection}{\numberline {2.1.f}Power delivered to the load}{19}{subsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.1.g}The complex conjugate matching condition}{20}{subsection.2.1.7}%
 \contentsline {subsection}{\numberline {2.1.h}Realizing the reactive compensation}{21}{subsection.2.1.8}%
-\contentsline {chapter}{\numberline {3}Rectifiers}{23}{chapter.3}%
-\contentsline {chapter}{Bibliography}{25}{section*.12}%
-\contentsline {chapter}{Acknowledgments}{29}{section*.14}%
+\contentsline {chapter}{\numberline {3}VREH System Model}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}System Overview}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Multi-Phase Electrical Model}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Design Requirements for the Interface Circuit}{24}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Proposed Rectifying Circuits}{25}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{25}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Full-Wave Rectifier (FWR)}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Application to the Six-Phase System}{27}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Simulations}{29}{chapter.5}%
+\contentsline {chapter}{Bibliography}{31}{section*.14}%
+\contentsline {chapter}{Acknowledgments}{35}{section*.16}%
