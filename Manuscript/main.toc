@@ -27,8 +27,9 @@
 \contentsline {chapter}{\numberline {4}Proposed Rectifying Circuits}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Overview}{25}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Full-Wave Rectifier (FWR)}{26}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.a}Star or Delta Connection of the Three-Phase Group}{26}{subsection.4.2.1}%
 \contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Application to the Six-Phase System}{27}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Simulations}{29}{chapter.5}%
-\contentsline {chapter}{Bibliography}{31}{section*.14}%
-\contentsline {chapter}{Acknowledgments}{35}{section*.16}%
+\contentsline {section}{\numberline {4.4}Application to the Six-Phase System}{29}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Simulations}{31}{chapter.5}%
+\contentsline {chapter}{Bibliography}{33}{section*.14}%
+\contentsline {chapter}{Acknowledgments}{37}{section*.16}%
