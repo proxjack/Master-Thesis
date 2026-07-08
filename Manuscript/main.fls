@@ -931,6 +931,9 @@ INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
+INPUT .\chapters\MeasurementSetup.tex
+INPUT .\chapters\MeasurementSetup.tex
+INPUT chapters\MeasurementSetup.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
