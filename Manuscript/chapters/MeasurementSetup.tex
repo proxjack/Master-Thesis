@@ -6,6 +6,8 @@
 
 The circuit simulations of Chapter \ref{ch:simulations} predict the behaviour of the FWR and NVC stages introduced in Chapter \ref{ch:topologies}, but validating those predictions requires measuring the real prototype. Both the voltage and the current at each phase, and at the output of each rectifying stage, must be acquired at the same time in order to compute the electrical power. This chapter describes the measurement setup built for this purpose, from the acquisition instrument down to the current sensing elements and their calibration.
 
+Two precision instruments are used throughout this chapter wherever a known reference quantity, rather than a signal from the circuit itself, is required: a Keysight B2901A precision source-measure unit sources the known reference currents used in Section \ref{sec:calibration}, and a Keysight 34470A precision digital multimeter, whose built-in four-wire resistance function is used in Section \ref{sec:shunt_characterization}, provides voltage readings with higher accuracy than the data acquisition system. Both instruments can be controlled directly from MATLAB, which makes it possible to automate long sequences of measurements, such as the many current-voltage points needed to build the lookup tables of Section \ref{sec:calibration}, without manual control at each step.
+
 % TODO: block diagram of the full measurement chain (phase / rectifier output -> shunt -> INA114AU -> Saleae channel), analogous to Circuits/FWR.pdf and Circuits/NVC.pdf.
 %\begin{figure}[H]
 %    \centering
@@ -17,7 +19,16 @@ The circuit simulations of Chapter \ref{ch:simulations} predict the behaviour of
 \section{Data Acquisition System}
 \label{sec:daq}
 
-All signals are acquired with a Saleae logic analyzer configured for differential analog acquisition, on 16 channels. Every quantity of interest, both voltages taken directly from the circuit (e.g.\ a phase or rectifier output terminal) and the outputs of the current sensors described in Section \ref{sec:current_sensing}, is captured through its own differential channel. Acquiring differentially, rather than referencing every channel to a single common ground, is necessary because several of the measured points, most notably the two terminals of a series shunt resistor, are not referenced to the same node as the rest of the circuit and would otherwise create a short-circuit. Because all channels are sampled by the same instrument, the resulting waveforms are synchronous, which is what makes it possible to pair a phase voltage with its corresponding current and compute instantaneous power.
+All signals are acquired with a Saleae logic analyzer, shown in Figure \ref{fig:saleae}, configured for differential analog acquisition, on 16 channels.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.45\textwidth]{imm/Saleae.jpg}
+    \caption{The Saleae logic analyzer used for data acquisition.}
+    \label{fig:saleae}
+\end{figure}
+
+Every quantity of interest, both voltages taken directly from the circuit (e.g.\ a phase or rectifier output terminal) and the outputs of the current sensors described in Section \ref{sec:current_sensing}, is captured through its own differential channel. Acquiring differentially, rather than referencing every channel to a single common ground, is necessary because several of the measured points, most notably the two terminals of a series shunt resistor, are not referenced to the same node as the rest of the circuit and would otherwise create a short-circuit. Because all channels are sampled by the same instrument, the resulting waveforms are synchronous, which is what makes it possible to pair a phase voltage with its corresponding current and compute instantaneous power.
 
 \section{Current Sensing: Shunt Resistors and Instrumentation Amplifiers}
 \label{sec:current_sensing}
@@ -29,7 +40,16 @@ The Saleae itself only measures voltage, so each current of interest must first 
 \end{equation}
 Given the low phase currents expected from the specifications of Section \ref{sec:mpvreh_specs}, $v_\text{shunt}(t)$ is small and, since the shunt sits in series within the branch rather than at a fixed reference node, it is not measured with respect to a common ground on either side. A sensing circuit is therefore needed to amplify the small differential drop across the shunt to a level suitable for acquisition.
 
-This role is carried by an INA114AU precision instrumentation amplifier connected across each shunt resistor. The INA114AU senses the two shunt terminals differentially, with high input impedance and high common-mode rejection, and delivers an output voltage proportional to the shunt voltage. Its gain $G$ is set by a single external resistor $R_G$ according to
+This role is carried by an INA114AU precision instrumentation amplifier connected across each shunt resistor. Figure \ref{fig:curr_sens_photo} shows one of the six current-sensing boards actually used, built around the INA114AU, with its input terminals on the top, its gain-setting trimmer in the middle, and its output connector on the right; the sticker on the board records the actual resistance of its own shunt, measured as described in Section \ref{sec:shunt_characterization}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.55\textwidth]{imm/Curr_sens.jpg}
+    \caption{One of the six current-sensing boards used in this thesis, built around the INA114AU instrumentation amplifier.}
+    \label{fig:curr_sens_photo}
+\end{figure}
+
+The INA senses the two shunt terminals differentially, with high input impedance and high common-mode rejection, and delivers an output voltage proportional to the shunt voltage. Its gain $G$ is set by a single external resistor $R_G$ according to
 \begin{equation}
     G \;=\; 1 + \frac{50\ \text{k}\Omega}{R_G},
     \label{eq:ina_gain}
@@ -40,11 +60,51 @@ so that the amplifier output is
     \label{eq:vout_sensing}
 \end{equation}
 
-The current sensor output voltage is then connected to the corresponding Saleae channel. In principle, the current could then be recovered by simply inverting \eqref{eq:vout_sensing} with the nominal values of $R_\text{shunt}$, $R_G$ and \eqref{eq:ina_gain}; in practice, this is not accurate enough, and an individual calibration, described in Section \ref{sec:calibration}, is required for every sensing channel.
+The current sensor output voltage is then connected to the corresponding Saleae channel. In principle, the current could then be recovered by simply inverting \eqref{eq:vout_sensing} with the nominal values of $R_\text{shunt}$, $R_G$ and \eqref{eq:ina_gain}; in practice, this is not accurate enough, and an individual calibration, described in Section \ref{sec:calibration}, is required for every current sensor.
 
-\section{Calibration of the Current Sensors}
+\section{Current Sensors Calibration}
 \label{sec:calibration}
 
-Equation \eqref{eq:vout_sensing} gives the nominal, linear relationship between the sensor output and the current it measures, but a real sensing channel does not follow it exactly. Component tolerances and offset voltage make every channel, comprising its own shunt resistor and INA114AU, different from every other nominally identical channel, and the response of the amplifier itself is not perfectly linear over the full input range. A single scale factor is therefore not accurate enough to describe a given channel, instead, each channel is calibrated individually by building a lookup table that maps its acquired output voltage directly to the true current.
+Equation \eqref{eq:vout_sensing} gives the nominal, linear relationship between the sensor output and the current it measures, but a real current sensor does not follow it exactly. Component tolerances and offset voltage make every sensor, comprising its own shunt resistor and INA114AU, different from every other nominally identical sensor, and the response of the amplifier itself is not perfectly linear over the full input range. A single scale factor is therefore not accurate enough to describe a given sensor; instead, each sensor is calibrated individually by building a lookup table that maps its acquired output voltage directly to the true current.
 
-The calibration consists of driving the shunt resistor with a set of known reference currents, spanning the range expected in operation and simultaneously acquiring the corresponding sensor output voltage. Each (voltage, current) pair obtained this way becomes one entry of that channel's lookup table. The current corresponding to any voltage acquired later during normal operation is then recovered by interpolating between the nearest entries of this table, rather than by inverting a single linear formula, which is what allows the non-linearity and channel-to-channel variation described above to be compensated for. Every current used later in this thesis to compute an experimental PCE or PEE is recovered from the acquired voltage through this per-channel lookup table.
+Figure \ref{fig:curr_sens} plots the calibration curve of the six current sensors of the MP-VREH, CS1 to CS6, current driven by the B2901A against the corresponding sensor output voltage. The six sensors use nominally identical shunt resistors and INA114AU amplifiers, but their slopes are clearly different, especially for CS2. A single scale factor could not capture this spread, so each sensor needs its own lookup table.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Plots/Curr_sens.pdf}
+    \caption{Calibration curves of the six current sensors of the MP-VREH, CS1 to CS6.}
+    \label{fig:curr_sens}
+\end{figure}
+
+The calibration consists of driving the shunt resistor with a set of known reference currents, spanning the range expected in operation and simultaneously acquiring the corresponding sensor output voltage. Each (voltage, current) pair obtained this way becomes one entry of that sensor's lookup table. The current corresponding to any voltage acquired later during normal operation is then recovered by interpolating between the nearest entries of this table, rather than by inverting a single linear formula, which is what allows the non-linearity and sensor-to-sensor variation described above to be compensated for. Every current used later in this thesis is recovered from the acquired voltage through this per-sensor lookup table.
+
+The B2901A, however, has a maximum output current lower than the peak phase current found in the simulations of Chapter \ref{ch:simulations}, so it cannot itself reproduce, through the $R_\text{shunt}=0.1\ \Omega$ shunt used on the board, the full range of shunt voltages that shunt produces in operation. The calibration shunt is therefore chosen ten times larger, $R_\text{cal}=1\ \Omega$. What actually sets the operating point of the INA114AU is the shunt voltage of \eqref{eq:vshunt}, not the current itself. With a shunt ten times larger, the same shunt voltage, and so the same amplifier operating point, is reached with a current ten times smaller, well within the B2901A's range.
+
+The lookup table built this way, however, relates the acquired output voltage to the current actually driven through $R_\text{cal}$ during calibration, not to the current that would flow through $R_\text{shunt}$ in the circuit at the same shunt voltage. At equal shunt voltage, the two currents are related by the ratio of the two resistances,
+\begin{equation}
+    i_\text{shunt} \;=\; i_\text{cal}\,\frac{R_\text{cal}}{R_\text{shunt}},
+    \label{eq:shunt_scaling}
+\end{equation}
+so every entry of the lookup table is rescaled by this ratio before use. Because \eqref{eq:shunt_scaling} is a direct multiplicative correction, its accuracy depends entirely on how precisely $R_\text{cal}$ and $R_\text{shunt}$ are known, and their nominal values are not sufficient for this purpose. Instead, the actual resistance of every calibration and circuit shunt is measured individually, as described in Section \ref{sec:shunt_characterization}.
+
+
+\section{Shunt Resistor Characterization}
+\label{sec:shunt_characterization}
+
+The scaling of \eqref{eq:shunt_scaling} requires the actual resistance of the $R_\text{cal}=1\ \Omega$ and $R_\text{shunt}=0.1\ \Omega$ shunts, rather than their nominal values. At these low resistances, this cannot be obtained with an ordinary two-wire measurement, e.g.\ with a standard multimeter, which applies its test current and senses the resulting voltage through the same pair of cables. The resistance of these cables and the contact resistance where the probes touch the shunt terminals are then included in the measurement, and for a $0.1\ \Omega$ shunt they are typically comparable in magnitude to the resistance being measured, so a two-wire reading is not accurate enough.
+
+Each shunt is instead characterised with the 34470A's built-in four-wire, or Kelvin, resistance function: the instrument sources a known current $I$ through the shunt via one pair of cables, and senses the resulting voltage drop through a second, separate pair of cables, connected as close as possible to the shunt's own terminals. Because the sensing cables carry a negligible current into the multimeter's high-impedance input, the voltage drop across their own resistance and across the contact resistance at their tips is negligible, and the voltage $V$ it measures is essentially the drop across the shunt element alone. The 34470A then computes the shunt's actual resistance directly from Ohm's law,
+\begin{equation}
+    R \;=\; \frac{V}{I},
+    \label{eq:kelvin_r}
+\end{equation}
+getting rid of the cable and contact resistance errors that limit the two-wire measurement. This four-wire measurement is applied individually to every calibration shunt and every circuit shunt used in this thesis, and the resulting actual resistances, rather than the nominal $1\ \Omega$ and $0.1\ \Omega$ values, are the ones used in the scaling of \eqref{eq:shunt_scaling}.
+
+A single reading of \eqref{eq:kelvin_r} is still affected by the noise of the 34470A itself, so rather than relying on one measurement, a long sequence of repeated four-wire measurements is acquired automatically using a MATLAB script for every shunt in the system. Figure \ref{fig:res_prob} illustrates this with one representative example, 2000 consecutive measurements of one such shunt: the top plot gives the measured resistance against acquisition number, together with the sample mean and the $\pm1\sigma$ band, and the bottom plot shows the same 2000 values as a histogram. This scatter is simply instrument noise, which a single reading cannot cancel out. So, for every shunt, the resistance value used in the scaling of \eqref{eq:shunt_scaling} is not any single acquisition, but the mean of a big sequence of measurements.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Plots/Res_Prob.pdf}
+    \caption{2000 consecutive four-wire measurements of one of the shunt resistors, shown as a representative example of how the repeated measurements are distributed.}
+    \label{fig:res_prob}
+\end{figure}

@@ -35,6 +35,7 @@
 \contentsline {section}{\numberline {6.1}Overview}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Data Acquisition System}{33}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Calibration of the Current Sensors}{34}{section.6.4}%
-\contentsline {chapter}{Bibliography}{37}{section*.14}%
-\contentsline {chapter}{Acknowledgments}{41}{section*.16}%
+\contentsline {section}{\numberline {6.4}Current Sensors Calibration}{36}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Shunt Resistor Characterization}{37}{section.6.5}%
+\contentsline {chapter}{Bibliography}{41}{section*.18}%
+\contentsline {chapter}{Acknowledgments}{45}{section*.20}%
