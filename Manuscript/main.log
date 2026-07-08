@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  7 JUL 2026 17:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  8 JUL 2026 12:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4081,7 +4081,7 @@ s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 pdfTeX warning: pdflatex.exe (file ./template/universis.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<template/universis.pdf, id=181, 547.96718pt x 186.70352pt>
+<template/universis.pdf, id=201, 547.96718pt x 186.70352pt>
 File: template/universis.pdf Graphic file (type pdf)
 <use template/universis.pdf>
 Package pdftex.def Info: template/universis.pdf  used on input line 83.
@@ -4108,7 +4108,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 
 pdfTeX warning: pdflatex.exe (file ./template/unipdbg.pdf): PDF inclusion: foun
 d PDF version <1.7>, but at most version <1.5> allowed
-<template/unipdbg.pdf, id=182, 608.18213pt x 574.15504pt>
+<template/unipdbg.pdf, id=202, 608.18213pt x 574.15504pt>
 File: template/unipdbg.pdf Graphic file (type pdf)
 <use template/unipdbg.pdf>
 Package pdftex.def Info: template/unipdbg.pdf  used on input line 83.
@@ -4235,7 +4235,7 @@ Chapter 2.
 
 pdfTeX warning: pdflatex.exe (file ./imm/VR_theory.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<imm/VR_theory.pdf, id=439, 356.79297pt x 275.98108pt>
+<imm/VR_theory.pdf, id=464, 356.79297pt x 275.98108pt>
 File: imm/VR_theory.pdf Graphic file (type pdf)
 <use imm/VR_theory.pdf>
 Package pdftex.def Info: imm/VR_theory.pdf  used on input line 45.
@@ -4243,7 +4243,7 @@ Package pdftex.def Info: imm/VR_theory.pdf  used on input line 45.
 
 
 [12 <./imm/VR_theory.pdf>]
-<imm/Airgap_swing.png, id=504, 1083.29718pt x 544.28343pt>
+<imm/Airgap_swing.png, id=529, 1083.29718pt x 544.28343pt>
 File: imm/Airgap_swing.png Graphic file (type png)
 <use imm/Airgap_swing.png>
 Package pdftex.def Info: imm/Airgap_swing.png  used on input line 55.
@@ -4260,7 +4260,7 @@ Underfull \vbox (badness 1215) has occurred while \output is active []
 [15]
 
 [16]
-<Circuits/Coil_model.pdf, id=567, 166.60744pt x 58.89403pt>
+<Circuits/Coil_model.pdf, id=592, 166.60744pt x 58.89403pt>
 File: Circuits/Coil_model.pdf Graphic file (type pdf)
 <use Circuits/Coil_model.pdf>
 Package pdftex.def Info: Circuits/Coil_model.pdf  used on input line 181.
@@ -4279,7 +4279,7 @@ Overfull \hbox (4.3345pt too wide) in paragraph at lines 226--228
 
 
 [18]
-<Circuits/Matching_condition.pdf, id=630, 120.79428pt x 65.92128pt>
+<Circuits/Matching_condition.pdf, id=655, 120.79428pt x 65.92128pt>
 File: Circuits/Matching_condition.pdf Graphic file (type pdf)
 <use Circuits/Matching_condition.pdf>
 Package pdftex.def Info: Circuits/Matching_condition.pdf  used on input line 25
@@ -4324,7 +4324,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 [26]
-<Circuits/FWR.pdf, id=742, 193.08437pt x 105.20103pt>
+<Circuits/FWR.pdf, id=767, 193.08437pt x 105.20103pt>
 File: Circuits/FWR.pdf Graphic file (type pdf)
 <use Circuits/FWR.pdf>
 Package pdftex.def Info: Circuits/FWR.pdf  used on input line 67.
@@ -4332,7 +4332,7 @@ Package pdftex.def Info: Circuits/FWR.pdf  used on input line 67.
 
 
 [27 <./Circuits/FWR.pdf>]
-<Circuits/NVC.pdf, id=786, 225.20436pt x 105.20103pt>
+<Circuits/NVC.pdf, id=811, 225.20436pt x 105.20103pt>
 File: Circuits/NVC.pdf Graphic file (type pdf)
 <use Circuits/NVC.pdf>
 Package pdftex.def Info: Circuits/NVC.pdf  used on input line 95.
@@ -4351,10 +4351,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Chapter 5.
-)
-No file main.gls.
-No file main.acr.
-
+) (chapters/MeasurementSetup.tex
 
 [31]
 
@@ -4362,56 +4359,80 @@ No file main.acr.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-118.
- (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
-File: t1npxtt.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 118.
+Chapter 6.
 
-Overfull \hbox (10.44496pt too wide) in paragraph at lines 118--118
-\T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T
-1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/zpltlf/b/n/24.88 Experimental Mea-sure-ment
  []
 
 
+Underfull \vbox (badness 1052) has occurred while \output is active []
 
-[33
 
 
-]
+[33]
 
-[34]
+[34])
+No file main.gls.
+No file main.acr.
+
 
 [35]
 
 [36
 
 
-] (docs/acknowledgments.tex)
+]
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
+119.
+ (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
+File: t1npxtt.fd 2000/12/14 v1.0
+)
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 10.95pt on input line 119.
+
+Overfull \hbox (10.44496pt too wide) in paragraph at lines 119--119
+\T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T
+1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
+ []
+
+
 
 [37
 
 
 ]
 
-[38] (main.aux)
+[38]
+
+[39]
+
+[40
+
+
+] (docs/acknowledgments.tex)
+
+[41
+
+
+]
+
+[42] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9804D5F7806DE5C3F783EF6EE1AB01A0;6608.
+(rerunfilecheck)             Checksum: 2F9D5C917F21C9EAD475B3AC18029D96;7704.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81190 strings out of 468130
- 1838659 string characters out of 5430633
- 2916436 words of memory out of 5000000
- 108421 multiletter control sequences out of 15000+600000
+ 81227 strings out of 468130
+ 1839322 string characters out of 5430633
+ 2917099 words of memory out of 5000000
+ 108443 multiletter control sequences out of 15000+600000
  691381 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3964s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4435,9 +4456,9 @@ tmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
 px/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/ne
 wpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/n
 ewpx/zplri.pfb>
-Output written on main.pdf (48 pages, 1113544 bytes).
+Output written on main.pdf (52 pages, 1127129 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1074 PDF objects out of 1200 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 521 words of extra memory for PDF output out of 10000 (max. 10000000)
 

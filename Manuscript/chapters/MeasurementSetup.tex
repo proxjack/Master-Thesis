@@ -1,0 +1,50 @@
+\chapter{Experimental Measurement Setup}
+\label{ch:measurement_setup}
+
+\section{Overview}
+\label{sec:measurement_overview}
+
+The circuit simulations of Chapter \ref{ch:simulations} predict the behaviour of the FWR and NVC stages introduced in Chapter \ref{ch:topologies}, but validating those predictions requires measuring the real prototype. Both the voltage and the current at each phase, and at the output of each rectifying stage, must be acquired at the same time in order to compute the electrical power. This chapter describes the measurement setup built for this purpose, from the acquisition instrument down to the current sensing elements and their calibration.
+
+% TODO: block diagram of the full measurement chain (phase / rectifier output -> shunt -> INA114AU -> Saleae channel), analogous to Circuits/FWR.pdf and Circuits/NVC.pdf.
+%\begin{figure}[H]
+%    \centering
+%    \includegraphics[width=0.8\textwidth]{Circuits/MeasurementChain.pdf}
+%    \caption{Block diagram of the measurement chain, from a phase or rectifier output terminal to one differential channel of the Saleae acquisition device.}
+%    \label{fig:measurement_chain}
+%\end{figure}
+
+\section{Data Acquisition System}
+\label{sec:daq}
+
+All signals are acquired with a Saleae logic analyzer configured for differential analog acquisition, on 16 channels. Every quantity of interest, both voltages taken directly from the circuit (e.g.\ a phase or rectifier output terminal) and the outputs of the current sensors described in Section \ref{sec:current_sensing}, is captured through its own differential channel. Acquiring differentially, rather than referencing every channel to a single common ground, is necessary because several of the measured points, most notably the two terminals of a series shunt resistor, are not referenced to the same node as the rest of the circuit and would otherwise create a short-circuit. Because all channels are sampled by the same instrument, the resulting waveforms are synchronous, which is what makes it possible to pair a phase voltage with its corresponding current and compute instantaneous power.
+
+\section{Current Sensing: Shunt Resistors and Instrumentation Amplifiers}
+\label{sec:current_sensing}
+
+The Saleae itself only measures voltage, so each current of interest must first be converted into a proportional voltage. This is done with a shunt resistor $R_\text{shunt}$ inserted in series with the branch to be measured, so that the current $i(t)$ flowing through it produces a voltage drop
+\begin{equation}
+    v_\text{shunt}(t) \;=\; R_\text{shunt}\, i(t).
+    \label{eq:vshunt}
+\end{equation}
+Given the low phase currents expected from the specifications of Section \ref{sec:mpvreh_specs}, $v_\text{shunt}(t)$ is small and, since the shunt sits in series within the branch rather than at a fixed reference node, it is not measured with respect to a common ground on either side. A sensing circuit is therefore needed to amplify the small differential drop across the shunt to a level suitable for acquisition.
+
+This role is carried by an INA114AU precision instrumentation amplifier connected across each shunt resistor. The INA114AU senses the two shunt terminals differentially, with high input impedance and high common-mode rejection, and delivers an output voltage proportional to the shunt voltage. Its gain $G$ is set by a single external resistor $R_G$ according to
+\begin{equation}
+    G \;=\; 1 + \frac{50\ \text{k}\Omega}{R_G},
+    \label{eq:ina_gain}
+\end{equation}
+so that the amplifier output is
+\begin{equation}
+    v_\text{out}(t) \;=\; G\, v_\text{shunt}(t) \;=\; G\, R_\text{shunt}\, i(t).
+    \label{eq:vout_sensing}
+\end{equation}
+
+The current sensor output voltage is then connected to the corresponding Saleae channel. In principle, the current could then be recovered by simply inverting \eqref{eq:vout_sensing} with the nominal values of $R_\text{shunt}$, $R_G$ and \eqref{eq:ina_gain}; in practice, this is not accurate enough, and an individual calibration, described in Section \ref{sec:calibration}, is required for every sensing channel.
+
+\section{Calibration of the Current Sensors}
+\label{sec:calibration}
+
+Equation \eqref{eq:vout_sensing} gives the nominal, linear relationship between the sensor output and the current it measures, but a real sensing channel does not follow it exactly. Component tolerances and offset voltage make every channel, comprising its own shunt resistor and INA114AU, different from every other nominally identical channel, and the response of the amplifier itself is not perfectly linear over the full input range. A single scale factor is therefore not accurate enough to describe a given channel, instead, each channel is calibrated individually by building a lookup table that maps its acquired output voltage directly to the true current.
+
+The calibration consists of driving the shunt resistor with a set of known reference currents, spanning the range expected in operation and simultaneously acquiring the corresponding sensor output voltage. Each (voltage, current) pair obtained this way becomes one entry of that channel's lookup table. The current corresponding to any voltage acquired later during normal operation is then recovered by interpolating between the nearest entries of this table, rather than by inverting a single linear formula, which is what allows the non-linearity and channel-to-channel variation described above to be compensated for. Every current used later in this thesis to compute an experimental PCE or PEE is recovered from the acquired voltage through this per-channel lookup table.
