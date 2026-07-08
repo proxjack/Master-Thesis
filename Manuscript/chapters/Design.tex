@@ -93,14 +93,14 @@ This switching mechanism only works once the gate-source voltage across the cond
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.65\textwidth]{Circuits/NVC.pdf}
-    \caption{Negative voltage converter used for one of the three two-phase groups of pickup units, with phase terminals $A$, $B$.}
+    \caption{Negative voltage converter used for one of the three two-phase groups of pickup units, with input terminals $A$, $B$.}
     \label{fig:nvc}
 \end{figure}
 
 \section{Application to the Six-Phase System}
 \label{sec:application_six_phase}
 
-Sections \ref{sec:fwr} and \ref{sec:nvc} already present the FWR and the NVC in the multi-phase form adopted in this thesis: the FWR groups the six pickup units of Chapter \ref{ch:system_model} into two three-phase subsystems, taking phases $k=0,2,4$ and $k=1,3,5$ of \eqref{eq:phase_voltage} respectively, while the NVC groups them into three two-phase subsystems, each pairing two phases $180^\circ$ apart and connecting them in anti-series, as derived in \eqref{eq:antiseries} ($k=0,3$; $k=1,4$; $k=2,5$). Because all six phases share the same $R_\text{Coil}$, $L_\text{Coil}$ and peak voltage and differ only by the $60^\circ$ time shift of \eqref{eq:phase_voltage}, every group of a given topology sees identical operating conditions, only shifted in time, so the performance of one group is representative of all the others. This is the grouping carried forward into the simulations of Chapter \ref{ch:simulations}.
+Sections \ref{sec:fwr} and \ref{sec:nvc} already present the FWR and the NVC in the multi-phase form adopted in this thesis. The FWR groups the six pickup units of Chapter \ref{ch:system_model} into two three-phase subsystems, taking phases $k=0,2,4$ and $k=1,3,5$ of \eqref{eq:phase_voltage} respectively. The NVC, instead, groups them into three two-phase subsystems, each pairing two phases $180^\circ$ apart and connecting them in anti-series, as derived in \eqref{eq:antiseries} ($k=0,3$; $k=1,4$; $k=2,5$). Because all six phases share the same $R_\text{Coil}$, $L_\text{Coil}$ and peak voltage and differ only by the $60^\circ$ time shift, every group of a given topology sees identical operating conditions, only shifted in time, so the performance of one group is representative of all the others. This is the grouping carried forward into the simulations of Chapter \ref{ch:simulations}.
 
 
 \chapter{Simulations}
