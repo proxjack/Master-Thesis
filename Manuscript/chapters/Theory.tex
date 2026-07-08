@@ -308,3 +308,25 @@ Condition \eqref{eq:reactance_cancel} shows that an inductive coil requires a lo
     \label{eq:matching_cap}
 \end{equation}
 Once the capacitor $C_m$ is fixed according to \eqref{eq:matching_cap}, it cancels the coil's reactance and therefore restores the resistive matching condition of \eqref{eq:resistive_match} and the maximum power of \eqref{eq:max_power} only at the single electrical frequency $\omega_e$ for which it was chosen.
+
+\section{Multi-Phase System Model}
+\label{sec:system_model}
+
+\subsection{System Overview}
+
+The harvester considered in this thesis is the six-phase multi-phase variable-reluctance energy harvester (MP-VREH) proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024} and already introduced in Section \ref{sec:mpvreh_specs}, whose electrical specifications are summarised in Table \ref{tab:vreh_par}. It consists of six m-shaped pickup units, each electrically equivalent to the series generator derived in Section \ref{sec:Electrical_model}, arranged around a common toothed wheel and integrated into a single bearing hub. As the wheel rotates, each pickup unit produces an independent AC voltage at the electrical frequency $f_c=\omega N_t$ of \eqref{eq:freq_teeth}. The six pickup units are evenly spaced around the wheel, so that their induced voltages are mutually phase-shifted by $60^\circ$, one from the next.
+
+From an electrical standpoint, the harvester can therefore be represented as six identical Th\'{e}venin sources, each with open-circuit voltage $e_k(t)$, series resistance $R_{Coil}$ and series inductance $L_{Coil}$, whose only difference is a fixed phase offset. This six-source representation is the starting point for the power conditioning circuits developed in Chapter \ref{ch:topologies}, which must process six independent AC inputs rather than a single one.
+
+\subsection{Multi-Phase Electrical Model}
+
+Let $\omega_e=2\pi f_c$ be the electrical angular frequency common to all six phases, and let $k=0,1,\dots,5$ index the pickup units in the order in which they are met by a tooth of the wheel. Under the ideal assumption of even angular spacing, the open-circuit EMF of phase $k$ is a sinusoid of amplitude $E_{pk}$ delayed with respect to phase $0$ by $k\cdot 60^\circ$,
+\begin{equation}
+    e_k(t) \;=\; E_{pk}\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right), \qquad k=0,1,\dots,5.
+    \label{eq:phase_voltage}
+\end{equation}
+Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}$ are the same for all six units, the six branches differ only in the phase term of \eqref{eq:phase_voltage}; so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
+
+\subsection{Design Requirements for the Interface Circuit}
+
+The specifications summarised in Table \ref{tab:vreh_par} fix the operating envelope that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this section; over the 100--400\,rpm target speed range, this puts $E_{pk}$ at about $1.8\ \text{V}$ to $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.

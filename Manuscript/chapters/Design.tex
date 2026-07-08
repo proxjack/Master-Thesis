@@ -1,29 +1,3 @@
-\chapter{VREH System Model}
-\label{ch:system_model}
-
-\section{System Overview}
-
-The harvester considered in this thesis is the six-phase multi-phase variable-reluctance energy harvester (MP-VREH) proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024} and already introduced in Section \ref{sec:mpvreh_specs}, whose electrical specifications are summarised in Table \ref{tab:vreh_par}. It consists of six m-shaped pickup units, each electrically equivalent to the series generator derived in Section \ref{sec:Electrical_model}, arranged around a common toothed wheel and integrated into a single bearing hub. As the wheel rotates, each pickup unit produces an independent AC voltage at the electrical frequency $f_c=\omega N_t$ of \eqref{eq:freq_teeth}. The six pickup units are evenly spaced around the wheel, so that their induced voltages are mutually phase-shifted by $60^\circ$, one from the next.
-
-From an electrical standpoint, the harvester can therefore be represented as six identical Th\'{e}venin sources, each with open-circuit voltage $e_k(t)$, series resistance $R_{Coil}$ and series inductance $L_{Coil}$, whose only difference is a fixed phase offset. This six-source representation is the starting point for the power conditioning circuits developed in Chapter \ref{ch:topologies}, which must process six independent AC inputs rather than a single one.
-
-\section{Multi-Phase Electrical Model}
-
-Let $\omega_e=2\pi f_c$ be the electrical angular frequency common to all six phases, and let $k=0,1,\dots,5$ index the pickup units in the order in which they are met by a tooth of the wheel. Under the ideal assumption of even angular spacing, the open-circuit EMF of phase $k$ is a sinusoid of amplitude $E_{pk}$ delayed with respect to phase $0$ by $k\cdot 60^\circ$,
-\begin{equation}
-    e_k(t) \;=\; E_{pk}\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right), \qquad k=0,1,\dots,5.
-    \label{eq:phase_voltage}
-\end{equation}
-Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}$ are the same for all six units, the six branches differ only in the phase term of \eqref{eq:phase_voltage}; so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
-
-\section{Design Requirements for the Interface Circuit}
-
-The specifications summarised in Table \ref{tab:vreh_par} fix the operating envelope that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this chapter; over the 100--400\,rpm target speed range, this puts $E_{pk}$ at about $1.8\ \text{V}$ to $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.
-
-
-
-
-
 \chapter{Proposed Rectifying Circuits}
 \label{ch:topologies}
 
@@ -100,7 +74,7 @@ This switching mechanism only works once the gate-source voltage across the cond
 \section{Application to the Six-Phase System}
 \label{sec:application_six_phase}
 
-Sections \ref{sec:fwr} and \ref{sec:nvc} already present the FWR and the NVC in the multi-phase form adopted in this thesis. The FWR groups the six pickup units of Chapter \ref{ch:system_model} into two three-phase subsystems, taking phases $k=0,2,4$ and $k=1,3,5$ of \eqref{eq:phase_voltage} respectively. The NVC, instead, groups them into three two-phase subsystems, each pairing two phases $180^\circ$ apart and connecting them in anti-series, as derived in \eqref{eq:antiseries} ($k=0,3$; $k=1,4$; $k=2,5$). Because all six phases share the same $R_\text{Coil}$, $L_\text{Coil}$ and peak voltage and differ only by the $60^\circ$ time shift, every group of a given topology sees identical operating conditions, only shifted in time, so the performance of one group is representative of all the others. This is the grouping carried forward into the simulations of Chapter \ref{ch:simulations}.
+Sections \ref{sec:fwr} and \ref{sec:nvc} already present the FWR and the NVC in the multi-phase form adopted in this thesis. The FWR groups the six pickup units of Section \ref{sec:system_model} into two three-phase subsystems, taking phases $k=0,2,4$ and $k=1,3,5$ of \eqref{eq:phase_voltage} respectively. The NVC, instead, groups them into three two-phase subsystems, each pairing two phases $180^\circ$ apart and connecting them in anti-series, as derived in \eqref{eq:antiseries} ($k=0,3$; $k=1,4$; $k=2,5$). Because all six phases share the same $R_\text{Coil}$, $L_\text{Coil}$ and peak voltage and differ only by the $60^\circ$ time shift, every group of a given topology sees identical operating conditions, only shifted in time, so the performance of one group is representative of all the others. This is the grouping carried forward into the simulations of Chapter \ref{ch:simulations}.
 
 
 \chapter{Simulations}

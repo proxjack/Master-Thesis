@@ -20,22 +20,22 @@
 \contentsline {subsection}{\numberline {2.1.f}Power delivered to the load}{19}{subsection.2.1.6}%
 \contentsline {subsection}{\numberline {2.1.g}The complex conjugate matching condition}{20}{subsection.2.1.7}%
 \contentsline {subsection}{\numberline {2.1.h}Realizing the reactive compensation}{21}{subsection.2.1.8}%
-\contentsline {chapter}{\numberline {3}VREH System Model}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}System Overview}{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Multi-Phase Electrical Model}{23}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Design Requirements for the Interface Circuit}{24}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Proposed Rectifying Circuits}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Overview}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Full-Wave Rectifier (FWR)}{26}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.a}Star or Delta Connection of the Three-Phase Group}{26}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Application to the Six-Phase System}{29}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Simulations}{31}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{33}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview}{33}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Data Acquisition System}{33}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{34}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Current Sensors Calibration}{36}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Shunt Resistor Characterization}{37}{section.6.5}%
-\contentsline {chapter}{Bibliography}{41}{section*.18}%
-\contentsline {chapter}{Acknowledgments}{45}{section*.20}%
+\contentsline {section}{\numberline {2.2}Multi-Phase System Model}{21}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.a}System Overview}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.b}Multi-Phase Electrical Model}{22}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.c}Design Requirements for the Interface Circuit}{22}{subsection.2.2.3}%
+\contentsline {chapter}{\numberline {3}Proposed Rectifying Circuits}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Overview}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Full-Wave Rectifier (FWR)}{24}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.a}Star or Delta Connection of the Three-Phase Group}{24}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Negative Voltage Converter (NVC)}{25}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Application to the Six-Phase System}{27}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Simulations}{29}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Experimental Measurement Setup}{31}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{31}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Data Acquisition System}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Current Sensors Calibration}{34}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Shunt Resistor Characterization}{35}{section.5.5}%
+\contentsline {chapter}{Bibliography}{39}{section*.18}%
+\contentsline {chapter}{Acknowledgments}{43}{section*.20}%
