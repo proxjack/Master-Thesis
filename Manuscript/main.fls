@@ -1,6 +1,6 @@
-PWD C:\UNIPD\Magistrale\Master Thesis\Manuscript
+PWD c:\UNIPD\Magistrale\Master Thesis\Manuscript
 INPUT C:\Users\jacop\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\UNIPD\Magistrale\Master Thesis\Manuscript\main.tex
 OUTPUT main.log
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
@@ -931,6 +931,35 @@ INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
 INPUT .\Circuits\NVC.pdf
+INPUT .\chapters\Simulations.tex
+INPUT .\chapters\Simulations.tex
+INPUT chapters\Simulations.tex
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT .\Plots\OCV_100_halfTourn.pdf
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\OCV_100_focus.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT .\Plots\Voltage_comp.pdf
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT .\chapters\MeasurementSetup.tex
 INPUT .\chapters\MeasurementSetup.tex
 INPUT chapters\MeasurementSetup.tex
@@ -978,6 +1007,8 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi6.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi7.pfb
@@ -986,12 +1017,16 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr9.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb

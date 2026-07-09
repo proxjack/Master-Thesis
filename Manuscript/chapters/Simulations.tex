@@ -1,0 +1,110 @@
+\chapter{Simulations}
+\label{ch:simulations}
+
+\section{Overview}
+\label{sec:sim_overview}
+
+This chapter presents the Simulink simulations used to evaluate the FWR and NVC topologies of Chapter \ref{ch:topologies}, following the star/delta and anti-series groupings introduced in Sections \ref{sec:fwr} and \ref{sec:nvc}. Before going through each configuration individually, this section describes how the simulations are run and, in particular, how the phase sources and the load are parametrised so that the simulated circuit matches the real prototype as closely as possible.
+
+The real quantities used for this purpose, the phase peak voltages and the current-sensing series resistance described below, come from preliminary measurements taken specifically to support these simulations, not from the full experimental characterisation of the prototype. The complete measurement setup and the actual validation measurements are presented later, in Chapter \ref{ch:measurement_setup}.
+
+The phase model of \eqref{eq:phase_voltage} assumes an ideal sinusoidal EMF of amplitude $E_{pk}$ for every phase, but the voltage actually measured on the prototype is not a perfect sinusoid. Driving the simulation directly with the peak voltage of the real waveform would therefore not reproduce the same power as the real system, since a non-sinusoidal waveform and an ideal sinusoid sharing the same peak value do not, in general, have the same RMS value. To correct for this, the peak voltage of each of the six phases was measured directly on the prototype at seven rotational speeds spanning the target range of Section \ref{sec:mpvreh_specs}, $100,150,200,250,300,350,400\ \text{rpm}$, giving a $6\times7$ table of real peak voltages $V_\text{pk,real}$, one per phase and speed. Separately, the ratio between the peak and the RMS value of the measured waveforms was found to be a crest factor $C\approx1.51$, close to but slightly above the value $\sqrt{2}\approx1.414$ that an ideal sinusoid would give, reflecting the fact that the real EMF is not perfectly sinusoidal.
+
+Figures \ref{fig:ocv_half} and \ref{fig:ocv_focus} show, as a representative example, the open-circuit voltage measured on all six phases at $100\ \text{rpm}$. Figure \ref{fig:ocv_half} covers half a revolution of the harvester and shows the general shape of the measured waveform, visibly different from the ideal sinusoid of \eqref{eq:phase_voltage}; Figure \ref{fig:ocv_focus} zooms in on a short time window to make the $60^\circ$ phase shift between consecutive phases, following \eqref{eq:phase_voltage}, clearly visible. The peak-to-peak voltage is not identical across the six phases: this is not a measurement artefact, but a consequence of manufacturing tolerances between the six nominally identical pickup units of the prototype, which is also why each phase is treated individually in Table \ref{tab:sim_voltage} rather than assumed identical.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Plots/OCV_100_halfTourn.pdf}
+    \caption{Open-circuit voltage measured on all six phases over half a revolution of the harvester at $100\ \text{rpm}$.}
+    \label{fig:ocv_half}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Plots/OCV_100_focus.pdf}
+    \caption{Detail of the same measurement, showing the $60^\circ$ phase shift between the six phase voltages.}
+    \label{fig:ocv_focus}
+\end{figure}
+
+Each phase is still represented in the Simulink model as an ideal sinusoidal source, consistently with \eqref{eq:phase_voltage}, but rather than using $V_\text{pk,real}$ directly as its amplitude, every tabulated value is rescaled by $\sqrt{2}/C$,
+\begin{equation}
+    V_s \;=\; V_\text{pk,real}\cdot\frac{\sqrt{2}}{C},
+    \label{eq:sim_voltage_scaling}
+\end{equation}
+for every phase and every simulated speed. Since $C$ is, by definition, the ratio of the real peak to the real RMS value, \eqref{eq:sim_voltage_scaling} is equivalent to $V_s=\sqrt{2}\,V_\text{rms,real}$: the peak of the ideal sinusoid whose RMS value, and therefore whose power, equals that of the real measured phase voltage. This follows the same reasoning as the individual sensor calibration of Section \ref{sec:calibration}: rather than driving the simulation with the ideal, purely theoretical waveform, each source is corrected from real measurements.
+
+Table \ref{tab:sim_voltage} lists the resulting value of $V_s$ used for each of the six coils at each of the seven simulated speeds.
+
+\begin{table}[htbp]
+    \centering
+
+    \begin{tabular}{cccccccc}
+        \toprule
+        & \multicolumn{7}{c}{Rotational speed (rpm)} \\
+        \cmidrule(lr){2-8}
+        Coil & 100 & 150 & 200 & 250 & 300 & 350 & 400 \\
+        \midrule
+        0 & 1.055 & 1.480 & 1.913 & 2.326 & 2.744 & 3.179 & 3.601 \\
+        1 & 1.041 & 1.458 & 1.862 & 2.255 & 2.652 & 3.036 & 3.344 \\
+        2 & 0.964 & 1.352 & 1.722 & 2.092 & 2.464 & 2.847 & 3.239 \\
+        3 & 1.052 & 1.463 & 1.872 & 2.288 & 2.712 & 3.128 & 3.542 \\
+        4 & 1.020 & 1.418 & 1.815 & 2.230 & 2.627 & 3.030 & 3.349 \\
+        5 & 0.997 & 1.393 & 1.803 & 2.197 & 2.592 & 3.006 & 3.408 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Equivalent sinusoidal peak voltage $V_s$ (V) used for each of the six coils in the Simulink simulations, computed from \eqref{eq:sim_voltage_scaling}.}
+    \label{tab:sim_voltage}
+\end{table}
+
+Figure \ref{fig:voltage_comp} illustrates this correction for phase 0 (coil 0) across the whole target speed range, comparing three quantities: the peak voltage predicted by the finite-element (COMSOL) model underlying the reference parameters of Table \ref{tab:vreh_par}, the raw measured peak voltage $V_\text{pk,real}$ used directly as if the phase were an ideal sinusoid, and the crest-factor-corrected equivalent sinusoidal voltage $V_s$ of \eqref{eq:sim_voltage_scaling}. The raw measurement starts well below the FEM prediction at the low-speed end of the range and ends above it at the high-speed end, crossing it partway through; the crest-factor correction leaves the low-speed end essentially unchanged but brings the curve into closer agreement with the FEM prediction at the high-speed end, where the uncorrected value overestimates it the most.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Plots/Voltage_comp.pdf}
+    \caption{Peak voltage of phase 0 across the target speed range: the COMSOL finite-element prediction, the raw measured value used directly as an idealised sinusoid, and the same value corrected by the crest factor of \eqref{eq:sim_voltage_scaling}.}
+    \label{fig:voltage_comp}
+\end{figure}
+
+The simulated circuit also accounts for the current-sensing chain used in the experimental setup of Chapter \ref{ch:measurement_setup}. The shunt resistor, the INA114AU sensing board and the connecting cables together introduce a series resistance that is not part of the idealised topologies of Chapter \ref{ch:topologies}; measured directly, this resistance is approximately $1.5\ \Omega$. Since this value is not negligible compared to the coil resistance $R_\text{Coil}$ of Table \ref{tab:vreh_par}, it is included in the Simulink model as an additional series resistance in the same branch as each coil and in the branch feeding the load, so that the simulated circuit is loaded in the same way as the real prototype during the measurements of Chapter \ref{ch:measurement_setup}.
+
+\section{Full-Wave Rectifier (FWR)}
+\label{sec:sim_fwr}
+
+\subsection{Star Connection}
+\label{sec:sim_fwr_star}
+
+\subsubsection{First Bridge (FWR1, $k=0,2,4$)}
+\label{sec:sim_fwr1_star}
+
+\subsubsection{Second Bridge (FWR2, $k=1,3,5$)}
+\label{sec:sim_fwr2_star}
+
+\subsubsection{Both Bridges}
+\label{sec:sim_fwr_star_both}
+
+\subsection{Delta Connection}
+\label{sec:sim_fwr_delta}
+
+\subsubsection{First Bridge (FWR1, $k=0,2,4$)}
+\label{sec:sim_fwr1_delta}
+
+\subsubsection{Second Bridge (FWR2, $k=1,3,5$)}
+\label{sec:sim_fwr2_delta}
+
+\subsubsection{Both Bridges}
+\label{sec:sim_fwr_delta_both}
+
+\section{Negative Voltage Converter (NVC)}
+\label{sec:sim_nvc}
+
+\subsection{First Bridge (NVC1, $k=0,3$)}
+\label{sec:sim_nvc1}
+
+\subsection{Second Bridge (NVC2, $k=1,4$)}
+\label{sec:sim_nvc2}
+
+\subsection{Third Bridge (NVC3, $k=2,5$)}
+\label{sec:sim_nvc3}
+
+\subsection{All Three Bridges}
+\label{sec:sim_nvc_all}
