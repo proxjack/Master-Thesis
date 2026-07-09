@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  9 JUL 2026 16:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  9 JUL 2026 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4315,7 +4315,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 
 [24]
-<Circuits/FWR.pdf, id=844, 193.08437pt x 105.20103pt>
+<Circuits/FWR.pdf, id=845, 193.08437pt x 105.20103pt>
 File: Circuits/FWR.pdf Graphic file (type pdf)
 <use Circuits/FWR.pdf>
 Package pdftex.def Info: Circuits/FWR.pdf  used on input line 41.
@@ -4323,7 +4323,7 @@ Package pdftex.def Info: Circuits/FWR.pdf  used on input line 41.
 
 
 [25 <./Circuits/FWR.pdf>]
-<Circuits/NVC.pdf, id=887, 225.20436pt x 105.20103pt>
+<Circuits/NVC.pdf, id=888, 225.20436pt x 105.20103pt>
 File: Circuits/NVC.pdf Graphic file (type pdf)
 <use Circuits/NVC.pdf>
 Package pdftex.def Info: Circuits/NVC.pdf  used on input line 69.
@@ -4345,19 +4345,19 @@ Chapter 4.
 
 
 [29]
-<Plots/OCV_100_halfTourn.pdf, id=956, 1226.5825pt x 791.95876pt>
+<Plots/OCV_100_halfTourn.pdf, id=954, 1226.5825pt x 791.95876pt>
 File: Plots/OCV_100_halfTourn.pdf Graphic file (type pdf)
 <use Plots/OCV_100_halfTourn.pdf>
-Package pdftex.def Info: Plots/OCV_100_halfTourn.pdf  used on input line 17.
+Package pdftex.def Info: Plots/OCV_100_halfTourn.pdf  used on input line 22.
 (pdftex.def)             Requested size: 325.57887pt x 210.20644pt.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 18.
+(Font)              scaled to size 7.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 18.
-<Plots/OCV_100_focus.pdf, id=957, 1254.6875pt x 791.95876pt>
+(Font)              scaled to size 5.0pt on input line 23.
+<Plots/OCV_100_focus.pdf, id=955, 1254.6875pt x 791.95876pt>
 File: Plots/OCV_100_focus.pdf Graphic file (type pdf)
 <use Plots/OCV_100_focus.pdf>
-Package pdftex.def Info: Plots/OCV_100_focus.pdf  used on input line 24.
+Package pdftex.def Info: Plots/OCV_100_focus.pdf  used on input line 29.
 (pdftex.def)             Requested size: 325.57887pt x 205.50563pt.
 
 
@@ -4368,59 +4368,45 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [30 <./Plots/OCV_100_halfTourn.pdf>]
 
 [31 <./Plots/OCV_100_focus.pdf>]
-<Plots/Voltage_comp.pdf, id=1033, 335.2525pt x 276.03125pt>
+<Plots/Voltage_comp.pdf, id=1030, 335.2525pt x 276.03125pt>
 File: Plots/Voltage_comp.pdf Graphic file (type pdf)
 <use Plots/Voltage_comp.pdf>
-Package pdftex.def Info: Plots/Voltage_comp.pdf  used on input line 63.
+Package pdftex.def Info: Plots/Voltage_comp.pdf  used on input line 68.
 (pdftex.def)             Requested size: 287.2734pt x 236.52722pt.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 76.
-
+[32 <./Plots/Voltage_comp.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 76.
+(hyperref)                removing `math shift' on input line 82.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 82.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 79.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 88.
+(hyperref)                removing `math shift' on input line 85.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 88.
+(hyperref)                removing `math shift' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 91.
+(hyperref)                removing `math shift' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 91.
+(hyperref)                removing `math shift' on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 100.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 103.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 103.
+(hyperref)                removing `math shift' on input line 97.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -4429,13 +4415,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 106.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 112.
 
 ) (chapters/MeasurementSetup.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[32 <./Plots/Voltage_comp.pdf>]
 
 [33]
 
@@ -4449,7 +4446,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 []\T1/zpltlf/b/n/24.88 Experimental Mea-sure-ment
  []
 
-<imm/Saleae.jpg, id=1085, 1204.5pt x 1204.5pt>
+<imm/Saleae.jpg, id=1078, 1204.5pt x 1204.5pt>
 File: imm/Saleae.jpg Graphic file (type jpg)
 <use imm/Saleae.jpg>
 Package pdftex.def Info: imm/Saleae.jpg  used on input line 26.
@@ -4459,7 +4456,7 @@ Package pdftex.def Info: imm/Saleae.jpg  used on input line 26.
 [35]
 
 [36 <./imm/Saleae.jpg>]
-<imm/Curr_sens.jpg, id=1100, 579.1236pt x 579.1236pt>
+<imm/Curr_sens.jpg, id=1093, 579.1236pt x 579.1236pt>
 File: imm/Curr_sens.jpg Graphic file (type jpg)
 <use imm/Curr_sens.jpg>
 Package pdftex.def Info: imm/Curr_sens.jpg  used on input line 47.
@@ -4473,7 +4470,7 @@ ly, with high in-put impedance
 
 
 [37 <./imm/Curr_sens.jpg>]
-<Plots/Curr_sens.pdf, id=1113, 373.395pt x 307.1475pt>
+<Plots/Curr_sens.pdf, id=1106, 373.395pt x 307.1475pt>
 File: Plots/Curr_sens.pdf Graphic file (type pdf)
 <use Plots/Curr_sens.pdf>
 Package pdftex.def Info: Plots/Curr_sens.pdf  used on input line 74.
@@ -4483,7 +4480,7 @@ Package pdftex.def Info: Plots/Curr_sens.pdf  used on input line 74.
 [38 <./Plots/Curr_sens.pdf>]
 
 [39]
-<Plots/Res_Prob.pdf, id=1159, 383.4325pt x 295.1025pt>
+<Plots/Res_Prob.pdf, id=1152, 383.4325pt x 295.1025pt>
 File: Plots/Res_Prob.pdf Graphic file (type pdf)
 <use Plots/Res_Prob.pdf>
 Package pdftex.def Info: Plots/Res_Prob.pdf  used on input line 107.
@@ -4492,13 +4489,20 @@ Package pdftex.def Info: Plots/Res_Prob.pdf  used on input line 107.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (main.gls) (main.acr
+)
 
 [40]
 
-[41 <./Plots/Res_Prob.pdf>])
+[41 <./Plots/Res_Prob.pdf>]
 
-[42]
+[42
+
+
+] (main.gls) (main.acr
+
+[43])
+
+[44]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
 120.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
@@ -4514,28 +4518,28 @@ Overfull \hbox (10.44496pt too wide) in paragraph at lines 120--120
 
 
 
-[43
+[45
 
 
 
 
 ]
 
-[44]
+[46]
 
-[45]
+[47]
 
-[46
+[48
 
 
 ] (docs/acknowledgments.tex)
 
-[47
+[49
 
 
 ]
 
-[48] (main.aux)
+[50] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -4547,10 +4551,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 81912 strings out of 468130
- 1849861 string characters out of 5430633
- 2925430 words of memory out of 5000000
- 109065 multiletter control sequences out of 15000+600000
+ 81916 strings out of 468130
+ 1849899 string characters out of 5430633
+ 2925439 words of memory out of 5000000
+ 109066 multiletter control sequences out of 15000+600000
  698984 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -4577,9 +4581,9 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (58 pages, 3708503 bytes).
+Output written on main.pdf (60 pages, 3710247 bytes).
 PDF statistics:
- 1476 PDF objects out of 1728 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 1477 PDF objects out of 1728 (max. 8388607)
+ 222 named destinations out of 1000 (max. 500000)
  692 words of extra memory for PDF output out of 10000 (max. 10000000)
 

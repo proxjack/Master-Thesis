@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1783606909.18323 "main.bcf" "main.bbl" "main" 1783607413.62231 0
-  "main.bcf" 1783607409.97375 114407 e0b7d3c261310dbeadf9adc9ce054e14 "pdflatex"
+["biber main"] 1783611085.41832 "main.bcf" "main.bbl" "main" 1783613583.90653 0
+  "main.bcf" 1783613581.61488 114407 e0b7d3c261310dbeadf9adc9ce054e14 "pdflatex"
   "refs.bib" 1783514657.46404 37017 0681fe504e1545b99c32db5e7e4047ca ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1783607399.10695 "main.tex" "main.pdf" "main" 1783607413.62393 0
+["pdflatex"] 1783613575.06469 "main.tex" "main.pdf" "main" 1783613583.90834 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778596719.09714 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -452,11 +452,11 @@
   "Plots/OCV_100_halfTourn.pdf" 1783605348.72185 608787 c461d4c842e9bcdc1c7559afa7bd0b79 ""
   "Plots/Res_Prob.pdf" 1783517019.06401 43364 10df4a2a4fa25eb168f033e4a46c01a6 ""
   "Plots/Voltage_comp.pdf" 1783604388.43994 12711 21ab10e835284c06986480017f91d160 ""
-  "chapters/Design.tex" 1783591296.06365 11708 7fa5f410ff258da519e282f858bc78a8 ""
+  "chapters/Design.tex" 1783609018.66863 11711 d318eb222bc0fd99c21b8e51c757bba8 ""
   "chapters/Introduction.tex" 1783433600.54805 27110 ca6639734e1bc05a7bfbcf48712ef1bf ""
   "chapters/MeasurementSetup.tex" 1783522192.70236 12668 38371ef2f63c537c59699fcb067bad96 ""
-  "chapters/Simulations.tex" 1783606950.5958 8392 90bd1f00e78cc09426d255ca96473244 ""
-  "chapters/Theory.tex" 1783522615.89781 31812 a04d8717e3df1afc6e26abfee3f6c00d ""
+  "chapters/Simulations.tex" 1783613425.96303 9054 8ac9be984da01e199bf2f0d146d699a3 ""
+  "chapters/Theory.tex" 1783608091.2325 31914 e2ee0f2a37c950302ade0d88719e58f0 ""
   "chapters/abstract.tex" 1783333837.09121 2880 2ae0f580bab45e9b116b6b1aaac3ddc1 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
   "custom-symbols.tex" 1773833088.09263 330 f652a192ed11175e0617d51cd50916a8 ""
@@ -467,18 +467,18 @@
   "imm/Saleae.jpg" 1783521794.10575 140282 958aff94474c3b35ee8eb66f45ecddb6 ""
   "imm/VR_theory.pdf" 1779791790.16379 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "main.acr" 1783607179.05984 2625 91a7de28ed081325c5ec0013a3897973 ""
-  "main.aux" 1783607409.91463 31827 c29eac3b9887a5885522ba6a16dbb618 "pdflatex"
-  "main.bbl" 1783606912.49048 59478 aa88bbff85278535dface0137a080301 "biber main"
+  "main.aux" 1783613581.56624 31815 6845d71b32cf6bbfafaacfdec2379313 "pdflatex"
+  "main.bbl" 1783611088.68025 59478 aa88bbff85278535dface0137a080301 "biber main"
   "main.gls" 1783607179.11578 6 9f404503043ec80c08484be9f659189e ""
-  "main.out" 1783607409.94871 10777 e0c5f710bbdcd9de145a463d4d291cee "pdflatex"
-  "main.run.xml" 1783607409.97995 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1783613581.59597 10777 e0c5f710bbdcd9de145a463d4d291cee "pdflatex"
+  "main.run.xml" 1783613581.61937 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1783591307.00384 3811 cf66c2e840e263d454543693d90624ac ""
-  "main.toc" 1783607409.97995 4926 01f44d6fb06832043612652a0c770f2d "pdflatex"
-  "pdfa.xmpi" 1783607400.88916 5042 7a03e30864a23623ac8ccddd0446a00a "pdflatex"
+  "main.toc" 1783613581.61937 4926 1c795cd9fdc9ee792ceaed93a9b8533a "pdflatex"
+  "pdfa.xmpi" 1783613576.37269 5042 053a67660d892b267055a92eae66c7f3 "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""
-  "unipd-thesis-modern.cls" 1783333560.21588 14989 a2ec22789fbb6e8dc2364b5f60ff3539 ""
+  "unipd-thesis-modern.cls" 1783612414.73842 14988 47168a79f9857c094aaf85c63219a8f8 ""
   (generated)
   "main.acn"
   "main.aux"

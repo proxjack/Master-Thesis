@@ -592,7 +592,7 @@
 
 % -- BACKMATTER --
 \renewcommand{\backmatter}{
-    %\cleardoublepage
+    \cleardoublepage
 
     % glossary
     \begingroup     

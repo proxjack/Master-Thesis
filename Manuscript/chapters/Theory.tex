@@ -320,12 +320,12 @@ From an electrical standpoint, the harvester can therefore be represented as six
 
 \subsection{Multi-Phase Electrical Model}
 
-Let $\omega_e=2\pi f_c$ be the electrical angular frequency common to all six phases, and let $k=0,1,\dots,5$ index the pickup units in the order in which they are met by a tooth of the wheel. Under the ideal assumption of even angular spacing, the open-circuit EMF of phase $k$ is a sinusoid of amplitude $E_{pk}$ delayed with respect to phase $0$ by $k\cdot 60^\circ$,
+Let $\omega_e=2\pi f_c$ be the electrical angular frequency common to all six phases, and let $k=0,1,\dots,5$ index the pickup units in the order in which they are met by a tooth of the wheel. Under the ideal assumption of even angular spacing, the open-circuit EMF of phase $k$ is a sinusoid of amplitude $E_{pk}(\omega_e)$, itself a function of $\omega_e$ as in \eqref{eq:vpp}, delayed with respect to phase $0$ by $k\cdot 60^\circ$,
 \begin{equation}
-    e_k(t) \;=\; E_{pk}\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right), \qquad k=0,1,\dots,5.
+    e_k(t) \;=\; E_{pk}(\omega_e)\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right), \qquad k=0,1,\dots,5.
     \label{eq:phase_voltage}
 \end{equation}
-Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}$ are the same for all six units, the six branches differ only in the phase term of \eqref{eq:phase_voltage}; so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
+Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}(\omega_e)$ are the same for all six units at a given speed, the six branches differ only in the phase term of \eqref{eq:phase_voltage}; so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
 
 \subsection{Design Requirements for the Interface Circuit}
 
