@@ -1,6 +1,6 @@
-PWD c:\UNIPD\Magistrale\Master Thesis\Manuscript
+PWD C:\UNIPD\Magistrale\Master Thesis\Manuscript
 INPUT C:\Users\jacop\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\UNIPD\Magistrale\Master Thesis\Manuscript\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
@@ -989,6 +989,12 @@ INPUT .\Plots\Res_Prob.pdf
 INPUT .\Plots\Res_Prob.pdf
 INPUT .\Plots\Res_Prob.pdf
 INPUT .\Plots\Res_Prob.pdf
+INPUT .\main.gls
+INPUT .\main.gls
+INPUT main.gls
+INPUT .\main.acr
+INPUT .\main.acr
+INPUT main.acr
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
