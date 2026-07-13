@@ -371,15 +371,26 @@
 
     % supervisor
     \vspace{2.2cm}
-    \begin{minipage}[t]{7cm}
+    \begin{minipage}[t]{14cm}
         \textsc{Supervisor}\\
         {\setlength\parindent{1mm}
         \indent\large{\textbf{\@advisor}}\\
         \indent\small\textbf{\@advisorUniversity}
         }
-    \end{minipage}%
-    \begin{minipage}[t]{7cm}
-      % insert other advisor, if not empty
+    \end{minipage}
+
+      % insert co-advisor and other advisor side by side, if not empty
+      \vspace{1cm}
+      \begin{minipage}[t]{7cm}
+      \ifx\@coadvisor\empty \else
+        \textsc{Co-supervisor}\\
+        {\setlength\parindent{1mm}
+        \indent\large{\textbf{\@coadvisor}}\\
+        \indent\small\textbf{\@coadvisorUniversity}
+        }
+      \fi
+      \end{minipage}%
+      \begin{minipage}[t]{7cm}
       \ifx\@otheradvisor\empty \else
         \textsc{\@otheradvisorDenomination}\\
         {\setlength\parindent{1mm}
@@ -387,17 +398,7 @@
         \indent\small\textbf{\@otheradvisorUniversity}
         }
       \fi
-    \end{minipage}
-      
-      % insert co-advisor, if not empty
-      \ifx\@coadvisor\empty \else
-        \vspace{1cm}
-        \textsc{Co-supervisor}\\
-        {\setlength\parindent{1mm}
-        \indent\large{\textbf{\@coadvisor}}\\
-        \indent\small\textbf{\@coadvisorUniversity}
-        }
-      \fi
+      \end{minipage}
     \end{flushleft}
 
     \vspace*{\fill}
@@ -405,7 +406,7 @@
     \normalsize\textsc{Academic Year \@academicYear}
     \end{flushleft}
     \vspace{5mm}
-    
+
     % restore defaults
     \restoregeometry
     %\onehalfspacing
@@ -479,15 +480,26 @@
         { ID \@studentId}\\
     % supervisor
     \vspace{1.8cm}
-    \begin{minipage}[t]{8cm}
+    \begin{minipage}[t]{15cm}
         \textsc{Supervisor}\\
         {\setlength\parindent{1mm}
         \indent\Large{\textbf{\@advisor}}\\[-4mm]
         \large{\indent{\@advisorUniversity}}
         }
-    \end{minipage}%
-    \begin{minipage}[t]{7cm}
-      % insert other advisor, if not empty
+    \end{minipage}
+
+      % insert co-advisor and other advisor side by side, if not empty
+      \vspace{1cm}
+      \begin{minipage}[t]{8cm}
+      \ifx\@coadvisor\empty \else
+        \textsc{Co-supervisor}\\
+        {\setlength\parindent{1mm}
+        \indent\Large{\textbf{\@coadvisor}}\\[-4mm]
+        \large{\indent{\@coadvisorUniversity}}
+        }
+      \fi
+      \end{minipage}%
+      \begin{minipage}[t]{7cm}
       \ifx\@otheradvisor\empty \else
         \textsc{\@otheradvisorDenomination}\\
         {\setlength\parindent{1mm}
@@ -495,17 +507,7 @@
         \large{\indent{\@otheradvisorUniversity}}
         }
       \fi
-    \end{minipage}
-      
-      % insert co-advisor, if not empty
-      \ifx\@coadvisor\empty \else
-        \vspace{1cm}
-        \textsc{Co-supervisor}\\
-        {\setlength\parindent{1mm}
-        \indent\Large{\textbf{\@coadvisor}}\\[-4mm]
-        \large{\indent{\@coadvisorUniversity}}
-        }
-      \fi
+      \end{minipage}
     \end{flushleft}
 
     \vspace*{\fill}
