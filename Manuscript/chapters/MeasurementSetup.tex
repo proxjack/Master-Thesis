@@ -16,12 +16,32 @@ Two precision instruments are used throughout this chapter wherever a known refe
 %    \label{fig:measurement_chain}
 %\end{figure}
 
+\section{Components Used}
+\label{sec:components_used}
+
+Both the FWR and NVC stages of Chapter \ref{ch:topologies} are built on prototype boards using the components listed in Table \ref{tab:board_components}. The same Schottky diode part is used for every diode across both bridges, whether as the FWR's own rectifying diodes or as the parallel diodes of the NVC's cross-coupled bridge, and this bridge itself is built from two N-MOSFETs and two P-MOSFETs. As discussed in Section \ref{sec:nvc}, the critical voltage $V_\text{off}\approx1.2\ \text{V}$ below which the NVC bridge falls back to diode conduction is set by the largest threshold voltage among its four MOSFETs; Table \ref{tab:board_components} shows that this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        Component & Specification & Characteristics \\
+        \midrule
+        $D_1$--$D_{10}$ & Schottky diode (CTS05S40-L3F) & $V_F=0.31\ \text{V}$ @ $I_F=0.1\ \text{A}$ \\
+        $N_1$, $N_2$ & N-MOSFET (BSS138PW-115) & $R_\text{DSon}=1\ \Omega$, $V_\text{GS(th)}=1.2\ \text{V}$, $V_\text{SD}=0.75\ \text{V}$ \\
+        $P_1$, $P_2$ & P-MOSFET (PMN27XPE-115) & $R_\text{DSon}=27\ \text{m}\Omega$, $V_\text{GS(th)}=-1.0\ \text{V}$, $V_\text{SD}=-0.7\ \text{V}$ \\
+        \bottomrule
+    \end{tabular}
+    \caption{Key components used on the FWR and NVC prototype boards.}
+    \label{tab:board_components}
+\end{table}
+
 \section{Data Acquisition System}
 \label{sec:daq}
 
 All signals are acquired with a Saleae logic analyzer, shown in Figure \ref{fig:saleae}, configured for differential analog acquisition, on 16 channels.
 
-\begin{figure}[H]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{imm/Saleae.jpg}
     \caption{The Saleae logic analyzer used for data acquisition.}
@@ -42,7 +62,7 @@ Given the low phase currents expected from the specifications of Section \ref{se
 
 This role is carried by an INA114AU precision instrumentation amplifier connected across each shunt resistor. Figure \ref{fig:curr_sens_photo} shows one of the six current-sensing boards actually used, built around the INA114AU, with its input terminals on the top, its gain-setting trimmer in the middle, and its output connector on the right; the sticker on the board records the actual resistance of its own shunt, measured as described in Section \ref{sec:shunt_characterization}.
 
-\begin{figure}[H]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.55\textwidth]{imm/Curr_sens.jpg}
     \caption{One of the six current-sensing boards used in this thesis, built around the INA114AU instrumentation amplifier.}
