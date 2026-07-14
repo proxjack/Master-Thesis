@@ -34,29 +34,25 @@
 \contentsline {section}{\numberline {4.1}Overview}{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Full-Wave Rectifier (FWR)}{33}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.a}Star Connection}{33}{subsection.4.2.1}%
-\contentsline {subsubsection}{Individual Bridges}{33}{subsubsection*.19}%
-\contentsline {paragraph}{Compensation Capacitor ($C_m$) Sweep}{33}{paragraph*.20}%
-\contentsline {paragraph}{Load Resistance ($R_L$) Sweep}{34}{paragraph*.23}%
-\contentsline {paragraph}{Frequency Sweep}{35}{paragraph*.25}%
-\contentsline {paragraph}{Efficiency}{38}{paragraph*.27}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{33}{subsubsection*.19}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{34}{subsubsection*.22}%
+\contentsline {subsubsection}{Frequency Sweep}{35}{subsubsection*.24}%
+\contentsline {subsubsection}{Efficiency}{38}{subsubsection*.26}%
 \contentsline {subsection}{\numberline {4.2.b}Delta Connection}{40}{subsection.4.2.2}%
-\contentsline {subsubsection}{Individual Bridges}{41}{subsubsection*.31}%
-\contentsline {paragraph}{Compensation Capacitor ($C_m$) Sweep}{41}{paragraph*.32}%
-\contentsline {paragraph}{Load Resistance ($R_L$) Sweep}{41}{paragraph*.35}%
-\contentsline {paragraph}{Frequency Sweep}{41}{paragraph*.37}%
-\contentsline {paragraph}{Efficiency}{42}{paragraph*.39}%
-\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{46}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.a}First Bridge (NVC1, $k=0,3$)}{46}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.b}Second Bridge (NVC2, $k=1,4$)}{46}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.c}Third Bridge (NVC3, $k=2,5$)}{46}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.d}All Three Bridges}{46}{subsection.4.3.4}%
-\contentsline {chapter}{\numberline {5}Experimental Measurement Setup}{47}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview}{47}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Components Used}{47}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Data Acquisition System}{48}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{49}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Current Sensors Calibration}{50}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Shunt Resistor Characterization}{52}{section.5.6}%
-\contentsline {chapter}{Acronyms}{55}{section*.47}%
-\contentsline {chapter}{Bibliography}{57}{section*.49}%
-\contentsline {chapter}{Acknowledgments}{61}{section*.51}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{41}{subsubsection*.30}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{41}{subsubsection*.33}%
+\contentsline {subsubsection}{Frequency Sweep}{41}{subsubsection*.35}%
+\contentsline {subsubsection}{Efficiency}{43}{subsubsection*.37}%
+\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{45}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.a}Compensation Capacitor ($C_m$) Sweep}{45}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.b}All Three Bridges}{46}{subsection.4.3.2}%
+\contentsline {chapter}{\numberline {5}Experimental Measurement Setup}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{49}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Components Used}{49}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Data Acquisition System}{50}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{51}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Current Sensors Calibration}{52}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Shunt Resistor Characterization}{54}{section.5.6}%
+\contentsline {chapter}{Acronyms}{57}{section*.47}%
+\contentsline {chapter}{Bibliography}{59}{section*.49}%
+\contentsline {chapter}{Acknowledgments}{63}{section*.51}%
