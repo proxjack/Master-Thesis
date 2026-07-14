@@ -16,6 +16,18 @@ Two precision instruments are used throughout this chapter wherever a known refe
 %    \label{fig:measurement_chain}
 %\end{figure}
 
+\section{Test Bench}
+\label{sec:test_bench}
+
+The voltages and currents measured throughout this chapter all depend on the harvester's rotation speed, so every measurement must be repeatable at a known, controlled speed. To achieve this, the MP-VREH harvester was mechanically coupled to an induction motor driven by a variable-frequency inverter: the inverter sets the motor's frequency, and so its speed, directly. Figure \ref{fig:setup} shows the resulting test bench, with the induction motor on the left coupled through a shaft coupling to the harvester on the right. This makes it possible to repeat every measurement in this chapter at each rotation speed of interest, across the $100$--$400\ \text{rpm}$ range used throughout Chapter \ref{ch:simulations}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imm/Setup.jpg}
+    \caption{Test bench used for all measurements: the induction motor (left) coupled through a shaft coupling to the MP-VREH harvester (right, white housing); the motor speed, and so the harvester's rotation speed, is set by a variable-frequency inverter.}
+    \label{fig:setup}
+\end{figure}
+
 \section{Data Acquisition System}
 \label{sec:daq}
 
