@@ -120,3 +120,15 @@ A single reading of \eqref{eq:kelvin_r} is still affected by the noise of the 34
     \caption{2000 consecutive four-wire measurements of one of the shunt resistors, shown as a representative example of how the repeated measurements are distributed.}
     \label{fig:res_prob}
 \end{figure}
+
+\section{Load Resistor}
+\label{sec:load}
+
+The load resistance $R_L$ connected to each rectifier output during the measurements of this chapter is set with a custom eight-decade programmable resistor board, shown in Figure \ref{fig:load}. Each of its eight decades, from $\times0.1\ \Omega$ to $\times1\ \text{M}\Omega$, contributes one digit of the total resistance, selected independently with its own jumper; together they span the full range from $0\ \Omega$ to $9\,999\,999\ \Omega$ (about $10\ \text{M}\Omega$) in steps of $0.1\ \Omega$. This lets $R_L$ be set to the exact value required by each measurement, rather than being limited to a fixed set of discrete resistors.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imm/Load.jpg}
+    \caption{The eight-decade programmable resistor board used to set the load resistance $R_L$, with one jumper per decade selecting a digit from 0 to 9.}
+    \label{fig:load}
+\end{figure}

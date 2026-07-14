@@ -56,8 +56,9 @@
 \contentsline {section}{\numberline {6.2}Test Bench}{59}{section.6.2}%
 \contentsline {section}{\numberline {6.3}Data Acquisition System}{60}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{61}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{62}{section.6.5}%
+\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{63}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{64}{section.6.6}%
-\contentsline {chapter}{Acronyms}{67}{section*.56}%
-\contentsline {chapter}{Bibliography}{69}{section*.58}%
-\contentsline {chapter}{Acknowledgments}{73}{section*.60}%
+\contentsline {section}{\numberline {6.7}Load Resistor}{65}{section.6.7}%
+\contentsline {chapter}{Acronyms}{67}{section*.57}%
+\contentsline {chapter}{Bibliography}{69}{section*.59}%
+\contentsline {chapter}{Acknowledgments}{73}{section*.61}%
