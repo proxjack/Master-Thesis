@@ -49,13 +49,14 @@
 \contentsline {chapter}{\numberline {5}Prototype Board Design}{49}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Overview}{49}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Components Used}{49}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Schematic}{50}{section.5.3}%
-\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{57}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview}{57}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Data Acquisition System}{57}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{58}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Current Sensors Calibration}{60}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Shunt Resistor Characterization}{61}{section.6.5}%
-\contentsline {chapter}{Acronyms}{65}{section*.53}%
-\contentsline {chapter}{Bibliography}{67}{section*.55}%
-\contentsline {chapter}{Acknowledgments}{71}{section*.57}%
+\contentsline {section}{\numberline {5.3}Schematic}{49}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Board Assembly}{57}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Data Acquisition System}{59}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{60}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Current Sensors Calibration}{62}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Shunt Resistor Characterization}{63}{section.6.5}%
+\contentsline {chapter}{Acronyms}{67}{section*.55}%
+\contentsline {chapter}{Bibliography}{69}{section*.57}%
+\contentsline {chapter}{Acknowledgments}{73}{section*.59}%

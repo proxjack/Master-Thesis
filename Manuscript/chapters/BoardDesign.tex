@@ -9,11 +9,13 @@ Chapter \ref{ch:topologies} introduced the FWR and NVC rectifier topologies used
 \section{Components Used}
 \label{sec:components_used}
 
-Both the FWR and NVC stages of Chapter \ref{ch:topologies} are built on prototype boards using the components listed in Table \ref{tab:board_components}. The same Schottky diode part is used for every diode across both bridges, whether as the FWR's own rectifying diodes or as the parallel diodes of the NVC's cross-coupled bridge, and this bridge itself is built from two N-MOSFETs and two P-MOSFETs. As discussed in Section \ref{sec:nvc}, the critical voltage $V_\text{off}\approx1.2\ \text{V}$ below which the NVC bridge falls back to diode conduction is set by the largest threshold voltage among its four MOSFETs; Table \ref{tab:board_components} shows that this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
+Table \ref{tab:board_components} lists the key components used to build the FWR and NVC prototype boards of Chapter \ref{ch:topologies}. The same Schottky diode is used both as the FWR's rectifying diodes and as the parallel diodes of the NVC's cross-coupled bridge. The NVC bridge itself also needs two N-MOSFETs and two P-MOSFETs.
+
+The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC bridge switches properly is set by the largest of its four MOSFET threshold voltages. Table \ref{tab:board_components} shows this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
 
 \begin{table}[htbp]
     \centering
-    \begin{tabular}{lll}
+    \begin{tabularx}{\textwidth}{l l X}
         \toprule
         Component & Specification & Characteristics \\
         \midrule
@@ -21,7 +23,7 @@ Both the FWR and NVC stages of Chapter \ref{ch:topologies} are built on prototyp
         $N_1$, $N_2$ & N-MOSFET (BSS138PW-115) & $R_\text{DSon}=1\ \Omega$, $V_\text{GS(th)}=1.2\ \text{V}$, $V_\text{SD}=0.75\ \text{V}$ \\
         $P_1$, $P_2$ & P-MOSFET (PMN27XPE-115) & $R_\text{DSon}=27\ \text{m}\Omega$, $V_\text{GS(th)}=-1.0\ \text{V}$, $V_\text{SD}=-0.7\ \text{V}$ \\
         \bottomrule
-    \end{tabular}
+    \end{tabularx}
     \caption{Key components used on the FWR and NVC prototype boards.}
     \label{tab:board_components}
 \end{table}
@@ -29,54 +31,85 @@ Both the FWR and NVC stages of Chapter \ref{ch:topologies} are built on prototyp
 \section{Schematic}
 \label{sec:board_schematic}
 
-Figures \ref{fig:board_sch_p1}--\ref{fig:board_sch_p6} show the complete schematic of the prototype board, page by page. The board integrates both FWR three-phase groups (FBR1, FBR2) and all three NVC bridges (NVC1--NVC3), together with jumpers that reconfigure each coil between the FWR and NVC paths, the FWR groups between star and delta connection, and the compensation capacitor $C_m$ of each coil, so that every configuration simulated in Chapter \ref{ch:simulations} can be tested on the same board.
+Figures \ref{fig:board_sch_p1}--\ref{fig:board_sch_p6} show the complete schematic of the prototype board, page by page. The board integrates both FWR three-phase groups (labelled FBR1, FBR2 in the schematic) and all three NVC bridges (NVC1--NVC3), together with jumpers that reconfigure each coil between the FWR and NVC paths, the FWR groups between star and delta connection, and the compensation capacitor $C_m$ of each coil, so that every configuration simulated in Chapter \ref{ch:simulations} can be tested on the same board.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[page=1, width=0.95\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
-    \caption{Rectifier bridges: the two FWR three-phase groups (FBR1, FBR2) and the three anti-series NVC bridges (NVC1--NVC3).}
+    \includegraphics[page=1, width=1.085\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \caption{Rectifier bridges: the two FWR three-phase groups (labelled FBR1, FBR2 in the schematic) and the three anti-series NVC bridges (NVC1,NVC2,NVC3).}
     \label{fig:board_sch_p1}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[page=2, width=0.95\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
-    \caption{Common connectors: input connectors for the six coils, current-sensing measurement points, and the jumpers selecting whether each coil feeds the FWR or the NVC bridges.}
+    \includegraphics[page=2, width=1.085\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \caption{Common connectors: input connectors for the six coils, voltage-sensing measurement points, and the jumpers selecting whether each coil feeds the FWR or the NVC bridges.}
     \label{fig:board_sch_p2}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[page=3, width=0.95\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \includegraphics[page=3, width=1.085\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
     \caption{FWR connections: jumpers selecting the star or delta connection of each three-phase group, the output filter capacitors, and the bridge and output voltage measurement points.}
     \label{fig:board_sch_p3}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[page=4, width=0.95\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \includegraphics[page=4, width=1.085\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
     \caption{NVC connections: anti-series pairing of the six coils, the output filter capacitors, and the voltage measurement points for the three NVC bridges.}
     \label{fig:board_sch_p4}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \includegraphics[page=5, width=0.95\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \includegraphics[page=5, width=1.085\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
     \caption{Matching capacitors: the jumper-selectable parallel capacitor bank used to set the compensation capacitor $C_m$ of each coil.}
     \label{fig:board_sch_p5}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \begin{subfigure}{0.85\textwidth}
-        \includegraphics[page=6, width=\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
-        \caption{Bottom copper layer.}
-    \end{subfigure}
-
-    \begin{subfigure}{0.85\textwidth}
-        \includegraphics[page=7, width=\textwidth]{Circuits/Rectifiers_Board_rotated.pdf}
+    \begin{subfigure}{1\textwidth}
+        \includegraphics[width=\textwidth]{Imm/Top2D.png}
         \caption{Top copper layer.}
     \end{subfigure}
-    \caption{PCB layout: bottom (a) and top (b) copper layers.}
+
+    \begin{subfigure}{1\textwidth}
+       \includegraphics[width=\textwidth]{Imm/Bottom2D.png}
+        \caption{Bottom copper layer.}
+    \end{subfigure}
+    \caption{PCB layout: top (a) and bottom (b) copper layers.}
     \label{fig:board_sch_p6}
 \end{figure}
+
+
+\section{Board Assembly}
+\label{sec:board_assembly}
+
+Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly from the PCB design tool, before assembly. On the top view, the six coil connectors (COIL1--COIL6) sit on the left, each next to its own bank of matching capacitors, with the Y/D and FBR/NVC selection jumpers in the middle, and the NVC and FBR rectifier sections, each with their own output connector and filter capacitors, on the right. The bottom view carries the same University of Padua engraving already visible on the copper layout of Figure \ref{fig:board_sch_p6}.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{imm/Soldering.jpg}
+    \caption{Microscope photo of one NVC bridge during hand assembly: the two diodes (left) are already soldered, while the two packages on the right, together holding all four MOSFETs of the bridge, still have unmelted solder on their pins and still need to be soldered.}
+    \label{fig:soldering}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{1\textwidth}
+        \includegraphics[width=\textwidth]{Circuits/3Dmodel/Top3D.png}
+        \caption{Top view.}
+    \end{subfigure}
+
+    \begin{subfigure}{1\textwidth}
+        \includegraphics[width=\textwidth]{Circuits/3Dmodel/Bottom3D.png}
+        \caption{Bottom view.}
+    \end{subfigure}
+    \caption{3D rendering of the prototype board: top (a) and bottom (b) views.}
+    \label{fig:board_3d}
+\end{figure}
+
+The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges partway through this process: the two diodes, on the left, are already been soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
+
