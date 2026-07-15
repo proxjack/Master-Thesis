@@ -1,6 +1,6 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{vii}{section*.3}%
-\contentsline {section}{Sommario}{ix}{section*.4}%
+\contentsline {chapter}{Abstract}{ix}{section*.3}%
+\contentsline {section}{Sommario}{xi}{section*.4}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Energy Harvesting Systems}{2}{section.1.2}%
@@ -62,6 +62,24 @@
 \contentsline {section}{\numberline {6.5}Current Sensors Calibration}{69}{section.6.5}%
 \contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{70}{section.6.6}%
 \contentsline {section}{\numberline {6.7}Load Resistor}{71}{section.6.7}%
-\contentsline {chapter}{Acronyms}{73}{section*.62}%
-\contentsline {chapter}{Bibliography}{75}{section*.64}%
-\contentsline {chapter}{Acknowledgments}{79}{section*.66}%
+\contentsline {chapter}{\numberline {7}Experimental Measurement Results}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Overview}{73}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Full-Wave Rectifier (FWR)}{74}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.a}Star Connection}{74}{subsection.7.2.1}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{74}{subsubsection*.62}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{75}{subsubsection*.64}%
+\contentsline {subsubsection}{Frequency Sweep}{75}{subsubsection*.67}%
+\contentsline {subsubsection}{Efficiency}{77}{subsubsection*.71}%
+\contentsline {subsection}{\numberline {7.2.b}Delta Connection}{80}{subsection.7.2.2}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{80}{subsubsection*.74}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{80}{subsubsection*.76}%
+\contentsline {subsubsection}{Frequency Sweep}{81}{subsubsection*.79}%
+\contentsline {subsubsection}{Efficiency}{82}{subsubsection*.83}%
+\contentsline {section}{\numberline {7.3}Negative Voltage Converter (NVC)}{86}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.a}Compensation Capacitor ($C_m$) Sweep}{86}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.b}Load Resistance ($R_L$) Sweep}{86}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.c}Frequency Sweep}{87}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.d}Efficiency}{88}{subsection.7.3.4}%
+\contentsline {chapter}{Acronyms}{93}{section*.94}%
+\contentsline {chapter}{Bibliography}{95}{section*.96}%
+\contentsline {chapter}{Acknowledgments}{99}{section*.98}%
