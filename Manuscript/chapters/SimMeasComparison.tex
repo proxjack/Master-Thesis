@@ -1,0 +1,96 @@
+\chapter{Simulation and Measurement Comparison}
+\label{ch:comparison}
+
+\section{Overview}
+\label{sec:comp_overview}
+
+This chapter relates the Simulink simulations of Chapter \ref{ch:simulations} to the measurements taken on the physical prototype in Chapter \ref{ch:measurements}, for each of the three rectifier configurations, at the respective operating point each one was found to prefer. Since the simulations always model each bridge of a configuration independently, loaded by its own resistor, and never a genuine electrical connection between bridges, the fairest measured counterpart is the sum of the individually-loaded bridges of Sections \ref{sec:meas_fwr_star}--\ref{sec:meas_nvc}, rather than the real combined measurement also presented there for the FWR connections; this is the quantity used for the output power throughout this chapter. The rectifier efficiency of the NVC, however, is only available from that real combined measurement, since the individual NVC bridges' frequency sweep did not record the input power needed to compute it; this is used here as the closest available counterpart, despite reflecting a different physical configuration (three bridges genuinely wired in parallel onto a shared load) than the independently-loaded bridges used for its simulated counterpart.
+
+Both the compensation capacitor and the load resistance are compared at each configuration's own chosen operating point, found independently in simulation and in measurement, rather than at a common value, since Chapter \ref{ch:measurements} could not repeat the simulations' two-speed compensation capacitor sweep.
+
+\section{Full-Wave Rectifier (FWR)}
+\label{sec:comp_fwr}
+
+\subsection{Star Connection}
+\label{sec:comp_fwr_star}
+
+Table \ref{tab:comp_fwr_star} compares the star connection's simulated and measured operating point and performance. The measured compensation capacitor is $630\ \mu\text{F}$, well above the $490\ \mu\text{F}$ found in simulation, while the measured load resistance, $16\ \Omega$, is closer to, but still above, the simulated $14.25\ \Omega$. The measured output power is $34.7\%$ below the simulated value at $100\ \text{rpm}$ ($42.4$ against $65\ \text{mW}$), but only $7.0\%$ below it at $400\ \text{rpm}$ ($399.9$ against $430\ \text{mW}$). The rectifier efficiency follows a similar pattern: close to the simulated value at $100\ \text{rpm}$ ($0.410$ against $0.43$, a $4.6\%$ gap) but noticeably below it at $400\ \text{rpm}$ ($0.564$ against $0.71$, a $20.6\%$ gap).
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        & Simulated & Measured \\
+        \midrule
+        $C_m$ at $100\ \text{rpm}$ ($\mu\text{F}$) & 490 & 630 \\
+        $R_L$ ($\Omega$) & 14.25 & 16 \\
+        $P_O$ at $100\ \text{rpm}$ (mW) & 65 & 42.4 \\
+        $P_O$ at $400\ \text{rpm}$ (mW) & 430 & 399.9 \\
+        $\eta_\text{Rec}$ at $100\ \text{rpm}$ & 0.43 & 0.410 \\
+        $\eta_\text{Rec}$ at $400\ \text{rpm}$ & 0.71 & 0.564 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Star connection: simulated (Section \ref{sec:sim_fwr_star}) against measured (Section \ref{sec:meas_fwr_star}) operating point and performance, each at its own chosen $C_m$ and $R_L$. $P_O$ and $\eta_\text{Rec}$ are the sum of the two individually-loaded bridges.}
+    \label{tab:comp_fwr_star}
+\end{table}
+
+\subsection{Delta Connection}
+\label{sec:comp_fwr_delta}
+
+Table \ref{tab:comp_fwr_delta} compares the delta connection. As with the star connection, the measured compensation capacitor ($630\ \mu\text{F}$) is well above the simulated one ($455\ \mu\text{F}$), and the measured load resistance ($7\ \Omega$) again sits somewhat above the simulated value ($5.75\ \Omega$). Unlike the star connection, however, the measured output power and efficiency at $100\ \text{rpm}$ are both \emph{higher} than simulated, not lower: $18.0$ against $13\ \text{mW}$ for $P_O$ ($38.5\%$ higher) and $0.293$ against $0.21$ for $\eta_\text{Rec}$ ($39.6\%$ higher). At $400\ \text{rpm}$, the ordering reverts to the same pattern seen for the star connection, with measured values below simulated ones: $P_O$ is only $2.1\%$ below simulation ($357.3$ against $365\ \text{mW}$), while $\eta_\text{Rec}$ is $11.0\%$ below it ($0.508$ against $0.57$).
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        & Simulated & Measured \\
+        \midrule
+        $C_m$ at $100\ \text{rpm}$ ($\mu\text{F}$) & 455 & 630 \\
+        $R_L$ ($\Omega$) & 5.75 & 7 \\
+        $P_O$ at $100\ \text{rpm}$ (mW) & 13 & 18.0 \\
+        $P_O$ at $400\ \text{rpm}$ (mW) & 365 & 357.3 \\
+        $\eta_\text{Rec}$ at $100\ \text{rpm}$ & 0.21 & 0.293 \\
+        $\eta_\text{Rec}$ at $400\ \text{rpm}$ & 0.57 & 0.508 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Delta connection: simulated (Section \ref{sec:sim_fwr_delta}) against measured (Section \ref{sec:meas_fwr_delta}) operating point and performance, each at its own chosen $C_m$ and $R_L$. $P_O$ and $\eta_\text{Rec}$ are the sum of the two individually-loaded bridges.}
+    \label{tab:comp_fwr_delta}
+\end{table}
+
+Because the delta connection carries less than a fifth of the star connection's power at $100\ \text{rpm}$ in either dataset, the same absolute measurement uncertainty affects its relative comparison far more strongly; this makes the delta connection the configuration most likely to show the largest relative gaps between simulation and measurement of the three, which is consistent with what Table \ref{tab:comp_fwr_delta} shows at $100\ \text{rpm}$.
+
+\section{Negative Voltage Converter (NVC)}
+\label{sec:comp_nvc}
+
+Table \ref{tab:comp_nvc} compares the NVC. The measured compensation capacitor ($430\ \mu\text{F}$) is again well above the simulated one ($260\ \mu\text{F}$), the same direction seen for both FWR connections; the three measured load resistances ($24$, $21$ and $21\ \Omega$ for NVC1, NVC2 and NVC3 respectively) sit below the single simulated value ($26\ \Omega$), unlike the FWR connections' load resistance, which sat above its simulated counterpart. The measured output power is below the simulated value at both speeds, by $10.5\%$ at $100\ \text{rpm}$ ($61.8$ against $69\ \text{mW}$) and by $25.7\%$ at $400\ \text{rpm}$ ($453.2$ against $610\ \text{mW}$), the largest high-speed power gap of the three configurations. The rectifier efficiency is below the simulated value by a similar margin at both speeds, $14.6\%$ at $100\ \text{rpm}$ ($0.568$ against $0.665$) and $14.5\%$ at $400\ \text{rpm}$ ($0.701$ against $0.82$), unlike the FWR connections, whose efficiency gap widens markedly between the two speeds.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lcc}
+        \toprule
+        & Simulated & Measured \\
+        \midrule
+        $C_m$ at $100\ \text{rpm}$ ($\mu\text{F}$) & 260 & 430 \\
+        $R_L$ ($\Omega$) & 26.00 & 24 / 21 / 21 \\
+        $P_O$ at $100\ \text{rpm}$ (mW) & 69 & 61.8 \\
+        $P_O$ at $400\ \text{rpm}$ (mW) & 610 & 453.2 \\
+        $\eta_\text{Rec}$ at $100\ \text{rpm}$ & 0.665 & 0.568 \\
+        $\eta_\text{Rec}$ at $400\ \text{rpm}$ & 0.82 & 0.701 \\
+        \bottomrule
+    \end{tabular}
+    \caption{NVC: simulated (Section \ref{sec:sim_nvc}) against measured (Section \ref{sec:meas_nvc}) operating point and performance, each at its own chosen $C_m$ and $R_L$. Measured $P_O$ is the sum of the three individually-loaded bridges; measured $\eta_\text{Rec}$, for which no such individual figure is available, is instead taken from the three bridges already connected in parallel (Section \ref{sec:meas_nvc_eff}).}
+    \label{tab:comp_nvc}
+\end{table}
+
+\section{Discussion}
+\label{sec:comp_discussion}
+
+Across all three configurations, the compensation capacitor found to maximise the output power at $100\ \text{rpm}$ is higher in measurement than in simulation: $630$ against $490\ \mu\text{F}$ for the star connection, $630$ against $455\ \mu\text{F}$ for the delta connection, and $430$ against $260\ \mu\text{F}$ for the NVC. Since $C_m$ of \eqref{eq:matching_cap} is inversely proportional to the coil inductance $L_\text{Coil}$ at a given electrical frequency, this consistent shift is what would be expected if the real coil inductance of the prototype were somewhat lower than the nominal value used throughout the simulations of Chapter \ref{ch:simulations}, rather than a coincidence specific to any one configuration.
+
+The load resistance shows no such consistent pattern: it is measured higher than simulated for both FWR connections ($16$ against $14.25\ \Omega$ for the star connection, $7$ against $5.75\ \Omega$ for the delta connection) but lower for the NVC ($21$--$24$ against $26\ \Omega$).
+
+The output power and rectifier efficiency are both below their simulated values at $400\ \text{rpm}$ for all three configurations, and the efficiency gap at this speed ($20.6\%$ for the star connection, $11.0\%$ for the delta connection, $14.5\%$ for the NVC) is larger than the corresponding gap at $100\ \text{rpm}$ for the two FWR connections. This is consistent with a loss mechanism that grows with electrical frequency and so matters more at $400\ \text{rpm}$ than at $100\ \text{rpm}$, such as core losses in the pickup coils or frequency-dependent conductor losses, neither of which is represented in the coil model of Chapter \ref{ch:simulations}, which uses a single frequency-independent series resistance $R_\text{Coil}$ for every speed. The NVC does not follow this widening pattern: its efficiency gap is close to the same size at both speeds, which would be consistent with a loss mechanism closer to frequency-independent for this topology, such as the MOSFET on-resistance and the Schottky diodes' own forward drop below $V_\text{off}$, both already present at $100\ \text{rpm}$.
+
+At $100\ \text{rpm}$, only the delta connection shows measured figures above the simulated ones, both for output power and for efficiency, in contrast with the star connection and the NVC, whose measured figures are below simulation at this speed as they are at $400\ \text{rpm}$. Since the delta connection delivers the least absolute power of the three configurations at $100\ \text{rpm}$ in both datasets, under a fifth of the star connection's, the same absolute measurement uncertainty, for instance from the current-sensing chain of Section \ref{sec:current_sensing} or from the load resistor of Section \ref{sec:load}, affects its relative comparison far more strongly than it does the other two configurations; this makes it the configuration most susceptible to being pushed either above or below its simulated value by a comparatively small absolute discrepancy.
+
+Despite these gaps, the ranking between configurations found in simulation is largely confirmed by measurement: the NVC remains the most efficient of the three at both speeds, and the delta connection the least, matching Section \ref{sec:sim_comparison}. The one exception is the NVC's output power at $400\ \text{rpm}$, which simulation placed above both FWR connections; measured with the bridges of each configuration individually loaded, the NVC still delivers the most power at this speed ($453.2\ \text{mW}$, against $399.9\ \text{mW}$ for the star connection and $357.3\ \text{mW}$ for the delta connection), but Section \ref{sec:meas_comparison} found the star and the NVC essentially tied once the bridges of each configuration are instead measured already connected in parallel onto a single shared load, a configuration the simulations of Chapter \ref{ch:simulations} did not model.

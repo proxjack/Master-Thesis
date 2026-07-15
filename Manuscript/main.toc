@@ -80,6 +80,14 @@
 \contentsline {subsection}{\numberline {7.3.b}Load Resistance ($R_L$) Sweep}{86}{subsection.7.3.2}%
 \contentsline {subsection}{\numberline {7.3.c}Frequency Sweep}{87}{subsection.7.3.3}%
 \contentsline {subsection}{\numberline {7.3.d}Efficiency}{88}{subsection.7.3.4}%
-\contentsline {chapter}{Acronyms}{93}{section*.94}%
-\contentsline {chapter}{Bibliography}{95}{section*.96}%
-\contentsline {chapter}{Acknowledgments}{99}{section*.98}%
+\contentsline {section}{\numberline {7.4}Comparison Between Topologies}{90}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Simulation and Measurement Comparison}{93}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Overview}{93}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Full-Wave Rectifier (FWR)}{94}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.a}Star Connection}{94}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.b}Delta Connection}{94}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Negative Voltage Converter (NVC)}{95}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Discussion}{95}{section.8.4}%
+\contentsline {chapter}{Acronyms}{99}{section*.98}%
+\contentsline {chapter}{Bibliography}{101}{section*.100}%
+\contentsline {chapter}{Acknowledgments}{105}{section*.102}%

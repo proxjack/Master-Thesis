@@ -1429,6 +1429,9 @@ INPUT .\Measure\NVC\Eff_tot.pdf
 INPUT .\Measure\NVC\Eff_tot.pdf
 INPUT .\Measure\NVC\Eff_tot.pdf
 INPUT .\Measure\NVC\Eff_tot.pdf
+INPUT .\chapters\SimMeasComparison.tex
+INPUT .\chapters\SimMeasComparison.tex
+INPUT chapters\SimMeasComparison.tex
 INPUT .\main.gls
 INPUT .\main.gls
 INPUT main.gls

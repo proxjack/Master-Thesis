@@ -251,3 +251,31 @@ Figure \ref{fig:meas_nvc_eff} shows the rectifier efficiency of the three NVC br
     \caption{Rectifier efficiency $\eta_\text{Rec}$ of the three NVC bridges combined, already connected in parallel, across the target speed range, for five fixed values of the compensation capacitor $C_m$ ($C_r=1480\ \mu\text{F}$, $R_L=6\ \Omega$).}
     \label{fig:meas_nvc_eff}
 \end{figure}
+
+\section{Comparison Between Topologies}
+\label{sec:meas_comparison}
+
+Sections \ref{sec:meas_fwr} and \ref{sec:meas_nvc} evaluate the FWR (star and delta connections) and the NVC independently, each with its own compensation capacitor and load resistance chosen to maximise the output power at $100\ \text{rpm}$. As in the simulations of Section \ref{sec:sim_comparison}, all three configurations rectify the same six pickup units, only regrouped differently, so their measured output power and efficiency can be compared directly. Table \ref{tab:meas_comparison} summarises the resulting operating points and performance of the three configurations at the two ends of the target speed range. Output power is taken from the bridges already connected in parallel onto a single shared load, the real combined measurement available for all three configurations; rectifier efficiency, for which this real combined measurement does not include the input power needed to compute it for the FWR connections, is instead taken as the ratio of the summed output and input power of the individually-loaded bridges of each configuration.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        & FWR (Star) & FWR (Delta) & NVC \\
+        \midrule
+        $C_m$ at $100\ \text{rpm}$ ($\mu\text{F}$) & 630 & 630 & 430 \\
+        $C_m$ at $400\ \text{rpm}$ ($\mu\text{F}$) & 47 & 47 & 47 \\
+        $R_L$ ($\Omega$) & 7 & 5 & 6 \\
+        $P_O$ at $100\ \text{rpm}$ (mW) & 47.6 & 14.9 & 57.7 \\
+        $P_O$ at $400\ \text{rpm}$ (mW) & 433.3 & 310.7 & 425.7 \\
+        $\eta_\text{Rec}$ at $100\ \text{rpm}$ & 0.410 & 0.293 & 0.568 \\
+        $\eta_\text{Rec}$ at $400\ \text{rpm}$ & 0.564 & 0.508 & 0.701 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparison of the three rectifier configurations at their respective chosen operating points, using the $C_m$ found optimal at $100\ \text{rpm}$ for the output power and efficiency figures. $R_L$, and the output power it is measured at, refer to the bridges already connected in parallel onto a shared load; $\eta_\text{Rec}$ is computed from the individually-loaded bridges instead (Sections \ref{sec:meas_fwr_star}--\ref{sec:meas_nvc}).}
+    \label{tab:meas_comparison}
+\end{table}
+
+At $100\ \text{rpm}$, the NVC delivers the most output power of the three configurations ($57.7\ \text{mW}$), slightly ahead of the star connection ($47.6\ \text{mW}$) and close to four times the delta connection ($14.9\ \text{mW}$). At $400\ \text{rpm}$, the picture is closer than in simulation: the star connection now edges ahead of the NVC ($433.3$ against $425.7\ \text{mW}$, a gap of under $2\%$), while the delta connection remains clearly behind both ($310.7\ \text{mW}$). Between the two FWR connections, the star connection consistently outperforms the delta connection at both speeds, consistent with Section \ref{sec:fwr}: the $\sqrt{3}$ line-to-line voltage gain of the star connection more than compensates for its lower line current, whereas the delta connection's lower line voltage is hit harder by the FWR's fixed two-diode-drop loss.
+
+The rectifier efficiency follows the same ranking as in simulation at both speeds: the NVC leads ($0.568$ at $100\ \text{rpm}$, $0.701$ at $400\ \text{rpm}$), followed by the star connection ($0.410$, $0.564$) and then the delta connection ($0.293$, $0.508$), consistent with the same two-diode-drop mechanism discussed in Section \ref{sec:nvc}: the NVC bridge only replaces the diode drop with the much smaller MOSFET on-resistance once the voltage across its anti-series pair exceeds $V_\text{off}\approx1.2\ \text{V}$, giving it an advantage that persists, if narrower than in simulation, at both ends of the target speed range. Unlike the simulated comparison of Section \ref{sec:sim_comparison}, however, this efficiency advantage no longer translates into the highest output power at the top of the range, where the measured star connection is, within a small margin, the best performer instead. A closer look at how these measured figures relate to the simulations of Chapter \ref{ch:simulations} is given in Chapter \ref{ch:comparison}.
