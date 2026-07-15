@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  15 JUL 2026 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  15 JUL 2026 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4754,33 +4754,32 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ]
 Chapter 5.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 
 [51]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2337, page=1, 614.295pt x 794.97pt>
+
+[52]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2341, page=1, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 1>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page1 used on 
-input line 38.
+input line 40.
 (pdftex.def)             Requested size: 415.59143pt x 537.83101pt.
 
-Overfull \hbox (32.56021pt too wide) in paragraph at lines 38--39
+Overfull \hbox (32.56021pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[52]
 <Circuits/Rectifiers_Board_rotated.pdf, id=2342, page=2, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 2>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page2 used on 
-input line 45.
+input line 47.
 (pdftex.def)             Requested size: 415.59143pt x 537.83101pt.
 
-Overfull \hbox (32.56021pt too wide) in paragraph at lines 45--46
+Overfull \hbox (32.56021pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
@@ -4794,10 +4793,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 3>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page3 used on 
-input line 52.
+input line 54.
 (pdftex.def)             Requested size: 415.59143pt x 537.83101pt.
 
-Overfull \hbox (32.56021pt too wide) in paragraph at lines 52--53
+Overfull \hbox (32.56021pt too wide) in paragraph at lines 54--55
  [][] 
  []
 
@@ -4811,10 +4810,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 4>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page4 used on 
-input line 59.
+input line 61.
 (pdftex.def)             Requested size: 415.59143pt x 537.83101pt.
 
-Overfull \hbox (32.56021pt too wide) in paragraph at lines 59--60
+Overfull \hbox (32.56021pt too wide) in paragraph at lines 61--62
  [][] 
  []
 
@@ -4828,10 +4827,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 5>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page5 used on 
-input line 66.
+input line 68.
 (pdftex.def)             Requested size: 415.59143pt x 537.83101pt.
 
-Overfull \hbox (32.56021pt too wide) in paragraph at lines 66--67
+Overfull \hbox (32.56021pt too wide) in paragraph at lines 68--69
  [][] 
  []
 
@@ -4844,12 +4843,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <Imm/Top2D.png, id=2407, 1093.08376pt x 659.46375pt>
 File: Imm/Top2D.png Graphic file (type png)
 <use Imm/Top2D.png>
-Package pdftex.def Info: Imm/Top2D.png  used on input line 74.
+Package pdftex.def Info: Imm/Top2D.png  used on input line 76.
 (pdftex.def)             Requested size: 383.03122pt x 231.08745pt.
 <Imm/Bottom2D.png, id=2408, 1090.82532pt x 657.2053pt>
 File: Imm/Bottom2D.png Graphic file (type png)
 <use Imm/Bottom2D.png>
-Package pdftex.def Info: Imm/Bottom2D.png  used on input line 79.
+Package pdftex.def Info: Imm/Bottom2D.png  used on input line 81.
 (pdftex.def)             Requested size: 383.03122pt x 230.76738pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -4865,17 +4864,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <imm/Soldering.jpg, id=2432, 908.6748pt x 600.8046pt>
 File: imm/Soldering.jpg Graphic file (type jpg)
 <use imm/Soldering.jpg>
-Package pdftex.def Info: imm/Soldering.jpg  used on input line 94.
+Package pdftex.def Info: imm/Soldering.jpg  used on input line 96.
 (pdftex.def)             Requested size: 229.82106pt x 151.95177pt.
 <Circuits/3Dmodel/Top3D.png, id=2433, 1053.9375pt x 636.12656pt>
 File: Circuits/3Dmodel/Top3D.png Graphic file (type png)
 <use Circuits/3Dmodel/Top3D.png>
-Package pdftex.def Info: Circuits/3Dmodel/Top3D.png  used on input line 102.
+Package pdftex.def Info: Circuits/3Dmodel/Top3D.png  used on input line 104.
 (pdftex.def)             Requested size: 383.03122pt x 231.18935pt.
 <Circuits/3Dmodel/Bottom3D.png, id=2434, 1051.67906pt x 635.37375pt>
 File: Circuits/3Dmodel/Bottom3D.png Graphic file (type png)
 <use Circuits/3Dmodel/Bottom3D.png>
-Package pdftex.def Info: Circuits/3Dmodel/Bottom3D.png  used on input line 107.
+Package pdftex.def Info: Circuits/3Dmodel/Bottom3D.png  used on input line 109.
 
 (pdftex.def)             Requested size: 383.03122pt x 231.41019pt.
 
@@ -5051,7 +5050,7 @@ type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/font
 s/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (86 pages, 12121104 bytes).
+Output written on main.pdf (86 pages, 12121128 bytes).
 PDF statistics:
  2852 PDF objects out of 2984 (max. 8388607)
  283 named destinations out of 1000 (max. 500000)

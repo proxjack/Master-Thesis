@@ -13,7 +13,7 @@ Table \ref{tab:board_components} lists the key components used to build the FWR 
 
 The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC bridge switches properly is set by the largest of its four MOSFET threshold voltages. Table \ref{tab:board_components} shows this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
 
-\begin{table}[htbp]
+\begin{table}[h!]
     \centering
     \begin{tabularx}{\textwidth}{l l X}
         \toprule
@@ -32,6 +32,8 @@ The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC brid
 \label{sec:board_schematic}
 
 Figures \ref{fig:board_sch_p1}--\ref{fig:board_sch_p6} show the complete schematic of the prototype board, page by page. The board integrates both FWR three-phase groups (labelled FBR1, FBR2 in the schematic) and all three NVC bridges (NVC1--NVC3), together with jumpers that reconfigure each coil between the FWR and NVC paths, the FWR groups between star and delta connection, and the compensation capacitor $C_m$ of each coil, so that every configuration simulated in Chapter \ref{ch:simulations} can be tested on the same board.
+
+\newpage
 
 \begin{figure}[H]
     \centering
