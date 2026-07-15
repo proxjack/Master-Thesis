@@ -1,11 +1,12 @@
 # Fdb version 4
-["biber main"] 1784107162.4493 "main.bcf" "main.bbl" "main" 1784107464.4125 0
-  "main.bcf" 1784107460.57823 114407 e0b7d3c261310dbeadf9adc9ce054e14 "pdflatex"
+["biber main"] 1784108169.2688 "main.bcf" "main.bbl" "main" 1784108224.94374 0
+  "main.bcf" 1784108221.29248 114407 e0b7d3c261310dbeadf9adc9ce054e14 "pdflatex"
+  "refs.bib" 1783951577.43362 37017 0681fe504e1545b99c32db5e7e4047ca ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784107448.38981 "main.tex" "main.pdf" "main" 1784107464.4145 0
+["pdflatex"] 1784108208.91707 "main.tex" "main.pdf" "main" 1784108224.94497 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784026442.45741 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -472,6 +473,9 @@
   "Plots/NVC_sweep/30-60_400_P1.pdf" 1784104400.8497 11348 40aabb1b31a39d38c2bd91bd5dbed348 ""
   "Plots/NVC_sweep/30-60_400_P2.pdf" 1784104401.44156 10128 3876c94b72daa820272e6e7b6ddc7e04 ""
   "Plots/NVC_sweep/50-800_100_P1.pdf" 1784104403.06777 11155 fb584d0af4c5cccc7a3a298040e6234a ""
+  "Plots/NVC_sweep/Y_Eff_sweep.pdf" 1784107972.86501 11047 79fd14b7ed97046e01b935a2c2cbbe41 ""
+  "Plots/NVC_sweep/Y_PEE_sweep.pdf" 1784107974.222 10867 4dbcbd0dc51e8276bbf71715cf42c2f7 ""
+  "Plots/NVC_sweep/Y_Power_sweep.pdf" 1784107975.35189 11084 180dede24fd6f818d6116af8dbd64ff4 ""
   "Plots/OCV_100_focus.pdf" 1783605264.37068 42018 e84e60c69dd7701925daf177ffbfde4b ""
   "Plots/OCV_100_halfTourn.pdf" 1783605348.72185 608787 c461d4c842e9bcdc1c7559afa7bd0b79 ""
   "Plots/Res_Prob.pdf" 1783517019.06401 43364 10df4a2a4fa25eb168f033e4a46c01a6 ""
@@ -491,7 +495,7 @@
   "chapters/Design.tex" 1783609018.66863 11711 d318eb222bc0fd99c21b8e51c757bba8 ""
   "chapters/Introduction.tex" 1783433600.54805 27110 ca6639734e1bc05a7bfbcf48712ef1bf ""
   "chapters/MeasurementSetup.tex" 1784106034.30522 15633 8994e17ff7b786bd7c4a7b7ffd286b01 ""
-  "chapters/Simulations.tex" 1784107085.40124 34125 dd6213378c5547014b003d6273a2598a ""
+  "chapters/Simulations.tex" 1784108157.47071 38248 d00c1b914736e0bb301784042037f56e ""
   "chapters/Theory.tex" 1783608091.2325 31914 e2ee0f2a37c950302ade0d88719e58f0 ""
   "chapters/abstract.tex" 1783333837.09121 2880 2ae0f580bab45e9b116b6b1aaac3ddc1 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
@@ -506,14 +510,14 @@
   "imm/Soldering.jpg" 1784032463.76138 2383046 c6b0edae494353afb688b3a66684205f ""
   "imm/VR_theory.pdf" 1779791790.16379 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "main.acr" 1783607179.05984 2625 91a7de28ed081325c5ec0013a3897973 ""
-  "main.aux" 1784107460.50979 48002 3dd0733b0da1d4e9068cb79e9632bb4c "pdflatex"
-  "main.bbl" 1784107228.88279 59478 aa88bbff85278535dface0137a080301 "biber main"
+  "main.aux" 1784108221.21788 50173 4642976ec37f34b8ab493c282ff1bd29 "pdflatex"
+  "main.bbl" 1784108174.63222 59478 aa88bbff85278535dface0137a080301 "biber main"
   "main.gls" 1783607179.11578 6 9f404503043ec80c08484be9f659189e ""
-  "main.out" 1784107460.54984 11580 2bedddcfdfdb27f1ff949bd58a69cceb "pdflatex"
-  "main.run.xml" 1784107460.5825 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1784108221.2667 11832 e3708caef544744e3b4eda9f1c522b73 "pdflatex"
+  "main.run.xml" 1784108221.29748 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1784026914.80389 3864 e60ddb7de553c86530d650cd7a552de6 ""
-  "main.toc" 1784107460.58356 5407 621e60f7f231b029c8ff53339da4cfff "pdflatex"
-  "pdfa.xmpi" 1784107450.30206 5042 e0397dc7399942e36630f39380eaddad "pdflatex"
+  "main.toc" 1784108221.29848 5574 dab3fd908042aad352faf631d3f0c2ef "pdflatex"
+  "pdfa.xmpi" 1784108210.96019 5042 6ca63b98cff1ae8a1673ca18bae00882 "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""

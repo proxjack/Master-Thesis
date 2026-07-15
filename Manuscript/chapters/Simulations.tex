@@ -356,3 +356,34 @@ With $C_m=260\ \mu\text{F}$ fixed at the value found optimal for $100\ \text{rpm
     \caption{Output power of the three NVC bridges as a function of the load resistance $R_L$ at $100\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $C_m=260\ \mu\text{F}$), shown individually (a) and combined (b).}
     \label{fig:nvc_rl_100}
 \end{figure}
+
+\subsection{Frequency Sweep}
+\label{sec:sim_nvc_freq}
+
+Figure \ref{fig:nvc_freq_power} sweeps five fixed values of $C_m$, from $38\ \mu\text{F}$ (optimal at $400\ \text{rpm}$) to $260\ \mu\text{F}$ (optimal at $100\ \text{rpm}$), across the whole target speed range, with $C_r=1480\ \mu\text{F}$ and $R_L=26.00\ \Omega$ fixed, and plots the resulting combined output power of the three NVC bridges. At the low-speed end of the range, $C_m=260\ \mu\text{F}$ delivers the most power, while $C_m=38\ \mu\text{F}$ performs far worse than every other value; by around $150\ \text{rpm}$ the curves converge closely together. As with the FWR delta connection, the best performer over the middle of the range is not one of the two extreme values just found, but the intermediate $C_m=100\ \mu\text{F}$, which stays on top from about $200$ to $300\ \text{rpm}$, exceeding even $C_m=260\ \mu\text{F}$. Only above about $325\ \text{rpm}$ does $C_m=38\ \mu\text{F}$ overtake every other choice, reaching about $920\ \text{mW}$ at $400\ \text{rpm}$, substantially more than the next best value ($C_m=100\ \mu\text{F}$, around $705\ \text{mW}$). As with the FWR bridges, no single value of $C_m$ is therefore best across the whole range, and since $100\ \text{rpm}$ still sets the lower bound on the power available across the whole range, $C_m=260\ \mu\text{F}$, the value found optimal at $100\ \text{rpm}$ in the compensation capacitor sweep, remains the preferred choice to keep this lower bound as high as possible.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Plots/NVC_sweep/Y_Power_sweep.pdf}
+    \caption{Combined output power of the three NVC bridges across the target speed range, for five fixed values of the compensation capacitor $C_m$ ($C_r=1480\ \mu\text{F}$, $R_L=26.00\ \Omega$).}
+    \label{fig:nvc_freq_power}
+\end{figure}
+
+\subsection{Efficiency}
+\label{sec:sim_nvc_eff}
+
+Figures \ref{fig:nvc_pce} and \ref{fig:nvc_pee} show the rectifier efficiency $\eta_\text{Rec}=P_\text{out}/P_\text{in}$ and the power extraction efficiency (PEE, \eqref{eq:pee}) for the same five values of $C_m$ across the speed range. As with the FWR bridges, these NVC-only simulations do not include a DC-DC converter stage after the rectifier, so $\eta_\text{Rec}$ is the quantity measured here; it coincides with the full PCE of \eqref{eq:pce} once such a stage, with its own efficiency $\eta_\text{DC-DC}$, is added. The $\eta_\text{Rec}$ curves are markedly more sensitive to $C_m$ than in the FWR case, especially at low speed: at $100\ \text{rpm}$, $\eta_\text{Rec}$ ranges from about $0.24$ for the smallest capacitor ($C_m=38\ \mu\text{F}$) to about $0.67$ for the largest one ($C_m=260\ \mu\text{F}$), while at $400\ \text{rpm}$ all five curves converge towards $\eta_\text{Rec}\approx0.76$--$0.83$. The PEE curves each peak at the speed where their $C_m$ is closest to the matching value of \eqref{eq:matching_cap}, mirroring the crossovers already seen in the frequency sweep of Figure \ref{fig:nvc_freq_power}; several of them, most notably $C_m=100\ \mu\text{F}$ around $300\ \text{rpm}$, exceed $\text{PEE}=1$. As in the FWR bridges, $\eta_\text{Rec}$, and therefore PCE, changes far less with $C_m$ than PEE does, so most of the swing in PEE again reflects how closely $C_m$ matches the coil at that speed rather than the rectifier's own efficiency.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Plots/NVC_sweep/Y_Eff_sweep.pdf}
+    \caption{Rectifier efficiency $\eta_\text{Rec}$ of the three NVC bridges combined, across the target speed range, for five fixed values of the compensation capacitor $C_m$ ($C_r=1480\ \mu\text{F}$, $R_L=26.00\ \Omega$).}
+    \label{fig:nvc_pce}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.65\textwidth]{Plots/NVC_sweep/Y_PEE_sweep.pdf}
+    \caption{Power extraction efficiency (PEE) of the three NVC bridges combined, across the target speed range, for five fixed values of the compensation capacitor $C_m$ ($C_r=1480\ \mu\text{F}$, $R_L=26.00\ \Omega$).}
+    \label{fig:nvc_pee}
+\end{figure}
