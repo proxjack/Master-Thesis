@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  15 JUL 2026 11:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  15 JUL 2026 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4687,28 +4687,27 @@ Package pdftex.def Info: Plots/NVC_sweep/200-350_100_P2.pdf  used on input line
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-
-[46 <./Plots/D_sweep/D_PEE_sweep.pdf>]
-<Plots/NVC_sweep/1-300_400_P1.pdf, id=2033, 319.1925pt x 287.0725pt>
+<Plots/NVC_sweep/1-300_400_P1.pdf, id=1988, 319.1925pt x 287.0725pt>
 File: Plots/NVC_sweep/1-300_400_P1.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/1-300_400_P1.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/1-300_400_P1.pdf  used on input line 3
 25.
 (pdftex.def)             Requested size: 183.85335pt x 165.3545pt.
-<Plots/NVC_sweep/30-60_400_P1.pdf, id=2034, 316.18124pt x 287.0725pt>
+<Plots/NVC_sweep/30-60_400_P1.pdf, id=1989, 316.18124pt x 287.0725pt>
 File: Plots/NVC_sweep/30-60_400_P1.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/30-60_400_P1.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/30-60_400_P1.pdf  used on input line 3
 30.
 (pdftex.def)             Requested size: 183.85335pt x 166.93143pt.
-<Plots/NVC_sweep/30-60_400_P2.pdf, id=2035, 316.18124pt x 287.0725pt>
+<Plots/NVC_sweep/30-60_400_P2.pdf, id=1990, 316.18124pt x 287.0725pt>
 File: Plots/NVC_sweep/30-60_400_P2.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/30-60_400_P2.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/30-60_400_P2.pdf  used on input line 3
 35.
 (pdftex.def)             Requested size: 183.85335pt x 166.93143pt.
 
+
+[46 <./Plots/D_sweep/D_PEE_sweep.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4761,22 +4760,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 [49 <./Plots/NVC_sweep/20-30_100_P1.pdf> <./Plots/NVC_sweep/20-30_100_P2.pdf>]
-<Plots/NVC_sweep/Y_Eff_sweep.pdf, id=2343, 373.395pt x 337.26pt>
+<Plots/NVC_sweep/Y_Eff_sweep.pdf, id=2343, 356.33125pt x 325.215pt>
 File: Plots/NVC_sweep/Y_Eff_sweep.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/Y_Eff_sweep.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/Y_Eff_sweep.pdf  used on input line 38
 1.
-(pdftex.def)             Requested size: 248.96794pt x 224.87202pt.
+(pdftex.def)             Requested size: 248.96794pt x 227.22714pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Plots/NVC_sweep/Y_PEE_sweep.pdf, id=2344, 370.38374pt x 337.26pt>
+<Plots/NVC_sweep/Y_PEE_sweep.pdf, id=2344, 354.32375pt x 325.215pt>
 File: Plots/NVC_sweep/Y_PEE_sweep.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/Y_PEE_sweep.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/Y_PEE_sweep.pdf  used on input line 38
 8.
-(pdftex.def)             Requested size: 248.96794pt x 226.70407pt.
+(pdftex.def)             Requested size: 248.96794pt x 228.51736pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -5070,7 +5069,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  82371 strings out of 468130
  1864395 string characters out of 5430633
- 2932166 words of memory out of 5000000
+ 2932163 words of memory out of 5000000
  109446 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5097,7 +5096,7 @@ type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/font
 s/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (90 pages, 12169231 bytes).
+Output written on main.pdf (90 pages, 12170335 bytes).
 PDF statistics:
  3018 PDF objects out of 3580 (max. 8388607)
  294 named destinations out of 1000 (max. 500000)
