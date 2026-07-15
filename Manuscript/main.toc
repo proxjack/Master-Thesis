@@ -43,24 +43,25 @@
 \contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{41}{subsubsection*.33}%
 \contentsline {subsubsection}{Frequency Sweep}{41}{subsubsection*.35}%
 \contentsline {subsubsection}{Efficiency}{43}{subsubsection*.37}%
-\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{45}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.a}Compensation Capacitor ($C_m$) Sweep}{45}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.b}Load Resistance ($R_L$) Sweep}{46}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.c}Frequency Sweep}{47}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.d}Efficiency}{50}{subsection.4.3.4}%
-\contentsline {chapter}{\numberline {5}Prototype Board Design}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Components Used}{53}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Schematic}{53}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Board Assembly}{61}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview}{63}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Test Bench}{63}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Data Acquisition System}{64}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{65}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{67}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{68}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Load Resistor}{69}{section.6.7}%
-\contentsline {chapter}{Acronyms}{71}{section*.61}%
-\contentsline {chapter}{Bibliography}{73}{section*.63}%
-\contentsline {chapter}{Acknowledgments}{77}{section*.65}%
+\contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{46}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.a}Compensation Capacitor ($C_m$) Sweep}{46}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.b}Load Resistance ($R_L$) Sweep}{47}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.c}Frequency Sweep}{48}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.d}Efficiency}{49}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Comparison Between Topologies}{50}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Prototype Board Design}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Components Used}{55}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Schematic}{55}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Board Assembly}{63}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{65}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Test Bench}{65}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Data Acquisition System}{66}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{67}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{69}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{70}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Load Resistor}{71}{section.6.7}%
+\contentsline {chapter}{Acronyms}{73}{section*.62}%
+\contentsline {chapter}{Bibliography}{75}{section*.64}%
+\contentsline {chapter}{Acknowledgments}{79}{section*.66}%

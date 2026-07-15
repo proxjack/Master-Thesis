@@ -287,6 +287,8 @@ Figures \ref{fig:fwr_delta_pce} and \ref{fig:fwr_delta_pee} show the rectifier e
     \label{fig:fwr_delta_pee}
 \end{figure}
 
+\newpage
+
 \section{Negative Voltage Converter (NVC)}
 \label{sec:sim_nvc}
 
@@ -387,3 +389,33 @@ Figures \ref{fig:nvc_pce} and \ref{fig:nvc_pee} show the rectifier efficiency $\
     \caption{Power extraction efficiency (PEE) of the three NVC bridges combined, across the target speed range, for five fixed values of the compensation capacitor $C_m$ ($C_r=1480\ \mu\text{F}$, $R_L=26.00\ \Omega$).}
     \label{fig:nvc_pee}
 \end{figure}
+
+\section{Comparison Between Topologies}
+\label{sec:sim_comparison}
+
+Sections \ref{sec:sim_fwr} and \ref{sec:sim_nvc} evaluate the FWR (star and delta connections) and the NVC independently, each with its own compensation capacitor and load resistance chosen to maximise the output power at $100\ \text{rpm}$, the speed that sets the lower bound on the power available across the whole target range. Since all three configurations rectify the same six pickup units, only regrouped differently (two three-phase groups for the FWR, three anti-series two-phase groups for the NVC), their output power and efficiency can be compared directly. Table \ref{tab:sim_comparison} summarises the resulting operating points and performance of the three configurations at the two ends of the target speed range.
+
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        & FWR (Star) & FWR (Delta) & NVC \\
+        \midrule
+        $C_m$ at $100\ \text{rpm}$ ($\mu\text{F}$) & 490 & 455 & 260 \\
+        $C_m$ at $400\ \text{rpm}$ ($\mu\text{F}$) & 55 & 53 & 38 \\
+        $R_L$ ($\Omega$) & 14.25 & 5.75 & 26.00 \\
+        $P_O$ at $100\ \text{rpm}$ (mW) & 65 & 13 & 69 \\
+        $P_O$ at $400\ \text{rpm}$ (mW) & 430 & 365 & 610 \\
+        $\eta_\text{Rec}$ at $100\ \text{rpm}$ & 0.43 & 0.21 & 0.665 \\
+        $\eta_\text{Rec}$ at $400\ \text{rpm}$ & 0.71 & 0.57 & 0.82 \\
+        \bottomrule
+    \end{tabular}
+    \caption{Comparison of the three rectifier configurations at their respective chosen operating points, using the $C_m$ found optimal at $100\ \text{rpm}$ for the output power and efficiency figures.}
+    \label{tab:sim_comparison}
+\end{table}
+
+The NVC delivers the most output power of the three configurations at both ends of the target range, and by a wide margin at the low-speed end: at $100\ \text{rpm}$ it delivers over five times the power of the FWR delta connection and slightly more than the FWR star connection, while at $400\ \text{rpm}$ it still leads, delivering about $42\%$ more power than the FWR star connection and $67\%$ more than the delta connection. Between the two FWR connections, the star connection consistently outperforms the delta connection, consistent with Section \ref{sec:fwr}: the $\sqrt{3}$ line-to-line voltage gain of the star connection more than compensates for its lower line current, whereas the delta connection's lower line voltage is hit harder by the FWR's fixed two-diode-drop loss.
+
+This same two-diode-drop loss also explains the NVC's efficiency advantage. As shown in Section \ref{sec:nvc}, the NVC bridge only replaces the diode drop with the much smaller MOSFET on-resistance once the voltage across its anti-series pair exceeds $V_\text{off}\approx1.2\ \text{V}$; below this threshold it falls back to the same diode-limited behaviour as the FWR. At $100\ \text{rpm}$, where the phase voltage is smallest, this shows up clearly in Table \ref{tab:sim_comparison}: $\eta_\text{Rec}\approx0.665$ for the NVC against $0.43$ and $0.21$ for the FWR star and delta connections. At $400\ \text{rpm}$, where the phase voltage is large enough that the fixed diode drop matters proportionally less, the gap narrows, but the NVC still leads with $\eta_\text{Rec}\approx0.82$ against $0.71$ and $0.57$. The power extraction efficiency (PEE) of all three configurations follows the same qualitative pattern already discussed individually in Sections \ref{sec:sim_fwr} and \ref{sec:sim_nvc}: each curve peaks close to the single speed for which its chosen $C_m$ best matches the coil, so it is not repeated here since it reflects the quality of the $C_m$ match rather than a difference between topologies.
+
+Overall, these simulations indicate the NVC as the preferred topology for the MP-VREH across the whole target speed range, delivering both the highest output power and the highest rectifier efficiency, with its advantage most pronounced at the low-speed end where the FWR's fixed diode drop is most costly.
