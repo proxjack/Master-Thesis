@@ -291,8 +291,9 @@ Figures \ref{fig:fwr_delta_pce} and \ref{fig:fwr_delta_pee} show the rectifier e
 \label{sec:sim_nvc}
 
 \subsection{Compensation Capacitor ($C_m$) Sweep}
+\label{sec:sim_nvc_cm}
 
-As with the FWR bridges, $C_m$ was swept at $100\ \text{rpm}$ for the NVC bridges, with $C_r=1480\ \mu\text{F}$ and $R_L=18.00\ \Omega$ fixed for this sweep. Figure \ref{fig:nvc_cm_100} shows the output power rising steeply for small $C_m$, reaching a maximum around $C_m=270\ \mu\text{F}$, and then decreasing gently for larger values. This value was therefore chosen as the one giving the maximum output power. Unlike the FWR bridges, NVC1 delivers consistently more power than NVC2 across the whole sweep, by roughly $10\%$ at the peak. The combined power of the two bridges, shown below, peaks at the same $C_m$ chosen from the individual curves, confirming that $C_m=270\ \mu\text{F}$ also maximises the total power.
+As with the FWR bridges, $C_m$ was swept at $100\ \text{rpm}$ for all three NVC bridges, with $C_r=1480\ \mu\text{F}$ and $R_L=25.00\ \Omega$ fixed for this sweep. Figure \ref{fig:nvc_cm_100} shows the output power of each bridge rising steeply for small $C_m$, reaching a maximum around $C_m=260\ \mu\text{F}$, and then decreasing gently for larger values; all three bridges peak within this same narrow window of $C_m$. NVC1 delivers the most power, followed by NVC2, with NVC3 delivering noticeably less than either, about a quarter less than NVC1 and a sixth less than NVC2 at the peak, and falling off more steeply than the other two as $C_m$ grows beyond the peak. The combined power of the three bridges, shown below, peaks at the same $C_m$ chosen from the individual curves, confirming that $C_m=260\ \mu\text{F}$ also maximises the total power.
 
 \begin{figure}[h!]
     \centering
@@ -310,26 +311,48 @@ As with the FWR bridges, $C_m$ was swept at $100\ \text{rpm}$ for the NVC bridge
         \includegraphics[width=\textwidth]{Plots/NVC_sweep/200-350_100_P2.pdf}
         \caption{Detail, combined power.}
     \end{subfigure}
-    \caption{Output power of the two NVC bridges as a function of the compensation capacitor $C_m$ at $100\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $R_L=18.00\ \Omega$), shown individually (a, b) and combined (c).}
+    \caption{Output power of the three NVC bridges as a function of the compensation capacitor $C_m$ at $100\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $R_L=25.00\ \Omega$), shown individually (a, b) and combined (c).}
     \label{fig:nvc_cm_100}
 \end{figure}
 
-At $400\ \text{rpm}$, Figure \ref{fig:nvc_cm_400} shows a much sharper peak than at $100\ \text{rpm}$, around $C_m=30\ \mu\text{F}$, after which the power falls off quickly before levelling out for larger $C_m$. NVC1 again delivers more power than NVC2 across the whole sweep. The combined power peaks at the same value, around $1290\ \text{mW}$ at $C_m=30\ \mu\text{F}$, confirming this as the best choice at this speed.
+At $400\ \text{rpm}$, Figure \ref{fig:nvc_cm_400} shows a much sharper peak than at $100\ \text{rpm}$, around $C_m=37\ \mu\text{F}$, after which the power falls off quickly before levelling out for larger $C_m$. The three bridges again peak within the same narrow window, but the gap between them is noticeably smaller than at $100\ \text{rpm}$: NVC1 leads, followed closely by NVC2 and then NVC3, only about a tenth below NVC1 at the peak. The combined power peaks at the same value, around $940\ \text{mW}$ at $C_m=37\ \mu\text{F}$, confirming this as the best choice at this speed.
 
 \begin{figure}[h!]
     \centering
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\textwidth]{Plots/NVC_sweep/1-500_400_P1.pdf}
+        \includegraphics[width=\textwidth]{Plots/NVC_sweep/1-300_400_P1.pdf}
+        \caption{Full sweep range.}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NVC_sweep/30-60_400_P1.pdf}
+        \caption{Detail near the maximum.}
+    \end{subfigure}
+
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NVC_sweep/30-60_400_P2.pdf}
+        \caption{Detail, combined power.}
+    \end{subfigure}
+    \caption{Output power of the three NVC bridges as a function of the compensation capacitor $C_m$ at $400\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $R_L=25.00\ \Omega$), shown individually (a, b) and combined (c).}
+    \label{fig:nvc_cm_400}
+\end{figure}
+
+\subsection{Load Resistance ($R_L$) Sweep}
+\label{sec:sim_nvc_rl}
+
+With $C_m=260\ \mu\text{F}$ fixed at the value found optimal for $100\ \text{rpm}$ in the previous sweep, and $C_r=1480\ \mu\text{F}$, the load resistance $R_L$ was swept to find the value that maximises the output power at this speed. Figure \ref{fig:nvc_rl_100} shows the resulting curves: NVC1 and NVC2 both peak around $R_L=25$--$26\ \Omega$, while NVC3 keeps rising further, peaking only around $R_L=27$--$29\ \Omega$. Despite this difference between the individual bridges, the combined power peaks in a broad plateau centred around $R_L=25$--$26\ \Omega$, staying close to its maximum up to about $R_L=28\ \Omega$ before decreasing. This confirms $R_L=25.00\ \Omega$, already used above for the compensation capacitor sweep, as a suitable choice for this speed.
+
+\begin{figure}[h!]
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \includegraphics[width=\textwidth]{Plots/NVC_sweep/20-30_100_P1.pdf}
         \caption{Individual bridges.}
     \end{subfigure}
     \hfill
     \begin{subfigure}{0.48\textwidth}
-        \includegraphics[width=\textwidth]{Plots/NVC_sweep/1-500_400_P2.pdf}
+        \includegraphics[width=\textwidth]{Plots/NVC_sweep/20-30_100_P2.pdf}
         \caption{Combined power.}
     \end{subfigure}
-    \caption{Output power of the two NVC bridges as a function of the compensation capacitor $C_m$ at $400\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $R_L=18.00\ \Omega$), shown individually (a) and combined (b).}
-    \label{fig:nvc_cm_400}
+    \caption{Output power of the three NVC bridges as a function of the load resistance $R_L$ at $100\ \text{rpm}$ ($C_r=1480\ \mu\text{F}$, $C_m=260\ \mu\text{F}$), shown individually (a) and combined (b).}
+    \label{fig:nvc_rl_100}
 \end{figure}
-
-\subsection{All Three Bridges}
-\label{sec:sim_nvc_all}

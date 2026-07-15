@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  14 JUL 2026 18:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  15 JUL 2026 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4663,42 +4663,76 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 293.
 
-<Plots/NVC_sweep/50-800_100_P1.pdf, id=1929, 185.69376pt x 158.5925pt>
+<Plots/NVC_sweep/50-800_100_P1.pdf, id=1929, 367.3725pt x 338.26375pt>
 File: Plots/NVC_sweep/50-800_100_P1.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/50-800_100_P1.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/50-800_100_P1.pdf  used on input line 
-300.
-(pdftex.def)             Requested size: 183.85335pt x 157.02397pt.
+301.
+(pdftex.def)             Requested size: 183.85335pt x 169.28629pt.
 <Plots/NVC_sweep/200-350_100_P1.pdf, id=1930, 367.3725pt x 338.26375pt>
 File: Plots/NVC_sweep/200-350_100_P1.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/200-350_100_P1.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/200-350_100_P1.pdf  used on input line
- 305.
+ 306.
 (pdftex.def)             Requested size: 183.85335pt x 169.28629pt.
 <Plots/NVC_sweep/200-350_100_P2.pdf, id=1931, 376.40625pt x 338.26375pt>
 File: Plots/NVC_sweep/200-350_100_P2.pdf Graphic file (type pdf)
 <use Plots/NVC_sweep/200-350_100_P2.pdf>
 Package pdftex.def Info: Plots/NVC_sweep/200-350_100_P2.pdf  used on input line
- 310.
+ 311.
 (pdftex.def)             Requested size: 183.85335pt x 165.2242pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Plots/NVC_sweep/1-500_400_P1.pdf, id=1933, 373.395pt x 338.26375pt>
-File: Plots/NVC_sweep/1-500_400_P1.pdf Graphic file (type pdf)
-<use Plots/NVC_sweep/1-500_400_P1.pdf>
-Package pdftex.def Info: Plots/NVC_sweep/1-500_400_P1.pdf  used on input line 3
-22.
-(pdftex.def)             Requested size: 183.85335pt x 166.55586pt.
-<Plots/NVC_sweep/1-500_400_P2.pdf, id=1934, 379.4175pt x 338.26375pt>
-File: Plots/NVC_sweep/1-500_400_P2.pdf Graphic file (type pdf)
-<use Plots/NVC_sweep/1-500_400_P2.pdf>
-Package pdftex.def Info: Plots/NVC_sweep/1-500_400_P2.pdf  used on input line 3
-27.
-(pdftex.def)             Requested size: 183.85335pt x 163.9132pt.
 
 
 [45 <./Plots/D_sweep/D_Eff_sweep.pdf>]
+<Plots/NVC_sweep/1-300_400_P1.pdf, id=1976, 319.1925pt x 287.0725pt>
+File: Plots/NVC_sweep/1-300_400_P1.pdf Graphic file (type pdf)
+<use Plots/NVC_sweep/1-300_400_P1.pdf>
+Package pdftex.def Info: Plots/NVC_sweep/1-300_400_P1.pdf  used on input line 3
+23.
+(pdftex.def)             Requested size: 183.85335pt x 165.3545pt.
+<Plots/NVC_sweep/30-60_400_P1.pdf, id=1977, 316.18124pt x 287.0725pt>
+File: Plots/NVC_sweep/30-60_400_P1.pdf Graphic file (type pdf)
+<use Plots/NVC_sweep/30-60_400_P1.pdf>
+Package pdftex.def Info: Plots/NVC_sweep/30-60_400_P1.pdf  used on input line 3
+28.
+(pdftex.def)             Requested size: 183.85335pt x 166.93143pt.
+<Plots/NVC_sweep/30-60_400_P2.pdf, id=1978, 316.18124pt x 287.0725pt>
+File: Plots/NVC_sweep/30-60_400_P2.pdf Graphic file (type pdf)
+<use Plots/NVC_sweep/30-60_400_P2.pdf>
+Package pdftex.def Info: Plots/NVC_sweep/30-60_400_P2.pdf  used on input line 3
+33.
+(pdftex.def)             Requested size: 183.85335pt x 166.93143pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+<Plots/NVC_sweep/20-30_100_P1.pdf, id=1980, 303.1325pt x 281.05pt>
+File: Plots/NVC_sweep/20-30_100_P1.pdf Graphic file (type pdf)
+<use Plots/NVC_sweep/20-30_100_P1.pdf>
+Package pdftex.def Info: Plots/NVC_sweep/20-30_100_P1.pdf  used on input line 3
+48.
+(pdftex.def)             Requested size: 183.85335pt x 170.46246pt.
+<Plots/NVC_sweep/20-30_100_P2.pdf, id=1981, 364.36125pt x 338.26375pt>
+File: Plots/NVC_sweep/20-30_100_P2.pdf Graphic file (type pdf)
+<use Plots/NVC_sweep/20-30_100_P2.pdf>
+Package pdftex.def Info: Plots/NVC_sweep/20-30_100_P2.pdf  used on input line 3
+53.
+(pdftex.def)             Requested size: 183.85335pt x 170.68506pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -4709,15 +4743,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [47 <./Plots/NVC_sweep/50-800_100_P1.pdf> <./Plots/NVC_sweep/200-350_100_P1.pdf
 > <./Plots/NVC_sweep/200-350_100_P2.pdf>]
 
-[48 <./Plots/NVC_sweep/1-500_400_P1.pdf> <./Plots/NVC_sweep/1-500_400_P2.pdf>]
-Chapter 5.
+[48 <./Plots/NVC_sweep/1-300_400_P1.pdf> <./Plots/NVC_sweep/30-60_400_P1.pdf> <
+./Plots/NVC_sweep/30-60_400_P2.pdf>]
 
+[49 <./Plots/NVC_sweep/20-30_100_P1.pdf> <./Plots/NVC_sweep/20-30_100_P2.pdf>]
 
-[49
+[50
 
 
 ]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2171, page=1, 614.295pt x 794.97pt>
+Chapter 5.
+
+
+[51]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2337, page=1, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 1>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page1 used on 
@@ -4733,8 +4772,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[50]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2176, page=2, 614.295pt x 794.97pt>
+[52]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2342, page=2, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 2>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page2 used on 
@@ -4750,8 +4789,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[51 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2197, page=3, 614.295pt x 794.97pt>
+[53 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2362, page=3, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 3>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page3 used on 
@@ -4767,8 +4806,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[52 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2212, page=4, 614.295pt x 794.97pt>
+[54 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2377, page=4, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 4>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page4 used on 
@@ -4784,8 +4823,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[53 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
-<Circuits/Rectifiers_Board_rotated.pdf, id=2227, page=5, 614.295pt x 794.97pt>
+[55 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
+<Circuits/Rectifiers_Board_rotated.pdf, id=2392, page=5, 614.295pt x 794.97pt>
 File: Circuits/Rectifiers_Board_rotated.pdf Graphic file (type pdf)
 <use Circuits/Rectifiers_Board_rotated.pdf, page 5>
 Package pdftex.def Info: Circuits/Rectifiers_Board_rotated.pdf , page5 used on 
@@ -4801,13 +4840,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[54 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
-<Imm/Top2D.png, id=2242, 1093.08376pt x 659.46375pt>
+[56 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
+<Imm/Top2D.png, id=2407, 1093.08376pt x 659.46375pt>
 File: Imm/Top2D.png Graphic file (type png)
 <use Imm/Top2D.png>
 Package pdftex.def Info: Imm/Top2D.png  used on input line 74.
 (pdftex.def)             Requested size: 383.03122pt x 231.08745pt.
-<Imm/Bottom2D.png, id=2243, 1090.82532pt x 657.2053pt>
+<Imm/Bottom2D.png, id=2408, 1090.82532pt x 657.2053pt>
 File: Imm/Bottom2D.png Graphic file (type png)
 <use Imm/Bottom2D.png>
 Package pdftex.def Info: Imm/Bottom2D.png  used on input line 79.
@@ -4817,23 +4856,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[55 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
+[57 <./Circuits/Rectifiers_Board_rotated.pdf, page is rotated 270 degrees>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[56 <./Imm/Top2D.png> <./Imm/Bottom2D.png>]
-<imm/Soldering.jpg, id=2266, 908.6748pt x 600.8046pt>
+[58 <./Imm/Top2D.png> <./Imm/Bottom2D.png>]
+<imm/Soldering.jpg, id=2432, 908.6748pt x 600.8046pt>
 File: imm/Soldering.jpg Graphic file (type jpg)
 <use imm/Soldering.jpg>
 Package pdftex.def Info: imm/Soldering.jpg  used on input line 94.
 (pdftex.def)             Requested size: 229.82106pt x 151.95177pt.
-<Circuits/3Dmodel/Top3D.png, id=2267, 1053.9375pt x 636.12656pt>
+<Circuits/3Dmodel/Top3D.png, id=2433, 1053.9375pt x 636.12656pt>
 File: Circuits/3Dmodel/Top3D.png Graphic file (type png)
 <use Circuits/3Dmodel/Top3D.png>
 Package pdftex.def Info: Circuits/3Dmodel/Top3D.png  used on input line 102.
 (pdftex.def)             Requested size: 383.03122pt x 231.18935pt.
-<Circuits/3Dmodel/Bottom3D.png, id=2268, 1051.67906pt x 635.37375pt>
+<Circuits/3Dmodel/Bottom3D.png, id=2434, 1051.67906pt x 635.37375pt>
 File: Circuits/3Dmodel/Bottom3D.png Graphic file (type png)
 <use Circuits/3Dmodel/Bottom3D.png>
 Package pdftex.def Info: Circuits/3Dmodel/Bottom3D.png  used on input line 107.
@@ -4845,9 +4884,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (chapters/MeasurementSetup.tex
 
-[57 <./imm/Soldering.jpg>]
+[59 <./imm/Soldering.jpg>]
 
-[58 <./Circuits/3Dmodel/Top3D.png> <./Circuits/3Dmodel/Bottom3D.png>]
+[60 <./Circuits/3Dmodel/Top3D.png> <./Circuits/3Dmodel/Bottom3D.png>]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--1
@@ -4856,16 +4895,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
 
 
-[59
+[61
 
 
 ]
-<imm/Setup.jpg, id=2294, 970.827pt x 572.8602pt>
+<imm/Setup.jpg, id=2459, 970.827pt x 572.8602pt>
 File: imm/Setup.jpg Graphic file (type jpg)
 <use imm/Setup.jpg>
 Package pdftex.def Info: imm/Setup.jpg  used on input line 26.
 (pdftex.def)             Requested size: 306.42613pt x 180.8103pt.
-<imm/Saleae.jpg, id=2296, 1204.5pt x 1204.5pt>
+<imm/Saleae.jpg, id=2461, 1204.5pt x 1204.5pt>
 File: imm/Saleae.jpg Graphic file (type jpg)
 <use imm/Saleae.jpg>
 Package pdftex.def Info: imm/Saleae.jpg  used on input line 38.
@@ -4876,10 +4915,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[60 <./imm/Setup.jpg>]
+[62 <./imm/Setup.jpg>]
 
-[61 <./imm/Saleae.jpg>]
-<imm/Curr_sens.jpg, id=2313, 579.1236pt x 579.1236pt>
+[63 <./imm/Saleae.jpg>]
+<imm/Curr_sens.jpg, id=2479, 579.1236pt x 579.1236pt>
 File: imm/Curr_sens.jpg Graphic file (type jpg)
 <use imm/Curr_sens.jpg>
 Package pdftex.def Info: imm/Curr_sens.jpg  used on input line 59.
@@ -4895,18 +4934,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[62 <./imm/Curr_sens.jpg>]
-<Plots/Curr_sens.pdf, id=2325, 373.395pt x 307.1475pt>
+[64 <./imm/Curr_sens.jpg>]
+<Plots/Curr_sens.pdf, id=2491, 373.395pt x 307.1475pt>
 File: Plots/Curr_sens.pdf Graphic file (type pdf)
 <use Plots/Curr_sens.pdf>
 Package pdftex.def Info: Plots/Curr_sens.pdf  used on input line 86.
 (pdftex.def)             Requested size: 268.12068pt x 220.56018pt.
 
 
-[63 <./Plots/Curr_sens.pdf>]
+[65 <./Plots/Curr_sens.pdf>]
 
-[64]
-<Plots/Res_Prob.pdf, id=2371, 383.4325pt x 295.1025pt>
+[66]
+<Plots/Res_Prob.pdf, id=2536, 383.4325pt x 295.1025pt>
 File: Plots/Res_Prob.pdf Graphic file (type pdf)
 <use Plots/Res_Prob.pdf>
 Package pdftex.def Info: Plots/Res_Prob.pdf  used on input line 119.
@@ -4915,7 +4954,7 @@ Package pdftex.def Info: Plots/Res_Prob.pdf  used on input line 119.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imm/Load.jpg, id=2373, 745.5855pt x 334.6101pt>
+<imm/Load.jpg, id=2538, 745.5855pt x 334.6101pt>
 File: imm/Load.jpg Graphic file (type jpg)
 <use imm/Load.jpg>
 Package pdftex.def Info: imm/Load.jpg  used on input line 131.
@@ -4925,16 +4964,16 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 )
 
-[65]
+[67]
 
-[66 <./Plots/Res_Prob.pdf> <./imm/Load.jpg>] (main.gls) (main.acr
+[68 <./Plots/Res_Prob.pdf> <./imm/Load.jpg>] (main.gls) (main.acr
 
-[67
+[69
 
 
 ])
 
-[68]
+[70]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
 121.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
@@ -4950,43 +4989,43 @@ Overfull \hbox (10.44496pt too wide) in paragraph at lines 121--121
 
 
 
-[69
+[71
 
 
 
 
 ]
 
-[70]
+[72]
 
-[71]
+[73]
 
-[72
+[74
 
 
 ] (docs/acknowledgments.tex)
 
-[73
+[75
 
 
 ]
 
-[74] (main.aux)
+[76] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 124D4D48FA9A3A9F333697DD680CD677;11526.
+(rerunfilecheck)             Checksum: 2BEDDDCFDFDB27F1FF949BD58A69CCEB;11580.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 82303 strings out of 468130
- 1862256 string characters out of 5430633
- 2930846 words of memory out of 5000000
- 109392 multiletter control sequences out of 15000+600000
+ 82329 strings out of 468130
+ 1863206 string characters out of 5430633
+ 2931144 words of memory out of 5000000
+ 109415 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5012,9 +5051,9 @@ type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/font
 s/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fon
 ts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (84 pages, 12070487 bytes).
+Output written on main.pdf (86 pages, 12121104 bytes).
 PDF statistics:
- 2685 PDF objects out of 2984 (max. 8388607)
- 280 named destinations out of 1000 (max. 500000)
- 953 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2852 PDF objects out of 2984 (max. 8388607)
+ 283 named destinations out of 1000 (max. 500000)
+ 968 words of extra memory for PDF output out of 10000 (max. 10000000)
 
