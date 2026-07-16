@@ -8,7 +8,7 @@
 \contentsline {section}{\numberline {1.4}Main Transduction Technologies}{4}{section.1.4}%
 \contentsline {section}{\numberline {1.5}The Variable Reluctance Principle}{5}{section.1.5}%
 \contentsline {section}{\numberline {1.6}State of the Art of VREH}{6}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Open Challenges}{7}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Open Challenges}{8}{section.1.7}%
 \contentsline {section}{\numberline {1.8}Harvester Specifications and Research Objective}{9}{section.1.8}%
 \contentsline {chapter}{\numberline {2}Theoretical Background}{11}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Electrical Model of the Variable-Reluctance Harvester}{11}{section.2.1}%

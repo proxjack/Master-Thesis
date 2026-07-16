@@ -887,6 +887,9 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\ts1zpltlf.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\ts1zpltlf.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\ts1zpltlf.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zplTLF-Regular-ts1.tfm
+INPUT .\imm\BS1.tex
+INPUT .\imm\BS1.tex
+INPUT imm\BS1.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newpx\zpl_TOsF.enc
@@ -1516,6 +1519,8 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\c
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy9.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\type1\public\txfonts\t1xtt.pfb

@@ -53,7 +53,7 @@ indefinitely.
 Batteries are the most common power source for WSN nodes, 
 but they have well-known limitations. In many applications, such as structural health monitoring, industrial 
 machinery surveillance, or medical implants, replacing or 
-recharging depleted batteries is difficult or simply not 
+recharging exhausted batteries is difficult or simply not
 possible \cite{grossiEnergyHarvestingStrategies2021}. Using 
 larger batteries to extend the device lifetime increases the 
 size of the system, which is often not acceptable. In 
@@ -104,19 +104,14 @@ that work in sequence, as illustrated in
 Figure \ref{fig:BD_EHS}.
 
 \begin{itemize}
-    \item \emph{Transducer}: converts the ambient energy into an electrical signal.
-    \item \emph{Power conditioning circuit}: perform AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021}.
+    \item \emph{Transducer}: converts the ambient energy into an electrical signal;
+    \item \emph{Power conditioning circuit}: perform AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021};
     \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is week or no more present. Such element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
 \end{itemize}
 
 
 
-%Inserire uno schema a blocchi di transducer, pcc e nenrgy storage
-\begin{figure}[htbp]
-\centering
-\caption{Block diagram of a typical energy harvesting system.}
-\label{fig:BD_EHS}
-\end{figure}
+\input{imm/BS1.tex}
 
 
 
@@ -304,7 +299,7 @@ to move. The flux variation is caused entirely by the
 relative motion between the toothed wheel and the pickup units.
 This removes the need for a mechanical connection between the 
 rotating part and the harvester, which is an advantage. It also
-means that the device is easy to scale: changing the shaft
+means that the device is easy to scale so changing the shaft
 diameter mainly affects the size of the toothed wheel,
 while the pickup unit can stay the
 same \cite{xuDesignModelingOptimization2019a}. In contrast, traditional
@@ -315,13 +310,8 @@ rotational speeds.
 At low rotational speeds, the output voltage and frequency
 are both small, which makes the design of the interface
 circuit more critical \cite{xuSystemImplementationTradeOffs2021}.
-At the same time, low-speed applications are exactly where
-VREH has the clearest advantage over other electromagnetic
-harvesters, since these typically require a relative
-displacement between coil and magnet that is hard to
-achieve at low speeds \cite{mitchesonEnergyHarvestingHuman2008}.
 
-Its application to energy harvesting is more recent. Kroener et
+Kroener et
 al. \cite{kroenerVariableReluctanceHarvester2013} were among the first to study a
 VREH specifically designed for energy harvesting in railway
 monitoring, showing that the principle could reliably power
@@ -337,7 +327,8 @@ applications \cite{xuSurveyVariableReluctance2018, xuDesignModelingOptimization2
 \section{State of the Art of VREH}
 
 
-The first applications of the variable reluctance principle
+As already mentioned, the first applications of the
+variable reluctance principle
 to energy harvesting appeared in the context of railway
 monitoring. Kroener et al. \cite{kroenerVariableReluctanceHarvester2013} demonstrated
 that a VREH placed beside a rail track could generate
@@ -465,7 +456,7 @@ interface circuit must be designed to handle multiple AC inputs efficiently.
 
 \subsection*{Low output voltage at low speed}
 A fundamental limitation of VREH transducers is that
-the output voltage scales with rotational speed. At low
+the output voltage increases with rotational speed. At low
 speeds, the induced voltage may be well below 1 V, which
 makes rectification difficult because conventional diode
 bridges lose a significant fraction of the available voltage
@@ -497,13 +488,13 @@ to the interface circuit design.
 \section{Harvester Specifications and Research Objective}
 \label{sec:mpvreh_specs}
 
-The work presented in this thesis is based directly on
+The work presented in this thesis is based directly on an updated version of
 the MP-VREH proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024}.
 The electrical characteristics of a single pickup unit,
 obtained from the transducer model, are summarised in
 Table \ref{tab:vreh_par}. These values are used
-throughout this work as the reference operating
-conditions for the design and evaluation of the proposed
+throughout this work as a preliminary reference for the operating
+conditions used in the design and evaluation of the proposed
 power conditioning circuits.
 
 \begin{table}[htbp]

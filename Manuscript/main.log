@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  16 JUL 2026 11:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  16 JUL 2026 14:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3081,26 +3081,32 @@ LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 107.
 
 
-[2]
+[2] (imm/BS1.tex)
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 153.
+(Font)              scaled to size 8.0pt on input line 148.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 6.0pt on input line 153.
+(Font)              scaled to size 6.0pt on input line 148.
 
 
 [3{C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
 
 [4]
+Underfull \vbox (badness 1226) has occurred while \output is active []
+
+
 
 [5]
 
 [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 [7]
 
-[8]) (chapters/Theory.tex
+[8]
 
-[9]
+[9]) (chapters/Theory.tex
 
 [10]
 Chapter 2.
@@ -3363,16 +3369,27 @@ File: Plots/Y_sweep/Y_Eff_sweep.pdf Graphic file (type pdf)
 <use Plots/Y_sweep/Y_Eff_sweep.pdf>
 Package pdftex.def Info: Plots/Y_sweep/Y_Eff_sweep.pdf  used on input line 173.
 (pdftex.def)             Requested size: 248.96794pt x 227.57054pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 <Plots/Y_sweep/Y_PEE_sweep.pdf, id=1671, 370.38374pt x 337.26pt>
 File: Plots/Y_sweep/Y_PEE_sweep.pdf Graphic file (type pdf)
 <use Plots/Y_sweep/Y_PEE_sweep.pdf>
 Package pdftex.def Info: Plots/Y_sweep/Y_PEE_sweep.pdf  used on input line 180.
 (pdftex.def)             Requested size: 248.96794pt x 226.70407pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[38 <./Plots/Y_sweep/Y_Eff_sweep.pdf>]
 
-[39 <./Plots/Y_sweep/Y_PEE_sweep.pdf>]
+
+[38]
+
+LaTeX Warning: Text page 39 contains only floats.
+
+
+
+[39 <./Plots/Y_sweep/Y_Eff_sweep.pdf> <./Plots/Y_sweep/Y_PEE_sweep.pdf>]
 <Circuits/S1x3D_1_IMM.pdf, id=1761, 794.97pt x 614.295pt>
 File: Circuits/S1x3D_1_IMM.pdf Graphic file (type pdf)
 <use Circuits/S1x3D_1_IMM.pdf>
@@ -4304,17 +4321,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 82940 strings out of 468130
- 1877536 string characters out of 5430633
+ 83015 strings out of 468130
+ 1878879 string characters out of 5430633
  2943658 words of memory out of 5000000
- 109881 multiletter control sequences out of 15000+600000
+ 109951 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2557b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (126 pages, 12873126 bytes).
+<C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
+Output written on main.pdf (126 pages, 12883016 bytes).
 PDF statistics:
- 4422 PDF objects out of 5155 (max. 8388607)
+ 4426 PDF objects out of 5155 (max. 8388607)
  414 named destinations out of 1000 (max. 500000)
  1440 words of extra memory for PDF output out of 10000 (max. 10000000)
 

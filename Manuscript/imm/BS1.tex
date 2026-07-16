@@ -1,6 +1,7 @@
 \usetikzlibrary{calc}
 \begin{figure}[h]
   \centering
+  \resizebox{\linewidth}{!}{%
   \begin{tikzpicture}[node distance=1.2cm and 1.4cm,
     block/.style={
         rectangle,
@@ -13,12 +14,12 @@
         font=\small
     },
     arrow/.style={-{Stealth[length=6pt]}, thick},
-    label/.style={font=\footnotesize, gray}
+    label/.style={font=\footnotesize, gray, align=center}
 ]
  
 % Nodes
 \node[block, fill=teal!15, draw=teal!60] (trans)
-    {\textbf{Transducer}\\[4pt]\footnotesize Ambient $\rightarrow$ electrical};
+    {\textbf{Transducer}\\[4pt]\footnotesize Ambient\\$\downarrow$\\electrical};
  
 \node[block, fill=violet!10, draw=violet!50, right=of trans] (pcc)
     {\textbf{Power conditioning}\\[4pt]\footnotesize Rectifier + PMIC\\impedance matching};
@@ -38,15 +39,9 @@
 \draw[arrow] (trans) -- node[above, label]{AC/DC} (pcc);
 \draw[arrow] (pcc)   -- (stor);
 \draw[arrow] (stor)  -- (load);
- 
-% Backup path (dashed, below)
-\draw[-{Stealth[length=5pt]}, dashed, gray, thick]
-    (stor.south) -- ++(0,-0.9)
-    -- node[below, label, midway]{backup (weak/absent source)}
-    ($(trans.south)+(0,-0.9)$)
-    -- (trans.south);
- 
-  \end{tikzpicture}
-  \caption{Energy harvesting chain}
-  \label{fig:energy-harvesting}
+
+  \end{tikzpicture}%
+  }
+  \caption{Block diagram of a typical energy harvesting system.}
+  \label{fig:BD_EHS}
 \end{figure}
