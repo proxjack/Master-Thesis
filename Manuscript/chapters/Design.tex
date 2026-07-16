@@ -23,7 +23,7 @@ In a \emph{star} (Y) connection, one terminal of each of the three coils is join
     v_A(t)-v_B(t) \;=\; e_k(t)-e_{k+2}(t) \;=\; \sqrt{3}\,E_{pk}\cos\!\left(\omega_e t - k\,\frac{\pi}{3}-\frac{\pi}{3}\right),
     \label{eq:star_line}
 \end{equation}
-an amplitude $\sqrt{3}$ times larger than a single phase, and leading it by $30^\circ$.
+an amplitude $\sqrt{3}$ times larger than a single phase, and phase shifted from it by $30^\circ$.
 
 In a \emph{delta} ($\Delta$) connection, the three coils are instead connected end to end in a closed loop, so that each pair of terminals $A$-$B$, $B$-$C$, $C$-$A$ coincides exactly with the two terminals of one coil. The line-to-line voltage is then simply the coil's own EMF,
 \begin{equation}
@@ -51,12 +51,12 @@ Figure \ref{fig:nvc} shows the two-phase NVC used to rectify one of the three tw
     e_{k+3}(t) \;=\; E_{pk}\,\sin\!\left(\omega_e t - (k+3)\,\frac{\pi}{3}\right) \;=\; E_{pk}\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3} - \pi\right) \;=\; -e_k(t),
     \label{eq:antiphase}
 \end{equation}
-since they are $180^\circ$ apart. Connecting the two coils in anti-series, i.e.\ joining their like-polarity terminals together and leaving the other two terminals free, gives a combined open-circuit voltage across the free terminals $A$ and $B$ of
+since they are $180^\circ$ apart. Connecting the two coils in anti-series, i.e.\ joining their same-polarity terminals together and leaving the other two terminals free, gives a combined open-circuit voltage across the free terminals $A$ and $B$ of
 \begin{equation}
     v_A(t) - v_B(t) \;=\; e_k(t) - e_{k+3}(t) \;\overset{\eqref{eq:antiphase}}{=}\; 2\,e_k(t),
     \label{eq:antiseries}
 \end{equation}
-twice the amplitude of a single phase, at the cost of a doubled series impedance $2Z_s$. Connecting the same pair in straight series, by contrast, would simply cancel the two antiphase voltages to zero, since $e_k(t)+e_{k+3}(t)=0$. The three NVC groups therefore pair phases $k=0,3$; $k=1,4$; and $k=2,5$, each combined in anti-series at the terminals $A$ and $B$ of Figure \ref{fig:nvc}. The bridge replaces the diodes of the FWR with four MOSFETs $S_1$--$S_4$, each with a Schottky diode ($D_1$--$D_4$) connected in parallel. $S_1$ and $S_2$ connect terminal $A$ to $\text{OUT+}$ and $\text{OUT-}$ respectively, while $S_3$ and $S_4$ connect terminal $B$ to $\text{OUT+}$ and $\text{OUT-}$ respectively. The bridge is \emph{gate cross-coupled}: the gates of $S_1$ and $S_2$ are tied together and driven directly by terminal $B$, while the gates of $S_3$ and $S_4$ are tied together and driven directly by terminal $A$. No separate gate-drive or polarity-detection circuit is needed, since each pair of switches is driven by the very AC terminal it is not connected to.
+twice the amplitude of a single phase, at the cost of a doubled series impedance $2Z_s$. Connecting the same pair in straight series, by contrast, would simply cancel the two antiphase voltages to zero, since $e_k(t)+e_{k+3}(t)=0$. The three NVC groups therefore pair phases $k=0,3$; $k=1,4$; and $k=2,5$, each combined in anti-series at the terminals $A$ and $B$ of Figure \ref{fig:nvc}. The bridge replaces the diodes of the FWR with four MOSFETs $S_1$--$S_4$, each with a Schottky diode ($D_1$--$D_4$) connected in parallel. $S_1$ and $S_2$ connect terminal $A$ to $\text{OUT+}$ and $\text{OUT-}$ respectively, while $S_3$ and $S_4$ connect terminal $B$ to $\text{OUT+}$ and $\text{OUT-}$ respectively. The bridge is \emph{gate cross-coupled}: the gates of $S_1$ and $S_2$ are tied together and driven directly by terminal $B$, while the gates of $S_3$ and $S_4$ are tied together and driven directly by terminal $A$. This removes the need for a separate gate-drive or polarity-detection circuit, since each pair of switches is simply driven by the other AC terminal.
 
 When $A$ is higher than $B$, the gate voltage $B$ shared by $S_1$ and $S_2$ turns $S_1$ on and keeps $S_2$ off, while the gate voltage $A$ shared by $S_3$ and $S_4$ turns $S_4$ on and keeps $S_3$ off. The load current therefore flows from $A$ through $S_1$ to $\text{OUT+}$, and returns from $\text{OUT-}$ through $S_4$ to $B$. When $B$ is higher than $A$, the roles swap, and the current instead flows through $S_3$ and $S_2$. In either case, the forward voltage drop across the bridge is the sum of the drain-source voltages of the two conducting MOSFETs, rather than a fixed diode drop as in the FWR.
 
