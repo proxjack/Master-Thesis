@@ -46,58 +46,58 @@
 \contentsline {section}{\numberline {4.3}Negative Voltage Converter (NVC)}{46}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.a}Compensation Capacitor ($C_m$) Sweep}{46}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.b}Load Resistance ($R_L$) Sweep}{47}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.c}Frequency Sweep}{48}{subsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.3.d}Efficiency}{49}{subsection.4.3.4}%
-\contentsline {section}{\numberline {4.4}Comparison Between Topologies}{50}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Prototype Board Design}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Overview}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Components Used}{53}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Schematic}{53}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Board Assembly}{61}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Overview}{63}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Test Bench}{63}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Data Acquisition System}{64}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{65}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{67}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{68}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Load Resistor}{69}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Experimental Measurement Results}{71}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Overview}{71}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Full-Wave Rectifier (FWR)}{72}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.a}Star Connection}{72}{subsection.7.2.1}%
-\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{72}{subsubsection*.62}%
-\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{73}{subsubsection*.64}%
-\contentsline {subsubsection}{Frequency Sweep}{73}{subsubsection*.67}%
-\contentsline {subsubsection}{Efficiency}{75}{subsubsection*.71}%
-\contentsline {subsection}{\numberline {7.2.b}Delta Connection}{78}{subsection.7.2.2}%
-\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{78}{subsubsection*.74}%
-\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{78}{subsubsection*.76}%
-\contentsline {subsubsection}{Frequency Sweep}{79}{subsubsection*.79}%
-\contentsline {subsubsection}{Efficiency}{80}{subsubsection*.83}%
-\contentsline {section}{\numberline {7.3}Negative Voltage Converter (NVC)}{84}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.a}Compensation Capacitor ($C_m$) Sweep}{84}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.b}Load Resistance ($R_L$) Sweep}{84}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.c}Frequency Sweep}{85}{subsection.7.3.3}%
-\contentsline {subsection}{\numberline {7.3.d}Efficiency}{86}{subsection.7.3.4}%
-\contentsline {section}{\numberline {7.4}Comparison Between Topologies}{88}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Simulation and Measurement Comparison}{91}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Overview}{91}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Full-Wave Rectifier (FWR)}{92}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.a}Star Connection}{92}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.b}Delta Connection}{92}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Negative Voltage Converter (NVC)}{93}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Discussion}{93}{section.8.4}%
-\contentsline {chapter}{\numberline {9}Power Management IC Compatibility}{97}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Overview}{97}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Open-Circuit Voltage Across Topologies}{97}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Candidate Power Management ICs}{99}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.a}DS-AEM13920\_VR}{99}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.b}DS-AEM10941\_VR}{99}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.c}bq25570}{101}{subsection.9.3.3}%
-\contentsline {subsection}{\numberline {9.3.d}SPV1050}{101}{subsection.9.3.4}%
-\contentsline {subsection}{\numberline {9.3.e}SPV1040}{103}{subsection.9.3.5}%
-\contentsline {section}{\numberline {9.4}Compatibility Analysis}{103}{section.9.4}%
-\contentsline {chapter}{Acronyms}{107}{section*.117}%
-\contentsline {chapter}{Bibliography}{109}{section*.119}%
-\contentsline {chapter}{Acknowledgments}{113}{section*.121}%
+\contentsline {subsection}{\numberline {4.3.c}Frequency Sweep}{49}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.d}Efficiency}{50}{subsection.4.3.4}%
+\contentsline {section}{\numberline {4.4}Comparison Between Topologies}{51}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Prototype Board Design}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Overview}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Components Used}{55}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Schematic}{55}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Board Assembly}{63}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Experimental Measurement Setup}{65}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Overview}{65}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Test Bench}{65}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Data Acquisition System}{66}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Current Sensing: Shunt Resistors and Instrumentation Amplifiers}{67}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Current Sensors Calibration}{69}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Shunt Resistor Characterization}{70}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Load Resistor}{71}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Experimental Measurement Results}{73}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Overview}{73}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Full-Wave Rectifier (FWR)}{74}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.a}Star Connection}{74}{subsection.7.2.1}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{74}{subsubsection*.63}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{75}{subsubsection*.65}%
+\contentsline {subsubsection}{Frequency Sweep}{75}{subsubsection*.68}%
+\contentsline {subsubsection}{Efficiency}{77}{subsubsection*.72}%
+\contentsline {subsection}{\numberline {7.2.b}Delta Connection}{80}{subsection.7.2.2}%
+\contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{80}{subsubsection*.75}%
+\contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{80}{subsubsection*.77}%
+\contentsline {subsubsection}{Frequency Sweep}{81}{subsubsection*.80}%
+\contentsline {subsubsection}{Efficiency}{82}{subsubsection*.84}%
+\contentsline {section}{\numberline {7.3}Negative Voltage Converter (NVC)}{86}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.a}Compensation Capacitor ($C_m$) Sweep}{86}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.b}Load Resistance ($R_L$) Sweep}{86}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.c}Frequency Sweep}{87}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.d}Efficiency}{88}{subsection.7.3.4}%
+\contentsline {section}{\numberline {7.4}Comparison Between Topologies}{90}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Simulation and Measurement Comparison}{93}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Overview}{93}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Full-Wave Rectifier (FWR)}{94}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.a}Star Connection}{94}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.b}Delta Connection}{94}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Negative Voltage Converter (NVC)}{95}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Discussion}{95}{section.8.4}%
+\contentsline {chapter}{\numberline {9}Power Management IC Compatibility}{99}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Overview}{99}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Open-Circuit Voltage Across Topologies}{99}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Candidate Power Management ICs}{101}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.a}DS-AEM13920\_VR}{101}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.b}DS-AEM10941\_VR}{101}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.c}bq25570}{103}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.d}SPV1050}{103}{subsection.9.3.4}%
+\contentsline {subsection}{\numberline {9.3.e}SPV1040}{105}{subsection.9.3.5}%
+\contentsline {section}{\numberline {9.4}Compatibility Analysis}{105}{section.9.4}%
+\contentsline {chapter}{Acronyms}{109}{section*.118}%
+\contentsline {chapter}{Bibliography}{111}{section*.120}%
+\contentsline {chapter}{Acknowledgments}{115}{section*.122}%

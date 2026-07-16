@@ -62,7 +62,7 @@ When $A$ is higher than $B$, the gate voltage $B$ shared by $S_1$ and $S_2$ turn
 
 This switching mechanism only works once the gate-source voltage across the conducting pair is large enough to turn the MOSFETs fully on. Below a critical voltage difference $V_\text{off}\approx1.2\ \text{V}$ between $A$ and $B$, set by the largest threshold voltage among the four MOSFETs, the devices cannot switch properly, and the parallel Schottky diodes $D_1$--$D_4$ carry the current instead: in this regime the NVC behaves like an FWR, with the same two-diode-drop loss. Above $V_\text{off}$, the MOSFETs conduct with an on-resistance much smaller than a diode's forward drop, and the output voltage tracks the input with very low losses. 
 
-% For the MP-VREH, the single-phase source amplitude $E_{pk}$ of Section \ref{sec:mpvreh_specs} already exceeds $V_\text{off}$ at the lowest end of the 100--400\,rpm target range, so a single NVC design used across the whole speed range is expected to stay in the favourable, MOSFET-limited regime throughout, rather than falling back to diode-limited operation at low speed as the FWR does.
+% For the MP-VREH, the single-phase source amplitude $E_{pk}$ of Section \ref{sec:mpvreh_specs} already exceeds $V_\text{off}$ at the lowest end of the 100-400\,rpm target range, so a single NVC design used across the whole speed range is expected to stay in the favourable, MOSFET-limited regime throughout, rather than falling back to diode-limited operation at low speed as the FWR does.
 
 \begin{figure}[H]
     \centering
