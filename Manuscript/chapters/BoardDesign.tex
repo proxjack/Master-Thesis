@@ -31,8 +31,7 @@ The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC brid
 \section{Schematic}
 \label{sec:board_schematic}
 
-Figures \ref{fig:board_sch_p1}--\ref{fig:board_sch_p6} show the complete schematic of the prototype board, page by page. The board integrates both FWR three-phase groups (labelled FBR1, FBR2 in the schematic) and all three NVC bridges (NVC1--NVC3), together with jumpers that reconfigure each coil between the FWR and NVC paths, the FWR groups between star and delta connection, and the compensation capacitor $C_m$ of each coil, so that every configuration simulated in Chapter \ref{ch:simulations} can be tested on the same board.
-
+Figures \ref{fig:board_sch_p1}-\ref{fig:board_sch_p6} show the complete schematic of the prototype board, page by page. The board integrates both FWR three-phase groups (labelled FBR1, FBR2 in the schematic, i.e. Full bridge rectifier) and all three NVC bridges (NVC1, NVC2, NVC3), together with jumpers that reconfigure each coil between the FWR and NVC paths, the FWR groups between star and delta connection, and the compensation capacitor $C_m$ of each coil, so that every configuration simulated in Chapter \ref{ch:simulations} can be tested on the same board.
 \newpage
 
 \begin{figure}[H]
@@ -89,7 +88,15 @@ Figures \ref{fig:board_sch_p1}--\ref{fig:board_sch_p6} show the complete schemat
 \section{Board Assembly}
 \label{sec:board_assembly}
 
-Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly from the PCB design tool, before assembly. On the top view, the six coil connectors (COIL1--COIL6) sit on the left, each next to its own bank of matching capacitors, with the Y/D and FBR/NVC selection jumpers in the middle, and the NVC and FBR rectifier sections, each with their own output connector and filter capacitors, on the right. The bottom view carries the same University of Padua engraving already visible on the copper layout of Figure \ref{fig:board_sch_p6}.
+Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly from Altium Designer, before assembly. On the top view, the six coil connectors (COIL1-COIL6) sit on the left, each next to its own bank of matching capacitors, with the Y/D and FBR/NVC selection jumpers in the middle, and the NVC and FBR rectifier sections, each with their own output connector and filter capacitors, on the right.
+
+
+
+
+
+The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges through the soldering process: the two diodes, on the left, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
+
+
 
 \begin{figure}[h!]
     \centering
@@ -112,8 +119,3 @@ Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly f
     \caption{3D rendering of the prototype board: top (a) and bottom (b) views.}
     \label{fig:board_3d}
 \end{figure}
-
-The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges partway through this process: the two diodes, on the left, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
-
-
-
