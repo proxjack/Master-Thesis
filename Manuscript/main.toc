@@ -69,7 +69,7 @@
 \contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{74}{subsubsection*.63}%
 \contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{75}{subsubsection*.65}%
 \contentsline {subsubsection}{Frequency Sweep}{75}{subsubsection*.68}%
-\contentsline {subsubsection}{Efficiency}{77}{subsubsection*.72}%
+\contentsline {subsubsection}{Efficiency}{76}{subsubsection*.72}%
 \contentsline {subsection}{\numberline {7.2.b}Delta Connection}{80}{subsection.7.2.2}%
 \contentsline {subsubsection}{Compensation Capacitor ($C_m$) Sweep}{80}{subsubsection*.75}%
 \contentsline {subsubsection}{Load Resistance ($R_L$) Sweep}{80}{subsubsection*.77}%
@@ -98,6 +98,5 @@
 \contentsline {subsection}{\numberline {9.3.d}SPV1050}{103}{subsection.9.3.4}%
 \contentsline {subsection}{\numberline {9.3.e}SPV1040}{105}{subsection.9.3.5}%
 \contentsline {section}{\numberline {9.4}Compatibility Analysis}{105}{section.9.4}%
-\contentsline {chapter}{Acronyms}{109}{section*.118}%
-\contentsline {chapter}{Bibliography}{111}{section*.120}%
-\contentsline {chapter}{Acknowledgments}{115}{section*.122}%
+\contentsline {chapter}{Bibliography}{111}{section*.118}%
+\contentsline {chapter}{Acknowledgments}{115}{section*.120}%
