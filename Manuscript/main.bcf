@@ -2438,6 +2438,11 @@
     <bcf:citekey order="55" intorder="1">xuDesignModelingOptimization2019a</bcf:citekey>
     <bcf:citekey order="56" intorder="1">wuMultiPhaseVariableReluctance2024</bcf:citekey>
     <bcf:citekey order="57" intorder="1">xuSystemImplementationTradeOffs2021</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">epeasAem13920Datasheet</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">epeasAem10941Datasheet</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">tiBq25570Datasheet</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">stSpv1050Datasheet</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">stSpv1040Datasheet</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

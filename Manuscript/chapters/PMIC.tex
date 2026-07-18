@@ -9,7 +9,7 @@ This chapter looks beyond the rectifier stage studied throughout the rest of the
 \section{Open-Circuit Voltage Across Topologies}
 \label{sec:pmic_ocv}
 
-Tables \ref{tab:pmic_ocv_star}--\ref{tab:pmic_ocv_nvc} report the open-circuit voltage $V_{OC}$ measured at the output of each rectifier topology, i.e.\ with no load connected ($R_L=\infty$), together with the high-frequency ripple superimposed on it, over the same $100$-$400\ \text{rpm}$ speed range used throughout Chapter \ref{ch:measurements}. This is the voltage a downstream PMIC's input pin would see before any load is drawn, and is the quantity compared against each candidate PMIC's input voltage range in Section \ref{sec:pmic_compatibility}.
+Tables \ref{tab:pmic_ocv_star}-\ref{tab:pmic_ocv_nvc} report the open-circuit voltage $V_{OC}$ measured at the output of each rectifier topology, i.e.\ with no load connected ($R_L=\infty$), together with the high-frequency ripple superimposed on it, over the same $100$-$400\ \text{rpm}$ speed range used throughout Chapter \ref{ch:measurements}. This is the voltage a downstream PMIC's input pin would see before any load is drawn, and is the quantity compared against each candidate PMIC's input voltage range in Section \ref{sec:pmic_compatibility}.
 
 \begin{table}[htbp]
     \centering
@@ -73,12 +73,12 @@ The star connection's open-circuit voltage grows the most steeply with speed, fr
 \section{Candidate Power Management ICs}
 \label{sec:pmic_candidates}
 
-This section summarises five commercially available PMICs considered as candidates for the six-phase harvester, each specified in terms of the input voltage range it accepts from the rectifier stage and the output(s) it regulates that range down to.
+This section summarises five commercially available PMICs considered as candidates for the six-phase harvester, each specified in terms of the input voltage range it accepts from the rectifier stage and the outputs it regulates that range down to.
 
 \subsection{DS-AEM13920\_VR}
 \label{sec:pmic_aem13920}
 
-\href{https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf}{Datasheet}
+\href{https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf}{Datasheet} \cite{epeasAem13920Datasheet}
 
 \begin{figure}[htbp]
     \centering
@@ -121,7 +121,7 @@ The output voltage is regulated with a Buck converter connected to the storage e
 \subsection{DS-AEM10941\_VR}
 \label{sec:pmic_aem10941}
 
-\href{https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf}{Datasheet}
+\href{https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf}{Datasheet} \cite{epeasAem10941Datasheet}
 
 \begin{figure}[htbp]
     \centering
@@ -173,7 +173,7 @@ The output voltage is regulated using a Buck converter with constant voltage (ty
 \subsection{bq25570}
 \label{sec:pmic_bq25570}
 
-\href{https://www.ti.com/lit/ds/symlink/bq25570.pdf}{Datasheet}
+\href{https://www.ti.com/lit/ds/symlink/bq25570.pdf}{Datasheet} \cite{tiBq25570Datasheet}
 
 \begin{figure}[htbp]
     \centering
@@ -216,7 +216,7 @@ The output voltage is regulated with a Buck converter connected to the storage e
 \subsection{SPV1050}
 \label{sec:pmic_spv1050}
 
-\href{https://www.st.com/resource/en/datasheet/spv1050.pdf}{Datasheet}
+\href{https://www.st.com/resource/en/datasheet/spv1050.pdf}{Datasheet} \cite{stSpv1050Datasheet}
 
 \begin{figure}[htbp]
     \centering
@@ -267,7 +267,7 @@ The SPV1050 can be configured either as a Boost or as a Buck-Boost converter at 
 \subsection{SPV1040}
 \label{sec:pmic_spv1040}
 
-\href{https://www.st.com/resource/en/datasheet/spv1040.pdf}{Datasheet}
+\href{https://www.st.com/resource/en/datasheet/spv1040.pdf}{Datasheet} \cite{stSpv1040Datasheet}
 
 \begin{figure}[htbp]
     \centering
@@ -296,7 +296,7 @@ No output-stage specification is available for this device from the source mater
 \section{Compatibility Analysis}
 \label{sec:pmic_compatibility}
 
-Table \ref{tab:pmic_compatibility} compares each PMIC's input voltage range against the open-circuit voltage measured for each topology (Tables \ref{tab:pmic_ocv_star}--\ref{tab:pmic_ocv_nvc}), to identify over which part of the $100$-$400\ \text{rpm}$ tested range the two remain compatible. Since the delta connection's open-circuit voltage never exceeds $3.755\ \text{V}$ and the NVC's never exceeds $3.20\ \text{V}$, both stay within the input range of every one of the six PMIC configurations across the whole tested speed range. The star connection, reaching $7.04\ \text{V}$ at $400\ \text{rpm}$, exceeds the input range of four of the six configurations above a certain speed, listed in the table; only the SPV1050's Buck-Boost configuration, with its $18\ \text{V}$ upper limit, accommodates the star connection's open-circuit voltage across the entire tested range.
+Table \ref{tab:pmic_compatibility} compares each PMIC's input voltage range against the open-circuit voltage measured for each topology (Tables \ref{tab:pmic_ocv_star}-\ref{tab:pmic_ocv_nvc}), to identify over which part of the $100$-$400\ \text{rpm}$ tested range the two remain compatible. Since the delta connection's open-circuit voltage, including its ripple, never exceeds $3.755+0.017=3.772\ \text{V}$ and the NVC's never exceeds $3.20+0.639=3.839\ \text{V}$, both stay within the input range of every one of the six PMIC configurations across the whole tested speed range. The star connection, reaching $7.04+0.012=7.052\ \text{V}$ including its ripple at $400\ \text{rpm}$, exceeds the input range of four of the six configurations above a certain speed, listed in the table; only the SPV1050's Buck-Boost configuration, with its $18\ \text{V}$ upper limit, accommodates the star connection's open-circuit voltage across the entire tested range.
 
 \begin{table}[htbp]
     \centering
@@ -318,4 +318,4 @@ Table \ref{tab:pmic_compatibility} compares each PMIC's input voltage range agai
 
 Cold-start capability follows a different pattern, since it is set by the source cold-start voltage $V_{cs}$ rather than the upper end of the input range, and must be met already at the lowest speed the harvester is expected to start from, $100\ \text{rpm}$. Against the $V_{cs}$ values in Table \ref{tab:pmic_compatibility}, all three topologies exceed the cold-start threshold of the first four configurations (at most $0.6\ \text{V}$) already at $100\ \text{rpm}$, where the lowest of the three open-circuit voltages, the delta connection's, is still $1.00\ \text{V}$. The much higher threshold of the SPV1050's Buck-Boost configuration ($2.6$-$2.8\ \text{V}$) is not met by any topology at $100\ \text{rpm}$: the star connection crosses it by $150\ \text{rpm}$ ($2.83\ \text{V}$), the NVC sits at the edge of the range already at $100\ \text{rpm}$ ($2.70\ \text{V}$) and clears it by $150\ \text{rpm}$ ($3.05\ \text{V}$), and the delta connection only clears it by $300\ \text{rpm}$ ($2.825\ \text{V}$). The SPV1040's threshold ($0.8$-$2\ \text{V}$) sits closer to the three topologies' voltages at $100\ \text{rpm}$: the star connection is already at the top of the range ($1.98\ \text{V}$), the NVC is above it ($2.70\ \text{V}$), and the delta connection sits within the lower half of the range ($1.00\ \text{V}$), only clearing its upper bound between $200$ and $250\ \text{rpm}$.
 
-Overall, the delta connection and the NVC can be paired with any of the five PMICs considered without additional input protection, cold-starting at the lowest speed tested for four of the six configurations. The star connection, despite delivering the highest open-circuit voltage and, consistent with Chapters \ref{ch:measurements} and \ref{ch:comparison}, the highest output power at higher speeds, would need either the wide-range SPV1050 Buck-Boost configuration or an input clamp ahead of a narrower-range device to be used safely above $250$-$300\ \text{rpm}$.
+Overall, the delta connection and the NVC can be paired with any of the five PMICs considered without additional input protection, cold-starting at the lowest speed tested for four of the six configurations. The star connection delivers the highest open-circuit voltage, and, as Chapters \ref{ch:measurements} and \ref{ch:comparison} show, the highest output power at higher speeds. To use it safely above $250$-$300\ \text{rpm}$, though, it would need either the wide-range SPV1050 Buck-Boost configuration, or a clamp added in front of a narrower-range device to protect its input.
