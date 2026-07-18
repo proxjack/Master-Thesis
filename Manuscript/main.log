@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5509,18 +5509,12 @@ No file main.acr.
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-127.
+101.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 127.
-
-Overfull \hbox (10.44496pt too wide) in paragraph at lines 127--127
-\T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T
-1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
- []
-
+(Font)              scaled to size 10.95pt on input line 101.
 
 
 [113
@@ -5584,7 +5578,7 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 12944380 bytes).
+Output written on main.pdf (130 pages, 12944154 bytes).
 PDF statistics:
  4514 PDF objects out of 5155 (max. 8388607)
  408 named destinations out of 1000 (max. 500000)
