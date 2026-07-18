@@ -85,9 +85,9 @@
 \contentsline {section}{\numberline {8.1}Overview}{93}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Full-Wave Rectifier (FWR)}{94}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.a}Star Connection}{94}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.b}Delta Connection}{94}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.b}Delta Connection}{95}{subsection.8.2.2}%
 \contentsline {section}{\numberline {8.3}Negative Voltage Converter (NVC)}{95}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Discussion}{95}{section.8.4}%
+\contentsline {section}{\numberline {8.4}Discussion}{96}{section.8.4}%
 \contentsline {chapter}{\numberline {9}Power Management IC Compatibility}{99}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Overview}{99}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Open-Circuit Voltage Across Topologies}{99}{section.9.2}%

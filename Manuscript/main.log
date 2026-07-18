@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  17 JUL 2026 17:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2810,30 +2810,30 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \c@theorem=\count628
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 82.
+(Font)              scaled to size 10.95pt on input line 83.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 82.
-LaTeX Font Info:    ... okay on input line 82.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2896,7 +2896,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@mv@tabular=\count635
 \c@mv@boldtabular=\count636
-Package hyperref Info: Link coloring ON on input line 82.
+Package hyperref Info: Link coloring ON on input line 83.
  (main.out) (main.out)
 \@outlinefile=\write9
 \openout9 = `main.out'.
@@ -2924,8 +2924,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 82.
-Package biblatex Info: Reference segment=0 on input line 82.
+Package biblatex Info: Reference section=0 on input line 83.
+Package biblatex Info: Reference segment=0 on input line 83.
 \c@lstlisting=\count637
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
@@ -2968,24 +2968,24 @@ pdfTeX warning: pdflatex (file ./template/universis.pdf): PDF inclusion: found P
 <template/universis.pdf, id=449, 547.96718pt x 186.70352pt>
 File: template/universis.pdf Graphic file (type pdf)
 <use template/universis.pdf>
-Package pdftex.def Info: template/universis.pdf  used on input line 84.
+Package pdftex.def Info: template/universis.pdf  used on input line 85.
 (pdftex.def)             Requested size: 200.42024pt x 68.28644pt.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 84.
+(Font)              scaled to size 10.95pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 84.
+(Font)              scaled to size 20.74pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 84.
+(Font)              scaled to size 20.74pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 84.
+(Font)              scaled to size 12.0pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 84.
+(Font)              scaled to size 12.0pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 84.
+(Font)              scaled to size 10.0pt on input line 85.
 
 
 
@@ -2994,7 +2994,7 @@ pdfTeX warning: pdflatex (file ./template/unipdbg.pdf): PDF inclusion: found PDF
 <template/unipdbg.pdf, id=450, 608.18213pt x 574.15504pt>
 File: template/unipdbg.pdf Graphic file (type pdf)
 <use template/unipdbg.pdf>
-Package pdftex.def Info: template/unipdbg.pdf  used on input line 84.
+Package pdftex.def Info: template/unipdbg.pdf  used on input line 85.
 (pdftex.def)             Requested size: 618.84615pt x 584.27246pt.
 [1
 
@@ -3009,7 +3009,7 @@ Package pdftex.def Info: template/unipdbg.pdf  used on input line 84.
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 84.
+(Font)              scaled to size 10.95pt on input line 85.
 
 
 [3]
@@ -3019,9 +3019,9 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 84.
+(Font)              scaled to size 10.95pt on input line 85.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 84.
+(Font)              scaled to size 24.88pt on input line 85.
  (main.toc
 
 [5
@@ -4215,7 +4215,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1590) has occurred while \output is active []
 
 
 
@@ -4223,6 +4223,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
+Underfull \vbox (badness 3199) has occurred while \output is active []
+
+
 
 [94]
 
@@ -4247,12 +4250,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 [99]
 
 [100]
-<imm/DS-AEM13920_VR_Block_Diagram.png, id=4109, 704.6325pt x 605.26125pt>
+<imm/DS-AEM13920_VR_Block_Diagram.png, id=4127, 704.6325pt x 605.26125pt>
 File: imm/DS-AEM13920_VR_Block_Diagram.png Graphic file (type png)
 <use imm/DS-AEM13920_VR_Block_Diagram.png>
 Package pdftex.def Info: imm/DS-AEM13920_VR_Block_Diagram.png  used on input line 85.
 (pdftex.def)             Requested size: 248.96794pt x 213.85794pt.
-<imm/DS-AEM10941_VR_Block_Diagram.png, id=4111, 776.9025pt x 655.69969pt>
+<imm/DS-AEM10941_VR_Block_Diagram.png, id=4129, 776.9025pt x 655.69969pt>
 File: imm/DS-AEM10941_VR_Block_Diagram.png Graphic file (type png)
 <use imm/DS-AEM10941_VR_Block_Diagram.png>
 Package pdftex.def Info: imm/DS-AEM10941_VR_Block_Diagram.png  used on input line 128.
@@ -4262,17 +4265,17 @@ Package pdftex.def Info: imm/DS-AEM10941_VR_Block_Diagram.png  used on input lin
 [101 <./imm/DS-AEM13920_VR_Block_Diagram.png>]
 
 [102 <./imm/DS-AEM10941_VR_Block_Diagram.png>]
-<imm/bq25570_Block_Diagram.png, id=4128, 707.64375pt x 499.11469pt>
+<imm/bq25570_Block_Diagram.png, id=4146, 707.64375pt x 499.11469pt>
 File: imm/bq25570_Block_Diagram.png Graphic file (type png)
 <use imm/bq25570_Block_Diagram.png>
 Package pdftex.def Info: imm/bq25570_Block_Diagram.png  used on input line 180.
 (pdftex.def)             Requested size: 268.12068pt x 189.10959pt.
-<imm/SPV1050_Block_Diagram.png, id=4130, 816.04875pt x 515.67656pt>
+<imm/SPV1050_Block_Diagram.png, id=4148, 816.04875pt x 515.67656pt>
 File: imm/SPV1050_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1050_Block_Diagram.png>
 Package pdftex.def Info: imm/SPV1050_Block_Diagram.png  used on input line 223.
 (pdftex.def)             Requested size: 248.96794pt x 157.32439pt.
-<imm/SPV1040_Block_Diagram.png, id=4133, 608.2725pt x 581.92406pt>
+<imm/SPV1040_Block_Diagram.png, id=4151, 608.2725pt x 581.92406pt>
 File: imm/SPV1040_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1040_Block_Diagram.png>
 Package pdftex.def Info: imm/SPV1040_Block_Diagram.png  used on input line 274.
@@ -4303,14 +4306,14 @@ No file main.acr.
 
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 125.
+LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 126.
  (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 125.
+(Font)              scaled to size 10.95pt on input line 126.
 
-Overfull \hbox (10.44496pt too wide) in paragraph at lines 125--125
+Overfull \hbox (10.44496pt too wide) in paragraph at lines 126--126
 \T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
  []
 
@@ -4349,15 +4352,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  83194 strings out of 468130
  1881527 string characters out of 5430633
- 2946095 words of memory out of 5000000
+ 2946008 words of memory out of 5000000
  110155 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2557b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (128 pages, 12924255 bytes).
+Output written on main.pdf (128 pages, 12929016 bytes).
 PDF statistics:
- 4424 PDF objects out of 5155 (max. 8388607)
+ 4442 PDF objects out of 5155 (max. 8388607)
  395 named destinations out of 1000 (max. 500000)
  1437 words of extra memory for PDF output out of 10000 (max. 10000000)
 
