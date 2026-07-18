@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1784402172.63903 "main.bcf" "main.bbl" "main" 1784402269.34482 0
-  "main.bcf" 1784402266.4697 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
+["biber main"] 1784402851.55329 "main.bcf" "main.bbl" "main" 1784402893.31651 0
+  "main.bcf" 1784402890.31666 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
   "refs.bib" 1784402097.17104 37628 53383d7df95b07ccde5433ea4fba60e9 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784402253.7355 "main.tex" "main.pdf" "main" 1784402269.34614 0
+["pdflatex"] 1784402877.71003 "main.tex" "main.pdf" "main" 1784402893.31749 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784026442.45741 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -531,7 +531,7 @@
   "chapters/abstract.tex" 1783333837.09121 2880 2ae0f580bab45e9b116b6b1aaac3ddc1 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
   "custom-symbols.tex" 1784145154.4594 353 a907ae195fbeb1cdfc513b4a45ece0b0 ""
-  "docs/acknowledgments.tex" 1773833088.15626 115 dbdcf034a0cce734e23c3a719effa62b ""
+  "docs/acknowledgments.tex" 1784402388.9989 67 7e40f93eb04b2bad298a402ed7494467 ""
   "docs/glossary.tex" 1784274828.64094 1554 bce1b0529156158f59662edf07c356f0 ""
   "imm/Airgap_swing.png" 1783075052.6624 209883 af51773db9372568e0e96e585ae22c6d ""
   "imm/BS1.tex" 1784198117.35026 1485 ba749de54fec00da75a2aa7dc61152bb ""
@@ -547,18 +547,18 @@
   "imm/VR_theory.pdf" 1779791790.16379 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "imm/bq25570_Block_Diagram.png" 1784145033.76023 65946 644cde2993c3b16450b0671658f7e53e ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1784402266.41 83803 d2f1a806b325d3796246976c7ddf446f "pdflatex"
-  "main.bbl" 1784402191.91927 64203 f925960c4711df7b507ccd7250352a93 "biber main"
+  "main.aux" 1784402890.23645 83803 d2f1a806b325d3796246976c7ddf446f "pdflatex"
+  "main.bbl" 1784402854.32662 64203 f925960c4711df7b507ccd7250352a93 "biber main"
   "main.gls" 0 -1 0 ""
-  "main.out" 1784402266.45043 18695 b627d9aa23003491fa1dec927bbe56f4 "pdflatex"
-  "main.run.xml" 1784402266.4697 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
-  "main.tex" 1784402043.30434 3135 d6c9731fc6b563aecfac750697ff4c4f ""
-  "main.toc" 1784402266.47756 9102 b547b3edea582b2dc89d4e5ca440a314 "pdflatex"
-  "pdfa.xmpi" 1784402255.77999 5042 27bcc90cb3f3de266f2d722632535579 "pdflatex"
+  "main.out" 1784402890.28795 18695 b627d9aa23003491fa1dec927bbe56f4 "pdflatex"
+  "main.run.xml" 1784402890.32164 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.tex" 1784402332.47708 3135 d6c9731fc6b563aecfac750697ff4c4f ""
+  "main.toc" 1784402890.32299 9102 b547b3edea582b2dc89d4e5ca440a314 "pdflatex"
+  "pdfa.xmpi" 1784402878.92176 5042 0c85cd8f1c20d2c5ae971780c11bd85b "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""
-  "unipd-thesis-modern.cls" 1783939466.33077 15058 358fd3f7c79a67f97cbbdefc8a30e996 ""
+  "unipd-thesis-modern.cls" 1784402769.4605 15192 068a02d81e77b6a1888089bf6c607e74 ""
   (generated)
   "main.acn"
   "main.aux"

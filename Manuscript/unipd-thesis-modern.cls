@@ -209,8 +209,9 @@
 
 
 % -- TITLES, HEADERS AND FOOTERS --
-\RequirePackage{scrextend} % remove headers and footers in blank pages 
+\RequirePackage{scrextend} % remove headers and footers in blank pages
 % NOTE: loaded before pdfx to avoid conflicts
+\KOMAoptions{cleardoublepage=plain} % auto-inserted blank pages get the plain style (page number only, no running header)
 
 \RequirePackage{fancyhdr} % custom headers and footers
 \RequirePackage[explicit]{titlesec} % custom title style
@@ -595,10 +596,11 @@
 % -- BACKMATTER --
 \renewcommand{\backmatter}{
     \cleardoublepage
+    \thispagestyle{plain}
 
     % glossary
-    \begingroup     
-    \let\clearpage\relax        
+    \begingroup
+    \let\clearpage\relax
     \printglossaries
     \endgroup
     

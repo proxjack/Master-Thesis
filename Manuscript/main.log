@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3735,7 +3735,7 @@ Package: leftindex 2024/01/31 v0.2beta
 \l__leftindex_subscript_temp_box=\box160
 \l__leftindex_width_of_subscript_dim=\dimen473
 ))
-Package hyperref Info: Option `colorlinks' set `true' on input line 632.
+Package hyperref Info: Option `colorlinks' set `true' on input line 634.
 ) (C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \g__lipsum_par_int=\count612
@@ -5550,7 +5550,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  83247 strings out of 468130
  1883019 string characters out of 5430633
- 2946764 words of memory out of 5000000
+ 2946817 words of memory out of 5000000
  110194 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5578,7 +5578,7 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 12944154 bytes).
+Output written on main.pdf (130 pages, 12944608 bytes).
 PDF statistics:
  4514 PDF objects out of 5155 (max. 8388607)
  408 named destinations out of 1000 (max. 500000)
