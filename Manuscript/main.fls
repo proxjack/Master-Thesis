@@ -1484,6 +1484,12 @@ INPUT .\imm\SPV1040_Block_Diagram.png
 INPUT .\chapters\Conclusions.tex
 INPUT .\chapters\Conclusions.tex
 INPUT chapters\Conclusions.tex
+INPUT .\main.gls
+INPUT .\main.gls
+INPUT main.gls
+INPUT .\main.acr
+INPUT .\main.acr
+INPUT main.acr
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\newpx\t1npxtt.fd
