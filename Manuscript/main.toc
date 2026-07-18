@@ -98,5 +98,11 @@
 \contentsline {subsection}{\numberline {9.3.d}SPV1050}{103}{subsection.9.3.4}%
 \contentsline {subsection}{\numberline {9.3.e}SPV1040}{105}{subsection.9.3.5}%
 \contentsline {section}{\numberline {9.4}Compatibility Analysis}{105}{section.9.4}%
-\contentsline {chapter}{Bibliography}{111}{section*.118}%
-\contentsline {chapter}{Acknowledgments}{115}{section*.120}%
+\contentsline {chapter}{\numberline {10}Conclusions}{109}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Summary}{109}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Key Findings}{109}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Practical Implications}{110}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Limitations}{110}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Future Work}{110}{section.10.5}%
+\contentsline {chapter}{Bibliography}{113}{section*.118}%
+\contentsline {chapter}{Acknowledgments}{117}{section*.120}%
