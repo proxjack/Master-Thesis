@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  18 JUL 2026 21:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5529,14 +5529,24 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 [116
 
 
-] (docs/acknowledgments.tex)
+] (docs/acknowledgments.tex
 
 [117
 
 
 ]
 
-[118] (main.aux)
+[118]
+<imm/SDL.jpg, id=4346, 700.2963pt x 933.7284pt>
+File: imm/SDL.jpg Graphic file (type jpg)
+<use imm/SDL.jpg>
+Package pdftex.def Info: imm/SDL.jpg  used on input line 9.
+(pdftex.def)             Requested size: 344.72575pt x 459.63956pt.
+)
+
+[119
+
+ <./imm/SDL.jpg>] (main.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -5548,10 +5558,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 83247 strings out of 468130
- 1883019 string characters out of 5430633
+ 83257 strings out of 468130
+ 1883208 string characters out of 5430633
  2946817 words of memory out of 5000000
- 110194 multiletter control sequences out of 15000+600000
+ 110203 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5578,9 +5588,9 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 12944608 bytes).
+Output written on main.pdf (131 pages, 16348181 bytes).
 PDF statistics:
- 4514 PDF objects out of 5155 (max. 8388607)
- 408 named destinations out of 1000 (max. 500000)
- 1485 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4520 PDF objects out of 5155 (max. 8388607)
+ 409 named destinations out of 1000 (max. 500000)
+ 1490 words of extra memory for PDF output out of 10000 (max. 10000000)
 
