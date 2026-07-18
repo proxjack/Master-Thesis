@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1784393592.51426 "main.bcf" "main.bbl" "main" 1784393897.32731 0
-  "main.bcf" 1784393896 114317 50601abe79a35c99f52b95bdecbcc0d5 "pdflatex"
+["biber main"] 1784398199.57607 "main.bcf" "main.bbl" "main" 1784398932.90033 0
+  "main.bcf" 1784398932 114317 50601abe79a35c99f52b95bdecbcc0d5 "pdflatex"
   "refs.bib" 1783951577 37017 0681fe504e1545b99c32db5e7e4047ca ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1784393889.07413 "c:/UNIPD/Magistrale/Master Thesis/Manuscript/main.tex" "main.pdf" "main" 1784393897.32803 0
+["pdflatex"] 1784398924.60979 "c:/UNIPD/Magistrale/Master Thesis/Manuscript/main.tex" "main.pdf" "main" 1784398932.90106 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784026442 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954 13286966 e7490d2baf4e82c397637554381a672f ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -524,8 +524,8 @@
   "chapters/Introduction.tex" 1784204327 26665 0248ce3da2e0a16986d5ed8a0a9fb022 ""
   "chapters/MeasurementSetup.tex" 1784277929 15170 80102ec1203b02e00a04a4725eee54e8 ""
   "chapters/Measurements.tex" 1784301978 28597 209d0ecff5c51794d7b951a1f0e46e95 ""
-  "chapters/PMIC.tex" 1784214613 15422 95337b5ea490c269d548071b79deb491 ""
-  "chapters/SimMeasComparison.tex" 1784393888 13988 4cb9f2134a067fa8e8fe721ff2429281 ""
+  "chapters/PMIC.tex" 1784398923 15419 47909b5938983498d682e7f50d93ac1c ""
+  "chapters/SimMeasComparison.tex" 1784398263 12263 a2371c3d430bed6725098ea524ebf39d ""
   "chapters/Simulations.tex" 1784393451 44039 0b8fcb32e2491937535f0fd0c51dc6ae ""
   "chapters/Theory.tex" 1784214613 32152 2de93ca7a756bc839abb393944ed870d ""
   "chapters/abstract.tex" 1783333837 2880 2ae0f580bab45e9b116b6b1aaac3ddc1 ""
@@ -547,14 +547,14 @@
   "imm/VR_theory.pdf" 1779791790 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "imm/bq25570_Block_Diagram.png" 1784145033 65946 67c6c34bcf33017e81586dcb599067d0 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1784393896 81583 aea106ec6ac48a292bd3046931a9b1d5 "pdflatex"
-  "main.bbl" 1784393594 59478 70da255c72c80241f3cf49145788a659 "biber main"
+  "main.aux" 1784398932 81521 d0cfb7fb2342cc819f2044745380de1b "pdflatex"
+  "main.bbl" 1784398201 59478 70da255c72c80241f3cf49145788a659 "biber main"
   "main.gls" 0 -1 0 ""
-  "main.out" 1784393896 17980 6bd3bb5df97ab5361a5ff96a2b9f0056 "pdflatex"
-  "main.run.xml" 1784393896 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1784398932 17980 6bd3bb5df97ab5361a5ff96a2b9f0056 "pdflatex"
+  "main.run.xml" 1784398932 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1784393550 4030 9acdfa044ddc8a792447d5cfe68e143a ""
-  "main.toc" 1784393896 8648 66bc491e59c136c01fba9bf3c552c323 "pdflatex"
-  "pdfa.xmpi" 1784393890 5042 b9485aa82e70c227faa5b2b219e4ed94 "pdflatex"
+  "main.toc" 1784398932 8648 1f855003e796477fdce3cd8a832dd56a "pdflatex"
+  "pdfa.xmpi" 1784398925 5042 95857c95a63f8246b2f49239b3f32ffb "pdflatex"
   "template/extras.tex" 1773833088 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892 142582 b442848f700784647bf2ab115ae3287d ""
   "template/universis.pdf" 1776333969 117986 21853b0a4da715a3df48abb62b9855c6 ""
