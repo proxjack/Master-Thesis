@@ -13,7 +13,7 @@ power transfer theorem and the role of impedance matching.
 \subsection{Faraday's law}
 \label{sec:faraday_law}
 
-The Faraday's law is the starting point for any electromagnetic transducer, which relates the electromotive force $\varepsilon(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop. 
+Faraday's law, which relates the electromotive force $\varepsilon(t)$ (EMF) induced in a closed loop wire to the time rate of change of the magnetic flux $\Phi(t)$ linked to the loop, is the starting point for any electromagnetic transducer.
 
 \begin{equation}
     \varepsilon(t) = -\frac{\dd \Phi(t)}{\dd t}
@@ -39,7 +39,7 @@ where $\Phi_i$ is the flux linkage associated with a single turn of the coil\cit
 
 \subsection{Variable Reluctance Principle}
 
-Unlike conventional electromagnetic transducers, in which the EMF is induced by a relative motion between a permanent magnet (PM) and a pickup coil, a variable-reluctance energy harvester (VREH) keeps both the magnet and the coil stationary. The magnetic flux linked to the coil is instead modulated by the passage of a rotating, toothed ferromagnetic wheel in front of a stationary pickup unit: as a tooth or a slot alternately faces the pickup unit, the reluctance of the magnetic circuit changes periodically, and it is this reluctance variation (rather than any motion of the magnet) that drives the flux change $\Phi_i(t)$ in \eqref{eq:faraday_dis} \cite{xuSurveyVariableReluctance2018}. Because the rotating part carries no magnet, no coil and no electrical connection, the resulting transducer is mechanically simple, robust, and easily scalable to shafts of different diameters \cite{xuDesignModelingOptimization2019a}.
+Unlike conventional electromagnetic transducers, in which the EMF is induced by relative motion between a permanent magnet (PM) and a pickup coil, a variable-reluctance energy harvester (VREH) keeps both the magnet and the coil stationary. The magnetic flux linked to the coil is instead modulated by the passage of a rotating, toothed ferromagnetic wheel in front of a stationary pickup unit: as a tooth or a slot alternately faces the pickup unit, the reluctance of the magnetic circuit changes periodically, and it is this reluctance variation (rather than any motion of the magnet) that drives the flux change $\Phi_i(t)$ in \eqref{eq:faraday_dis} \cite{xuSurveyVariableReluctance2018}. Because the rotating part carries no magnet, no coil and no electrical connection, the resulting transducer is mechanically simple, robust, and easily scalable to shafts of different diameters \cite{xuDesignModelingOptimization2019a}.
 
 \begin{figure}[h!]
     \centering
@@ -49,7 +49,7 @@ Unlike conventional electromagnetic transducers, in which the EMF is induced by 
 \end{figure}
 
 
-The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes. Fig. \ref{fig:Airgap_swing} illustrates this swing directly where the air-gap flux density rises sharply to a plateau at the aligned position and nearly collapses at the unaligned position, confirming that the flux change is concentrated within a narrow angular window around each tooth-slot transition.
+The pole-piece and the toothed wheel are both made of soft ferromagnetic material, while the PM is a hard ferromagnetic material providing a magnetomotive force (MMF) $\mathcal{F}_M$ that can be taken as constant. As the wheel rotates, the pickup unit cycles between two extreme relative positions: the \emph{aligned} position, where a pole of the pickup unit faces a tooth of the wheel and the air-gap reluctance is minimum, and the \emph{unaligned} position, where the pole faces a slot and the reluctance is maximum \cite{xuSurveyVariableReluctance2018,xuDesignModelingOptimization2019a}. The corresponding flux swings between a maximum $\Phi_{max}$ and a minimum $\Phi_{min}$, so that the relevant design quantity is the flux difference $\Delta\Phi = \Phi_{max}-\Phi_{min}$ between the two extremes. Fig. \ref{fig:Airgap_swing} illustrates this swing directly: the air-gap flux density rises sharply to a plateau at the aligned position and nearly collapses at the unaligned position, confirming that the flux change is concentrated within a narrow angular window around each tooth-slot transition.
 
 \begin{figure}[h!]
     \centering
@@ -139,7 +139,7 @@ The same reasoning applies to the magnet height by setting $\dv{\Delta\Phi}{h_M}
     h_M^{\ast} \;=\; \mu_M\,\frac{k_2}{k_1}\,\frac{W_{g,a}}{W_{g,u}}\,\sqrt{l_{g,a}\,l_{g,u}},
     \label{eq:optimal_hm}
 \end{equation}
-where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap length and width at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors that account, respectively, for flux leakage and for the MMF drop across the finite-permeability soft iron \cite{xuDesignModelingOptimization2019a}.
+where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap lengths and widths at the aligned and unaligned positions, and $k_1,k_2>1$ are correction factors that account, respectively, for flux leakage and for the MMF drop across the finite-permeability soft iron \cite{xuDesignModelingOptimization2019a}.
 
 
 
@@ -166,7 +166,7 @@ where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap lengt
 
 
 
-The Faraday law derivation of Section \ref{sec:faraday_law} gives the ideal electromotive force induced in the coil, but it does not yet describe how that voltage appears at the physical terminals of the pickup unit. A real coil is made of a finite length of copper wire, so it has a nonzero winding resistance, and it carries a current that produces its own magnetic flux, so it also has a nonzero self inductance. Both effects are in series with the ideal source, since the same wire that generates the electromotive force also carries the resistance and the flux linkage that define $R_{Coil}$ and $L_{Coil}$.
+The derivation of Faraday's law in Section \ref{sec:faraday_law} gives the ideal electromotive force induced in the coil, but it does not yet describe how that voltage appears at the physical terminals of the pickup unit. A real coil is made of a finite length of copper wire, so it has a nonzero winding resistance, and it carries a current that produces its own magnetic flux, so it also has a nonzero self inductance. Both effects are in series with the ideal source, since the same wire that generates the electromotive force also carries the resistance and the flux linkage that define $R_{Coil}$ and $L_{Coil}$.
 
 \subsubsection*{Circuit equation}
 
@@ -225,7 +225,7 @@ where $E$, $I$ and $V$ are the phasors associated with $e(t)$, $i(t)$ and $v(t)$
     Z_s \;=\; R_{Coil} + j\,\omega_e\,L_{Coil},
     \label{eq:source_impedance_def}
 \end{equation}
-which is precisely the Th\'{e}venin source impedance used in \eqref{eq:source_impedance} for the impedance matching analysis of Section \ref{sec:impedance_matching}. The series generator, resistance, inductance model derived in this section therefore provides the electrical foundation on which the maximum power transfer condition of the next section, and the power conditioning topologies compared in Chapter \ref{ch:topologies}, are built.
+which is precisely the Th\'{e}venin source impedance used in \eqref{eq:source_impedance} for the impedance matching analysis of Section \ref{sec:impedance_matching}. The series generator, resistance, and inductance model derived in this section therefore provides the electrical foundation on which the maximum power transfer condition of the next section, and the power conditioning topologies compared in Chapter \ref{ch:topologies}, are built.
 
 
 \subsection{Maximum Power Transfer and Impedance Matching}
@@ -326,8 +326,8 @@ Let $\omega_e=2\pi f_c$ be the electrical angular frequency common to all six ph
     e_k(t) \;=\; E_{pk}(\omega_e)\,\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right), \qquad k=0,1,\dots,5.
     \label{eq:phase_voltage}
 \end{equation}
-Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}(\omega_e)$ are the same for all six units at a given speed, the six branches differ only in the phase term of \eqref{eq:phase_voltage}; so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
+Each phase drives the power conditioning circuit through its own series impedance $Z_s=R_{Coil}+j\,\omega_e L_{Coil}$, exactly as derived for the single pickup unit in \eqref{eq:source_impedance}. Because $R_{Coil}$, $L_{Coil}$ and $E_{pk}(\omega_e)$ are the same for all six units at a given speed, the six branches differ only in the phase term of \eqref{eq:phase_voltage}, so the same circuit design can be reused for every phase, each one simply delayed in time by $60^\circ$.
 
 \subsection{Design Requirements for the Interface Circuit}
 
-The specifications summarised in Table \ref{tab:vreh_par} fix the operating envelope that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this section; over the 100-400\,rpm target speed range, this puts $E_{pk}$ at about $1.8\ \text{V}$ to $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.
+The specifications summarised in Table \ref{tab:vreh_par} fix the operating envelope that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this section; over the 100-400\,rpm target speed range, this relation puts $E_{pk}$ between about $1.8\ \text{V}$ and $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.

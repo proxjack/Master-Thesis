@@ -1,22 +1,22 @@
 # Fdb version 4
-["biber main"] 1784708875.83827 "main.bcf" "main.bbl" "main" 1784711389.07024 0
-  "main.bcf" 1784711386.33405 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
+["biber main"] 1784708875.83827 "main.bcf" "main.bbl" "main" 1784711579.59534 0
+  "main.bcf" 1784711576.95736 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
   "refs.bib" 1784708870.13867 38018 72b8022d2954150fee28ddc49dbe254c ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["cusdep acn acr main"] 0 "main.acn" "main.acr" "main" 1784711389.07211 -1
-  "main.acn" 1784711386.34072 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
+["cusdep acn acr main"] 0 "main.acn" "main.acr" "main" 1784711579.59639 -1
+  "main.acn" 1784711576.96361 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
   (generated)
   "main.acr"
   (rewritten before read)
-["cusdep glo gls main"] 1784708545.60977 "main.glo" "main.gls" "main" 1784711389.06887 0
-  "main.glo" 1784711379.80266 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep glo gls main"] 1784708545.60977 "main.glo" "main.gls" "main" 1784711579.5944 0
+  "main.glo" 1784711570.86645 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.gls"
   (rewritten before read)
-["pdflatex"] 1784711377.25081 "main.tex" "main.pdf" "main" 1784711389.07312 0
+["pdflatex"] 1784711568.30473 "main.tex" "main.pdf" "main" 1784711579.59709 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784549957.32092 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -537,7 +537,7 @@
   "chapters/PMIC.tex" 1784708849.81898 15652 45167751d29c5bc892dfab80a9d9b616 ""
   "chapters/SimMeasComparison.tex" 1784708845.81611 12261 63679ee800d8ffafcc2b910e1716a4c5 ""
   "chapters/Simulations.tex" 1784708854.71584 44039 6405a4a435dc16f5aacb9520c3495981 ""
-  "chapters/Theory.tex" 1784708475.19091 32179 2ad29c6d61653ee47c91a63a769d204c ""
+  "chapters/Theory.tex" 1784711560.31499 32194 3898ec43bb4178b11312a98bdc2021aa ""
   "chapters/abstract.tex" 1784708475.46376 2880 b6624fae14a64526ea43f8b2336a1086 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
   "custom-symbols.tex" 1784145154.4594 353 a907ae195fbeb1cdfc513b4a45ece0b0 ""
@@ -560,14 +560,14 @@
   "imm/bq25570_Block_Diagram.png" 1784145033.76023 65946 644cde2993c3b16450b0671658f7e53e ""
   "imm/dragon_emoji.png" 1784404474.50882 3834 064540d6acdfe3c0f1fe2a74dd93c17a ""
   "main.acr" 1784708546.4719 3452 5a241a1f74d91ad90b44edc4b560685f "cusdep acn acr main"
-  "main.aux" 1784711386.29492 84030 2fdabe1d34e2872b95e1d1f268d4e7cc "pdflatex"
+  "main.aux" 1784711576.91897 84030 2fdabe1d34e2872b95e1d1f268d4e7cc "pdflatex"
   "main.bbl" 1784708878.62572 65656 a0318498e46e346b664009e8eb496c43 "biber main"
   "main.gls" 1784708546.1351 6 9f404503043ec80c08484be9f659189e "cusdep glo gls main"
-  "main.out" 1784711386.32398 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
-  "main.run.xml" 1784711386.34072 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1784711576.94549 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
+  "main.run.xml" 1784711576.96361 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1784550036.05173 3123 f7742f8259f26066440b009a09d0c0cc ""
-  "main.toc" 1784711386.34072 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
-  "pdfa.xmpi" 1784711378.35414 5042 7e4416910fbb06d7af5caf6f450eb99b "pdflatex"
+  "main.toc" 1784711576.96361 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
+  "pdfa.xmpi" 1784711569.4124 5042 3ea8ffe353d87188ad580ca213e98168 "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""
