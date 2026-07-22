@@ -1,6 +1,6 @@
-PWD C:\UNIPD\Magistrale\Master Thesis\Manuscript
+PWD c:\UNIPD\Magistrale\Master Thesis\Manuscript
 INPUT C:\Users\jacop\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\UNIPD\Magistrale\Master Thesis\Manuscript\main.tex
 OUTPUT main.log
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
