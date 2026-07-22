@@ -48,7 +48,7 @@
       \field{day}{18}
       \field{journaltitle}{Smart Materials and Structures}
       \field{month}{5}
-      \field{shortjournal}{Smart Materials and Structures}
+      \field{shortjournal}{Smart Mater. Struct.}
       \field{title}{A {{Review}} of {{Power Harvesting Using Piezoelectric Materials}} (2003-2006)}
       \field{volume}{16}
       \field{year}{2007}
@@ -96,7 +96,7 @@
       \field{day}{1}
       \field{journaltitle}{Measurement Science and Technology}
       \field{month}{12}
-      \field{shortjournal}{Measurement Science and Technology}
+      \field{shortjournal}{Meas. Sci. Technol.}
       \field{title}{Energy {{Harvesting Vibration Sources}} for {{Microsystems Applications}}}
       \field{volume}{17}
       \field{year}{2006}
@@ -257,7 +257,6 @@
       \field{langid}{english}
       \field{month}{3}
       \field{number}{2}
-      \field{shortjournal}{Nano Energy}
       \field{title}{Flexible Triboelectric Generator}
       \field{urlday}{30}
       \field{urlmonth}{4}
@@ -429,7 +428,7 @@
       \field{langid}{english}
       \field{month}{12}
       \field{number}{1}
-      \field{shortjournal}{J. Phys.: Conf. Ser.}
+      \field{shortjournal}{J. Phys. Conf. Ser.}
       \field{title}{Variable Reluctance Harvester for Applications in Railroad Monitoring}
       \field{urlday}{4}
       \field{urlmonth}{5}
@@ -497,7 +496,7 @@
       \field{day}{1}
       \field{journaltitle}{Energy Strategy Reviews}
       \field{month}{1}
-      \field{shortjournal}{Energy Strategy Reviews}
+      \field{shortjournal}{Energy Strategy Rev.}
       \field{shorttitle}{Energy Harvesting Techniques for Wireless Sensor Networks}
       \field{title}{Energy Harvesting Techniques for Wireless Sensor Networks: {{A}} Systematic Literature Review}
       \field{volume}{57}
@@ -619,7 +618,7 @@
       \field{langid}{english}
       \field{month}{7}
       \field{number}{11}
-      \field{shortjournal}{Computer Communications}
+      \field{shortjournal}{Comput. Commun.}
       \field{title}{A Study of Low Level Vibrations as a Power Source for Wireless Sensor Nodes}
       \field{urlday}{27}
       \field{urlmonth}{4}
@@ -834,6 +833,7 @@
       \field{journaltitle}{IEEE Sensors Journal}
       \field{month}{4}
       \field{number}{8}
+      \field{shortjournal}{IEEE Sens. J.}
       \field{title}{A {{Survey}} on {{Variable Reluctance Energy Harvesters}} in {{Low-Speed Rotating Applications}}}
       \field{urlday}{4}
       \field{urlmonth}{5}
@@ -894,7 +894,7 @@
       \field{issn}{0196-8904}
       \field{journaltitle}{Energy Conversion and Management}
       \field{month}{9}
-      \field{shortjournal}{Energy Conversion and Management}
+      \field{shortjournal}{Energy Convers. Manag.}
       \field{title}{Design, Modeling and Optimization of an m-Shaped Variable Reluctance Energy Harvester for Rotating Applications}
       \field{urlday}{4}
       \field{urlmonth}{5}
@@ -966,7 +966,6 @@
       \field{langid}{english}
       \field{month}{9}
       \field{number}{18}
-      \field{shortjournal}{Sensors}
       \field{title}{System {{Implementation Trade-Offs}} for {{Low-Speed Rotational Variable Reluctance Energy Harvesters}}}
       \field{urlday}{10}
       \field{urlmonth}{3}
@@ -1077,6 +1076,7 @@
       \field{journaltitle}{IEEE Transactions on Power Electronics}
       \field{month}{8}
       \field{number}{8}
+      \field{shortjournal}{IEEE Trans. Power Electron.}
       \field{title}{A {{Discontinuous Conduction Mode Single-Stage Step-Up Rectifier}} for {{Low-Voltage Energy Harvesting Applications}}}
       \field{urlday}{12}
       \field{urlmonth}{3}

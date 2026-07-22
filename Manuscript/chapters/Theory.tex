@@ -35,7 +35,7 @@ In case of a coil consisting of $N_c$ turns mechanically spaced one respect to e
 \end{equation}
 
 
-where $\Phi_i$ is the flux linkage associated with a single turn of the coil\cite{xuSurveyVariableReluctance2018}.
+where $\Phi_i$ is the flux linkage associated with a single turn of the coil \cite{xuSurveyVariableReluctance2018}.
 
 \subsection{Variable Reluctance Principle}
 
@@ -180,7 +180,7 @@ where $v(t)$ is the voltage measured at the coil terminals, available to the pow
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{Circuits/Coil_model.pdf}
-    \caption{Series generator model of the pickup unit: an ideal source in series with the winding resistance $R_{Coil}$ and inductance $L_{Coil}$}.
+    \caption{Series generator model of the pickup unit: an ideal source in series with the winding resistance $R_{Coil}$ and inductance $L_{Coil}$.}
     \label{fig:coil_model}
 \end{figure}
 
@@ -330,4 +330,4 @@ Each phase drives the power conditioning circuit through its own series impedanc
 
 \subsection{Design Requirements for the Interface Circuit}
 
-The specifications summarised in Table \ref{tab:vreh_par} fix the operating envelope that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this section; over the 100-400\,rpm target speed range, this relation puts $E_{pk}$ between about $1.8\ \text{V}$ and $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.
+The specifications summarised in Table \ref{tab:vreh_par} fix the operating range that the interface circuit must handle. The load voltages $V_\text{Lpk}$ reported there are measured under the impedance-matched condition of \eqref{eq:vload}, i.e.\ half of the open-circuit source amplitude $E_{pk}$ of \eqref{eq:phase_voltage} used throughout this section; over the 100-400\,rpm target speed range, this relation puts $E_{pk}$ between about $1.8\ \text{V}$ and $3.5\ \text{V}$. The rectifier must remain efficient at these low input voltages. Because the six phases are electrically identical but time-shifted, as shown in \eqref{eq:phase_voltage}, the interface circuit must either replicate the same rectification stage six times, one per phase, or combine the six inputs in a way that preserves the impedance matching condition of Section \ref{sec:impedance_matching} for each of them individually. These two requirements, low-voltage operation and per-phase impedance matching across a variable speed range, motivate the comparison of rectifying topologies carried out in Chapter \ref{ch:topologies}.

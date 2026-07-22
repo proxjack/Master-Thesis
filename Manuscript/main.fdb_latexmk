@@ -1,22 +1,22 @@
 # Fdb version 4
-["biber main"] 1784712390.53176 "main.bcf" "main.bbl" "main" 1784712442.87473 0
-  "main.bcf" 1784712438.93748 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
-  "refs.bib" 1784708870.13867 38018 72b8022d2954150fee28ddc49dbe254c ""
+["biber main"] 1784724144.24031 "main.bcf" "main.bbl" "main" 1784724195.54101 0
+  "main.bcf" 1784724191.31969 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
+  "refs.bib" 1784724139.5098 37982 037347a65cb4f11a59c04c5400428aa9 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["cusdep acn acr main"] 0 "main.acn" "main.acr" "main" 1784712442.87567 -1
-  "main.acn" 1784712438.94174 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
+["cusdep acn acr main"] 0 "main.acn" "main.acr" "main" 1784724195.54222 -1
+  "main.acn" 1784724191.31969 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
   (generated)
   "main.acr"
   (rewritten before read)
-["cusdep glo gls main"] 1784712389.6269 "main.glo" "main.gls" "main" 1784712442.86845 0
-  "main.glo" 1784712430.54695 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep glo gls main"] 1784712389.6269 "main.glo" "main.gls" "main" 1784724195.5403 0
+  "main.glo" 1784724182.47783 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.gls"
   (rewritten before read)
-["pdflatex"] 1784712427.66424 "main.tex" "main.pdf" "main" 1784712442.8763 0
+["pdflatex"] 1784724179.47551 "main.tex" "main.pdf" "main" 1784724195.54298 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784549957.32092 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -528,16 +528,16 @@
   "Plots/Y_sweep/Y_Eff_sweep.pdf" 1783937658.77023 11313 de4ea8ba2b1bf01fd1f32d0357230b6c ""
   "Plots/Y_sweep/Y_PEE_sweep.pdf" 1784194509.11754 11204 ebec1b90c4e36afe16ab7890fc7f6705 ""
   "Plots/Y_sweep/Y_Power_sweep.pdf" 1783696130.97628 10449 9cae43d8b5d35da3c13cede0b9066b40 ""
-  "chapters/BoardDesign.tex" 1784711802.20065 6351 7be13bc8c96beecd476a660ae14e7ed3 ""
+  "chapters/BoardDesign.tex" 1784712913.14944 6351 7be13bc8c96beecd476a660ae14e7ed3 ""
   "chapters/Conclusions.tex" 1784709881.03458 3700 a1755c2478fce9f716943dfd6ca9038b ""
   "chapters/Design.tex" 1784711795.8367 11742 30e4da6ab6728d009b4362b2613db6f8 ""
-  "chapters/Introduction.tex" 1784711370.23791 26716 cb8c6636db2897da75ac56db04d6625f ""
+  "chapters/Introduction.tex" 1784715677.34453 26716 cb8c6636db2897da75ac56db04d6625f ""
   "chapters/MeasurementSetup.tex" 1784708464.8258 15170 5f4d46832c09d546277545f729ed7e26 ""
   "chapters/Measurements.tex" 1784708852.34628 28595 137802de1f2ec592a9b27c83e13aa338 ""
   "chapters/PMIC.tex" 1784708849.81898 15652 45167751d29c5bc892dfab80a9d9b616 ""
   "chapters/SimMeasComparison.tex" 1784712176.6462 12255 96cbfe8a44284a3c07a15f5f1866f455 ""
   "chapters/Simulations.tex" 1784712000.32652 44043 1824770f3c126a1dbc8ece0808d110e1 ""
-  "chapters/Theory.tex" 1784711560.31499 32194 3898ec43bb4178b11312a98bdc2021aa ""
+  "chapters/Theory.tex" 1784724080.90537 32192 78e10b36ff74c687c58c73bbb167dc91 ""
   "chapters/abstract.tex" 1784712339.3186 2883 40822c5b4c8dabae56282e7c8a3f2732 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
   "custom-symbols.tex" 1784145154.4594 353 a907ae195fbeb1cdfc513b4a45ece0b0 ""
@@ -560,14 +560,14 @@
   "imm/bq25570_Block_Diagram.png" 1784145033.76023 65946 644cde2993c3b16450b0671658f7e53e ""
   "imm/dragon_emoji.png" 1784404474.50882 3834 064540d6acdfe3c0f1fe2a74dd93c17a ""
   "main.acr" 1784712390.44272 3452 5a241a1f74d91ad90b44edc4b560685f "cusdep acn acr main"
-  "main.aux" 1784712438.88507 84028 e75e8af7312b86b1ac43575372d1eb3e "pdflatex"
-  "main.bbl" 1784712393.94272 65656 a0318498e46e346b664009e8eb496c43 "biber main"
+  "main.aux" 1784724191.25259 84029 98e464c024c4d709e9d178acc7d144de "pdflatex"
+  "main.bbl" 1784724147.12024 65631 5de5fddedceaeaf259517ac9cd8f2b1d "biber main"
   "main.gls" 1784712390.05586 6 9f404503043ec80c08484be9f659189e "cusdep glo gls main"
-  "main.out" 1784712438.91443 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
-  "main.run.xml" 1784712438.94174 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.out" 1784724191.29501 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
+  "main.run.xml" 1784724191.31969 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1784550036.05173 3123 f7742f8259f26066440b009a09d0c0cc ""
-  "main.toc" 1784712438.94174 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
-  "pdfa.xmpi" 1784712428.90042 5042 bbd0ea34887e723d227411c3c6c03d92 "pdflatex"
+  "main.toc" 1784724191.31969 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
+  "pdfa.xmpi" 1784724180.8525 5042 d4ef9900eeb821431ea84526d53793e1 "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""
