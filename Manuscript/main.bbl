@@ -161,6 +161,66 @@
       \endverb
       \keyw{AC-DC power conversion,Buck-boost conversion,Capacitors,Converters,energy harvesting,Energy harvesting,Inductors,low power,low voltage,MOSFETs,Switches,Topology}
     \endentry
+    \entry{epeasAem10941Datasheet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0cac1ae053ee448531ce23b99554759}{%
+           family={{e-peas}},
+           familyi={e\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {e-peas}%
+      }
+      \strng{namehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{fullhash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{fullhashraw}{b0cac1ae053ee448531ce23b99554759}
+      \strng{bibnamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorbibnamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authornamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorfullhash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorfullhashraw}{b0cac1ae053ee448531ce23b99554759}
+      \field{extraname}{1}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{DS-AEM10941}} {{Datasheet}}}
+      \verb{urlraw}
+      \verb https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf
+      \endverb
+      \verb{url}
+      \verb https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf
+      \endverb
+    \endentry
+    \entry{epeasAem13920Datasheet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=b0cac1ae053ee448531ce23b99554759}{%
+           family={{e-peas}},
+           familyi={e\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {e-peas}%
+      }
+      \strng{namehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{fullhash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{fullhashraw}{b0cac1ae053ee448531ce23b99554759}
+      \strng{bibnamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorbibnamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authornamehash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorfullhash}{b0cac1ae053ee448531ce23b99554759}
+      \strng{authorfullhashraw}{b0cac1ae053ee448531ce23b99554759}
+      \field{extraname}{2}
+      \field{sortinit}{e}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{DS-AEM13920}} {{Datasheet}}}
+      \verb{urlraw}
+      \verb https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf
+      \endverb
+      \verb{url}
+      \verb https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf
+      \endverb
+    \endentry
     \entry{fanFlexibleTriboelectricGenerator2012}{article}{}{}
       \name{author}{3}{}{%
         {{hash=9e7568b67aa6c467cc7bb4775c0e30ed}{%
@@ -584,6 +644,95 @@
       \endverb
       \keyw{INTRO}
     \endentry
+    \entry{stSpv1040Datasheet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={{STMicroelectronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {STMicroelectronics}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{SPV1040}} {{Datasheet}}}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/datasheet/spv1040.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/datasheet/spv1040.pdf
+      \endverb
+    \endentry
+    \entry{stSpv1050Datasheet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=c38884ab3cf908c2798725960369391b}{%
+           family={{STMicroelectronics}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {STMicroelectronics}%
+      }
+      \strng{namehash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
+      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
+      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{SPV1050}} {{Datasheet}}}
+      \verb{urlraw}
+      \verb https://www.st.com/resource/en/datasheet/spv1050.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.st.com/resource/en/datasheet/spv1050.pdf
+      \endverb
+    \endentry
+    \entry{tiBq25570Datasheet}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=67e54b1ee931f3f4bddfefa5fbde5fd8}{%
+           family={{Texas Instruments}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Texas Instruments}%
+      }
+      \strng{namehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{fullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{bibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorbibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authornamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \strng{authorfullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{{bq25570}} {{Datasheet}}}
+      \verb{urlraw}
+      \verb https://www.ti.com/lit/ds/symlink/bq25570.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ti.com/lit/ds/symlink/bq25570.pdf
+      \endverb
+    \endentry
     \entry{wuMultiPhaseVariableReluctance2024}{inproceedings}{}{}
       \name{author}{3}{}{%
         {{hash=05c253c0a4cd0a6b1a1055027e1ddc73}{%
@@ -953,11 +1102,6 @@
       \keyw{AC/DC conversion,boost,buck–boost,Capacitors,energy harvesting,Energy harvesting,Inductors,low power,low voltage,Low voltage,MOSFET,Switches,Topology}
     \endentry
   \enddatalist
-  \missing{epeasAem10941Datasheet}
-  \missing{epeasAem13920Datasheet}
-  \missing{stSpv1040Datasheet}
-  \missing{stSpv1050Datasheet}
-  \missing{tiBq25570Datasheet}
 \endrefsection
 \endinput
 
