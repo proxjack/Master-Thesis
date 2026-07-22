@@ -1,15 +1,21 @@
 [0] Config.pm:328> INFO - This is Biber 2.21
 [0] Config.pm:331> INFO - Logfile is 'main.blg'
-[177] biber-MSWIN64:342> INFO - === 
-[235] Biber.pm:421> INFO - Reading 'main.bcf'
-[384] Biber.pm:1002> INFO - Found 21 citekeys in bib section 0
-[401] Biber.pm:4487> INFO - Processing section 0
-[416] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
-[492] bibtex.pm:1713> INFO - LaTeX decoding ...
-[606] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
-[852] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[853] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[853] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[853] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
-[890] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[911] bbl.pm:779> INFO - Output to main.bbl
+[106] biber-MSWIN64:342> INFO - === 
+[151] Biber.pm:421> INFO - Reading 'main.bcf'
+[290] Biber.pm:1002> INFO - Found 21 citekeys in bib section 0
+[305] Biber.pm:4487> INFO - Processing section 0
+[320] Biber.pm:4678> INFO - Looking for bibtex file 'refs.bib' for section 0
+[409] bibtex.pm:1713> INFO - LaTeX decoding ...
+[459] bibtex.pm:1519> INFO - Found BibTeX data source 'refs.bib'
+[602] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[602] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[612] Biber.pm:4307> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[612] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[633] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[647] bbl.pm:779> INFO - Output to main.bbl
+[647] Biber.pm:132> WARN - I didn't find a database entry for 'epeasAem13920Datasheet' (section 0)
+[647] Biber.pm:132> WARN - I didn't find a database entry for 'epeasAem10941Datasheet' (section 0)
+[647] Biber.pm:132> WARN - I didn't find a database entry for 'tiBq25570Datasheet' (section 0)
+[647] Biber.pm:132> WARN - I didn't find a database entry for 'stSpv1050Datasheet' (section 0)
+[647] Biber.pm:132> WARN - I didn't find a database entry for 'stSpv1040Datasheet' (section 0)
+[647] Biber.pm:134> INFO - WARNINGS: 5

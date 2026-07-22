@@ -9,7 +9,7 @@ Chapter \ref{ch:topologies} introduced the FWR and NVC rectifier topologies used
 \section{Components Used}
 \label{sec:components_used}
 
-Table \ref{tab:board_components} lists the key components used to build the FWR and NVC prototype boards of Chapter \ref{ch:topologies}. The same Schottky diode is used both as the FWR's rectifying diodes and as the parallel diodes of the NVC's cross-coupled bridge. The NVC bridge itself also needs two N-MOSFETs and two P-MOSFETs.
+Table \ref{tab:board_components} lists the key components used to build the FWR and NVC prototype board of Chapter \ref{ch:topologies}. The same Schottky diode is used both as the FWR's rectifying diodes and as the parallel diodes of the NVC's cross-coupled bridge. The NVC bridge itself also needs two N-MOSFETs and two P-MOSFETs.
 
 The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC bridge switches properly is set by the largest of its four MOSFET threshold voltages. Table \ref{tab:board_components} shows this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
 
@@ -94,14 +94,14 @@ Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly f
 
 
 
-The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges through the soldering process: the two diodes, on the left, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
+The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges through the soldering process: the four diodes, on the sides, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
 
 
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{imm/Soldering.jpg}
-    \caption{Microscope photo of one NVC bridge during hand assembly: the two diodes (left) are already soldered, while the two packages on the right, together holding all four MOSFETs of the bridge, still have unmelted solder on their pins and still need to be soldered.}
+    \caption{Microscope photo of one NVC bridge during hand assembly: the four diodes are already soldered, while the two packages on the right, together holding all four MOSFETs of the bridge, still have unmelted solder on their pins and still need to be soldered.}
     \label{fig:soldering}
 \end{figure}
 

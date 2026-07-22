@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  20 JUL 2026 14:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  22 JUL 2026 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4043,7 +4043,43 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (main.bbl)
+ (main.bbl
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                epeasAem10941Datasheet
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                epeasAem13920Datasheet
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                stSpv1040Datasheet
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                stSpv1050Datasheet
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                tiBq25570Datasheet
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+)
 Package biblatex Info: Reference section=0 on input line 83.
 Package biblatex Info: Reference segment=0 on input line 83.
 \c@lstlisting=\count637
@@ -4482,12 +4518,12 @@ File: Plots/Y_sweep/10-18_100_P1.pdf Graphic file (type pdf)
 Package pdftex.def Info: Plots/Y_sweep/10-18_100_P1.pdf  used on input line 144
 .
 (pdftex.def)             Requested size: 183.85335pt x 166.55586pt.
-<Plots/Y_sweep/13-16_100_P1.pdf, id=1357, 268.00125pt x 240.9pt>
+<Plots/Y_sweep/13-16_100_P1.pdf, id=1357, 270.00874pt x 240.9pt>
 File: Plots/Y_sweep/13-16_100_P1.pdf Graphic file (type pdf)
 <use Plots/Y_sweep/13-16_100_P1.pdf>
 Package pdftex.def Info: Plots/Y_sweep/13-16_100_P1.pdf  used on input line 149
 .
-(pdftex.def)             Requested size: 183.85335pt x 165.26178pt.
+(pdftex.def)             Requested size: 183.85335pt x 164.03404pt.
 
 
 [34 <./Circuits/S1x3Y_1_IMM.pdf>]
@@ -5438,13 +5474,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 [99]
 
 [100]
-<imm/DS-AEM13920_VR_Block_Diagram.png, id=4163, 704.6325pt x 605.26125pt>
+
+LaTeX Warning: Citation 'epeasAem13920Datasheet' on page 101 undefined on input
+ line 81.
+
+<imm/DS-AEM13920_VR_Block_Diagram.png, id=4162, 704.6325pt x 605.26125pt>
 File: imm/DS-AEM13920_VR_Block_Diagram.png Graphic file (type png)
 <use imm/DS-AEM13920_VR_Block_Diagram.png>
 Package pdftex.def Info: imm/DS-AEM13920_VR_Block_Diagram.png  used on input li
 ne 85.
 (pdftex.def)             Requested size: 248.96794pt x 213.85794pt.
-<imm/DS-AEM10941_VR_Block_Diagram.png, id=4166, 776.9025pt x 655.69969pt>
+
+LaTeX Warning: Citation 'epeasAem10941Datasheet' on page 101 undefined on input
+ line 124.
+
+<imm/DS-AEM10941_VR_Block_Diagram.png, id=4164, 776.9025pt x 655.69969pt>
 File: imm/DS-AEM10941_VR_Block_Diagram.png Graphic file (type png)
 <use imm/DS-AEM10941_VR_Block_Diagram.png>
 Package pdftex.def Info: imm/DS-AEM10941_VR_Block_Diagram.png  used on input li
@@ -5455,19 +5499,31 @@ ne 128.
 [101 <./imm/DS-AEM13920_VR_Block_Diagram.png>]
 
 [102 <./imm/DS-AEM10941_VR_Block_Diagram.png>]
-<imm/bq25570_Block_Diagram.png, id=4186, 707.64375pt x 499.11469pt>
+
+LaTeX Warning: Citation 'tiBq25570Datasheet' on page 103 undefined on input lin
+e 176.
+
+<imm/bq25570_Block_Diagram.png, id=4181, 707.64375pt x 499.11469pt>
 File: imm/bq25570_Block_Diagram.png Graphic file (type png)
 <use imm/bq25570_Block_Diagram.png>
 Package pdftex.def Info: imm/bq25570_Block_Diagram.png  used on input line 180.
 
 (pdftex.def)             Requested size: 268.12068pt x 189.10959pt.
-<imm/SPV1050_Block_Diagram.png, id=4189, 816.04875pt x 515.67656pt>
+
+LaTeX Warning: Citation 'stSpv1050Datasheet' on page 103 undefined on input lin
+e 219.
+
+<imm/SPV1050_Block_Diagram.png, id=4183, 816.04875pt x 515.67656pt>
 File: imm/SPV1050_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1050_Block_Diagram.png>
 Package pdftex.def Info: imm/SPV1050_Block_Diagram.png  used on input line 223.
 
 (pdftex.def)             Requested size: 248.96794pt x 157.32439pt.
-<imm/SPV1040_Block_Diagram.png, id=4193, 608.2725pt x 581.92406pt>
+
+LaTeX Warning: Citation 'stSpv1040Datasheet' on page 103 undefined on input lin
+e 270.
+
+<imm/SPV1040_Block_Diagram.png, id=4186, 608.2725pt x 581.92406pt>
 File: imm/SPV1040_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1040_Block_Diagram.png>
 Package pdftex.def Info: imm/SPV1040_Block_Diagram.png  used on input line 274.
@@ -5510,6 +5566,12 @@ File: t1npxtt.fd 2000/12/14 v1.0
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 10.95pt on input line 101.
 
+Overfull \hbox (10.44496pt too wide) in paragraph at lines 101--101
+\T1/npxtt/m/n/10.95 elsevier . com / retrieve / pii / S2211285512000481$[][] \T
+1/zpltlf/m/n/10.95 (vis-ited on 04/30/2026). 
+ []
+
+
 
 [113
 
@@ -5531,12 +5593,12 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 
 
 ]
-<imm/SDL1.jpg, id=4374, 3035.34pt x 4047.12pt>
+<imm/SDL1.jpg, id=4354, 3035.34pt x 4047.12pt>
 File: imm/SDL1.jpg Graphic file (type jpg)
 <use imm/SDL1.jpg>
 Package pdftex.def Info: imm/SDL1.jpg  used on input line 15.
 (pdftex.def)             Requested size: 344.72575pt x 459.63501pt.
-<imm/dragon_emoji.png, id=4375, 153.57375pt x 144.54pt>
+<imm/dragon_emoji.png, id=4355, 153.57375pt x 144.54pt>
 File: imm/dragon_emoji.png Graphic file (type png)
 <use imm/dragon_emoji.png>
 Package pdftex.def Info: imm/dragon_emoji.png  used on input line 18.
@@ -5551,16 +5613,16 @@ LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DE1BFB63C7D77AA2E6636F464837FC4F;18783.
+(rerunfilecheck)             Checksum: 961742E572C60E6F7E0490CB6172B6A4;18786.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 83315 strings out of 468130
- 1884232 string characters out of 5430633
- 2946899 words of memory out of 5000000
- 110226 multiletter control sequences out of 15000+600000
+ 83294 strings out of 468130
+ 1883257 string characters out of 5430633
+ 2946724 words of memory out of 5000000
+ 110210 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  123i,19n,131p,2512b,3982s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -5587,9 +5649,9 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 17912832 bytes).
+Output written on main.pdf (130 pages, 17907168 bytes).
 PDF statistics:
- 4556 PDF objects out of 5155 (max. 8388607)
- 436 named destinations out of 1000 (max. 500000)
+ 4533 PDF objects out of 5155 (max. 8388607)
+ 431 named destinations out of 1000 (max. 500000)
  1503 words of extra memory for PDF output out of 10000 (max. 10000000)
 

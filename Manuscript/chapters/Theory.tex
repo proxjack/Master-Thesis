@@ -20,22 +20,22 @@ The Faraday's law is the starting point for any electromagnetic transducer, whic
     \label{eq:faraday}
 \end{equation}
 
-For a coil made by $N_t$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N_t\Phi(t)$ and the induced EMF becomes:
+For a coil made of $N_c$ turns sharing the same flux, the total linked flux is $\Lambda(t)=N_c\Phi(t)$ and the induced EMF becomes:
 
 \begin{equation}
-    \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_t\frac{\dd \Phi(t)}{\dd t}.
+    \varepsilon(t) = -\frac{\dd \Lambda(t)}{\dd t} = -N_c\frac{\dd \Phi(t)}{\dd t}.
     \label{eq:faraday_N}
 \end{equation}
 
-In case of a coil consisting of $N_t$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
+In case of a coil consisting of $N_c$ turns mechanically spaced one respect to each other leading to different linked flux, the induce voltage can be described by
 
 \begin{equation}
-    \varepsilon(t) = -\frac{d}{dt} \cdot \sum_{n=i}^{N_t} \Phi_i(t)
+    \varepsilon(t) = -\frac{d}{dt} \cdot \sum_{i=1}^{N_c} \Phi_i(t)
 \label{eq:faraday_dis}
 \end{equation}
 
 
-where $\Phi_i$ is the flux linkage associated to a single turn of the coil\cite{xuSurveyVariableReluctance2018}.
+where $\Phi_i$ is the flux linkage associated with a single turn of the coil\cite{xuSurveyVariableReluctance2018}.
 
 \subsection{Variable Reluctance Principle}
 
@@ -62,7 +62,7 @@ The pole-piece and the toothed wheel are both made of soft ferromagnetic materia
 
 For a wheel with $N_t$ teeth rotating at angular velocity $\omega$, the electrical frequency of the induced voltage is
 \begin{equation}
-    f_c \;=\; \omega\, N_t.
+    \omega_c \;=\; \omega\, N_t.
     \label{eq:freq_teeth}
 \end{equation}
 At low rotational speeds the coil impedance is dominated by its resistance $R_{Coil}$, so that maximum power is transferred to a purely resistive load matched to it, $R_L = R_{Coil}$; under this condition the load voltage $V_L(t)$ is related to the open-circuit coil voltage $V_c(t)$ of \eqref{eq:faraday_dis} by
@@ -88,7 +88,7 @@ Because $V_{L,pp}$ in \eqref{eq:vpp} is the peak-to-peak amplitude of an (assume
 
 where the last equality follows from substituting \eqref{eq:freq_teeth} into \eqref{eq:vpp}. Equation \eqref{eq:power_law} shows that the harvested power scales quadratically with the rotational speed $\omega$, the flux swing $\Delta\Phi$, the number of coil turns $N_c$ and the number of teeth $N_t$, while it is inversely proportional to the coil resistance $R_{Coil}$.
 
-For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimization problems \cite{xuDesignModelingOptimization2019a}:
+For a given application (i.e.\ fixed $\omega$ and $N_t$), the design of the pickup unit therefore splits into two largely independent optimisation problems \cite{xuDesignModelingOptimization2019a}:
 \begin{subequations}
 \begin{align}
     P_L &\;\propto\; \frac{N_c^2}{R_{Coil}}, \label{eq:subfunc_coil}\\
@@ -127,12 +127,12 @@ Once the magnet material and the nominal air-gap length are fixed by mechanical 
     \item the \textbf{magnet height} $h_M$, which pulls in two opposite directions at once: it raises the MMF $\mathcal{F}_M=H_ch_M$ (good for $\Delta\Phi$), but it also raises the magnet's own reluctance $\mathcal{R}_M$ (bad for $\Delta\Phi$). Because of this trade-off, a non-trivial optimal value of $h_M$ exists.
 \end{itemize}
 
-In a size-constrained design, what matters is not just $P_L$ but the power delivered per unit volume, i.e.\ the volumetric optimization of the pickup unit. Modelling the harvester as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density is
+In a size-constrained design, what matters is not just $P_L$ but the power delivered per unit volume, i.e.\ the volumetric optimisation of the pickup unit. Modelling the harvester as a hollow cylinder of overall diameter $d_o$, shaft diameter $d_{Shaft}$ and depth $l_o$, the volumetric power density is
 \begin{equation}
     p_v \;=\; \frac{P_L}{V_{VREH}}, \qquad V_{VREH} \;=\; \frac{\pi}{4}\,l_o\,(d_o-d_{Shaft})^2.
     \label{eq:power_density}
 \end{equation}
-Once the air-gap length and the (shared) flux-path width are fixed, the available radial space must be split between the coil and the tooth, $C = h_{Coil}+h_{Tooth}$. Growing $h_{Coil}$ always helps $P_L$, through \eqref{eq:coil_appendixA}, whereas growing $h_{Tooth}$ only helps up to the $3\ \text{mm}$ knee point described above, through \eqref{eq:flux_extremes}. Because of this asymmetry, for any given $C$ there is an optimal split between $h_{Coil}$ and $h_{Tooth}$ that maximizes $p_v$ \cite{xuDesignModelingOptimization2019a}.
+Once the air-gap length and the (shared) flux-path width are fixed, the available radial space must be split between the coil and the tooth, $C = h_{Coil}+h_{Tooth}$. Growing $h_{Coil}$ always helps $P_L$, through \eqref{eq:coil_appendixA}, whereas growing $h_{Tooth}$ only helps up to the $3\ \text{mm}$ knee point described above, through \eqref{eq:flux_extremes}. Because of this asymmetry, for any given $C$ there is an optimal split between $h_{Coil}$ and $h_{Tooth}$ that maximises $p_v$ \cite{xuDesignModelingOptimization2019a}.
 
 The same reasoning applies to the magnet height by setting $\dv{\Delta\Phi}{h_M}=0$ in \eqref{eq:flux_extremes} yields a closed-form expression for the optimal magnet height,
 \begin{equation}
@@ -158,7 +158,7 @@ where $l_{g,a}$, $l_{g,u}$, $W_{g,a}$, $W_{g,u}$ are the effective air-gap lengt
 % It is worth noting that \eqref{eq:power_law} neglects the coil inductance, an approximation only valid at sufficiently low electrical frequencies. In the optimized structure discussed above, the coil presents a non-negligible inductance ($L_{Coil}\approx210\ \text{mH}$); as $\omega$ increases, the corresponding inductive reactance becomes comparable to $R_{Coil}$, and a purely resistive load match, $R_L = R_{Coil}$, no longer maximizes the extracted power. Experimentally, the effect of a complex-conjugate impedance match (a series-compensating capacitor added to the resistive load) was found to be negligible below $\omega\approx2.1\ \text{rad/s}$ ($\approx 20$\,rpm), but above this speed a purely resistive load increasingly fails to exploit the harvester's capability, so that a full complex-conjugate match between coil and load is required to reach the maximum output power of $22\ \text{mW}$ quoted above at the top of the evaluated speed range \cite{xuDesignModelingOptimization2019a}. This observation motivates the discussion of impedance matching under variable operating conditions developed later in this chapter.
 
 
-\subsection{Electrical Thevenin Model of the Pickup Unit}
+\subsection{Electrical Thévenin Model of the Pickup Unit}
 \label{sec:Electrical_model}
 % The electrical model and its consequent derivation is important to study the system and t o of a single pick up unit 
 
@@ -196,7 +196,7 @@ where $N_c$ is the number of turns, $l_t$ is the mean length of a single turn, a
     R_{Coil} \;=\; \rho_{wire}\,\frac{N_c^2\, l_t}{k_w\, h_{Coil}\, W_{Coil}}.
     \label{eq:rcoil_fillfactor}
 \end{equation}
-Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref{eq:rcoil_fillfactor} reproduces the proportionality $N_c^2 / R_{Coil} \propto k_w\, h_{Coil}\, W_{Coil} / \rho_{wire}$ already used in \eqref{eq:coil_appendixA} to optimize the winding cross section \cite{xuDesignModelingOptimization2019a}.
+Treating $l_t$ as approximately constant for a fixed pole piece geometry, \eqref{eq:rcoil_fillfactor} reproduces the proportionality $N_c^2 / R_{Coil} \propto k_w\, h_{Coil}\, W_{Coil} / \rho_{wire}$ already used in \eqref{eq:coil_appendixA} to optimise the winding cross section \cite{xuDesignModelingOptimization2019a}.
 
 \subsubsection*{Self inductance and its dependence on rotor position}
 
@@ -211,7 +211,7 @@ The pickup unit is a variable-reluctance device, so the reluctance seen by the c
     L_{min} \;=\; \frac{N_c^2}{\mathcal{R}_{g,u}+\mathcal{R}_M},
     \label{eq:lcoil_extremes}
 \end{equation}
-reached at the aligned and unaligned positions, just like the flux extremes of \eqref{eq:flux_extremes}. For circuit-level analysis, such as the impedance matching study of Section \ref{sec:impedance_matching}, it is more practical to replace this varying inductance with a single, constant value $L_{Coil}$. This value can be obtained either by averaging over one electrical period, or by measuring it directly with an impedance analyzer at the frequency of interest.
+reached at the aligned and unaligned positions, just like the flux extremes of \eqref{eq:flux_extremes}. For circuit-level analysis, such as the impedance matching study of Section \ref{sec:impedance_matching}, it is more practical to replace this varying inductance with a single, constant value $L_{Coil}$. This value can be obtained either by averaging over one electrical period, or by measuring it directly with an impedance analyser at the frequency of interest.
 
 \subsubsection*{Phasor representation}
 
@@ -245,7 +245,7 @@ where $\omega_e = 2\pi f_c$ is the electrical angular frequency and $f_c$ is the
     Z_{L} \;=\; R_{L} \;+\; j\,X_{L}.
     \label{eq:load_impedance}
 \end{equation}
-Here $R_L$ is the resistive part of the load and $X_L$ its reactive part, which can be inductive ($X_L>0$) or capacitive ($X_L<0$) depending on how the load is realized.
+Here $R_L$ is the resistive part of the load and $X_L$ its reactive part, which can be inductive ($X_L>0$) or capacitive ($X_L<0$) depending on how the load is realised.
 
 \subsection{Power delivered to the load}
 
@@ -270,9 +270,9 @@ Equation \eqref{eq:power_general} is the generalization of \eqref{eq:power_law} 
 
 \subsection{The complex conjugate matching condition}
 
-Equation \eqref{eq:power_general} can be maximized in two independent steps, since $R_L$ and $X_L$ appear in separate terms of the denominator.
+Equation \eqref{eq:power_general} can be maximised in two independent steps, since $R_L$ and $X_L$ appear in separate terms of the denominator.
 
-First, for any fixed $R_L$, the denominator is minimized, and $P_L$ is therefore maximized, by cancelling the reactive term. This requires
+First, for any fixed $R_L$, the denominator is minimised, and $P_L$ is therefore maximised, by cancelling the reactive term. This requires
 \begin{equation}
     X_L \;=\; -\,\omega_e L_{Coil}.
     \label{eq:reactance_cancel}
@@ -301,7 +301,7 @@ The load must present a resistance equal to the coil resistance and a reactance 
 \end{equation}
 which is independent of $L_{Coil}$. Once the reactance is properly cancelled, the maximum extractable power depends only on the coil resistance, exactly as in the low frequency case of \eqref{eq:power_law}.
 
-\subsection{Realizing the reactive compensation}
+\subsection{Realising the reactive compensation}
 
 Condition \eqref{eq:reactance_cancel} shows that an inductive coil requires a load with an equal and opposite \emph{capacitive} reactance. The simplest way to obtain this is a compensation capacitor $C_m$ placed in series with the resistive load, whose reactance at $\omega_e$ is $X_{C_m} = -1/(\omega_e C_m)$. Imposing $X_{C_m} = -\omega_e L_{Coil}$ gives the required capacitance
 \begin{equation}

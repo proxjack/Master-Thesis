@@ -139,8 +139,12 @@
       \field{issn}{2329-3748}
       \field{month}{9}
       \field{title}{A New Single Stage {{AC-DC}} Converter for Low Voltage Electromagnetic Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{year}{2010}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{4447\bibrangedash 4452}
       \range{pages}{6}
       \verb{doi}
@@ -156,66 +160,6 @@
       \verb https://ieeexplore.ieee.org/document/5618446
       \endverb
       \keyw{AC-DC power conversion,Buck-boost conversion,Capacitors,Converters,energy harvesting,Energy harvesting,Inductors,low power,low voltage,MOSFETs,Switches,Topology}
-    \endentry
-    \entry{epeasAem10941Datasheet}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=b0cac1ae053ee448531ce23b99554759}{%
-           family={{e-peas}},
-           familyi={e\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {e-peas}%
-      }
-      \strng{namehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{fullhash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{fullhashraw}{b0cac1ae053ee448531ce23b99554759}
-      \strng{bibnamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorbibnamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authornamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorfullhash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorfullhashraw}{b0cac1ae053ee448531ce23b99554759}
-      \field{extraname}{1}
-      \field{sortinit}{e}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{{DS-AEM10941}} {{Datasheet}}}
-      \verb{urlraw}
-      \verb https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf
-      \endverb
-      \verb{url}
-      \verb https://e-peas.com/documents/AEM10941/DS-AEM10941.pdf
-      \endverb
-    \endentry
-    \entry{epeasAem13920Datasheet}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=b0cac1ae053ee448531ce23b99554759}{%
-           family={{e-peas}},
-           familyi={e\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {e-peas}%
-      }
-      \strng{namehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{fullhash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{fullhashraw}{b0cac1ae053ee448531ce23b99554759}
-      \strng{bibnamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorbibnamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authornamehash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorfullhash}{b0cac1ae053ee448531ce23b99554759}
-      \strng{authorfullhashraw}{b0cac1ae053ee448531ce23b99554759}
-      \field{extraname}{2}
-      \field{sortinit}{e}
-      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{{DS-AEM13920}} {{Datasheet}}}
-      \verb{urlraw}
-      \verb https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf
-      \endverb
-      \verb{url}
-      \verb https://e-peas.com/documents/AEM13920/DS-AEM13920.pdf
-      \endverb
     \endentry
     \entry{fanFlexibleTriboelectricGenerator2012}{article}{}{}
       \name{author}{3}{}{%
@@ -255,9 +199,13 @@
       \field{number}{2}
       \field{shortjournal}{Nano Energy}
       \field{title}{Flexible Triboelectric Generator}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
       \field{volume}{1}
       \field{year}{2012}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{328\bibrangedash 334}
       \range{pages}{7}
       \verb{doi}
@@ -304,9 +252,13 @@
       \field{number}{6}
       \field{shorttitle}{Energy {{Harvesting Strategies}} for {{Wireless Sensor Networks}} and {{Mobile Devices}}}
       \field{title}{Energy {{Harvesting Strategies}} for {{Wireless Sensor Networks}} and {{Mobile Devices}}: {{A Review}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
       \field{volume}{10}
       \field{year}{2021}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{661}
       \range{pages}{1}
       \verb{doi}
@@ -359,8 +311,12 @@
       \field{issn}{1553-572X}
       \field{month}{10}
       \field{title}{A Simple {{Bi-directional}} Bridgeless {{AC}}/{{DC}} Buck-Boost Converter for Automotive Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{year}{2014}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{1937\bibrangedash 1943}
       \range{pages}{7}
       \verb{doi}
@@ -415,9 +371,13 @@
       \field{number}{1}
       \field{shortjournal}{J. Phys.: Conf. Ser.}
       \field{title}{Variable Reluctance Harvester for Applications in Railroad Monitoring}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
       \field{volume}{476}
       \field{year}{2013}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{012091}
       \range{pages}{1}
       \verb{doi}
@@ -541,9 +501,13 @@
       \field{number}{9}
       \field{shortjournal}{Proc. IEEE}
       \field{title}{Energy {{Harvesting From Human}} and {{Machine Motion}} for {{Wireless Electronic Devices}}}
+      \field{urlday}{30}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
       \field{volume}{96}
       \field{year}{2008}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{1457\bibrangedash 1486}
       \range{pages}{30}
       \verb{doi}
@@ -597,9 +561,13 @@
       \field{number}{11}
       \field{shortjournal}{Computer Communications}
       \field{title}{A Study of Low Level Vibrations as a Power Source for Wireless Sensor Nodes}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2026}
       \field{volume}{26}
       \field{year}{2003}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{1131\bibrangedash 1144}
       \range{pages}{14}
       \verb{doi}
@@ -615,95 +583,6 @@
       \verb https://linkinghub.elsevier.com/retrieve/pii/S0140366402002487
       \endverb
       \keyw{INTRO}
-    \endentry
-    \entry{stSpv1040Datasheet}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=c38884ab3cf908c2798725960369391b}{%
-           family={{STMicroelectronics}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {STMicroelectronics}%
-      }
-      \strng{namehash}{c38884ab3cf908c2798725960369391b}
-      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
-      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
-      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
-      \field{extraname}{1}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{{SPV1040}} {{Datasheet}}}
-      \verb{urlraw}
-      \verb https://www.st.com/resource/en/datasheet/spv1040.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.st.com/resource/en/datasheet/spv1040.pdf
-      \endverb
-    \endentry
-    \entry{stSpv1050Datasheet}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=c38884ab3cf908c2798725960369391b}{%
-           family={{STMicroelectronics}},
-           familyi={S\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {STMicroelectronics}%
-      }
-      \strng{namehash}{c38884ab3cf908c2798725960369391b}
-      \strng{fullhash}{c38884ab3cf908c2798725960369391b}
-      \strng{fullhashraw}{c38884ab3cf908c2798725960369391b}
-      \strng{bibnamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorbibnamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authornamehash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorfullhash}{c38884ab3cf908c2798725960369391b}
-      \strng{authorfullhashraw}{c38884ab3cf908c2798725960369391b}
-      \field{extraname}{2}
-      \field{sortinit}{S}
-      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{{SPV1050}} {{Datasheet}}}
-      \verb{urlraw}
-      \verb https://www.st.com/resource/en/datasheet/spv1050.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.st.com/resource/en/datasheet/spv1050.pdf
-      \endverb
-    \endentry
-    \entry{tiBq25570Datasheet}{online}{}{}
-      \name{author}{1}{}{%
-        {{hash=67e54b1ee931f3f4bddfefa5fbde5fd8}{%
-           family={{Texas Instruments}},
-           familyi={T\bibinitperiod}}}%
-      }
-      \list{organization}{1}{%
-        {Texas Instruments}%
-      }
-      \strng{namehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{fullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{fullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{bibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{authorbibnamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{authornamehash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{authorfullhash}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \strng{authorfullhashraw}{67e54b1ee931f3f4bddfefa5fbde5fd8}
-      \field{sortinit}{T}
-      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{{{bq25570}} {{Datasheet}}}
-      \verb{urlraw}
-      \verb https://www.ti.com/lit/ds/symlink/bq25570.pdf
-      \endverb
-      \verb{url}
-      \verb https://www.ti.com/lit/ds/symlink/bq25570.pdf
-      \endverb
     \endentry
     \entry{wuMultiPhaseVariableReluctance2024}{inproceedings}{}{}
       \name{author}{3}{}{%
@@ -749,8 +628,12 @@
       \field{langid}{english}
       \field{month}{11}
       \field{title}{Multi-{{Phase Variable Reluctance Energy Harvester For Smart Bearing Hub Units}}}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{year}{2024}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{46\bibrangedash 49}
       \range{pages}{4}
       \verb{doi}
@@ -803,9 +686,13 @@
       \field{month}{4}
       \field{number}{8}
       \field{title}{A {{Survey}} on {{Variable Reluctance Energy Harvesters}} in {{Low-Speed Rotating Applications}}}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
       \field{volume}{18}
       \field{year}{2018}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{3426\bibrangedash 3435}
       \range{pages}{10}
       \verb{doi}
@@ -860,9 +747,13 @@
       \field{month}{9}
       \field{shortjournal}{Energy Conversion and Management}
       \field{title}{Design, Modeling and Optimization of an m-Shaped Variable Reluctance Energy Harvester for Rotating Applications}
+      \field{urlday}{4}
+      \field{urlmonth}{5}
+      \field{urlyear}{2026}
       \field{volume}{195}
       \field{year}{2019}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{1280\bibrangedash 1294}
       \range{pages}{15}
       \verb{doi}
@@ -928,9 +819,13 @@
       \field{number}{18}
       \field{shortjournal}{Sensors}
       \field{title}{System {{Implementation Trade-Offs}} for {{Low-Speed Rotational Variable Reluctance Energy Harvesters}}}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{volume}{21}
       \field{year}{2021}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{6317}
       \range{pages}{1}
       \verb{doi}
@@ -976,8 +871,12 @@
       \field{eventtitle}{2016 {{IEEE Energy Conversion Congress}} and {{Exposition}} ({{ECCE}})}
       \field{month}{9}
       \field{title}{A Single Stage {{AC}}/{{DC}} Converter for Low Voltage Energy Harvesting}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{year}{2016}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{1\bibrangedash 6}
       \range{pages}{6}
       \verb{doi}
@@ -1030,9 +929,13 @@
       \field{month}{8}
       \field{number}{8}
       \field{title}{A {{Discontinuous Conduction Mode Single-Stage Step-Up Rectifier}} for {{Low-Voltage Energy Harvesting Applications}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2026}
       \field{volume}{32}
       \field{year}{2017}
       \field{dateera}{ce}
+      \field{urldateera}{ce}
       \field{pages}{6161\bibrangedash 6169}
       \range{pages}{9}
       \verb{doi}
@@ -1050,6 +953,11 @@
       \keyw{AC/DC conversion,boost,buck–boost,Capacitors,energy harvesting,Energy harvesting,Inductors,low power,low voltage,Low voltage,MOSFET,Switches,Topology}
     \endentry
   \enddatalist
+  \missing{epeasAem10941Datasheet}
+  \missing{epeasAem13920Datasheet}
+  \missing{stSpv1040Datasheet}
+  \missing{stSpv1050Datasheet}
+  \missing{tiBq25570Datasheet}
 \endrefsection
 \endinput
 

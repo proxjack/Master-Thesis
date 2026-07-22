@@ -6,7 +6,7 @@
 
 The circuit simulations of Chapter \ref{ch:simulations} predict the behaviour of the FWR and NVC stages introduced in Chapter \ref{ch:topologies}, but validating those predictions requires measuring the real prototype. Both the voltage and the current at each phase, and at the output of each rectifying stage, must be acquired at the same time in order to compute the electrical power. This chapter describes the measurement setup built for this purpose, from the acquisition instrument down to the current sensing elements and their calibration.
 
-The sensor calibrations in this chapter rely on two precision instruments to provide known reference values, rather than the Saleae logic analyzer of Section \ref{sec:daq} used for the actual circuit measurements. A Keysight B2901A precision source-measure unit supplies the known reference currents used in Section \ref{sec:calibration}. A Keysight 34470A precision digital multimeter, whose built-in four-wire resistance function is used in Section \ref{sec:shunt_characterization}, provides voltage readings more accurate than the Saleae. Both instruments can be controlled directly from MATLAB, which makes it possible to automate long sequences of measurements, such as the many current-voltage points needed to build the lookup tables of Section \ref{sec:calibration}, without manual control at each step.
+The sensor calibrations in this chapter rely on two precision instruments to provide known reference values, rather than the Saleae logic analyser of Section \ref{sec:daq} used for the actual circuit measurements. A Keysight B2901A precision source-measure unit supplies the known reference currents used in Section \ref{sec:calibration}. A Keysight 34470A precision digital multimeter, whose built-in four-wire resistance function is used in Section \ref{sec:shunt_characterization}, provides voltage readings more accurate than the Saleae. Both instruments can be controlled directly from MATLAB, which makes it possible to automate long sequences of measurements, such as the many current-voltage points needed to build the lookup tables of Section \ref{sec:calibration}, without manual control at each step.
 
 % TODO: block diagram of the full measurement chain (phase / rectifier output -> shunt -> INA114AU -> Saleae channel), analogous to Circuits/FWR.pdf and Circuits/NVC.pdf.
 %\begin{figure}[H]
@@ -19,7 +19,7 @@ The sensor calibrations in this chapter rely on two precision instruments to pro
 \section{Test Bench}
 \label{sec:test_bench}
 
-The voltages and currents measured throughout this chapter all depend on the harvester's rotation speed, so every measurement must be repeatable at a known, controlled speed. To achieve this, the MP-VREH harvester was mechanically coupled to an induction motor driven by a variable-frequency inverter: the inverter sets the motor's frequency, and so its speed, directly. Figure \ref{fig:setup} shows the resulting test bench, with the induction motor on the left coupled to the harvester on the right through a flexible shaft coupling. This coupling acts as an interface between the two shafts, whose purpose is to minimize the mechanical vibrations transmitted from the motor to the harvester. These vibrations strongly affect the repeatability of the measurements described in this chapter, keeping them to a minimum is essential. This makes it possible to repeat every measurement in this chapter at each rotation speed of interest ($100$-$400\ \text{rpm}$).
+The voltages and currents measured throughout this chapter all depend on the harvester's rotation speed, so every measurement must be repeatable at a known, controlled speed. To achieve this, the MP-VREH harvester was mechanically coupled to an induction motor driven by a variable-frequency inverter: the inverter sets the motor's frequency, and so its speed, directly. Figure \ref{fig:setup} shows the resulting test bench, with the induction motor on the left coupled to the harvester on the right through a flexible shaft coupling. This coupling acts as an interface between the two shafts, whose purpose is to minimise the mechanical vibrations transmitted from the motor to the harvester. These vibrations strongly affect the repeatability of the measurements described in this chapter, keeping them to a minimum is essential. This makes it possible to repeat every measurement in this chapter at each rotation speed of interest ($100$-$400\ \text{rpm}$).
 
 \begin{figure}[h!]
     \centering
@@ -31,12 +31,12 @@ The voltages and currents measured throughout this chapter all depend on the har
 \section{Data Acquisition System}
 \label{sec:daq}
 
-All signals are acquired with a Saleae logic analyzer, shown in Figure \ref{fig:saleae}, configured for differential analog acquisition, on 16 channels.
+All signals are acquired with a Saleae logic analyser, shown in Figure \ref{fig:saleae}, configured for differential analog acquisition, on 16 channels.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.45\textwidth]{imm/Saleae.jpg}
-    \caption{The Saleae logic analyzer used for data acquisition.}
+    \caption{The Saleae logic analyser used for data acquisition.}
     \label{fig:saleae}
 \end{figure}
 
@@ -100,7 +100,7 @@ The lookup table built this way, however, relates the acquired output voltage to
 so every entry of the lookup table is rescaled by this ratio before use. Because \eqref{eq:shunt_scaling} is a direct multiplicative correction, its accuracy depends entirely on how precisely $R_\text{cal}$ and $R_\text{shunt}$ are known, and their nominal values are not sufficient for this purpose. Instead, the actual resistance of every calibration and circuit shunt is measured individually, as described in Section \ref{sec:shunt_characterization}.
 
 
-\section{Shunt Resistor Characterization}
+\section{Shunt Resistor Characterisation}
 \label{sec:shunt_characterization}
 
 The scaling of \eqref{eq:shunt_scaling} requires the actual resistance of the $R_\text{cal}=1\ \Omega$ and $R_\text{shunt}=0.1\ \Omega$ shunts, rather than their nominal values. At these low resistances, this cannot be obtained with an ordinary two-wire measurement, e.g.\ with a standard multimeter, which applies its test current and senses the resulting voltage through the same pair of cables. The resistance of these cables and the contact resistance where the probes touch the shunt terminals are then included in the measurement, and for a $0.1\ \Omega$ shunt they are typically comparable in magnitude to the resistance being measured, so a two-wire reading is not accurate enough.

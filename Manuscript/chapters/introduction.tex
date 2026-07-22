@@ -57,7 +57,7 @@ recharging exhausted batteries is difficult or simply not
 possible \cite{grossiEnergyHarvestingStrategies2021}. Using 
 larger batteries to extend the device lifetime increases the 
 size of the system, which is often not acceptable. In 
-addition, the environmental cost of battery and the consequent 
+addition, the environmental cost of batteries and the consequent 
 maintenance of large-scale networks are serious 
 obstacles to the widespread use of WSNs 
 \cite{leonavilaEnergyHarvestingTechniques2025}.
@@ -106,7 +106,7 @@ Figure \ref{fig:BD_EHS}.
 \begin{itemize}
     \item \emph{Transducer}: converts the ambient energy into an electrical signal;
     \item \emph{Power conditioning circuit}: perform AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021};
-    \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is week or no more present. Such element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
+    \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is weak or no longer present. Such element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
 \end{itemize}
 
 
@@ -117,7 +117,7 @@ Figure \ref{fig:BD_EHS}.
 
 The performance of the entire system depends in particular on
 the transducer. Its design must be matched to the
-characteristics of the ambient source as well as to the power need
+characteristics of the ambient source as well as to the power needs
 of the target device. A transducer that is well suited to
 one environment may perform poorly in another, which is why
 the choice of transduction mechanism is the central design
@@ -138,7 +138,7 @@ sections.
 
 A key challenge in evaluating energy harvesting systems is 
 choosing the right performance metrics. Xu et 
-al.\cite{xuSystemImplementationTradeOffs2021} propose two metrics 
+al. \cite{xuSystemImplementationTradeOffs2021} propose two metrics 
 for this purpose. The first is the \emph{power conversion 
 efficiency} (PCE), which measures how much of the power 
 entering the interface circuit actually reaches the output:
@@ -166,7 +166,7 @@ transducer could deliver under ideal conditions:
 The difference between the two is important. A circuit can 
 convert power efficiently (high PCE) while still wasting 
 much of what the transducer could produce, if the circuit 
-itself is not able to work in the optimal operating 
+itself is not able to work at the optimal operating 
 point. For this reason, PEE is a more useful metric when the 
 goal is to maximise the total power delivered to the 
 load \cite{xuSystemImplementationTradeOffs2021}.
@@ -268,12 +268,12 @@ the rotational speed and the number of teeth on the
 wheel \cite{xuSurveyVariableReluctance2018}:
 %
 \begin{equation}
-    f_c = \omega \, N_t,
+    \omega_c = \omega \, N_t,
     \label{eq:vreh_freq}
 \end{equation}
 %
 where $\omega$ is the rotational speed in rad/s and $N_t$
-is the number of teeth on the weel. Following Faraday's law, the output
+is the number of teeth on the wheel. Following Faraday's law, the output
 power of the transducer delivered to a matched load can be expressed
 as \cite{xuDesignModelingOptimization2019a}:
 %
@@ -334,7 +334,7 @@ monitoring. Kroener et al. \cite{kroenerVariableReluctanceHarvester2013} demonst
 that a VREH placed beside a rail track could generate
 enough power from the passage of train wheels to supply a
 wireless sensor node, reporting a peak output power of
-around $5.9$ mW at a simulated train speed of $81.5$ Km/h.
+around $5.9$ mW at a simulated train speed of $81.5$ km/h.
 This work showed for the first time that the variable
 reluctance principle could be practically used as an energy source
 rather than just a measurement transducer.
@@ -369,7 +369,7 @@ supply any systems. At low rotational speeds, the output
 voltage can be well below 1 V, which makes the choice of
 rectifier circuit critical. Xu et
 al. \cite{xuSystemImplementationTradeOffs2021} compared three
-passive rectifier topologie: a full-wave bridge
+passive rectifier topologies: a full-wave bridge
 rectifier (FWR), a voltage doubler (VD), and a negative
 voltage converter (NVC), all on the same VREH system at
 speeds between 5 rpm and 20 rpm. The results showed
@@ -390,7 +390,7 @@ proposed by Wu et al. \cite{wuMultiPhaseVariableReluctance2024}, which
 integrates six m-shaped pickup units into a bearing hub
 unit for large commercial vehicles, reaching output powers
 between 0.46 W and 4.77 W at rotational speeds of
-100 to 400 RPM. This significant increase in output power
+100 to 400 rpm. This significant increase in output power
 opens new possibilities for powering more demanding
 condition monitoring systems. However, it also introduces
 new challenges in the design of the power conditioning
@@ -438,7 +438,6 @@ control electronics. Without a control system, the
 circuit cannot adapt to changes in the rotational speed
 or load conditions, which are essential in real-world
 applications.
-
 This gap in the literature 
 motivates the investigation presented in this thesis.
 
@@ -502,7 +501,7 @@ power conditioning circuits.
 
     \begin{tabular}{cccccc}
         \toprule
-        RPM & $f$ (Hz) & $V_\text{Lpk}$ (V) & $R_\text{coil}$ ($\Omega$) &$L_\text{coil}$ (mH) & $P_o$ (W) \\
+        rpm & $f$ (Hz) & $V_\text{Lpk}$ (V) & $R_\text{coil}$ ($\Omega$) &$L_\text{coil}$ (mH) & $P_o$ (W) \\
         \midrule
         100 & 36.7  & 0.91 & 6 & 21.68 & 0.41 \\
         200 & 73.3  & 1.35 & 6 & 21.46 & 0.91 \\
@@ -530,5 +529,5 @@ power conditioning circuits for the six-phase MP-VREH
 described above. The goal is to identify the interface
 circuit topology that maximises the power delivered to
 the load across the relevant operating speed range of
-100 to 400 RPM (20-80 Km/h), corresponding to typical driving
-conditions of large commercial vehicles, for exaple buses.
+100 to 400 rpm (20-80 km/h), corresponding to typical driving
+conditions of large commercial vehicles, for example buses.
