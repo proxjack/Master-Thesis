@@ -99,14 +99,14 @@ uninterrupted operation.
 
 \section{Energy Harvesting Systems}
 
-An energy harvesting system is made of three components
+An energy harvesting system is made up of three components
 that work in sequence, as illustrated in
 Figure \ref{fig:BD_EHS}.
 
 \begin{itemize}
     \item \emph{Transducer}: converts the ambient energy into an electrical signal;
-    \item \emph{Power conditioning circuit}: perform AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021};
-    \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is weak or no longer present. Such element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
+    \item \emph{Power conditioning circuit}: performs AC-DC conversion, impedance matching and voltage regulation. A typical implementation combines a rectifier circuit with a power management integrated circuit (PMIC) \cite{xuSystemImplementationTradeOffs2021};
+    \item \emph{energy storage element}: is used to keep the device operating for a certain amount of time even if the source is weak or no longer present. Such an element can be a capacitor/super capacitor or a rechargeable battery \cite{roundyStudyLowLevel2003a}.
 \end{itemize}
 
 
@@ -138,7 +138,7 @@ sections.
 
 A key challenge in evaluating energy harvesting systems is 
 choosing the right performance metrics. Xu et 
-al. \cite{xuSystemImplementationTradeOffs2021} propose two metrics 
+al. \cite{xuSystemImplementationTradeOffs2021} proposed two metrics
 for this purpose. The first is the \emph{power conversion 
 efficiency} (PCE), which measures how much of the power 
 entering the interface circuit actually reaches the output:
@@ -273,7 +273,7 @@ wheel \cite{xuSurveyVariableReluctance2018}:
 \end{equation}
 %
 where $\omega$ is the rotational speed in rad/s and $N_t$
-is the number of teeth on the wheel. Following Faraday's law, the output
+is the number of teeth on the wheel. From Faraday's law, the output
 power of the transducer delivered to a matched load can be expressed
 as \cite{xuDesignModelingOptimization2019a}:
 %
@@ -297,9 +297,9 @@ What makes VREH different from most other electromagnetic
 harvesters is that neither the magnet nor the coil needs
 to move. The flux variation is caused entirely by the
 relative motion between the toothed wheel and the pickup units.
-This removes the need for a mechanical connection between the 
-rotating part and the harvester, which is an advantage. It also
-means that the device is easy to scale so changing the shaft
+This is an advantage, since it removes the need for a mechanical
+connection between the rotating part and the harvester. It also
+means that the device is easy to scale, so changing the shaft
 diameter mainly affects the size of the toothed wheel,
 while the pickup unit can stay the
 same \cite{xuDesignModelingOptimization2019a}. In contrast, traditional
@@ -358,14 +358,14 @@ constraints, and provided a numerical optimisation method
 based on finite element analysis (FEA). The optimised
 structure reached output powers between 0.12 mW and
 22 mW at rotational speeds of 5\,rpm to 60 rpm within
-a volume constraint of 43.5 cm $^3$, which is sufficient
-to power a range of duty-cycled wireless sensor
+a volume constraint of 43.5 cm $^3$; these output power levels
+are sufficient to power a range of duty-cycled wireless sensor
 systems \cite{xuDesignModelingOptimization2019a}.
 
 A practical challenge in VREH systems is that the
 transducer produces a low-voltage alternating output,
 which must be rectified and conditioned before it can
-supply any systems. At low rotational speeds, the output
+supply any system. At low rotational speeds, the output
 voltage can be well below 1 V, which makes the choice of
 rectifier circuit critical. Xu et
 al. \cite{xuSystemImplementationTradeOffs2021} compared three
@@ -378,7 +378,7 @@ at low speeds, reaching a PEE of 40-60\%, while the NVC
 outperformed it above 18 rpm. The FWR showed the lowest
 performance across all conditions, with PEE values of only
 20-40\%. These results confirm that the interface circuit
-is not just a passive element but actively affects how
+is not just a passive element but an active one that affects how
 much power the transducer can deliver to the load.
 
 These studies show that VREH is a mature
@@ -447,8 +447,8 @@ al. \cite{wuMultiPhaseVariableReluctance2024}, which uses six m-shaped
 pickup units arranged around a common toothed wheel,
 the power conditioning problem becomes considerably
 more complex. Each pickup unit produces an independent
-AC output with a different phase and the six signals are evenly
-spaced in time by $60^\circ$ phase shift.
+AC output with a different phase, and the six signals are evenly
+spaced in time by a $60^\circ$ phase shift.
 This means that standard single-phase rectifier
 solutions cannot be directly applied, and that the
 interface circuit must be designed to handle multiple AC inputs efficiently.
