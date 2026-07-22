@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  22 JUL 2026 11:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  22 JUL 2026 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5556,6 +5556,10 @@ Package pdftex.def Info: imm/dragon_emoji.png  used on input line 18.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 961742E572C60E6F7E0490CB6172B6A4;18786.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -5565,7 +5569,7 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of TeX's memory you used:
  83315 strings out of 468130
  1884232 string characters out of 5430633
- 2946892 words of memory out of 5000000
+ 2946904 words of memory out of 5000000
  110226 multiletter control sequences out of 15000+600000
  701807 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5593,7 +5597,7 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 17913108 bytes).
+Output written on main.pdf (130 pages, 17913132 bytes).
 PDF statistics:
  4556 PDF objects out of 5155 (max. 8388607)
  436 named destinations out of 1000 (max. 500000)

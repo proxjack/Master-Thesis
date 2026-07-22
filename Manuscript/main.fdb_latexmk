@@ -1,22 +1,22 @@
 # Fdb version 4
-["biber main"] 1784711897.33854 "main.bcf" "main.bbl" "main" 1784711940.32892 0
-  "main.bcf" 1784711937.2837 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
+["biber main"] 1784712069.97165 "main.bcf" "main.bbl" "main" 1784712100.56837 0
+  "main.bcf" 1784712097.36759 114695 537ff86d22d56e6e32233b39cb3857d6 "pdflatex"
   "refs.bib" 1784708870.13867 38018 72b8022d2954150fee28ddc49dbe254c ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["cusdep acn acr main"] 1784711900.05415 "main.acn" "main.acr" "main" 1784711940.32986 0
-  "main.acn" 1784711937.29169 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
+["cusdep acn acr main"] 1784712038.01732 "main.acn" "main.acr" "main" 1784712100.5694 0
+  "main.acn" 1784712097.37051 2111 c56702889c1cf9e5a4ea4111ccace19a "pdflatex"
   (generated)
   "main.acr"
   (rewritten before read)
-["cusdep glo gls main"] 1784711896.56689 "main.glo" "main.gls" "main" 1784711940.32821 0
-  "main.glo" 1784711930.21023 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["cusdep glo gls main"] 1784712033.59582 "main.glo" "main.gls" "main" 1784712100.56773 0
+  "main.glo" 1784712089.68943 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "main.gls"
   (rewritten before read)
-["pdflatex"] 1784711927.18901 "main.tex" "main.pdf" "main" 1784711940.33058 0
+["pdflatex"] 1784712086.75731 "main.tex" "main.pdf" "main" 1784712100.57008 0
   "C:/Users/jacop/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1784549957.32092 160571 87dbf2e8c5b3f2a7d0da773a1d50547e ""
   "C:/Users/jacop/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1758967954.9851 13286966 8197512522de534cc7b8edc2542b6d42 ""
   "C:/Users/jacop/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1762693727 2688 c4453cc5ea1d5eadb4ed2ca5fa23d7e7 ""
@@ -536,7 +536,7 @@
   "chapters/Measurements.tex" 1784708852.34628 28595 137802de1f2ec592a9b27c83e13aa338 ""
   "chapters/PMIC.tex" 1784708849.81898 15652 45167751d29c5bc892dfab80a9d9b616 ""
   "chapters/SimMeasComparison.tex" 1784708845.81611 12261 63679ee800d8ffafcc2b910e1716a4c5 ""
-  "chapters/Simulations.tex" 1784708854.71584 44039 6405a4a435dc16f5aacb9520c3495981 ""
+  "chapters/Simulations.tex" 1784712000.32652 44043 1824770f3c126a1dbc8ece0808d110e1 ""
   "chapters/Theory.tex" 1784711560.31499 32194 3898ec43bb4178b11312a98bdc2021aa ""
   "chapters/abstract.tex" 1784708475.46376 2880 b6624fae14a64526ea43f8b2336a1086 ""
   "chapters/sommario.tex" 1783333383.13283 3005 0a231dd822eaaf8edaa4cd584e304220 ""
@@ -559,15 +559,15 @@
   "imm/VR_theory.pdf" 1779791790.16379 53611 8c8df31c8483b88b502c97cc9acf0da1 ""
   "imm/bq25570_Block_Diagram.png" 1784145033.76023 65946 644cde2993c3b16450b0671658f7e53e ""
   "imm/dragon_emoji.png" 1784404474.50882 3834 064540d6acdfe3c0f1fe2a74dd93c17a ""
-  "main.acr" 1784711900.87189 3452 5a241a1f74d91ad90b44edc4b560685f "cusdep acn acr main"
-  "main.aux" 1784711937.21599 84028 e75e8af7312b86b1ac43575372d1eb3e "pdflatex"
-  "main.bbl" 1784711899.97561 65656 a0318498e46e346b664009e8eb496c43 "biber main"
-  "main.gls" 1784711900.92662 6 9f404503043ec80c08484be9f659189e "cusdep glo gls main"
-  "main.out" 1784711937.26663 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
-  "main.run.xml" 1784711937.2837 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
+  "main.acr" 1784712042.56831 3452 5a241a1f74d91ad90b44edc4b560685f "cusdep acn acr main"
+  "main.aux" 1784712097.31417 84028 e75e8af7312b86b1ac43575372d1eb3e "pdflatex"
+  "main.bbl" 1784712072.97749 65656 a0318498e46e346b664009e8eb496c43 "biber main"
+  "main.gls" 1784712042.63118 7 151665bede946f27337a5cce942d5612 "cusdep glo gls main"
+  "main.out" 1784712097.34369 18786 961742e572c60e6f7e0490cb6172b6a4 "pdflatex"
+  "main.run.xml" 1784712097.36959 2299 33d8dfeb54dc04cad67f98afaa10639d "pdflatex"
   "main.tex" 1784550036.05173 3123 f7742f8259f26066440b009a09d0c0cc ""
-  "main.toc" 1784711937.29169 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
-  "pdfa.xmpi" 1784711928.56057 5042 ac0c7ebd3c049bb8022264de110e3b3e "pdflatex"
+  "main.toc" 1784712097.37051 9157 e178c67f57fc6466ce63e9c26e4e6eae "pdflatex"
+  "pdfa.xmpi" 1784712088.1561 5042 fc4486866f44c5d00ce27f00cb9c2de8 "pdflatex"
   "template/extras.tex" 1773833088.20186 4682 2e7a308feedbc8886853352b4d001e4d ""
   "template/unipdbg.pdf" 1776334892.65166 142582 bf751aedc3fdfd60485df89f3e450563 ""
   "template/universis.pdf" 1776333969.47834 117986 c3df10d7b866ac53d8e1cc3cd006b9a1 ""
