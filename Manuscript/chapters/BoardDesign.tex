@@ -9,7 +9,7 @@ Chapter \ref{ch:topologies} introduced the FWR and NVC rectifier topologies used
 \section{Components Used}
 \label{sec:components_used}
 
-Table \ref{tab:board_components} lists the key components used to build the FWR and NVC prototype board of Chapter \ref{ch:topologies}. The same Schottky diode is used both as the FWR's rectifying diodes and as the parallel diodes of the NVC's cross-coupled bridge. The NVC bridge itself also needs two N-MOSFETs and two P-MOSFETs.
+Table \ref{tab:board_components} lists the key components used to build the FWR and NVC prototype board of Chapter \ref{ch:topologies}. The same Schottky diode part is used both for the FWR's rectifying diodes and for the NVC's parallel diodes on its cross-coupled bridge. The NVC bridge itself also needs two N-MOSFETs and two P-MOSFETs.
 
 The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC bridge switches properly is set by the largest of its four MOSFET threshold voltages. Table \ref{tab:board_components} shows this is the N-MOSFET's $V_\text{GS(th)}=1.2\ \text{V}$, larger in magnitude than the P-MOSFET's $V_\text{GS(th)}=-1.0\ \text{V}$.
 
@@ -24,7 +24,7 @@ The critical voltage $V_\text{off}\approx1.2\ \text{V}$ above which the NVC brid
         $P_1$, $P_2$ & P-MOSFET (PMN27XPE-115) & $R_\text{DSon}=27\ \text{m}\Omega$, $V_\text{GS(th)}=-1.0\ \text{V}$, $V_\text{SD}=-0.7\ \text{V}$ \\
         \bottomrule
     \end{tabularx}
-    \caption{Key components used on the FWR and NVC prototype boards.}
+    \caption{Key components used on the FWR and NVC prototype board.}
     \label{tab:board_components}
 \end{table}
 
@@ -88,13 +88,13 @@ Figures \ref{fig:board_sch_p1}-\ref{fig:board_sch_p6} show the complete schemati
 \section{Board Assembly}
 \label{sec:board_assembly}
 
-Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly from Altium Designer, before assembly. On the top view, the six coil connectors (COIL1-COIL6) sit on the left, each next to its own bank of matching capacitors, with the Y/D and FBR/NVC selection jumpers in the middle, and the NVC and FBR rectifier sections, each with their own output connector and filter capacitors, on the right.
+Figure \ref{fig:board_3d} shows a 3D rendering of the board generated directly from Altium Designer, before assembly. In the top view, the six coil connectors (COIL1-COIL6) sit on the left, each next to its own bank of matching capacitors; the Y/D and FBR/NVC selection jumpers sit in the middle; and the NVC and FBR rectifier sections, each with its own output connector and filter capacitors, sit on the right.
 
 
 
 
 
-The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges through the soldering process: the four diodes, on the sides, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
+The PCB was ordered from a Chinese board manufacturer, while all components were sourced separately and the entire board was hand-soldered. Figure \ref{fig:soldering} shows one of the three NVC bridges during the soldering process: the four diodes, on the sides, are already soldered, while the MOSFET packages, on the right, still show unmelted solder sitting on their pins.
 
 
 
