@@ -24,7 +24,7 @@ The voltages and currents measured throughout this chapter all depend on the har
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{imm/Setup.jpg}
-    \caption{Test bench used for all measurements: the induction motor (left) coupled through a shaft coupling to the MP-VREH harvester (right, white housing); the motor speed, and so the harvester's rotation speed, is set by a variable-frequency inverter.}
+    \caption{Test bench used for all measurements: the induction motor (left) coupled through a shaft coupling to the MP-VREH harvester (right, white housing).}
     \label{fig:setup}
 \end{figure}
 
@@ -77,7 +77,7 @@ The current sensor output voltage is then connected to the corresponding Saleae 
 \section{Current Sensors Calibration}
 \label{sec:calibration}
 
-Equation \eqref{eq:vout_sensing} gives the nominal, linear relationship between the sensor output and the current it measures, but a real current sensor does not follow it exactly. Component tolerances and offset voltage make every sensor, comprising its own shunt resistor and INA114AU, different from every other nominally identical sensor, and the response of the amplifier itself is not perfectly linear over the full input range. A single scale factor is therefore not accurate enough to describe a given sensor; instead, each sensor is calibrated individually by building a lookup table that maps its acquired output voltage directly to the true current.
+Equation \eqref{eq:vout_sensing} gives the nominal, linear relationship between the sensor output and the current it measures, but a real current sensor does not follow it exactly. Component tolerances and offset voltage make every sensor, each consisting of its own shunt resistor and INA114AU, different from every other nominally identical sensor, and the response of the amplifier itself is not perfectly linear over the full input range. A single scale factor is therefore not accurate enough to describe a given sensor; instead, each sensor is calibrated individually by building a lookup table that maps its acquired output voltage directly to the true current.
 
 Figure \ref{fig:curr_sens} plots, for each of the six current sensors of the MP-VREH (CS1 to CS6), the known current driven by the B2901A against the corresponding sensor output voltage. The six sensors use nominally identical shunt resistors and INA114AU amplifiers, but their slopes are clearly different, especially for CS2. A single scale factor could not capture this spread, so each sensor needs its own lookup table.
 
