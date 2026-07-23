@@ -93,11 +93,11 @@
 \contentsline {section}{\numberline {9.2}Open-Circuit Voltage Across Topologies}{99}{section.9.2}%
 \contentsline {section}{\numberline {9.3}Candidate Power Management ICs}{101}{section.9.3}%
 \contentsline {subsection}{\numberline {9.3.a}DS-AEM13920\_VR}{101}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.b}DS-AEM10941\_VR}{101}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.b}DS-AEM10941\_VR}{102}{subsection.9.3.2}%
 \contentsline {subsection}{\numberline {9.3.c}bq25570}{103}{subsection.9.3.3}%
 \contentsline {subsection}{\numberline {9.3.d}SPV1050}{103}{subsection.9.3.4}%
-\contentsline {subsection}{\numberline {9.3.e}SPV1040}{105}{subsection.9.3.5}%
-\contentsline {section}{\numberline {9.4}Compatibility Analysis}{105}{section.9.4}%
+\contentsline {subsection}{\numberline {9.3.e}SPV1040}{103}{subsection.9.3.5}%
+\contentsline {section}{\numberline {9.4}Compatibility Analysis}{106}{section.9.4}%
 \contentsline {chapter}{\numberline {10}Conclusions}{109}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Summary}{109}{section.10.1}%
 \contentsline {section}{\numberline {10.2}Key Findings}{109}{section.10.2}%

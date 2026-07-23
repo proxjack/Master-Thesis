@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  23 JUL 2026 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.9.27)  23 JUL 2026 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -5445,40 +5445,44 @@ File: imm/DS-AEM13920_VR_Block_Diagram.png Graphic file (type png)
 Package pdftex.def Info: imm/DS-AEM13920_VR_Block_Diagram.png  used on input li
 ne 85.
 (pdftex.def)             Requested size: 248.96794pt x 213.85794pt.
-<imm/DS-AEM10941_VR_Block_Diagram.png, id=4166, 776.9025pt x 655.69969pt>
+<imm/DS-AEM10941_VR_Block_Diagram.png, id=4168, 776.9025pt x 655.69969pt>
 File: imm/DS-AEM10941_VR_Block_Diagram.png Graphic file (type png)
 <use imm/DS-AEM10941_VR_Block_Diagram.png>
 Package pdftex.def Info: imm/DS-AEM10941_VR_Block_Diagram.png  used on input li
-ne 128.
+ne 130.
 (pdftex.def)             Requested size: 248.96794pt x 210.12834pt.
 
 
 [101 <./imm/DS-AEM13920_VR_Block_Diagram.png>]
-
-[102 <./imm/DS-AEM10941_VR_Block_Diagram.png>]
-<imm/bq25570_Block_Diagram.png, id=4186, 707.64375pt x 499.11469pt>
+<imm/bq25570_Block_Diagram.png, id=4182, 707.64375pt x 499.11469pt>
 File: imm/bq25570_Block_Diagram.png Graphic file (type png)
 <use imm/bq25570_Block_Diagram.png>
-Package pdftex.def Info: imm/bq25570_Block_Diagram.png  used on input line 180.
+Package pdftex.def Info: imm/bq25570_Block_Diagram.png  used on input line 184.
 
 (pdftex.def)             Requested size: 268.12068pt x 189.10959pt.
-<imm/SPV1050_Block_Diagram.png, id=4189, 816.04875pt x 515.67656pt>
+
+Underfull \vbox (badness 2119) has occurred while \output is active []
+
+
+
+[102 <./imm/DS-AEM10941_VR_Block_Diagram.png>]
+<imm/SPV1050_Block_Diagram.png, id=4196, 816.04875pt x 515.67656pt>
 File: imm/SPV1050_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1050_Block_Diagram.png>
-Package pdftex.def Info: imm/SPV1050_Block_Diagram.png  used on input line 223.
+Package pdftex.def Info: imm/SPV1050_Block_Diagram.png  used on input line 229.
 
 (pdftex.def)             Requested size: 248.96794pt x 157.32439pt.
-<imm/SPV1040_Block_Diagram.png, id=4193, 608.2725pt x 581.92406pt>
+<imm/SPV1040_Block_Diagram.png, id=4201, 608.2725pt x 581.92406pt>
 File: imm/SPV1040_Block_Diagram.png Graphic file (type png)
 <use imm/SPV1040_Block_Diagram.png>
-Package pdftex.def Info: imm/SPV1040_Block_Diagram.png  used on input line 274.
+Package pdftex.def Info: imm/SPV1040_Block_Diagram.png  used on input line 282.
 
 (pdftex.def)             Requested size: 248.96794pt x 238.18195pt.
 
 
-[103 <./imm/bq25570_Block_Diagram.png>]
+[103]
 
-[104 <./imm/SPV1050_Block_Diagram.png>]
+[104 <./imm/bq25570_Block_Diagram.png> <./imm/SPV1050_Block_Diagram.png>]
 
 [105 <./imm/SPV1040_Block_Diagram.png>]
 
@@ -5538,12 +5542,12 @@ Overfull \hbox (10.44496pt too wide) in paragraph at lines 101--101
 
 
 ]
-<imm/SDL1.jpg, id=4374, 3035.34pt x 4047.12pt>
+<imm/SDL1.jpg, id=4382, 3035.34pt x 4047.12pt>
 File: imm/SDL1.jpg Graphic file (type jpg)
 <use imm/SDL1.jpg>
 Package pdftex.def Info: imm/SDL1.jpg  used on input line 15.
 (pdftex.def)             Requested size: 344.72575pt x 459.63501pt.
-<imm/dragon_emoji.png, id=4375, 153.57375pt x 144.54pt>
+<imm/dragon_emoji.png, id=4383, 153.57375pt x 144.54pt>
 File: imm/dragon_emoji.png Graphic file (type png)
 <use imm/dragon_emoji.png>
 Package pdftex.def Info: imm/dragon_emoji.png  used on input line 18.
@@ -5594,9 +5598,9 @@ X/fonts/type1/urw/times/utmri8a.pfb><C:/Users/jacop/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/newpx/zplb.pfb><C:/Users/jacop/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/newpx/zplr.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
 KTeX/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (130 pages, 17913059 bytes).
+Output written on main.pdf (130 pages, 17914879 bytes).
 PDF statistics:
- 4556 PDF objects out of 5155 (max. 8388607)
+ 4564 PDF objects out of 5155 (max. 8388607)
  436 named destinations out of 1000 (max. 500000)
  1503 words of extra memory for PDF output out of 10000 (max. 10000000)
 
