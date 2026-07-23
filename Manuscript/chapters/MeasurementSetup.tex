@@ -88,7 +88,7 @@ Figure \ref{fig:curr_sens} plots, for each of the six current sensors of the MP-
     \label{fig:curr_sens}
 \end{figure}
 
-The calibration consists of driving the shunt resistor with a set of known reference currents, spanning the range expected in operation and simultaneously acquiring the corresponding sensor output voltage. Each (voltage, current) pair obtained this way becomes one entry of that sensor's lookup table. The current corresponding to any voltage acquired later during normal operation is then recovered by interpolating between the nearest entries of this table, rather than by inverting a single linear formula, which is what allows the non-linearity and sensor-to-sensor variation described above to be compensated for. Every current used later in this thesis is recovered from the acquired voltage through this per-sensor lookup table.
+The calibration consists of driving the shunt resistor with a set of known reference currents, spanning the range expected in operation and simultaneously acquiring the corresponding sensor output voltage. Each (voltage, current) pair obtained this way becomes one entry of that sensor's lookup table. The current corresponding to any voltage acquired later during normal operation is then recovered by interpolating between the nearest entries of this table, rather than by inverting a single linear formula, which is what allows the non-linearity and sensor-to-sensor variation described above to be compensated for. Every current used later in this thesis is recovered from the acquired voltage through this lookup table.
 
 The B2901A, however, has a maximum output current lower than the peak phase current found in the simulations of Chapter \ref{ch:simulations}, so it cannot itself reproduce, through the $R_\text{shunt}=0.1\ \Omega$ shunt used on the board, the full range of shunt voltages that shunt produces in operation. The calibration shunt is therefore chosen ten times larger, $R_\text{cal}=1\ \Omega$. What actually sets the operating point of the INA114AU is the shunt voltage of \eqref{eq:vshunt}, not the current itself. With a shunt ten times larger, the same shunt voltage, and so the same amplifier operating point, is reached with a current ten times smaller, well within the B2901A's range.
 
@@ -124,6 +124,6 @@ The load resistance $R_L$ connected to each rectifier output during the measurem
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{imm/Load.jpg}
-    \caption{The eight-decade programmable resistor board used to set the load resistance $R_L$, with one jumper per decade selecting a digit from 0 to 9.}
+    \caption{The eight-decade programmable resistor board used to set the load resistance $R_L$.}
     \label{fig:load}
 \end{figure}
