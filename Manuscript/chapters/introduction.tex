@@ -167,9 +167,26 @@ The difference between the two is important. A circuit can
 convert power efficiently (high PCE) while still wasting 
 much of what the transducer could produce, if the circuit 
 itself is not able to work at the optimal operating 
-point. For this reason, PEE is a more useful metric when the 
-goal is to maximise the total power delivered to the 
+point. For this reason, PEE is a more useful metric when the
+goal is to maximise the total power delivered to the
 load \cite{xuSystemImplementationTradeOffs2021}.
+
+Computing PEE requires knowing $P_\text{max}$, i.e.\ the
+transducer's true source impedance $R_\text{Coil}$ and
+$L_\text{Coil}$ of Section~\ref{sec:impedance_matching}. In
+the Simulink simulations of Chapter~\ref{ch:simulations}
+these are known model parameters at every simulated speed,
+so PEE is computed directly alongside PCE for every
+topology. In the laboratory measurements, however,
+$P_\text{max}$ was only characterised at the two ends of the
+target speed range, $100$ and $400\ \text{rpm}$, rather than
+at every speed in between; since
+Chapters~\ref{ch:measurements}-\ref{ch:comparison} compare
+the topologies across the whole range, PEE could not be
+computed there. For this reason, PCE ($\eta_\text{Rec}$) is
+adopted as the metric used throughout this work, with PEE
+reported only alongside it for the simulated results of
+Chapter~\ref{ch:simulations}.
 
 
 

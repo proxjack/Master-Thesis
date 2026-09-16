@@ -1,6 +1,6 @@
-PWD C:\UNIPD\Magistrale\Master Thesis\Manuscript
+PWD c:\PERSONAL\UNIPD\Magistrale\Master Thesis\Manuscript
 INPUT C:\Users\jacop\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\PERSONAL\UNIPD\Magistrale\Master Thesis\Manuscript\main.tex
 OUTPUT main.log
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
@@ -112,13 +112,13 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.de
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
+INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\babel-english\english.ldf
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\colorprofiles\colorprofiles.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\colorprofiles\colorprofiles.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\generic\colorprofiles\colorprofiles.tex
@@ -563,8 +563,6 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbraster
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbskins.code.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzfill.image.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzfill.image.sty
-INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzfill-common.sty
-INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzfill-common.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzlibraryfill.image.code.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tikzfill\tikzlibraryfill.image.code.tex
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\tcolorbox\tcbskinsjigsaw.code.tex
