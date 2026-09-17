@@ -11,6 +11,7 @@
 
 % Unipd theme (see main.tex for the available options)
 \usetheme[pageofpages=of]{Unipd}
+\usetikzlibrary{positioning}   % tikz itself is loaded by the theme
 
 % Author and date are printed on the red title page: force them to white
 \setbeamercolor{author}{fg=white}
@@ -22,12 +23,20 @@
     {./Imm/}%
 }
 
+% Boxes of the roadmap on the "Objectives and approach" slide
+\tikzset{
+    roadstep/.style={draw=red_unipd, thick, rounded corners, fill=red_unipd!8,
+                 text width=1.25cm, align=center, minimum height=1.05cm,
+                 inner sep=1.5pt, font=\scriptsize},
+    roadflow/.style={-latex, thick, draw=red_unipd}
+}
+
 \title[Interface circuits for a six-phase VREH]{Interface Circuits for a Six-Phase\\Variable Reluctance Energy Harvester}
 \subtitle{A comparative study of rectification and power conditioning topologies}
 \author[Jacopo Garau]{Jacopo Garau\\[0.8ex]
     {\small Supervisor: Prof.~Alessandro Pozzebon}\\
     {\small Co-supervisors: Prof.~Sebastian Bader, Dr.~Ye Xu}}
-\date{\small Master Thesis in Electronic Engineering --- A.Y.~2025/2026}
+\date{\small Master Thesis in Electronic Engineering -- A.Y.~2025/2026}
 
 \begin{document}
 
@@ -39,108 +48,119 @@
 % ---------------------------------------------------------------- 2
 \begin{frame}{Why energy harvesting?}
     \begin{itemize}
-        \item Wireless sensor networks and IoT devices have grown very fast, and are
-              widely used to \alert{collect data} that can then be processed for
-              many different purposes.
-        \item \alert{Millions of small nodes} therefore need to be powered.
-        \item Batteries are expensive to maintain, have a finite life, and in many
-              embedded or rotating installations \alert{cannot be replaced at all};
-              they are also a poor choice for the environment.
+        \item WSN and IoT nodes are everywhere, \alert{collecting data} for many
+              different purposes.
+        \item Batteries are costly to maintain, have a finite life and are often
+              \alert{impossible to replace}, and they are bad for the environment.
+        \item With \alert{energy harvesting} the node powers itself from the
+              energy already available around it.
     \end{itemize}
     \vfill
-    \begin{block}{Energy harvesting}
-        Convert energy already available in the environment into electrical power,
-        so that the node powers itself for its whole lifetime.
-    \end{block}
+    \centering
+    \includegraphics[width=0.74\textwidth]{VREH_basic.png}
     \vfill
-    This thesis targets \textbf{rotating motion}, converted through
-    \textbf{Variable Reluctance Energy Harvesting (VREH)}.
 \end{frame}
 
 % ---------------------------------------------------------------- 3
 \begin{frame}{The variable reluctance principle}
     \begin{columns}[T]
-        \column{0.46\textwidth}
+        \column{0.44\textwidth}
             \small
             \begin{itemize}
-                \item Magnet and coil stay \alert{completely still}.
-                \item Only a toothed wheel rotates across the air gap.
-                \item The passing teeth modulate the reluctance, hence the flux
-                      linked by the coil: an EMF is induced.
+                \item Magnet and coil \alert{stand still}; only the toothed wheel
+                      rotates.
+                \item The passing teeth modulate the flux and induce an EMF.
             \end{itemize}
-            \vspace{0.5ex}
+            \vspace{1.5ex}
             \textbf{Advantages}
             \begin{itemize}
-                \item No moving electrical parts.
-                \item Easily scaled to different shaft sizes.
-                \item Very small counter torque.
+                \item No moving electrical parts
+                \item Scalable to any shaft size
+                \item Very small counter torque
             \end{itemize}
-        \column{0.52\textwidth}
+        \column{0.54\textwidth}
             \centering
             \includegraphics[width=\textwidth]{VR_theory.pdf}\\[1ex]
-            {\scriptsize Stationary pickup unit (magnet, pole piece, coil)
-             facing the rotating toothed wheel.}
+            {\scriptsize Pickup unit facing the rotating wheel.}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------- 4
 \begin{frame}{The six-phase MP-VREH}
-    From single-unit prototypes for railway monitoring to an optimised
-    \alert{six-phase} design for large vehicles (buses): six pickup units,
-    electrically shifted by $60^\circ$, mounted around the shaft.
+    Six pickup units around the shaft, electrically $60^\circ$ apart, evolved from
+    railway prototypes into a design for large vehicles.
     \vfill
     \begin{table}
         \centering
         \small
         \begin{tabular}{cccccc}
             \toprule
-            rpm & $f$ (Hz) & $V_\text{Lpk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
+            rpm & $f$ (Hz) & $V_\text{pk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
             \midrule
-            100 & 36.7  & 0.91 & 6 & 21.68 & 0.41\\
-            200 & 73.3  & 1.35 & 6 & 21.46 & 0.91\\
-            300 & 110.0 & 1.59 & 6 & 21.27 & 1.26\\
-            400 & 146.7 & 1.74 & 6 & 21.12 & 1.51\\
+            100 & 36.7  & 1.82 & 6 & 21.68 & 0.41\\
+            200 & 73.3  & 2.7 & 6 & 21.46 & 0.91\\
+            300 & 110.0 & 3.18 & 6 & 21.27 & 1.26\\
+            400 & 146.7 & 3.48 & 6 & 21.12 & 1.51\\
             \bottomrule
         \end{tabular}
     \end{table}
     \vfill
-    Target operating range: \alert{100--400 rpm}, i.e.\ 20--80 km/h for a typical
-    large commercial vehicle. Each phase delivers less than $2\ \text{V}$ peak:
-    the rectifier choice becomes critical.
+    Target range \alert{100 - 400 rpm} (20 - 80 km/h), with under $2V$ peak
+    per phase, so the rectifier choice becomes critical.
 \end{frame}
 
 % ---------------------------------------------------------------- 5
 \begin{frame}{Research gap and question}
-    \begin{itemize}
-        \item More phases mean more power, but a much harder electronics problem:
-              \alert{six AC signals}, all shifted in time, all to be rectified.
-        \item Previous work compared rectifier topologies for a
-              \alert{single-phase} VREH only.
-        \item How to condition the power of a six-phase harvester has never been
-              studied systematically.
-    \end{itemize}
+    \vspace{0.5ex}
+    \centering
+    \begin{tikzpicture}[x=1cm, y=1cm,
+        coil/.style={draw=red_unipd, thick, rounded corners, fill=red_unipd!8,
+                     text width=0.8cm, align=center, minimum height=0.4cm,
+                     inner sep=1pt, font=\tiny},
+        box/.style={draw=red_unipd, thick, rounded corners, fill=red_unipd!15,
+                    text width=2.1cm, align=center, minimum height=1.5cm,
+                    inner sep=2pt, font=\scriptsize}]
+        \foreach \i/\lab in {0/{$Coil0$},1/{$Coil1$},2/{$Coil2$},3/{$Coil3$},4/{$Coil4$},5/{$Coil5$}}
+            \node[coil] (c\i) at (0, {-0.6*\i}) {\lab};
+        \node[box] (q) at (3.4, -1.5) {\textbf{?}\\[0.3ex] interface circuit};
+        \node[box, text width=1.1cm, minimum height=0.9cm] (l) at (6.0, -1.5) {load};
+        \foreach \i in {0,...,5} \draw[roadflow] (c\i.east) -- (q.west);
+        \draw[roadflow] (q.east) -- (l.west);
+        \node[font=\scriptsize, above=1mm of c0] {six coils, $60^\circ$ apart};
+    \end{tikzpicture}
     \vfill
+    \raggedright
+    \small
+    More phases, more power, but \alert{six AC signals} to rectify, and prior
+    work compared rectifiers for a \alert{single phase} only.
+    \vspace{0.5ex}
     \begin{alertblock}{Research question}
-        Which interface circuit extracts the most power from the six-phase
-        MP-VREH, across its entire 100--400 rpm speed range?
+        Which interface circuit extracts the most power, over the whole speed range?
     \end{alertblock}
 \end{frame}
 
 % ---------------------------------------------------------------- 6
 \begin{frame}{Objectives and approach}
-    A complete path, from theory to a working prototype:
     \vfill
-    \begin{enumerate}
-        \item \textbf{Model} the harvester: electrical model of one coil,
-              extended to the six-phase system.
-        \item \textbf{Propose} rectifier topologies able to combine six phases.
-        \item \textbf{Simulate} each candidate in MATLAB/Simulink, sweeping the
-              compensation capacitor and the load.
-        \item \textbf{Design and build} a single reconfigurable prototype board.
-        \item \textbf{Measure} every topology on the same hardware, on the same
-              test bench.
-        \item \textbf{Assess} compatibility with commercial power management ICs.
-    \end{enumerate}
+    \centering
+    \begin{tikzpicture}[node distance=3mm]
+        \node[roadstep] (a) {Coil model};
+        \node[roadstep, right=of a] (b) {Topo\-logies};
+        \node[roadstep, right=of b] (c) {Simulink};
+        \node[roadstep, right=of c] (d) {PCB};
+        \node[roadstep, right=of d] (e) {Measure\-ments};
+        \node[roadstep, right=of e] (f) {PMICs};
+        \draw[roadflow] (a) -- (b);
+        \draw[roadflow] (b) -- (c);
+        \draw[roadflow] (c) -- (d);
+        \draw[roadflow] (d) -- (e);
+        \draw[roadflow] (e) -- (f);
+    \end{tikzpicture}
+    \vfill
+    \raggedright
+    From theory to a real prototype, with \alert{every topology measured on the
+    same board} and on the same test bench.
+    \vfill
 \end{frame}
 
 \section{Modelling and Proposed Topologies}
@@ -148,23 +168,21 @@
 % ---------------------------------------------------------------- 7
 \begin{frame}{Coil model and matching}
     \begin{columns}[T]
-        \column{0.52\textwidth}
+        \column{0.50\textwidth}
             \small
             \begin{itemize}
-                \item Each coil: ideal source in series with $R_\text{Coil}$ and
+                \item Each coil is a source in series with $R_\text{Coil}$ and
                       $L_\text{Coil}$.
-                \item At low speed a purely \alert{resistive} load is enough to
-                      extract the maximum power.
-                \item As speed (and frequency) grows, $\omega_e L_\text{Coil}$
-                      can no longer be neglected: the matched-load condition is lost.
-                \item A \alert{series compensation capacitor} $C_m$ cancels the
-                      inductive reactance and restores it:
+                \item At low speed a \alert{resistive} load is enough.
+                \item At higher speed $\omega_e L_\text{Coil}$ breaks the matching.
+                \item A series capacitor $C_m$ cancels it
             \end{itemize}
             \begin{equation*}
                 C_m = \frac{1}{\omega_e^{2}\,L_\text{Coil}}
             \end{equation*}
-            valid at one frequency at a time.
-        \column{0.46\textwidth}
+            \centering
+            {\small valid at one frequency at a time.}
+        \column{0.48\textwidth}
             \centering
             \includegraphics[width=0.95\textwidth]{Coil_model.pdf}\\[2ex]
             \includegraphics[width=0.85\textwidth]{Matching_condition.pdf}
@@ -174,17 +192,15 @@
 % ---------------------------------------------------------------- 8
 \begin{frame}{The six real phase voltages}
     \begin{columns}[T]
-        \column{0.58\textwidth}
+        \column{0.60\textwidth}
             \centering
             \includegraphics[width=\textwidth]{OCV_100_focus.pdf}
-        \column{0.40\textwidth}
+        \column{0.38\textwidth}
             \begin{itemize}
-                \item Measured open-circuit voltage of the six coils at
-                      $100\ \text{rpm}$.
-                \item The $60^\circ$ electrical shift between phases is clearly
-                      visible.
-                \item The waveform is \alert{not} a clean sine wave, and the six
-                      units are not perfectly identical.
+                \item Measured at $100\ \text{rpm}$.
+                \item The $60^\circ$ shift is clearly visible.
+                \item \alert{Not} clean sine waves, and the six units are not
+                      identical.
             \end{itemize}
     \end{columns}
 \end{frame}
@@ -192,72 +208,67 @@
 % ---------------------------------------------------------------- 9
 \begin{frame}{From waveform to simulation}
     \begin{columns}[T]
-        \column{0.44\textwidth}
+        \column{0.42\textwidth}
             \begin{itemize}
-                \item The RMS voltage of each coil was computed as a function of
-                      speed.
-                \item Each source was then replaced by an \alert{equivalent
-                      sinusoid}, scaled through the measured crest factor.
-                \item It delivers the same power as the real waveform, so the
-                      simulation stays realistic while remaining tractable.
+                \item RMS voltage computed against speed.
+                \item Each source replaced by an \alert{equivalent sinusoid},
+                      scaled by the crest factor.
+                \item Same power as the real waveform.
             \end{itemize}
-        \column{0.54\textwidth}
+        \column{0.56\textwidth}
             \centering
             \includegraphics[width=\textwidth]{Voltage_comp.pdf}\\[0.5ex]
-            {\scriptsize FEM prediction, raw measured peak and crest-factor
-             corrected value.}
+            {\scriptsize FEM, raw measured peak, crest-factor corrected.}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------- 10
-\begin{frame}{Strategy 1: FWR bridges}
+\begin{frame}{Strategy 1 --- FWR bridges}
     \begin{columns}[T]
-        \column{0.52\textwidth}
+        \column{0.50\textwidth}
             \small
-            The six phases split into \alert{two three-phase groups}
-            ($k=0,2,4$ and $k=1,3,5$), each feeding a standard three-phase bridge.
+            \alert{Two three-phase groups} ($k=0,2,4$ and $k=1,3,5$), each on a
+            standard bridge.
             \vspace{1ex}
             \begin{itemize}
-                \item \textbf{Star (Y)}: line voltage is $\sqrt{3}$ times the
-                      phase EMF, so the fixed two-diode drop costs relatively less.
-                \item \textbf{Delta ($\Delta$)}: line voltage equals the coil EMF,
-                      no amplitude gain, but no floating node.
+                \item The \textbf{star (Y)} gives a line voltage $\sqrt{3}$ times
+                      the phase EMF, so the two-diode drop costs less.
+                \item The \textbf{delta ($\Delta$)} gives the coil EMF itself, with
+                      no gain but no floating node.
             \end{itemize}
             \vspace{1ex}
-            Expectation: \alert{higher open-circuit voltage for the star
-            connection}. Both are carried forward as candidates.
-        \column{0.46\textwidth}
+            The star should give the \alert{higher open-circuit voltage}.
+        \column{0.48\textwidth}
             \centering
             \includegraphics[width=0.92\textwidth]{FWR.pdf}\\[1ex]
-            {\scriptsize Three-phase bridge for one group; the current path always
-             crosses two diodes.}
+            {\scriptsize Two diodes always in the current path.}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------- 11
-\begin{frame}{Strategy 2: NVC bridges}
+\begin{frame}{Strategy 2 --- NVC bridges}
     \begin{columns}[T]
-        \column{0.52\textwidth}
-            \footnotesize
-            The six phases split into \alert{three two-phase groups}, each pairing
-            phases $180^\circ$ apart ($k=0,3$; $1,4$; $2,5$) in \textbf{anti-series}:
+        \column{0.50\textwidth}
+            \small
+            \alert{Three two-phase groups}, pairing phases $180^\circ$ apart in
+            \textbf{anti-series}
             \begin{equation*}
                 v_A - v_B = e_k - e_{k+3} = 2\,e_k
             \end{equation*}
-            ideally double the voltage, at the cost of a doubled series impedance.
-            \vspace{0.5ex}
+            ideally double the voltage.
+            \vspace{1ex}
             \begin{itemize}
-                \item Four MOSFETs with \alert{cross-coupled gates}: two conduct at
-                      a time, no gate driver needed.
-                \item They bypass the parallel Schottky diodes, replacing the fixed
-                      drop with a small $R_\text{on}$; below
-                      $V_\text{off}\approx1.2\ \text{V}$ the bridge falls back to
-                      diode behaviour.
+                \item Four MOSFETs with \alert{cross-coupled gates}, so no gate
+                      driver is needed.
+                \item They bypass the diodes, trading the fixed drop for a small
+                      $R_\text{on}$.
+                \item Below $V_\text{off}\approx1.2\ \text{V}$ it falls back to the
+                      diodes.
             \end{itemize}
-        \column{0.46\textwidth}
+        \column{0.48\textwidth}
             \centering
             \includegraphics[width=0.95\textwidth]{NVC.pdf}\\[1ex]
-            {\scriptsize Negative voltage converter for one anti-series pair.}
+            {\scriptsize NVC for one anti-series pair.}
     \end{columns}
 \end{frame}
 
@@ -265,56 +276,57 @@
 
 % ---------------------------------------------------------------- 12
 \begin{frame}{The prototype board}
-    \begin{columns}[T]
-        \column{0.48\textwidth}
+    \begin{columns}[c]
+        \column{0.38\textwidth}
+            \small
             \begin{itemize}
-                \item Custom PCB designed in Altium Designer.
-                \item \alert{Every configuration} (star, delta, NVC) selected by
-                      moving jumpers, on the same hardware.
-                \item Jumper-selectable capacitor bank to set $C_m$ of each coil.
-                \item Assembled entirely by hand, with soldering iron and hot plate.
+                \item Custom PCB, Altium Designer.
+                \item \alert{Star, delta and NVC} selected by moving jumpers, plus
+                      a jumper bank for $C_m$.
+                \item Hand assembled with soldering iron and hot plate.
             \end{itemize}
-        \column{0.50\textwidth}
+        \column{0.60\textwidth}
             \centering
-            \includegraphics[width=0.9\textwidth]{Top3D.png}\\[1ex]
-            \includegraphics[width=0.72\textwidth]{Soldering.jpg}\\[0.5ex]
-            {\scriptsize One NVC bridge during hand assembly.}
+            \includegraphics[width=0.49\textwidth]{Top3D.png}
+            \includegraphics[width=0.49\textwidth]{Bottom3D.png}\\[1ex]
+            \includegraphics[width=0.62\textwidth]{Soldering.jpg}\\[0.3ex]
+            {\scriptsize One NVC bridge during assembly.}
     \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------- 13
 \begin{frame}{Test bench}
-    \begin{columns}[T]
-        \column{0.55\textwidth}
+    \begin{columns}[c]
+        \column{0.58\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{Setup.jpg}\\[0.5ex]
-            {\scriptsize Induction motor (left) coupled to the MP-VREH (right).}
-        \column{0.43\textwidth}
-            \begin{itemize}
-                \item Induction motor driven by an inverter: rotation speed set
-                      precisely over the whole 100--400 rpm range.
-                \item Voltages acquired with a Saleae differential acquisition
-                      device.
-                \item Load set by an eight-decade programmable resistor board.
-            \end{itemize}
+            \includegraphics[width=\textwidth]{Setup.jpg}\\[0.3ex]
+            {\scriptsize Motor coupled to the MP-VREH.}
+        \column{0.40\textwidth}
+            \centering
+            \includegraphics[width=0.66\textwidth]{Saleae.jpg}\\[0.3ex]
+            {\scriptsize Acquisition device.}\\[1ex]
+            \includegraphics[width=0.8\textwidth]{Load.jpg}\\[0.3ex]
+            {\scriptsize Programmable load.}
     \end{columns}
+    \vfill
+    \small
+    An inverter drives the motor and sets the speed precisely over the whole
+    $100$--$400\ \text{rpm}$ range.
 \end{frame}
 
 % ---------------------------------------------------------------- 14
 \begin{frame}{Current sensing}
     \begin{columns}[T]
-        \column{0.46\textwidth}
-            \footnotesize
+        \column{0.44\textwidth}
+            \small
             \begin{itemize}
-                \item Six custom sensing boards (INA114AU) measure the drop across
-                      a shunt resistor differentially.
-                \item Every shunt characterised with four-wire measurements.
-                \item \alert{Each sensor calibrated individually} against precision
-                      instruments, into its own lookup table.
-                \item This makes power figures trustworthy down to the
-                      \alert{milliwatt} level.
+                \item Six INA114AU boards, differential across a shunt.
+                \item Shunts measured four-wire.
+                \item \alert{Every sensor calibrated individually}, into its own
+                      lookup table.
+                \item Power trustworthy down to the \alert{milliwatt}.
             \end{itemize}
-        \column{0.52\textwidth}
+        \column{0.54\textwidth}
             \centering
             \includegraphics[width=0.45\textwidth]{Curr_sens.jpg}\\[0.8ex]
             \includegraphics[width=0.82\textwidth]{Curr_sens.pdf}\\[0.3ex]
@@ -342,12 +354,11 @@
     \end{columns}
     \vfill
     \begin{itemize}
-        \item Output power across the speed range, for several fixed values of $C_m$.
-        \item At $100\ \text{rpm}$, the \alert{worst case} that sets the lower bound
-              of what the system can deliver, the NVC gives $69.0\ \text{mW}$:
-              about $6\times$ the delta connection ($10.7\ \text{mW}$) and nearly
-              double the star one ($36.7\ \text{mW}$).
-        \item The NVC is also the most efficient topology at every speed.
+        \item Power against speed, for several fixed $C_m$.
+        \item At $100\ \text{rpm}$, the worst case, the NVC gives
+              \alert{$69.0\ \text{mW}$}, about $6\times$ the delta ($10.7$) and
+              nearly double the star ($36.7$).
+        \item The NVC is also the most efficient at every speed.
     \end{itemize}
 \end{frame}
 
@@ -369,11 +380,11 @@
     \end{columns}
     \vfill
     \begin{itemize}
-        \item At $100\ \text{rpm}$ the NVC still wins: $57.7\ \text{mW}$, against
-              $47.6$ (star) and $14.9\ \text{mW}$ (delta).
-        \item Above roughly $250\ \text{rpm}$ the \alert{star connection overtakes
-              the NVC}: $433.3$ against $425.7\ \text{mW}$ at $400\ \text{rpm}$.
-        \item Simulation alone did not predict this crossover.
+        \item At $100\ \text{rpm}$ the NVC still wins with $57.7\ \text{mW}$,
+              against $47.6$ (star) and $14.9$ (delta).
+        \item Above $250\ \text{rpm}$ the \alert{star overtakes the NVC}, $433.3$
+              against $425.7\ \text{mW}$ at $400\ \text{rpm}$.
+        \item Simulation did not predict this crossover.
     \end{itemize}
 \end{frame}
 
@@ -396,21 +407,19 @@
     \vspace{1ex}
     \small
     \begin{itemize}
-        \item The NVC has the \alert{best efficiency at every speed}, up to
-              $\eta_\text{Rec}\approx0.70$ at $400\ \text{rpm}$.
-        \item The star connection reaches $\approx0.55$--$0.57$, the delta
-              connection only $\approx0.48$--$0.51$: the weakest performer, as
-              expected from its lower line voltage.
-        \item So the two rankings disagree: \alert{efficiency says NVC, power says
-              star at high speed}.
+        \item \alert{Best efficiency at every speed for the NVC}, up to
+              $\eta_\text{Rec}\approx0.70$.
+        \item Star $\approx0.55$--$0.57$ and delta only $\approx0.48$--$0.51$,
+              the weakest as expected.
+        \item The two rankings disagree, since \alert{efficiency says NVC while
+              power says star at high speed}.
     \end{itemize}
 \end{frame}
 
 % ---------------------------------------------------------------- 18
 \begin{frame}{Simulation vs measurement}
-    Averaged over the whole speed range, the measured power differs from the
-    simulated one by \alert{about 8\% for the star connection, up to almost 30\%
-    for the NVC}.
+    Measured power differs from simulation by \alert{8\% for the star, up to almost
+    30\% for the NVC}.
     \vfill
     \begin{table}
         \centering
@@ -424,43 +433,55 @@
         \end{tabular}
     \end{table}
     \vfill
+    Why?
     \begin{itemize}
-        \item The ceramic compensation capacitors \alert{lose part of their
-              capacitance} under the real operating voltage, which grows with speed:
-              a larger nominal $C_m$ is needed to reach the same effective value.
-        \item Tolerances of the real components, and the parasitic resistance of
-              the bridges, add losses the ideal model does not include.
-        \item The sources are not perfectly sinusoidal.
+        \item The ceramic $C_m$ \alert{lose capacitance} under the real voltage,
+              which grows with speed.
+        \item Component tolerances and the parasitic resistance of the bridges.
+        \item Sources that are not perfectly sinusoidal.
     \end{itemize}
 \end{frame}
 
 % ---------------------------------------------------------------- 19
 \begin{frame}{PMIC compatibility}
-    \footnotesize
-    A PMIC conditions the rectified power and delivers a \alert{stable supply} to
-    the load: for example a node whose sensors detect and prevent malfunctions of
-    the system or the vehicle it is installed on.
-    \begin{table}
-        \centering
-        \footnotesize
-        \begin{tabular}{lccc}
-            \toprule
-            PMIC (configuration) & $V_{in}$ range (V) & $V_{cs}$ (V) & Star connection\\
-            \midrule
-            DS-AEM13920\_VR      & $0.120$--$4.6$ & $0.275$        & up to $250\ \text{rpm}$\\
-            DS-AEM10941\_VR      & $0.05$--$5$    & $0.38$         & up to $250\ \text{rpm}$\\
-            bq25570              & $0.1$--$5.1$   & $0.6$          & up to $250\ \text{rpm}$\\
-            SPV1050 (Boost)      & $0.15$--$5.3$  & $0.55$--$0.58$ & up to $250\ \text{rpm}$\\
-            SPV1050 (Buck-Boost) & $0.15$--$18$   & $2.6$--$2.8$   & full range\\
-            SPV1040              & $0.3$--$5.5$   & $0.8$--$2$     & up to $300\ \text{rpm}$\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
+    \begin{columns}[c]
+        \column{0.58\textwidth}
+            \scriptsize\setlength{\tabcolsep}{3pt}
+            \begin{tabular}{lcc}
+                \toprule
+                PMIC & $V_{in}$ (V) & Star up to\\
+                \midrule
+                DS-AEM13920\_VR      & $0.120$--$4.6$ & $250$ rpm\\
+                DS-AEM10941\_VR      & $0.05$--$5$    & $250$ rpm\\
+                bq25570              & $0.1$--$5.1$   & $250$ rpm\\
+                SPV1050 (Boost)      & $0.15$--$5.3$  & $250$ rpm\\
+                SPV1050 (Buck-Boost) & $0.15$--$18$   & full range\\
+                SPV1040              & $0.3$--$5.5$   & $300$ rpm\\
+                \bottomrule
+            \end{tabular}
+        \column{0.37\textwidth}
+            \centering
+            \begin{tikzpicture}[x=1cm, y=1cm,
+                blk/.style={draw=red_unipd, thick, rounded corners,
+                            fill=red_unipd!10, text width=1.8cm, align=center,
+                            minimum height=0.6cm, inner sep=2pt, font=\scriptsize}]
+                \node[blk] (h) at (0,0)    {MP-VREH};
+                \node[blk] (r) at (0,-1.0) {rectifier};
+                \node[blk] (p) at (0,-2.0) {\textbf{PMIC}};
+                \node[blk] (l) at (0,-3.0) {sensor node};
+                \draw[roadflow] (h) -- (r);
+                \draw[roadflow] (r) -- (p);
+                \draw[roadflow] (p) -- (l);
+            \end{tikzpicture}\\[0.5ex]
+            {\scriptsize The PMIC turns the rectified power into a stable supply.}
+    \end{columns}
+    \vfill
+    \small
     \begin{itemize}
-        \item Delta and NVC stay below about $4\ \text{V}$ over the whole range:
-              \alert{compatible with every configuration tested}.
-        \item The star connection climbs to $7\ \text{V}$ at $400\ \text{rpm}$: it
-              needs a wide-input converter or an input clamp.
+        \item Delta and NVC stay below $4\ \text{V}$ and are \alert{compatible
+              with every chip tested}.
+        \item The star reaches $7\ \text{V}$ and needs a wide-input converter or a
+              clamp.
     \end{itemize}
 \end{frame}
 
@@ -468,23 +489,21 @@
 
 % ---------------------------------------------------------------- 20
 \begin{frame}{Conclusions and future work}
-    \small
     \begin{block}{Conclusions}
-        The NVC and the star connection are the two strongest candidates, each
-        suited to a different part of the speed range; the delta connection is
-        consistently the weakest. NVC and delta connect safely to every PMIC
-        tested, while the star connection needs extra protection at high speed:
-        its higher open-circuit voltage can damage the input of the PMIC.
+        \begin{itemize}
+            \item \alert{NVC and star} are the two strongest candidates, one per
+                  end of the speed range; delta is always the weakest.
+            \item NVC and delta fit any PMIC tested; the star needs protection at
+                  high speed, its open-circuit voltage can damage the input.
+        \end{itemize}
     \end{block}
     \begin{alertblock}{Limitation}
-        The harvester prototype is 3D-printed, and therefore sensitive to
-        vibration, especially at high speed: this limits how repeatable the
-        measurements can be.
+        The harvester prototype is 3D-printed and sensitive to vibration at high
+        speed, which makes the measurements harder to repeat.
     \end{alertblock}
     \begin{block}{Future work}
-        An adaptive compensation network tracking the optimal $C_m$ as speed
-        changes, and a full hardware test of the harvester connected to a real
-        PMIC, to measure the true efficiency from the harvester to the final load.
+        Adaptive compensation tracking $C_m$ with speed, and a full hardware test
+        up to a real PMIC, to measure the efficiency from harvester to load.
     \end{block}
 \end{frame}
 
@@ -495,7 +514,7 @@
 
 \appendix
 
-\begin{frame}{Backup: star connection}
+\begin{frame}{Backup --- star connection}
     \begin{table}
         \centering
         \small
@@ -517,7 +536,7 @@
     \end{table}
 \end{frame}
 
-\begin{frame}{Backup: delta and NVC}
+\begin{frame}{Backup --- delta and NVC}
     \begin{columns}[T]
         \column{0.49\textwidth}
             \centering {\small Delta}\\[0.5ex]
@@ -558,7 +577,7 @@
     \end{columns}
 \end{frame}
 
-\begin{frame}{Backup: open-circuit voltage}
+\begin{frame}{Backup --- open-circuit voltage}
     \begin{table}
         \centering
         \small

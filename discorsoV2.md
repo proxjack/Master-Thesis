@@ -1,7 +1,5 @@
 # Thesis Defense Speech (English) — target 10 minutes
 
-*Legend: `[PAUSE]`, `[SLOW DOWN HERE]`, `[SHOW SLIDE: ...]` are stage directions for you — do not read them aloud. Section headers (`##`) are navigation aids only.*
-
 ---
 
 ## 1. Opening (30 sec) — Slides 1-2
