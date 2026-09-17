@@ -4,7 +4,7 @@
 
 ---
 
-## 1. Opening (30 sec)
+## 1. Opening (30 sec) — Slides 1-2
 
 Good afternoon to the members of the committee and to everyone here. My name is Jacopo Garau.
 
@@ -14,9 +14,9 @@ The goal of my project was to design and implement an interface able to extract 
 
 ---
 
-## 2. Context and motivation
+## 2. Context and motivation — Slides 3-5
 
-Wireless sensor networks and IoT devices have grown very fast in recent years, and are widely used to detect and prevent malfunctions in the system or in the vehicle where they are installed. This creates a simple but important problem: how do we power millions of small devices without constantly replacing their batteries? Batteries are expensive to maintain, and are often not even possible to replace, and also they are not good for the planet.
+Wireless sensor networks and IoT devices have grown very fast in recent years. They are widely used to collect data, which can then be processed for many different purposes. This creates a simple but important problem: how do we power millions of small devices without constantly replacing their batteries? Batteries are expensive to maintain, and are often not even possible to replace, and also they are not good for the planet.
 
 Energy harvesting comes as a solution to those problems. [SHOW SLIDE: Energy harvesting overview]
 
@@ -32,7 +32,7 @@ This system is designed to be mounted around a shaft in large vehicles, for exam
 
 ---
 
-## 3. Research question and objectives
+## 3. Research question and objectives — Slides 6-7
 
 The six coils are designed to be phase-shifted by 60 degrees from each other. More phases mean more power, but they also mean a harder electronics problem: six AC signals, all shifted in time, all needing rectification. Nobody has studied how to do this properly.
 
@@ -44,7 +44,7 @@ To answer it, I followed a complete path: from theoretical modeling, to circuit 
 
 ---
 
-## 4. Methodology
+## 4. Methodology — Slides 8-15
 
 Now, how did I approach this?
 
@@ -60,20 +60,20 @@ Now I could approach this problem using two standard full bridge rectifiers. For
 What would I expect from these configurations? I expect the Star connection to have a higher open-circuit voltage than the Delta connection.
 
 The second strategy I decided to follow was to divide the main system into 3 subsystems of two phases each, coupling two coils phase shifted by 180deg in antiseries connection. [SHOW SLIDE: Antiseries connection]
-This way I expect to have, in ideal condition, the same signal with double the voltage. 
+This way I expect to have, in ideal conditions, the same signal with double the voltage. 
 These two voltage sources are then connected to a Negative Voltage Converter, or NVC. This device combines 4 mosfets with cross coupled gates that activate two at a time, bypassing the diodes to avoid their voltage drop and increasing the overall bridge efficiency.
 
 I simulated both strategies in Matlab Simulink. But the real coil voltage is not a perfect sine wave. [SHOW SLIDE: Fig. 4.3 — measured vs. ideal waveform]
 So I computed the RMS voltage of the coil as a function of rpm, and based on that I ran the simulation with an equivalent sinusoid, scaled using the real crest factor, that produces the same power as the measured waveform.
 
-After simulations I designed a custom PCB (using Altium Designer) where every configuration can be tested just by moving jumpers. I also soldered by hand every single component using a soldering iron and a hot plate. [SHOW SLIDE: Fig. 5.7 soldered transistors]
+After the simulations I designed a custom PCB (using Altium Designer) where every configuration can be tested just by moving jumpers. I also soldered by hand every single component using a soldering iron and a hot plate. [SHOW SLIDE: Fig. 5.7 soldered transistors]
 
 Here is my test bench, with a motor connected to its inverter to control rotation speed precisely. [SHOW SLIDE: Fig. 6.1 testbench]
-To measure voltage I used the acquisition board, and to measure currents I used current sensors based on differential measurement of a shunt resistor. Every current sensor has been calibrated individually, using precision instruments to create the lookup tables.
+To measure voltage I used the acquisition board, and to measure currents I used current sensors based on differential measurement of a shunt resistor. Every current sensor was calibrated individually, using precision instruments to create the lookup tables.
 
 ---
 
-## 5. Main results
+## 5. Main results — Slides 16-20
 
 Let's look at what I found. [SHOW SLIDE: Fig. 4.8, 4.15, 4.22 — total power vs. speed for the three topologies]
 
@@ -83,36 +83,34 @@ As we can see, the NVC was the clear winner, especially at low speed and low spe
 
 But the real prototype told a more interesting story. [SHOW SLIDE: Fig. 7.6, 7.14, 7.23 — total power vs. speed for the three topologies]
 
-
-
 At low speed, the NVC still wins. But above roughly 250 rotations per minute, the star connection actually overtook the NVC in output power. 
 
 Looking ant the eficiency we can see that [SHOW SLIDE: Fig. 7.7, 7.16, 7.24 — total efficiency vs. speed for the three topologies]
 The NVC has the best efficiency at every speed and it goes up to seventy percent, against fiftyfive percent for the star connection at top speed. The Dela connection instead is the worst performer as expected. This is a result that simulation alone did not predict.
 
-On average, across all topologies and speeds, measured power differed from simulation by about 18 percent.
+On average, across all topologies and speeds, measured power differed from 8% for star configuration to almost 30% for NVC.
 Why the gap between simulation and measurement?  The compensation capacitors lose some of their capacitance under real operating voltage expecially wiht voltage rising with rpm, real components in general, bridge parasitic resistance and because of non ideal sinusoidal sources.
 
 Finally, I checked compatibility with five real, commercial power-management chips. these IC can be used to manage the power and to produce a stable voltage to deliver power to the load.
 Which kind of load we are talking about? we can for examples power some circuitds that by means of various sensors are capable to detect and prevent malfunxionamenti al systema o al veicolo dove sono isnstallati.
 
-## 6. Conclusions, limitations, and future work
+## 6. Conclusions, limitations, and future work — Slide 21
 
 To conclude.
 
-The NVC and the star connection emerge as the two strongest candidates, each better suited to a different part of the speed range. The delta connection is consistently the weakest choice.
+The NVC and the star connection emerge as the two strongest candidates ans the delta connection is consistently the weakest choice.
 
-In practice, the NVC and delta configurations connect safely to any power-management chip I tested. The star connection needs extra protection at high speed, despite giving the most power there.
+In practice, the NVC and delta configurations connect safely to any power-management chip I tested. The star connection needs extra protection at high speed because of an higher open circuit votage that can damage the Powerv managment IC.
 
-This work has two main limitations. My coil model does not capture losses that grow with frequency. And my prototype housing, being 3D-printed, is sensitive to vibration, which limits how repeatable the measurements can be.
+The biggest limitation of this work was that the Vriable reluctace energu harvester was a 3d printed prototpe that is sensitive to vibration execially at high speeds, which limits la ripetibilità delle misure.
 
-For future work, I suggest an adaptive compensation network that tracks the optimal capacitance as speed changes, and a full hardware test of the harvester connected to a real power-management chip, to measure the true end-to-end efficiency. [SHOW SLIDE: Conclusions]
+For future work, I suggest an adaptive compensation network that tracks the optimal capacitance as speed changes, and a full hardware test of the harvester connected to a real power-management chip, to measure the true efficiency form the harvester to the final load. [SHOW SLIDE: Conclusions]
 
 ---
 
-## 7. Acknowledgments (20 sec)
+## 7. Acknowledgments (20 sec) — Slide 22
 
-Before I finish, I want to thank my supervisor, Professor Pozzebon, and my co-supervisors, Professor Bader and Doctor Xu, for their guidance throughout this work.
+Before I finish, I want to thank my supervisor, Professor Pozzebon, and my two co-supervisors, Professor Bader and Doctor Xu, for their guidance throughout this work.
 
 Thank you to the committee for your attention. I am happy to answer your questions.
 
