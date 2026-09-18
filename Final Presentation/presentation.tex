@@ -86,27 +86,47 @@
 \end{frame}
 
 % ---------------------------------------------------------------- 4
-\begin{frame}{The six-phase MP-VREH}
-    Six pickup units around the shaft, electrically $60^\circ$ apart, evolved from
-    railway prototypes into a design for large vehicles.
-    \vfill
-    \begin{table}
-        \centering
-        \small
-        \begin{tabular}{cccccc}
-            \toprule
-            rpm & $f$ (Hz) & $V_\text{pk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
-            \midrule
-            100 & 36.7  & 1.82 & 6 & 21.68 & 0.41\\
-            200 & 73.3  & 2.7 & 6 & 21.46 & 0.91\\
-            300 & 110.0 & 3.18 & 6 & 21.27 & 1.26\\
-            400 & 146.7 & 3.48 & 6 & 21.12 & 1.51\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-    \vfill
-    Target range \alert{100 - 400 rpm} (20 - 80 km/h), with under $2V$ peak
-    per phase, so the rectifier choice becomes critical.
+\begin{frame}{The six-phase VREH}
+    \begin{columns}[c]
+        \column{0.52\textwidth}
+            Six pickup units around the shaft, electrically $60^\circ$ apart,
+            evolved from railway prototypes into a design for large vehicles.
+            \vspace{3ex}
+
+            Target range \alert{100 - 400 rpm} (20 - 80 km/h), with under $2V$ peak
+            per phase, so the rectifier choice becomes critical.
+        \column{0.44\textwidth}
+            \centering
+            \begin{tikzpicture}[scale=0.92, font=\tiny]
+                % toothed wheel on the shaft
+                \draw[thick, draw=red_unipd, fill=red_unipd!5] (0,0) circle (1.0);
+                \foreach \t in {0,12,...,348}
+                    \draw[red_unipd, thick] (\t:1.0) -- (\t:1.13);
+                \node[font=\scriptsize] at (0,0) {shaft};
+                % six pickup units, each a permanent magnet over a wound coil
+                \foreach \a/\i in {90/0, 30/1, -30/2, -90/3, -150/4, 150/5} {
+                    \begin{scope}[shift={(\a:1.5)}, rotate=\a-90]
+                        % turns of the pickup coil
+                        \foreach \y in {-0.21,-0.14,-0.07,0.00}
+                            \draw[red_unipd, thick] (-0.14,\y) -- (0.14,\y);
+                        % pole piece, drawn over the turns so they wind around it
+                        \fill[red_unipd!55, draw=red_unipd, thin]
+                             (-0.05,-0.26) rectangle (0.05,0.08);
+                        % permanent magnet
+                        \fill[red_unipd]    (-0.13,0.08) rectangle (0.13,0.17);
+                        \fill[red_unipd!25] (-0.13,0.17) rectangle (0.13,0.26);
+                        \draw[red_unipd]    (-0.13,0.08) rectangle (0.13,0.26);
+                    \end{scope}
+                    \node at (\a:2.0) {\i};
+                }
+                % what one unit is made of
+                \draw[gray] (0.14,1.70) -- (0.45,1.92);
+                \node[anchor=west] at (0.45,1.92) {magnet};
+                \draw[gray] (0.14,1.43) -- (0.50,1.22);
+                \node[anchor=west] at (0.50,1.22) {coil};
+            \end{tikzpicture}\\[1ex]
+            {\scriptsize Each unit is a permanent magnet over its pickup coil.}
+    \end{columns}
 \end{frame}
 
 % ---------------------------------------------------------------- 5
@@ -140,6 +160,30 @@
 \end{frame}
 
 % ---------------------------------------------------------------- 6
+\begin{frame}{Harvester specifications}
+    \vfill
+    \begin{table}
+        \centering
+        \small
+        \begin{tabular}{cccccc}
+            \toprule
+            rpm & $f$ (Hz) & $V_\text{pk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
+            \midrule
+            100 & 36.7  & 1.82 & 6 & 21.68 & 0.41\\
+            200 & 73.3  & 2.7 & 6 & 21.46 & 0.91\\
+            300 & 110.0 & 3.18 & 6 & 21.27 & 1.26\\
+            400 & 146.7 & 3.48 & 6 & 21.12 & 1.51\\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+    \vfill
+    One pickup unit under matched load, across the target speed range. Low
+    voltages, and a coil inductance that weighs more and more as the frequency
+    grows, are what the interface circuit has to work with.
+    \vfill
+\end{frame}
+
+% ---------------------------------------------------------------- 7
 \begin{frame}{Objectives and approach}
     \vfill
     \centering
@@ -165,7 +209,7 @@
 
 \section{Modelling and Proposed Topologies}
 
-% ---------------------------------------------------------------- 7
+% ---------------------------------------------------------------- 8
 \begin{frame}{Coil model and matching}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -189,7 +233,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 8
+% ---------------------------------------------------------------- 9
 \begin{frame}{The six real phase voltages}
     \begin{columns}[T]
         \column{0.60\textwidth}
@@ -205,7 +249,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 9
+% ---------------------------------------------------------------- 10
 \begin{frame}{From waveform to simulation}
     \begin{columns}[T]
         \column{0.42\textwidth}
@@ -222,7 +266,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 10
+% ---------------------------------------------------------------- 11
 \begin{frame}{Strategy 1 --- FWR bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -245,7 +289,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 11
+% ---------------------------------------------------------------- 12
 \begin{frame}{Strategy 2 --- NVC bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -274,7 +318,7 @@
 
 \section{Prototype and Measurement Setup}
 
-% ---------------------------------------------------------------- 12
+% ---------------------------------------------------------------- 13
 \begin{frame}{The prototype board}
     \begin{columns}[c]
         \column{0.38\textwidth}
@@ -294,7 +338,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 13
+% ---------------------------------------------------------------- 14
 \begin{frame}{Test bench}
     \begin{columns}[c]
         \column{0.58\textwidth}
@@ -314,7 +358,7 @@
     $100$--$400\ \text{rpm}$ range.
 \end{frame}
 
-% ---------------------------------------------------------------- 14
+% ---------------------------------------------------------------- 15
 \begin{frame}{Current sensing}
     \begin{columns}[T]
         \column{0.44\textwidth}
@@ -336,7 +380,7 @@
 
 \section{Results}
 
-% ---------------------------------------------------------------- 15
+% ---------------------------------------------------------------- 16
 \begin{frame}{Simulation results}
     \begin{columns}[c]
         \column{0.33\textwidth}
@@ -362,7 +406,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 16
+% ---------------------------------------------------------------- 17
 \begin{frame}{Measured power}
     \begin{columns}[c]
         \column{0.33\textwidth}
@@ -388,7 +432,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 17
+% ---------------------------------------------------------------- 18
 \begin{frame}{Measured efficiency}
     \begin{columns}[c]
         \column{0.33\textwidth}
@@ -416,7 +460,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 18
+% ---------------------------------------------------------------- 19
 \begin{frame}{Simulation vs measurement}
     Measured power differs from simulation by \alert{8\% for the star, up to almost
     30\% for the NVC}.
@@ -442,7 +486,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 19
+% ---------------------------------------------------------------- 20
 \begin{frame}{PMIC compatibility}
     \begin{columns}[c]
         \column{0.58\textwidth}
@@ -487,7 +531,7 @@
 
 \section{Conclusions}
 
-% ---------------------------------------------------------------- 20
+% ---------------------------------------------------------------- 21
 \begin{frame}{Conclusions and future work}
     \begin{block}{Conclusions}
         \begin{itemize}
@@ -507,7 +551,7 @@
     \end{block}
 \end{frame}
 
-% ---------------------------------------------------------------- 21
+% ---------------------------------------------------------------- 22
 \begin{emptyframe}
     Thank you for your attention!
 \end{emptyframe}
