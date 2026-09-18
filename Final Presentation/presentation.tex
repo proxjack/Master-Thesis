@@ -61,31 +61,32 @@
     \vfill
 \end{frame}
 
-% ---------------------------------------------------------------- 3
-\begin{frame}{The variable reluctance principle}
-    \begin{columns}[T]
-        \column{0.44\textwidth}
-            \small
-            \begin{itemize}
-                \item Magnet and coil \alert{stand still}; only the toothed wheel
-                      rotates.
-                \item The passing teeth modulate the flux and induce an EMF.
-            \end{itemize}
-            \vspace{1.5ex}
-            \textbf{Advantages}
-            \begin{itemize}
-                \item No moving electrical parts
-                \item Scalable to any shaft size
-                \item Very small counter torque
-            \end{itemize}
-        \column{0.54\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{VR_theory.pdf}\\[1ex]
-            {\scriptsize Pickup unit facing the rotating wheel.}
-    \end{columns}
-\end{frame}
+% ------------------------------------------- disabled for now
+% The variable reluctance principle. Uncomment to put the slide back.
+% \begin{frame}{The variable reluctance principle}
+%     \begin{columns}[T]
+%         \column{0.44\textwidth}
+%             \small
+%             \begin{itemize}
+%                 \item Magnet and coil \alert{stand still}; only the toothed wheel
+%                       rotates.
+%                 \item The passing teeth modulate the flux and induce an EMF.
+%             \end{itemize}
+%             \vspace{1.5ex}
+%             \textbf{Advantages}
+%             \begin{itemize}
+%                 \item No moving electrical parts
+%                 \item Scalable to any shaft size
+%                 \item Very small counter torque
+%             \end{itemize}
+%         \column{0.54\textwidth}
+%             \centering
+%             \includegraphics[width=\textwidth]{VR_theory.pdf}\\[1ex]
+%             {\scriptsize Pickup unit facing the rotating wheel.}
+%     \end{columns}
+% \end{frame}
 
-% ---------------------------------------------------------------- 4
+% ---------------------------------------------------------------- 3
 \begin{frame}{The six-phase VREH}
     \begin{columns}[c]
         \column{0.52\textwidth}
@@ -129,6 +130,9 @@
                     \end{scope}
                     \node at (\a:2.0) {\i};
                 }
+                % electrical shift between two neighbouring units
+                \draw[latex-latex, red_unipd, thin] (-90:2.3) arc (-90:-150:2.3);
+                \node at (-120:2.62) {$60^\circ$};
                 % what one unit is made of
                 \draw[gray] (0.14,1.70) -- (0.45,1.92);
                 \node[anchor=west] at (0.45,1.92) {magnet};
@@ -139,7 +143,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 5
+% ---------------------------------------------------------------- 4
 \begin{frame}{Research gap and question}
     \centering
     \begin{tikzpicture}[x=1cm, y=1cm, scale=0.88,
@@ -151,8 +155,8 @@
                     inner sep=2pt, font=\scriptsize}]
         \foreach \i/\lab in {0/{$Coil0$},1/{$Coil1$},2/{$Coil2$},3/{$Coil3$},4/{$Coil4$},5/{$Coil5$}}
             \node[coil] (c\i) at (0, {-0.6*\i}) {\lab};
-        \node[box] (q) at (3.4, -1.5) {\textbf{?}\\[0.3ex] interface circuit};
-        \node[box, text width=1.1cm, minimum height=0.9cm] (l) at (6.0, -1.5) {load};
+        \node[box] (q) at (3.4, -1.5) {\textbf{?}\\[0.3ex] Interface circuit};
+        \node[box, text width=1.1cm, minimum height=0.9cm] (l) at (6.0, -1.5) {Load};
         \foreach \i in {0,...,5} \draw[roadflow] (c\i.east) -- (q.west);
         \draw[roadflow] (q.east) -- (l.west);
         \node[font=\scriptsize, above=1mm of c0] {six coils, $60^\circ$ apart};
@@ -196,7 +200,7 @@
 %     \vfill
 % \end{frame}
 
-% ---------------------------------------------------------------- 6
+% ---------------------------------------------------------------- 5
 \begin{frame}{Objectives and approach}
     \vfill
     \centering
@@ -222,23 +226,27 @@
 
 \section{Modelling and Proposed Topologies}
 
-% ---------------------------------------------------------------- 7
+% ---------------------------------------------------------------- 6
 \begin{frame}{Coil model and matching}
     \begin{columns}[T]
         \column{0.50\textwidth}
             \small
             \begin{itemize}
                 \item Each coil is a source in series with $R_\text{Coil}$ and
-                      $L_\text{Coil}$.
+                      $L_\text{Coil}$, delayed by $60^\circ$ from the previous one
+                      ($k = 0, 1, \dots, 5$),
+                      \vspace{-1ex}
+                      \begin{equation*}
+                          e_k(t) = E_{pk}\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right)
+                      \end{equation*}
                 \item At low speed a \alert{resistive} load is enough.
                 \item At higher speed $\omega_e L_\text{Coil}$ breaks the matching.
-                \item A series capacitor $C_m$ cancels it
+                \item A series capacitor $C_m$ cancels it, one frequency at a time,
+                      \vspace{-1ex}
+                      \begin{equation*}
+                          C_m = \frac{1}{\omega_e^{2}\,L_\text{Coil}}
+                      \end{equation*}
             \end{itemize}
-            \begin{equation*}
-                C_m = \frac{1}{\omega_e^{2}\,L_\text{Coil}}
-            \end{equation*}
-            \centering
-            {\small valid at one frequency at a time.}
         \column{0.48\textwidth}
             \centering
             \includegraphics[width=0.95\textwidth]{Coil_model.pdf}\\[2ex]
@@ -246,7 +254,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 8
+% ---------------------------------------------------------------- 7
 \begin{frame}{The six real phase voltages}
     \begin{columns}[T]
         \column{0.60\textwidth}
@@ -262,25 +270,16 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 9
+% ---------------------------------------------------------------- 8
 \begin{frame}{From waveform to simulation}
     \begin{columns}[T]
         \column{0.42\textwidth}
-            \small
             \begin{itemize}
                 \item RMS voltage computed against speed.
                 \item Each source replaced by an \alert{equivalent sinusoid},
                       scaled by the crest factor.
                 \item Same power as the real waveform.
             \end{itemize}
-            \vspace{0.5ex}
-            Every phase is then one source, delayed by $60^\circ$ from the previous
-            one,
-            \begin{equation*}
-                e_k(t) = E_{pk}\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right)
-            \end{equation*}
-            \centering
-            with $k = 0, 1, \dots, 5$.
         \column{0.56\textwidth}
             \centering
             \includegraphics[width=\textwidth]{Voltage_comp.pdf}\\[0.5ex]
@@ -288,7 +287,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 10
+% ---------------------------------------------------------------- 9
 \begin{frame}{Strategy 1 - FWR bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -311,7 +310,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 11
+% ---------------------------------------------------------------- 10
 \begin{frame}{Strategy 2 - NVC bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -336,6 +335,32 @@
             \includegraphics[width=0.95\textwidth]{NVC.pdf}\\[1ex]
             {\scriptsize NVC for one anti-series pair.}
     \end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------- 11
+\begin{frame}{Simulation results}
+    \begin{columns}[c]
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{D_Power_sweep.pdf}\\
+            {\scriptsize Delta}
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Y_Power_sweep.pdf}\\
+            {\scriptsize Star}
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{NVC_Power_sweep.pdf}\\
+            {\scriptsize NVC}
+    \end{columns}
+    \vfill
+    \begin{itemize}
+        \item Power against speed, for several fixed $C_m$.
+        \item At $100\ \text{rpm}$, the worst case, the NVC gives
+              \alert{$69.0\ \text{mW}$}, about $6\times$ the Delta ($10.7$) and
+              nearly double the Star ($36.7$).
+        \item The NVC is also the most efficient at every speed.
+    \end{itemize}
 \end{frame}
 
 \section{Prototype and Measurement Setup}
@@ -402,32 +427,6 @@
 \section{Results}
 
 % ---------------------------------------------------------------- 15
-\begin{frame}{Simulation results}
-    \begin{columns}[c]
-        \column{0.33\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{D_Power_sweep.pdf}\\
-            {\scriptsize Delta}
-        \column{0.33\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Y_Power_sweep.pdf}\\
-            {\scriptsize Star}
-        \column{0.33\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{NVC_Power_sweep.pdf}\\
-            {\scriptsize NVC}
-    \end{columns}
-    \vfill
-    \begin{itemize}
-        \item Power against speed, for several fixed $C_m$.
-        \item At $100\ \text{rpm}$, the worst case, the NVC gives
-              \alert{$69.0\ \text{mW}$}, about $6\times$ the Delta ($10.7$) and
-              nearly double the Star ($36.7$).
-        \item The NVC is also the most efficient at every speed.
-    \end{itemize}
-\end{frame}
-
-% ---------------------------------------------------------------- 16
 \begin{frame}{Measured power}
     \begin{columns}[c]
         \column{0.33\textwidth}
@@ -453,7 +452,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 17
+% ---------------------------------------------------------------- 16
 \begin{frame}{Measured efficiency}
     \begin{columns}[c]
         \column{0.33\textwidth}
@@ -481,7 +480,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 18
+% ---------------------------------------------------------------- 17
 \begin{frame}{Simulation vs measurement}
     Measured power differs from simulation by \alert{8\% for the Star, up to almost
     30\% for the NVC}.
@@ -507,7 +506,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 19
+% ---------------------------------------------------------------- 18
 \begin{frame}{PMIC compatibility}
     \begin{columns}[c]
         \column{0.58\textwidth}
@@ -552,7 +551,7 @@
 
 \section{Conclusions}
 
-% ---------------------------------------------------------------- 20
+% ---------------------------------------------------------------- 19
 \begin{frame}{Conclusions and future work}
     \begin{block}{Conclusions}
         \begin{itemize}
@@ -572,7 +571,7 @@
     \end{block}
 \end{frame}
 
-% ---------------------------------------------------------------- 21
+% ---------------------------------------------------------------- 20
 \begin{emptyframe}
     Thank you for your attention!
 \end{emptyframe}
