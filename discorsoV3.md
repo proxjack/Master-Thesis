@@ -1,34 +1,33 @@
-# Thesis Defense Speech (English) — target 10 minutes
+# Thesis Defense Speech - target 10 minutes
 
 ---
 
-## 1. Opening (30 sec) — Slides 1
+## 1. Opening (45 sec) - Slides 1
+
+[SHOW SLIDE: Title]
 
 Good afternoon to the members of the committee and to everyone here. My name is Jacopo Garau.
 
 Today I will present my Master's thesis in Electronic Engineering. The work was carried out at Mid Sweden University during my Erasmus for Traineeship program, under the supervision of Professor Alessandro Pozzebon, Professor Sebastian Bader, and Doctor Ye Xu.
 
-The goal of my project was to design and implement an interface able to extract the maximum power from a six-phase energy harvester. [SHOW SLIDE: Title]
+The goal of my project was to design and implement an interface able to extract the maximum power from a six-phase energy harvester.
 
 ---
 
-## 2. Context and motivation — Slides 2-3
+## 2. Context and motivation (90 sec) - Slides 2-3
 
 Wireless sensor networks and IoT devices have grown very fast in recent years. They are widely used to collect data, which can then be processed for many different purposes. This creates a simple but important problem: how do we power millions of small devices without constantly replacing their batteries? 
 
 Energy harvesting comes as a solution to those problems. [SHOW SLIDE: Energy harvesting overview]
 
-My thesis focuses on generating electric power from rotating motion using a specific electromagnetic technology: variable reluctance energy harvesting, or VREH.
-
-How does this system work? In a VREH device, both the magnet and the coil stay completely still. Only a toothed metal wheel rotates nearby. As the teeth pass, the magnetic flux through the coil changes, and this induces a voltage across each coil. [SHOW SLIDE: VREH principle]
-
-What is the convenience of using this system? There are no moving electrical parts, it can be scaled easily to shafts of different sizes, and, notably, it's designed to produce a very small counter torque. 
+In a variable reluctance energy harvester, or VREH frome here, convert mechanical energy into electrical energy using the veriable reluctance principle.
+The pickup unit stays still while the toothed wheel rotates, this relative motion changes the magnetic flux overtime and this induces a voltage across the coil.
 
 This system is designed to be mounted around a shaft in large vehicles, for example buses. It operates in the 100 to 400 RPM range, corresponding to typical driving speeds of 20 to 80 kilometers per hour.
 
 ---
 
-## 3. Research question and objectives — Slides 6-7
+## 3. Research question and objectives - Slides 4-5
 
 The six coils are designed to be phase-shifted by 60 degrees from each other. More phases mean more power, but they also mean a harder electronics problem: six AC signals, all shifted in time, all needing rectification. Nobody has studied how to do this properly.
 
@@ -40,7 +39,7 @@ To answer it, I followed a complete path: from theoretical modeling, to circuit 
 
 ---
 
-## 4. Methodology — Slides 8-15
+## 4. Methodology - Slides 8-15
 
 Now, how did I approach this?
 
@@ -69,7 +68,7 @@ To measure voltage I used the acquisition board, and to measure currents I used 
 
 ---
 
-## 5. Main results — Slides 16-20
+## 5. Main results - Slides 16-20
 
 Let's look at what I found. [SHOW SLIDE: Fig. 4.8, 4.15, 4.22 — total power vs. speed for the three topologies]
 
@@ -90,7 +89,7 @@ Why the gap between simulation and measurement?  The compensation capacitors los
 Finally, I checked compatibility with five real, commercial power-management chips. these IC can be used to manage the power and to produce a stable voltage to deliver power to the load.
 Which kind of load we are talking about? we can for examples power some circuitds that by means of various sensors are capable to detect and prevent malfunxionamenti al systema o al veicolo dove sono isnstallati.
 
-## 6. Conclusions, limitations, and future work — Slide 21
+## 6. Conclusions, limitations, and future work - Slide 21
 
 To conclude.
 
@@ -104,16 +103,10 @@ For future work, I suggest an adaptive compensation network that tracks the opti
 
 ---
 
-## 7. Acknowledgments (20 sec) — Slide 22
+## 7. Acknowledgments (20 sec) - Slide 22
 
 Before I finish, I want to thank my supervisor, Professor Pozzebon, and my two co-supervisors, Professor Bader and Doctor Xu, for their guidance throughout this work.
 
 Thank you to the committee for your attention. I am happy to answer your questions.
 
 ---
-
-## Word count and timing
-
-**Spoken word count: 1319 words** (stage directions and headers excluded).
-
-At 130 words/minute: **~10.1 minutes**. At 140 words/minute: **~9.4 minutes**. Comfortably within the 10-minute target — practice it once out loud with a timer to find your own natural pace, and trim a sentence or two from Section 4 or 5 if you consistently run long.

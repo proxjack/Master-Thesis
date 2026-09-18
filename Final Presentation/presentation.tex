@@ -36,7 +36,7 @@
 \author[Jacopo Garau]{Jacopo Garau\\[0.8ex]
     {\small Supervisor: Prof.~Alessandro Pozzebon}\\
     {\small Co-supervisors: Prof.~Sebastian Bader, Dr.~Ye Xu}}
-\date{\small Master Thesis in Electronic Engineering -- A.Y.~2025/2026}
+\date{\small Master Thesis in Electronic Engineering - A.Y.~2025/2026}
 
 \begin{document}
 
@@ -98,11 +98,21 @@
         \column{0.44\textwidth}
             \centering
             \begin{tikzpicture}[scale=0.92, font=\tiny]
-                % toothed wheel on the shaft
-                \draw[thick, draw=red_unipd, fill=red_unipd!5] (0,0) circle (1.0);
-                \foreach \t in {0,12,...,348}
-                    \draw[red_unipd, thick] (\t:1.0) -- (\t:1.13);
-                \node[font=\scriptsize] at (0,0) {shaft};
+                % toothed wheel on the shaft, 22 teeth as on the real rotor
+                \fill[red_unipd!8] (0,0) circle (1.0);
+                \foreach \i in {0,...,21} {
+                    \pgfmathsetmacro{\t}{\i*360/22}
+                    \pgfmathsetmacro{\tn}{(\i+1)*360/22}
+                    \fill[red_unipd!30]
+                         (\t-4:1.0) -- (\t-3:1.17) -- (\t+3:1.17) -- (\t+4:1.0) -- cycle;
+                    \draw[red_unipd, thin]
+                         (\t-4:1.0) -- (\t-3:1.17) -- (\t+3:1.17) -- (\t+4:1.0);
+                    \draw[red_unipd, thick] (\t+4:1.0) arc (\t+4:\tn-4:1.0);
+                }
+                % shaft the wheel is keyed onto
+                \fill[white] (0,0) circle (0.42);
+                \draw[red_unipd, thick] (0,0) circle (0.42);
+                \node at (0,0) {shaft};
                 % six pickup units, each a permanent magnet over a wound coil
                 \foreach \a/\i in {90/0, 30/1, -30/2, -90/3, -150/4, 150/5} {
                     \begin{scope}[shift={(\a:1.5)}, rotate=\a-90]
@@ -131,9 +141,8 @@
 
 % ---------------------------------------------------------------- 5
 \begin{frame}{Research gap and question}
-    \vspace{0.5ex}
     \centering
-    \begin{tikzpicture}[x=1cm, y=1cm,
+    \begin{tikzpicture}[x=1cm, y=1cm, scale=0.88,
         coil/.style={draw=red_unipd, thick, rounded corners, fill=red_unipd!8,
                      text width=0.8cm, align=center, minimum height=0.4cm,
                      inner sep=1pt, font=\tiny},
@@ -151,39 +160,43 @@
     \vfill
     \raggedright
     \small
-    More phases, more power, but \alert{six AC signals} to rectify, and prior
-    work compared rectifiers for a \alert{single phase} only.
+    \begin{itemize}
+        \item Six phases give more power, but also \alert{six time-shifted AC
+              signals} that all have to be rectified.
+        \item Earlier work only compared rectifiers for a \alert{single phase}.
+    \end{itemize}
     \vspace{0.5ex}
     \begin{alertblock}{Research question}
         Which interface circuit extracts the most power, over the whole speed range?
     \end{alertblock}
 \end{frame}
 
-% ---------------------------------------------------------------- 6
-\begin{frame}{Harvester specifications}
-    \vfill
-    \begin{table}
-        \centering
-        \small
-        \begin{tabular}{cccccc}
-            \toprule
-            rpm & $f$ (Hz) & $V_\text{pk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
-            \midrule
-            100 & 36.7  & 1.82 & 6 & 21.68 & 0.41\\
-            200 & 73.3  & 2.7 & 6 & 21.46 & 0.91\\
-            300 & 110.0 & 3.18 & 6 & 21.27 & 1.26\\
-            400 & 146.7 & 3.48 & 6 & 21.12 & 1.51\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-    \vfill
-    One pickup unit under matched load, across the target speed range. Low
-    voltages, and a coil inductance that weighs more and more as the frequency
-    grows, are what the interface circuit has to work with.
-    \vfill
-\end{frame}
+% ------------------------------------------- disabled for now
+% Harvester specifications. Uncomment to put the slide back.
+% \begin{frame}{Harvester specifications}
+%     \vfill
+%     \begin{table}
+%         \centering
+%         \small
+%         \begin{tabular}{cccccc}
+%             \toprule
+%             rpm & $f$ (Hz) & $V_\text{pk}$ (V) & $R_\text{coil}$ ($\Omega$) & $L_\text{coil}$ (mH) & $P_o$ (W)\\
+%             \midrule
+%             100 & 36.7  & 1.82 & 6 & 21.68 & 0.41\\
+%             200 & 73.3  & 2.7 & 6 & 21.46 & 0.91\\
+%             300 & 110.0 & 3.18 & 6 & 21.27 & 1.26\\
+%             400 & 146.7 & 3.48 & 6 & 21.12 & 1.51\\
+%             \bottomrule
+%         \end{tabular}
+%     \end{table}
+%     \vfill
+%     One pickup unit under matched load, across the target speed range. Low
+%     voltages, and a coil inductance that weighs more and more as the frequency
+%     grows, are what the interface circuit has to work with.
+%     \vfill
+% \end{frame}
 
-% ---------------------------------------------------------------- 7
+% ---------------------------------------------------------------- 6
 \begin{frame}{Objectives and approach}
     \vfill
     \centering
@@ -209,7 +222,7 @@
 
 \section{Modelling and Proposed Topologies}
 
-% ---------------------------------------------------------------- 8
+% ---------------------------------------------------------------- 7
 \begin{frame}{Coil model and matching}
     \begin{columns}[T]
         \column{0.50\textwidth}
@@ -233,7 +246,7 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 9
+% ---------------------------------------------------------------- 8
 \begin{frame}{The six real phase voltages}
     \begin{columns}[T]
         \column{0.60\textwidth}
@@ -249,16 +262,25 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 10
+% ---------------------------------------------------------------- 9
 \begin{frame}{From waveform to simulation}
     \begin{columns}[T]
         \column{0.42\textwidth}
+            \small
             \begin{itemize}
                 \item RMS voltage computed against speed.
                 \item Each source replaced by an \alert{equivalent sinusoid},
                       scaled by the crest factor.
                 \item Same power as the real waveform.
             \end{itemize}
+            \vspace{0.5ex}
+            Every phase is then one source, delayed by $60^\circ$ from the previous
+            one,
+            \begin{equation*}
+                e_k(t) = E_{pk}\sin\!\left(\omega_e t - k\,\frac{\pi}{3}\right)
+            \end{equation*}
+            \centering
+            with $k = 0, 1, \dots, 5$.
         \column{0.56\textwidth}
             \centering
             \includegraphics[width=\textwidth]{Voltage_comp.pdf}\\[0.5ex]
@@ -266,8 +288,8 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 11
-\begin{frame}{Strategy 1 --- FWR bridges}
+% ---------------------------------------------------------------- 10
+\begin{frame}{Strategy 1 - FWR bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
             \small
@@ -275,13 +297,13 @@
             standard bridge.
             \vspace{1ex}
             \begin{itemize}
-                \item The \textbf{star (Y)} gives a line voltage $\sqrt{3}$ times
+                \item The \textbf{Star (Y)} gives a line voltage $\sqrt{3}$ times
                       the phase EMF, so the two-diode drop costs less.
-                \item The \textbf{delta ($\Delta$)} gives the coil EMF itself, with
+                \item The \textbf{Delta ($\Delta$)} gives the coil EMF itself, with
                       no gain but no floating node.
             \end{itemize}
             \vspace{1ex}
-            The star should give the \alert{higher open-circuit voltage}.
+            The Star should give the \alert{higher open-circuit voltage}.
         \column{0.48\textwidth}
             \centering
             \includegraphics[width=0.92\textwidth]{FWR.pdf}\\[1ex]
@@ -289,8 +311,8 @@
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 12
-\begin{frame}{Strategy 2 --- NVC bridges}
+% ---------------------------------------------------------------- 11
+\begin{frame}{Strategy 2 - NVC bridges}
     \begin{columns}[T]
         \column{0.50\textwidth}
             \small
@@ -318,27 +340,26 @@
 
 \section{Prototype and Measurement Setup}
 
-% ---------------------------------------------------------------- 13
+% ---------------------------------------------------------------- 12
 \begin{frame}{The prototype board}
     \begin{columns}[c]
         \column{0.38\textwidth}
             \small
             \begin{itemize}
                 \item Custom PCB, Altium Designer.
-                \item \alert{Star, delta and NVC} selected by moving jumpers, plus
+                \item \alert{Delta, Star and NVC} selected by moving jumpers, plus
                       a jumper bank for $C_m$.
                 \item Hand assembled with soldering iron and hot plate.
             \end{itemize}
         \column{0.60\textwidth}
             \centering
-            \includegraphics[width=0.49\textwidth]{Top3D.png}
-            \includegraphics[width=0.49\textwidth]{Bottom3D.png}\\[1ex]
+            \includegraphics[width=0.78\textwidth]{Top3D.png}\\[1.5ex]
             \includegraphics[width=0.62\textwidth]{Soldering.jpg}\\[0.3ex]
             {\scriptsize One NVC bridge during assembly.}
     \end{columns}
 \end{frame}
 
-% ---------------------------------------------------------------- 14
+% ---------------------------------------------------------------- 13
 \begin{frame}{Test bench}
     \begin{columns}[c]
         \column{0.58\textwidth}
@@ -355,10 +376,10 @@
     \vfill
     \small
     An inverter drives the motor and sets the speed precisely over the whole
-    $100$--$400\ \text{rpm}$ range.
+    $100$-$400\ \text{rpm}$ range.
 \end{frame}
 
-% ---------------------------------------------------------------- 15
+% ---------------------------------------------------------------- 14
 \begin{frame}{Current sensing}
     \begin{columns}[T]
         \column{0.44\textwidth}
@@ -380,17 +401,17 @@
 
 \section{Results}
 
-% ---------------------------------------------------------------- 16
+% ---------------------------------------------------------------- 15
 \begin{frame}{Simulation results}
     \begin{columns}[c]
         \column{0.33\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{Y_Power_sweep.pdf}\\
-            {\scriptsize Star}
-        \column{0.33\textwidth}
-            \centering
             \includegraphics[width=\textwidth]{D_Power_sweep.pdf}\\
             {\scriptsize Delta}
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Y_Power_sweep.pdf}\\
+            {\scriptsize Star}
         \column{0.33\textwidth}
             \centering
             \includegraphics[width=\textwidth]{NVC_Power_sweep.pdf}\\
@@ -400,23 +421,23 @@
     \begin{itemize}
         \item Power against speed, for several fixed $C_m$.
         \item At $100\ \text{rpm}$, the worst case, the NVC gives
-              \alert{$69.0\ \text{mW}$}, about $6\times$ the delta ($10.7$) and
-              nearly double the star ($36.7$).
+              \alert{$69.0\ \text{mW}$}, about $6\times$ the Delta ($10.7$) and
+              nearly double the Star ($36.7$).
         \item The NVC is also the most efficient at every speed.
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 17
+% ---------------------------------------------------------------- 16
 \begin{frame}{Measured power}
     \begin{columns}[c]
         \column{0.33\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{Y_Fs_tot.pdf}\\
-            {\scriptsize Star}
-        \column{0.33\textwidth}
-            \centering
             \includegraphics[width=\textwidth]{D_Fs_tot.pdf}\\
             {\scriptsize Delta}
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Y_Fs_tot.pdf}\\
+            {\scriptsize Star}
         \column{0.33\textwidth}
             \centering
             \includegraphics[width=\textwidth]{NVC_Fs_tot.pdf}\\
@@ -425,24 +446,24 @@
     \vfill
     \begin{itemize}
         \item At $100\ \text{rpm}$ the NVC still wins with $57.7\ \text{mW}$,
-              against $47.6$ (star) and $14.9$ (delta).
-        \item Above $250\ \text{rpm}$ the \alert{star overtakes the NVC}, $433.3$
+              against $14.9$ (Delta) and $47.6$ (Star).
+        \item Above $250\ \text{rpm}$ the \alert{Star overtakes the NVC}, $433.3$
               against $425.7\ \text{mW}$ at $400\ \text{rpm}$.
         \item Simulation did not predict this crossover.
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 18
+% ---------------------------------------------------------------- 17
 \begin{frame}{Measured efficiency}
     \begin{columns}[c]
         \column{0.33\textwidth}
             \centering
-            \includegraphics[width=\textwidth]{Y_Eff_1.pdf}\\
-            {\scriptsize Star}
-        \column{0.33\textwidth}
-            \centering
             \includegraphics[width=\textwidth]{D_Eff_2.pdf}\\
             {\scriptsize Delta}
+        \column{0.33\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Y_Eff_1.pdf}\\
+            {\scriptsize Star}
         \column{0.33\textwidth}
             \centering
             \includegraphics[width=\textwidth]{NVC_Eff_tot.pdf}\\
@@ -453,16 +474,16 @@
     \begin{itemize}
         \item \alert{Best efficiency at every speed for the NVC}, up to
               $\eta_\text{Rec}\approx0.70$.
-        \item Star $\approx0.55$--$0.57$ and delta only $\approx0.48$--$0.51$,
-              the weakest as expected.
+        \item Delta stops at $\approx0.48$-$0.51$, the weakest as expected, and
+              Star reaches $\approx0.55$-$0.57$.
         \item The two rankings disagree, since \alert{efficiency says NVC while
-              power says star at high speed}.
+              power says Star at high speed}.
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 19
+% ---------------------------------------------------------------- 18
 \begin{frame}{Simulation vs measurement}
-    Measured power differs from simulation by \alert{8\% for the star, up to almost
+    Measured power differs from simulation by \alert{8\% for the Star, up to almost
     30\% for the NVC}.
     \vfill
     \begin{table}
@@ -470,9 +491,9 @@
         \small
         \begin{tabular}{lccc}
             \toprule
-            & Star & Delta & NVC\\
+            & Delta & Star & NVC\\
             \midrule
-            Mean deviation of $P_O$ from simulation & 8\% & 16\% & \alert{30\%}\\
+            Mean deviation of $P_O$ from simulation & 16\% & 8\% & \alert{30\%}\\
             \bottomrule
         \end{tabular}
     \end{table}
@@ -486,7 +507,7 @@
     \end{itemize}
 \end{frame}
 
-% ---------------------------------------------------------------- 20
+% ---------------------------------------------------------------- 19
 \begin{frame}{PMIC compatibility}
     \begin{columns}[c]
         \column{0.58\textwidth}
@@ -495,12 +516,12 @@
                 \toprule
                 PMIC & $V_{in}$ (V) & Star up to\\
                 \midrule
-                DS-AEM13920\_VR      & $0.120$--$4.6$ & $250$ rpm\\
-                DS-AEM10941\_VR      & $0.05$--$5$    & $250$ rpm\\
-                bq25570              & $0.1$--$5.1$   & $250$ rpm\\
-                SPV1050 (Boost)      & $0.15$--$5.3$  & $250$ rpm\\
-                SPV1050 (Buck-Boost) & $0.15$--$18$   & full range\\
-                SPV1040              & $0.3$--$5.5$   & $300$ rpm\\
+                DS-AEM13920\_VR      & $0.120$-$4.6$ & $250$ rpm\\
+                DS-AEM10941\_VR      & $0.05$-$5$    & $250$ rpm\\
+                bq25570              & $0.1$-$5.1$   & $250$ rpm\\
+                SPV1050 (Boost)      & $0.15$-$5.3$  & $250$ rpm\\
+                SPV1050 (Buck-Boost) & $0.15$-$18$   & full range\\
+                SPV1040              & $0.3$-$5.5$   & $300$ rpm\\
                 \bottomrule
             \end{tabular}
         \column{0.37\textwidth}
@@ -524,20 +545,20 @@
     \begin{itemize}
         \item Delta and NVC stay below $4\ \text{V}$ and are \alert{compatible
               with every chip tested}.
-        \item The star reaches $7\ \text{V}$ and needs a wide-input converter or a
+        \item The Star reaches $7\ \text{V}$ and needs a wide-input converter or a
               clamp.
     \end{itemize}
 \end{frame}
 
 \section{Conclusions}
 
-% ---------------------------------------------------------------- 21
+% ---------------------------------------------------------------- 20
 \begin{frame}{Conclusions and future work}
     \begin{block}{Conclusions}
         \begin{itemize}
-            \item \alert{NVC and star} are the two strongest candidates, one per
-                  end of the speed range; delta is always the weakest.
-            \item NVC and delta fit any PMIC tested; the star needs protection at
+            \item \alert{NVC and Star} are the two strongest candidates, one per
+                  end of the speed range; Delta is always the weakest.
+            \item NVC and Delta fit any PMIC tested; the Star needs protection at
                   high speed, its open-circuit voltage can damage the input.
         \end{itemize}
     \end{block}
@@ -551,99 +572,101 @@
     \end{block}
 \end{frame}
 
-% ---------------------------------------------------------------- 22
+% ---------------------------------------------------------------- 21
 \begin{emptyframe}
     Thank you for your attention!
 \end{emptyframe}
 
-\appendix
-
-\begin{frame}{Backup --- star connection}
-    \begin{table}
-        \centering
-        \small
-        \begin{tabular}{cccccc}
-            \toprule
-            \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
-            \cmidrule{2-3}\cmidrule{5-6}
-            & Simulated & Measured & & Simulated & Measured\\
-            \midrule
-            100 & 36.7  & 47.6  & & 0.430 & 0.423\\
-            150 & 94.3  & 107.5 & & 0.541 & 0.475\\
-            200 & 165.8 & 175.6 & & 0.608 & 0.507\\
-            250 & 240.0 & 245.1 & & 0.650 & 0.529\\
-            300 & 308.8 & 312.7 & & 0.674 & 0.544\\
-            350 & 372.3 & 374.6 & & 0.691 & 0.556\\
-            400 & 430.0 & 433.3 & & 0.710 & 0.565\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-\end{frame}
-
-\begin{frame}{Backup --- delta and NVC}
-    \begin{columns}[T]
-        \column{0.49\textwidth}
-            \centering {\small Delta}\\[0.5ex]
-            \scriptsize\setlength{\tabcolsep}{3pt}
-            \begin{tabular}{ccccc}
-                \toprule
-                \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
-                \cmidrule{2-3}\cmidrule{4-5}
-                & Sim. & Meas. & Sim. & Meas.\\
-                \midrule
-                100 & 10.7  & 14.9  & 0.210 & 0.279\\
-                150 & 43.7  & 43.2  & 0.340 & 0.379\\
-                200 & 95.0  & 84.2  & 0.425 & 0.441\\
-                250 & 158.3 & 134.1 & 0.482 & 0.480\\
-                300 & 228.5 & 190.8 & 0.522 & 0.508\\
-                350 & 298.0 & 248.7 & 0.550 & 0.515\\
-                400 & 365.0 & 310.7 & 0.570 & 0.511\\
-                \bottomrule
-            \end{tabular}
-        \column{0.49\textwidth}
-            \centering {\small NVC}\\[0.5ex]
-            \scriptsize\setlength{\tabcolsep}{3pt}
-            \begin{tabular}{ccccc}
-                \toprule
-                \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
-                \cmidrule{2-3}\cmidrule{4-5}
-                & Sim. & Meas. & Sim. & Meas.\\
-                \midrule
-                100 & 69.0  & 57.7  & 0.665 & 0.568\\
-                150 & 146.5 & 109.4 & 0.768 & 0.619\\
-                200 & 238.9 & 175.9 & 0.821 & 0.648\\
-                250 & 374.8 & 245.2 & 0.841 & 0.668\\
-                300 & 508.0 & 308.0 & 0.842 & 0.682\\
-                350 & 576.8 & 367.7 & 0.834 & 0.693\\
-                400 & 610.0 & 425.7 & 0.820 & 0.701\\
-                \bottomrule
-            \end{tabular}
-    \end{columns}
-\end{frame}
-
-\begin{frame}{Backup --- open-circuit voltage}
-    \begin{table}
-        \centering
-        \small
-        \begin{tabular}{cccccc}
-            \toprule
-            \multirow{2}{*}{rpm} & \multicolumn{2}{c}{Star} & \multicolumn{2}{c}{Delta} & NVC\\
-            \cmidrule{2-3}\cmidrule{4-5}\cmidrule{6-6}
-            & $V_{OC}$ (V) & ripple & $V_{OC}$ (V) & ripple & $V_{OC}$ (V)\\
-            \midrule
-            100 & 1.98 & 0.012 & 1.000 & 0.022 & 2.70\\
-            150 & 2.83 & 0.012 & 1.460 & 0.021 & 3.05\\
-            200 & 3.67 & 0.011 & 1.910 & 0.017 & 3.20\\
-            250 & 4.51 & 0.012 & 2.365 & 0.017 & 3.15\\
-            300 & 5.32 & 0.012 & 2.825 & 0.017 & 3.15\\
-            350 & 6.17 & 0.011 & 3.275 & 0.017 & 3.15\\
-            400 & 7.04 & 0.012 & 3.755 & 0.017 & 3.15\\
-            \bottomrule
-        \end{tabular}
-    \end{table}
-    The NVC saturates at $3.15\ \text{V}$ above $200\ \text{rpm}$, with a ripple an
-    order of magnitude larger than the FWR connections, consistent with its active
-    switching operation.
-\end{frame}
+% ------------------------------------------- disabled for now
+% Backup slides. Uncomment the block below to put them back.
+% \appendix
+%
+% \begin{frame}{Backup - Star connection}
+%     \begin{table}
+%         \centering
+%         \small
+%         \begin{tabular}{cccccc}
+%             \toprule
+%             \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
+%             \cmidrule{2-3}\cmidrule{5-6}
+%             & Simulated & Measured & & Simulated & Measured\\
+%             \midrule
+%             100 & 36.7  & 47.6  & & 0.430 & 0.423\\
+%             150 & 94.3  & 107.5 & & 0.541 & 0.475\\
+%             200 & 165.8 & 175.6 & & 0.608 & 0.507\\
+%             250 & 240.0 & 245.1 & & 0.650 & 0.529\\
+%             300 & 308.8 & 312.7 & & 0.674 & 0.544\\
+%             350 & 372.3 & 374.6 & & 0.691 & 0.556\\
+%             400 & 430.0 & 433.3 & & 0.710 & 0.565\\
+%             \bottomrule
+%         \end{tabular}
+%     \end{table}
+% \end{frame}
+%
+% \begin{frame}{Backup - Delta and NVC}
+%     \begin{columns}[T]
+%         \column{0.49\textwidth}
+%             \centering {\small Delta}\\[0.5ex]
+%             \scriptsize\setlength{\tabcolsep}{3pt}
+%             \begin{tabular}{ccccc}
+%                 \toprule
+%                 \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
+%                 \cmidrule{2-3}\cmidrule{4-5}
+%                 & Sim. & Meas. & Sim. & Meas.\\
+%                 \midrule
+%                 100 & 10.7  & 14.9  & 0.210 & 0.279\\
+%                 150 & 43.7  & 43.2  & 0.340 & 0.379\\
+%                 200 & 95.0  & 84.2  & 0.425 & 0.441\\
+%                 250 & 158.3 & 134.1 & 0.482 & 0.480\\
+%                 300 & 228.5 & 190.8 & 0.522 & 0.508\\
+%                 350 & 298.0 & 248.7 & 0.550 & 0.515\\
+%                 400 & 365.0 & 310.7 & 0.570 & 0.511\\
+%                 \bottomrule
+%             \end{tabular}
+%         \column{0.49\textwidth}
+%             \centering {\small NVC}\\[0.5ex]
+%             \scriptsize\setlength{\tabcolsep}{3pt}
+%             \begin{tabular}{ccccc}
+%                 \toprule
+%                 \multirow{2}{*}{rpm} & \multicolumn{2}{c}{$P_O$ (mW)} & \multicolumn{2}{c}{$\eta_\text{Rec}$}\\
+%                 \cmidrule{2-3}\cmidrule{4-5}
+%                 & Sim. & Meas. & Sim. & Meas.\\
+%                 \midrule
+%                 100 & 69.0  & 57.7  & 0.665 & 0.568\\
+%                 150 & 146.5 & 109.4 & 0.768 & 0.619\\
+%                 200 & 238.9 & 175.9 & 0.821 & 0.648\\
+%                 250 & 374.8 & 245.2 & 0.841 & 0.668\\
+%                 300 & 508.0 & 308.0 & 0.842 & 0.682\\
+%                 350 & 576.8 & 367.7 & 0.834 & 0.693\\
+%                 400 & 610.0 & 425.7 & 0.820 & 0.701\\
+%                 \bottomrule
+%             \end{tabular}
+%     \end{columns}
+% \end{frame}
+%
+% \begin{frame}{Backup - open-circuit voltage}
+%     \begin{table}
+%         \centering
+%         \small
+%         \begin{tabular}{cccccc}
+%             \toprule
+%             \multirow{2}{*}{rpm} & \multicolumn{2}{c}{Star} & \multicolumn{2}{c}{Delta} & NVC\\
+%             \cmidrule{2-3}\cmidrule{4-5}\cmidrule{6-6}
+%             & $V_{OC}$ (V) & ripple & $V_{OC}$ (V) & ripple & $V_{OC}$ (V)\\
+%             \midrule
+%             100 & 1.98 & 0.012 & 1.000 & 0.022 & 2.70\\
+%             150 & 2.83 & 0.012 & 1.460 & 0.021 & 3.05\\
+%             200 & 3.67 & 0.011 & 1.910 & 0.017 & 3.20\\
+%             250 & 4.51 & 0.012 & 2.365 & 0.017 & 3.15\\
+%             300 & 5.32 & 0.012 & 2.825 & 0.017 & 3.15\\
+%             350 & 6.17 & 0.011 & 3.275 & 0.017 & 3.15\\
+%             400 & 7.04 & 0.012 & 3.755 & 0.017 & 3.15\\
+%             \bottomrule
+%         \end{tabular}
+%     \end{table}
+%     The NVC saturates at $3.15\ \text{V}$ above $200\ \text{rpm}$, with a ripple an
+%     order of magnitude larger than the FWR connections, consistent with its active
+%     switching operation.
+% \end{frame}
 
 \end{document}
