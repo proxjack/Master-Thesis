@@ -20,7 +20,7 @@ Energy harvesting comes as a solution to those problems. [SHOW SLIDE: Energy har
 
 My thesis focuses on generating electric power from rotating motion using a specific electromagnetic technology: variable reluctance energy harvesting, or VREH.
 
-How does this system work? In a VREH device, both the magnet and the coil stay completely still. Only a toothed metal wheel rotates nearby. As the teeth pass, the magnetic flux through the coil changes, and this induces a voltage across each coil. [SHOW SLIDE: VREH principle]
+How does this system work? A VREH is made of two parts: a pickup unit, made of a magnet and a coil, and a toothed wheel, made of ferromagnetic material. The pickup unit stays completely still, while the toothed wheel rotates nearby. As the teeth pass, the magnetic flux through the coil changes, and this induces a voltage across each coil. [SHOW SLIDE: VREH principle]
 
 The VREH I worked with evolved from early single-unit prototypes for railway monitoring, to an optimized design with a six-phase system proposed for large vehicles, like buses.
 
