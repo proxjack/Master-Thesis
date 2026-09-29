@@ -60,7 +60,7 @@ After the simulations I designed a custom PCB (using Altium Designer) where ever
 Here is my test bench, with a motor connected to its inverter to control rotation speed precisely.
 The VREH is connected on the motor shaft.
 
-## 7. Main results - (3 min 30sec) Slides 12-15
+## 7. Main results - (3 min 30sec) Slides 12-14
 
 But the real prototype told a more interesting story.
 
@@ -74,7 +74,7 @@ Why the gap between simulation and measurement? The compensation capacitors lose
 Finally, I checked compatibility with five real, commercial power-management chips. These ICs manage the harvested power and produce a stable voltage to deliver power to the load.
 What kind of load are we talking about? For example, they can power circuits whose sensors detect and prevent malfunctions in the system or the vehicle where they are installed.
 
-## 8. Conclusions, limitations, and future work (1 min 30 sec) - Slide 16
+## 8. Conclusions, limitations, and future work (1 min 30 sec) - Slide 15
 
 To conclude.
 
@@ -86,7 +86,7 @@ The biggest limitation of this work was that the variable reluctance harvester w
 
 For future work, I suggest an adaptive compensation network that tracks the optimal capacitance as speed changes, and a full hardware test of the harvester connected to a real power-management chip, to measure the true efficiency from the harvester to the final load.
 
-## 9. Acknowledgments (20 sec) - Slide 17
+## 9. Acknowledgments (20 sec) - Slide 16
 
 Before I finish, I want to thank my supervisor for this amazing experience in Sweden, without whom none of this would have been possible.
 

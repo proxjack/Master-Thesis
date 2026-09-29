@@ -60,7 +60,7 @@ After the simulations I designed a custom PCB (using Altium Designer) where ever
 Here is my test bench, with a motor connected to its inverter to control rotation speed precisely.
 The VREH is connected on the motor shaft.
 
-## 7. Main results - (3 min 30sec) Slides 12-15
+## 7. Main results - (3 min 30sec) Slides 12-14
 
 But the real prototype told a more interesting story.
 
@@ -71,10 +71,7 @@ Looking at the efficiency, the NVC has the best efficiency at every speed and it
 On average, across all topologies and speeds, the measured power differed from simulation by about eight percent for the Star configuration, up to almost thirty percent for the NVC.
 Why the gap between simulation and measurement? The compensation capacitors lose some of their capacitance under the real operating voltage, especially as the voltage rises with rpm. On top of that there are the tolerances of the real components, the parasitic resistance of the bridges, and sources that are not perfectly sinusoidal.
 
-Finally, I checked compatibility with five real, commercial power-management chips. These ICs manage the harvested power and produce a stable voltage to deliver power to the load.
-What kind of load are we talking about? For example, they can power circuits whose sensors detect and prevent malfunctions in the system or the vehicle where they are installed.
-
-## 8. Conclusions, limitations, and future work (1 min 30 sec) - Slide 16
+## 8. Conclusions, limitations, and future work (1 min 30 sec) - Slide 15
 
 To conclude.
 
