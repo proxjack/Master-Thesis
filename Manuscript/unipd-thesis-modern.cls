@@ -630,7 +630,7 @@
   citecolor=black,
   filecolor=black,
   linkcolor=black,
-  urlcolor=mainColor
+  urlcolor=black
 }
 
 
