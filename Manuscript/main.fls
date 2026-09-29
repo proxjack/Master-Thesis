@@ -1,6 +1,6 @@
-PWD c:\PERSONAL\UNIPD\Magistrale\Master Thesis\Manuscript
+PWD C:\PERSONAL\UNIPD\Magistrale\Master Thesis\Manuscript
 INPUT C:\Users\jacop\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\PERSONAL\UNIPD\Magistrale\Master Thesis\Manuscript\main.tex
+INPUT main.tex
 OUTPUT main.log
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\xcolor\xcolor.sty
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
@@ -815,11 +815,6 @@ INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Bo
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-sc-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-t1.tfm
-INPUT .\template\unipdbg.pdf
-INPUT .\template\unipdbg.pdf
-INPUT .\template\unipdbg.pdf
-INPUT .\template\unipdbg.pdf
-INPUT .\template\unipdbg.pdf
 OUTPUT main.ist
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newtx\ntx-ec-tlf-pc.enc
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\newtx\ntx-ec-tlf.enc

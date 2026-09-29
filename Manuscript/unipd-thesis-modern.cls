@@ -338,7 +338,7 @@
     % \put(-294,-740){\includegraphics[width=1.45\linewidth]{template/unipdbg}}
     \put(-294,-740){%
     \begin{tikzpicture}
-        \node[inner sep=0, opacity=0.45] {\includegraphics[width=1.45\linewidth]{template/unipdbg}};
+        % \node[inner sep=0, opacity=0.45] {\includegraphics[width=1.45\linewidth]{template/unipdbg}};
     \end{tikzpicture}%
 }
     }
@@ -627,9 +627,9 @@
 %\RequirePackage{hyperref}
 \hypersetup{
   colorlinks,
-  citecolor=mainColor,
+  citecolor=black,
   filecolor=black,
-  linkcolor=mainColor,
+  linkcolor=black,
   urlcolor=mainColor
 }
 
