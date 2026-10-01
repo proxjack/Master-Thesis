@@ -344,7 +344,7 @@
     }
 
     % logo(s)
-    {\hspace{-22.5mm}\noindent\printlogos[2.4cm]{template/universis}}
+    {\hspace{-22.5mm}\noindent\printlogos[2.4cm]{template/unipd_logo}}
     %  NOTE: you can add a list of images to add more logos. Example:
     %      \printlogos[2.4cm]{template/universis}
 
@@ -459,7 +459,7 @@
     \thispagestyle{empty}
 
     % logo
-    {\hspace{-22.5mm}\noindent\printlogos[2.4cm]{template/universis}}
+    {\hspace{-22.5mm}\noindent\printlogos[2.4cm]{template/unipd_logo}}
 
     % content
     \begin{flushleft}

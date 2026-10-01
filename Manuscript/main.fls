@@ -802,11 +802,11 @@ INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl
-INPUT .\template\universis.pdf
-INPUT .\template\universis.pdf
-INPUT .\template\universis.pdf
-INPUT .\template\universis.pdf
-INPUT .\template\universis.pdf
+INPUT .\template\unipd_logo.pdf
+INPUT .\template\unipd_logo.pdf
+INPUT .\template\unipd_logo.pdf
+INPUT .\template\unipd_logo.pdf
+INPUT .\template\unipd_logo.pdf
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-sc-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Regular-tlf-t1.tfm
 INPUT C:\Users\jacop\AppData\Local\Programs\MiKTeX\fonts\tfm\public\newpx\zpl-Bold-tlf-t1.tfm
